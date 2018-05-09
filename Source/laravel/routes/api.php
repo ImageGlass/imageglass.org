@@ -17,5 +17,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+//http://ig.local/public/api/downloads/1
 
 Route::get('/downloads/{id}', "DownloadController@show");
+Route::get('/releases/{id}', "ReleaseController@show");

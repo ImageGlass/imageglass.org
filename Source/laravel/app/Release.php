@@ -17,5 +17,11 @@ class Release extends Model
     protected $dates = ['deleted_at'];
 
 
-    
+    /**
+	* Relationship 1 - n
+	*/
+	public function downloads()
+	{
+		return $this->hasMany(Download::class, 'release_id', 'id');
+	}
 }
