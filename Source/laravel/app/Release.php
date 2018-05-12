@@ -26,6 +26,14 @@ class Release extends Model
 		return $this->hasMany(Download::class, "release_id", "id");
 	}
 
+	/**
+	* Relationship 1 - n
+	*/
+	public function screen_shots()
+	{
+		return $this->hasMany(ReleaseScreenShot::class, "release_id", "id");
+	}
+
 
 	/**
 	 * Get item that matches provided ID,

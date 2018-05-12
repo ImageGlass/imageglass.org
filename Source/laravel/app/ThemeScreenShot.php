@@ -5,7 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Theme extends Model
+class ThemeScreenShot extends Model
 {
     use SoftDeletes;
 
@@ -18,12 +18,10 @@ class Theme extends Model
 
 
     /**
-	* Relationship 1 - n
+	* Relationship n - 1
 	*/
-	public function screen_shots()
+	public function theme()
 	{
-		return $this->hasMany(ThemeScreenShot::class, "theme_id", "id");
+		return $this->belongsTo(Theme::class, 'theme_id', 'id');
     }
-    
-
 }

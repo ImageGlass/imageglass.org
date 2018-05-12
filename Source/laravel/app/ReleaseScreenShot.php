@@ -5,7 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class ScreenShot extends Model
+class ReleaseScreenShot extends Model
 {
     use SoftDeletes;
 
@@ -15,4 +15,14 @@ class ScreenShot extends Model
      * @var array
      */
     protected $dates = ['deleted_at'];
+
+
+    /**
+	* Relationship n - 1
+	*/
+	public function release()
+	{
+		return $this->belongsTo(Release::class, 'release_id', 'id');
+    }
+
 }

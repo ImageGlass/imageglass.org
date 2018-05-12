@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class ScreenShotController extends Controller
+class ThemeScreenShotController extends Controller
 {
     //
 }
