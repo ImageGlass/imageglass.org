@@ -11,12 +11,6 @@ use App\Http\Resources\Download as DownloadResource;
 
 class ReleaseController extends Controller
 {
-    public function show($id) {
-        
-        //get all download records of this release id
-        return (new ReleaseResource(Release::find($id)))->downloads;
-    }
-
 
     /**
      * Get the latest stable release of ImageGlass
@@ -24,7 +18,7 @@ class ReleaseController extends Controller
     public function get_latest_release() {
 
         $item = Release::get_item(0);
-        return $item;
+        return response($item)->header('Content-Type', 'application/json');
     }
 
 
@@ -34,7 +28,7 @@ class ReleaseController extends Controller
     public function get_release($id) {
 
         $item = Release::get_item($id);
-        return $item;
+        return response($item)->header('Content-Type', 'application/json');
     }
 
 
@@ -44,7 +38,8 @@ class ReleaseController extends Controller
     public function download_release($download_id) {
 
         $item = Download::get_item($download_id);
-        return new DownloadResource($item);
+
+        return response(new DownloadResource($item))->header('Content-Type', 'application/json');
     }
 
 
@@ -65,7 +60,9 @@ class ReleaseController extends Controller
         $get_relatives = $request->input('get_relatives', 'false');
 
         $items = Release::get_items($id, $title, $slug, $release_type, $version, $delete_filter, $limit, $where_raw, $order_by, $get_relatives);
-        return $items;
+
+
+        return response($items)->header('Content-Type', 'application/json');
     }
 
 }
