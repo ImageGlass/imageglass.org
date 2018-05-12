@@ -24,5 +24,19 @@ class Download extends Model
 	public function release()
 	{
 		return $this->belongsTo(Release::class, 'release_id', 'id');
-	}
+    }
+    
+
+
+    /**
+     * Get item that matches provided ID
+     */
+    public static function get_item($id) {
+        
+        return Download::where("id", "=", $id)
+            ->with("release")
+            ->first();
+    }
+
+
 }
