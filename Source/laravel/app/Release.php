@@ -23,7 +23,7 @@ class Release extends Model
 	*/
 	public function downloads()
 	{
-		return $this->hasMany(Download::class, "release_id", "id");
+		return $this->hasMany(ReleaseDownload::class, "release_id", "id");
 	}
 
 	/**

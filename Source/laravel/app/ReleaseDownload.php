@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 
-class Download extends Model
+class ReleaseDownload extends Model
 {
     use SoftDeletes;
 
@@ -33,7 +33,7 @@ class Download extends Model
      */
     public static function get_item($id) {
         
-        return Download::where("id", "=", $id)
+        return ReleaseDownload::where("id", "=", $id)
             ->with("release")
             ->first();
     }

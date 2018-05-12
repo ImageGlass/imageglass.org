@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateDownloadsTable extends Migration
+class CreateReleaseDownloadsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateDownloadsTable extends Migration
      */
     public function up()
     {
-        Schema::create('downloads', function (Blueprint $table) {
+        Schema::create('release_downloads', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('release_id')->unsigned();
             $table->string('type', 100);
@@ -35,15 +35,16 @@ class CreateDownloadsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('downloads');
+        Schema::dropIfExists('release_downloads');
     }
 }
+
 
 
 /*
 
 
-INSERT INTO `c_downloads` (`id`, `release_id`, `type`, `link`, `checksum`, `size`, `count`, `created_at`, `updated_at`, `deleted_at`) VALUES
+INSERT INTO `c_release_downloads` (`id`, `release_id`, `type`, `link`, `checksum`, `size`, `count`, `created_at`, `updated_at`, `deleted_at`) VALUES
 (1, 1, 'installer', 'http://imageglass.codeplex.com/downloads/get/320356', '2677117fc7fe3de6f0d7f09e1c30a5b23a0c0d83', '347.6 KB', 510, '2010-07-21 16:00:00', '2010-07-21 16:00:00', NULL),
 (2, 2, 'installer', 'http://imageglass.codeplex.com/downloads/get/320357', '339e0069650a17f2ecc003cf345dfd8439012b37', '350.2 KB', 507, '2010-07-26 16:00:00', '2010-07-26 16:00:00', NULL),
 (3, 3, 'installer', 'http://imageglass.codeplex.com/downloads/get/320358', '386a60f6027cc6b9936d1862058b0e23b4033cb1', '387.6 KB', 567, '2010-08-27 16:00:00', '2010-08-27 16:00:00', NULL),
