@@ -46,7 +46,28 @@ class Release extends Model
 	}
 
 
-	public static function get_items($id = 0, $title = '', $slug = '', $release_type = '', $version = '', $delete_filter = 0, $limit = 0, $whereRaw = '', $order_by = '', $get_relatives = 'false')
+	/**
+	 * Get list of items with search criterias: 
+	 * number: $id
+	 * string: $title
+	 * string: $slug
+	 * string: $release_type
+	 * string: $version
+	 * number: $delete_filter = [
+	 * 		-1: include trashed items
+	 * 	 	 0: exclude trashed items
+	 * 	 	 1: only trashed items
+	 * ]
+	 * 
+	 * number: $limit
+	 * string: $where_raw
+	 * string: $order_by - orderByRaw()
+	 * string: $get_relatives = [
+	 * 		'true': include the relatives tables
+	 * 		'false': exclude the relatives tables
+	 * ]
+	 */
+	public static function get_items($id = 0, $title = '', $slug = '', $release_type = '', $version = '', $delete_filter = 0, $limit = 0, $where_raw = '', $order_by = '', $get_relatives = 'false')
 	{
 		$db = Release::where('title', 'LIKE', '%'.$title.'%')
 		->where('slug', 'LIKE', '%'.$slug.'%')
@@ -64,8 +85,8 @@ class Release extends Model
 			$db = $db->onlyTrashed();
 		}
 
-		if ($whereRaw != '') {
-			$db = $db->whereRaw($whereRaw);
+		if ($where_raw != '') {
+			$db = $db->whereRaw($where_raw);
 		}
 
 		if ($order_by == '') {

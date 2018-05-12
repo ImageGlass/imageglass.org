@@ -61,10 +61,10 @@ class ReleaseController extends Controller
         $delete_filter = $request->input('delete_filter', '');
         $limit = $request->input('limit', '');
         $order_by = $request->input('order_by', '');
-        $whereRaw = '';
+        $where_raw = '';
         $get_relatives = $request->input('get_relatives', 'false');
 
-        $items = Release::get_items($id, $title, $slug, $release_type, $version, $delete_filter, $limit, $whereRaw, $order_by, $get_relatives);
+        $items = Release::get_items($id, $title, $slug, $release_type, $version, $delete_filter, $limit, $where_raw, $order_by, $get_relatives);
         return $items;
     }
 
