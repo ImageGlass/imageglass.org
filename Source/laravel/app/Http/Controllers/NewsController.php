@@ -11,9 +11,10 @@ class NewsController extends Controller
     /**
      * Get the news which matches provided ID
      */
-    public function get_post($id) {
+    public function get_post($id, Request $request) {
+        $delete_filter = $request->input('delete_filter', 0);
 
-        $item = News::get_item($id);
+        $item = News::get_item($id, $delete_filter);
         return response($item)->header('Content-Type', 'application/json');
     }
 

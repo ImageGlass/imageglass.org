@@ -11,9 +11,10 @@ class ThemeController extends Controller
     /**
      * Get the theme which matches provided ID
      */
-    public function get_theme($id) {
+    public function get_theme($id, Request $request) {
+        $delete_filter = $request->input('delete_filter', 0);
 
-        $item = Theme::get_item($id);
+        $item = Theme::get_item($id, $delete_filter);
         return response($item)->header('Content-Type', 'application/json');
     }
 

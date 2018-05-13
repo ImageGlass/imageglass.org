@@ -13,21 +13,25 @@ class ReleaseController extends Controller
 {
 
     /**
-     * Get the latest stable release of ImageGlass
+     * Get the latest release of ImageGlass
      */
-    public function get_latest_release() {
+    public function get_latest_release(Request $request) {
+        $release_type = $request->input('release_type', 'stable');
+        $delete_filter = $request->input('delete_filter', 0);
 
-        $item = Release::get_item(0);
-        return response($item)->header('Content-Type', 'application/json');
+        $item = Release::get_item(0, $release_type, $delete_filter);
+        return response(new ReleaseResource($item))->header('Content-Type', 'application/json');
     }
 
 
     /**
      * Get the release which matches provided ID
      */
-    public function get_release($id) {
+    public function get_release($id, Request $request) {
+        $release_type = $request->input('release_type', 'stable');
+        $delete_filter = $request->input('delete_filter', 0);
 
-        $item = Release::get_item($id);
+        $item = Release::get_item($id, $release_type, $delete_filter);
         return response($item)->header('Content-Type', 'application/json');
     }
 

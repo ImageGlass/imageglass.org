@@ -30,10 +30,24 @@ class Theme extends Model
     /**
 	 * Get item that matches provided ID
 	 */
-	public static function get_item($id) {
-        return Theme::where("id", "=", $id)
-            ->with("screen_shots")
-            ->first();
+	public static function get_item($id = 0, $delete_filter = 0) {
+		$db = Theme::where('title', 'LIKE', '%%');
+
+		if ($delete_filter == -1) {
+			$db = $db->withTrashed();
+		}
+		elseif ($delete_filter == 1) {
+			$db = $db->onlyTrashed();
+		}
+
+		if ($id != 0) {
+			$db = $db->where("id", "=", $id);
+		}
+		else {
+			$db = $db->orderBy("updated_at", 'desc');
+		}
+
+		return $db->with("screen_shots")->first();
     }
     
 

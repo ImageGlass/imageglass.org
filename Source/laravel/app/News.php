@@ -22,15 +22,24 @@ class News extends Model
 	 * Get item that matches provided ID,
 	 * Set ID = 0 to get the latest news
 	 */
-	public static function get_item($id = 0) {
+	public static function get_item($id = 0, $delete_filter = 0) {
+		$db = News::where('title', 'LIKE', '%%');
 
-		if ($id != 0) {
-			return News::where("id", "=", $id)
-				->first();
+		if ($delete_filter == -1) {
+			$db = $db->withTrashed();
+		}
+		elseif ($delete_filter == 1) {
+			$db = $db->onlyTrashed();
 		}
 
-		return News::orderBy("created_at", 'desc')
-			->first();
+		if ($id != 0) {
+			$db = $db->where("id", "=", $id);
+		}
+		else {
+			$db = $db->orderBy("created_at", 'desc');
+		}
+
+		return $db->first();
     }
 
 
@@ -39,8 +48,6 @@ class News extends Model
 	 * number: $id
 	 * string: $title
 	 * string: $slug
-	 * string: $release_type
-	 * string: $version
 	 * number: $delete_filter = [
 	 * 		-1: include trashed items
 	 * 	 	 0: exclude trashed items
@@ -57,7 +64,7 @@ class News extends Model
 	 */
 	public static function get_items($id = 0, $title = '', $slug = '', $delete_filter = 0, $limit = 0, $where_raw = '', $order_by = '', $get_relatives = 'false')
 	{
-		$db = Release::where('title', 'LIKE', '%'.$title.'%');
+		$db = News::where('title', 'LIKE', '%'.$title.'%');
 
 		if ($id != 0) {
 			$db = $db->where('id', $id);

@@ -15,7 +15,7 @@ class Release extends Model
 	 *
 	 * @var array
 	 */
-	protected $dates = ["deleted_at"];
+	protected $dates = ['deleted_at'];
 
 
 	/**
@@ -23,7 +23,7 @@ class Release extends Model
 	*/
 	public function downloads()
 	{
-		return $this->hasMany(ReleaseDownload::class, "release_id", "id");
+		return $this->hasMany(ReleaseDownload::class, 'release_id', 'id');
 	}
 
 	/**
@@ -31,7 +31,7 @@ class Release extends Model
 	*/
 	public function screen_shots()
 	{
-		return $this->hasMany(ReleaseScreenShot::class, "release_id", "id");
+		return $this->hasMany(ReleaseScreenShot::class, 'release_id', 'id');
 	}
 
 
@@ -39,19 +39,29 @@ class Release extends Model
 	 * Get item that matches provided ID,
 	 * Set ID = 0 to get the latest stable release
 	 */
-	public static function get_item($id = 0) {
+	public static function get_item($id = 0, $release_type = 'stable', $delete_filter = 0) {
+		$db = Release::where('title', 'LIKE', '%%');
 
-		if ($id != 0) {
-			return Release::where("id", "=", $id)
-				->with("downloads")
-				->first();
+		if ($release_type != '') {
+			$db = $db->where('release_type', 'LIKE', $release_type);
 		}
 
-		return Release::where("release_type", "=", "stable")
-			->orderBy("created_at", 'desc')
-			->with("downloads")
-			->first();
-	}
+		if ($delete_filter == -1) {
+			$db = $db->withTrashed();
+		}
+		elseif ($delete_filter == 1) {
+			$db = $db->onlyTrashed();
+		}
+
+		if ($id != 0) {
+			$db = $db->where('id', '=', $id);
+		}
+		else {
+			$db = $db->orderBy('created_at', 'desc');
+		}
+
+		return $db->with('downloads', 'screen_shots')->first();
+    }
 
 
 	/**
@@ -114,7 +124,7 @@ class Release extends Model
 		
 		//Eager Loading
 		if ($get_relatives == 'true') {
-			$db = $db->with('downloads');
+			$db = $db->with('downloads', 'screen_shots');
 		}
 		
 
