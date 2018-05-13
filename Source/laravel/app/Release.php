@@ -78,12 +78,18 @@ class Release extends Model
 	public static function get_items($id = 0, $title = '', $slug = '', $release_type = '', $version = '', $delete_filter = 0, $limit = 0, $where_raw = '', $order_by = '', $get_relatives = 'false')
 	{
 		$db = Release::where('title', 'LIKE', '%'.$title.'%')
-		->where('slug', 'LIKE', '%'.$slug.'%')
-		->where('release_type', 'LIKE', '%'.$release_type.'%')
 		->where('version', 'LIKE', '%'.$version.'%');
 
 		if ($id != 0) {
 			$db = $db->where('id', $id);
+		}
+
+		if ($slug != '') {
+			$db = $db->where('slug', 'LIKE', $slug);
+		}
+
+		if ($release_type != '') {
+			$db = $db->where('release_type', 'LIKE', $release_type);
 		}
 
 		if ($delete_filter == -1) {
@@ -116,7 +122,7 @@ class Release extends Model
 			return $db->paginate($limit);
 		}
 
-		return $db->get();
+		return $db->paginate(1000);
 	}
 
 
