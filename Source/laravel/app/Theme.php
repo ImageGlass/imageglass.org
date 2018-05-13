@@ -48,6 +48,23 @@ class Theme extends Model
 		}
 
 		return $db->with("screen_shots")->first();
+	}
+	
+
+	/**
+     * Update the count attr
+     */
+    public static function update_count($id, $count_increasement) {
+        
+        $db = Theme::where("id", "=", $id)
+			->first();
+			
+		if (!is_null($db)) {
+			$db->count = $db->count + $count_increasement;
+			$db->save();
+		}
+
+        return $db;
     }
     
 

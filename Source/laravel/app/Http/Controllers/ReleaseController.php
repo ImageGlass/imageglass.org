@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Release;
-use App\Download;
+use App\ReleaseDownload;
 use App\Http\Resources\Release as ReleaseResource;
-use App\Http\Resources\Download as DownloadResource;
+use App\Http\Resources\ReleaseDownload as ReleaseDownloadResource;
 
 
 class ReleaseController extends Controller
@@ -20,7 +20,12 @@ class ReleaseController extends Controller
         $delete_filter = $request->input('delete_filter', 0);
 
         $item = Release::get_item(0, $release_type, $delete_filter);
-        return response(new ReleaseResource($item))->header('Content-Type', 'application/json');
+
+        if (!is_null($item)) {
+			return response(new ReleaseResource($item))->header('Content-Type', 'application/json');
+		}
+
+        return null;
     }
 
 
@@ -41,9 +46,14 @@ class ReleaseController extends Controller
      */
     public function download_release($download_id) {
 
-        $item = Download::get_item($download_id);
+        //get and increase download count
+        $item = ReleaseDownload::update_count($download_id, 1);
 
-        return response(new DownloadResource($item))->header('Content-Type', 'application/json');
+        if (!is_null($item)) {
+			return response(new ReleaseDownloadResource($item))->header('Content-Type', 'application/json');
+		}
+
+        return null;
     }
 
 

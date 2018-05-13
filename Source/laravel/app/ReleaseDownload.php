@@ -39,4 +39,21 @@ class ReleaseDownload extends Model
     }
 
 
+    /**
+     * Update the count attr
+     */
+    public static function update_count($id, $count_increasement) {
+        
+        $db = ReleaseDownload::where("id", "=", $id)
+            ->first();
+
+        if (!is_null($db)) {
+            $db->count = $db->count + $count_increasement;
+            $db->save();
+        }
+
+        return $db;
+    }
+
+
 }
