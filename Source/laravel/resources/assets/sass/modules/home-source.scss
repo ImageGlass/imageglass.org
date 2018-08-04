@@ -1,0 +1,21 @@
+.home-source {
+    background-image: linear-gradient(-20deg, #282046 0%, #09304a 100%);
+
+    .home-source-content {
+        background-image: url(https://desktop.github.com/images/star-bg.svg);
+        background-position: top center;
+        background-size: cover;
+        color: $color-white;
+
+        padding-top: $gap*3;
+        padding-bottom: $gap*3;
+
+        .eff-reveal-border {
+            border-radius: $gap*3;
+
+            .eff-reveal {
+                border-radius: $gap*3;
+            }
+        }
+    }
+}

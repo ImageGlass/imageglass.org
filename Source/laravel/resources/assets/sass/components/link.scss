@@ -1,0 +1,27 @@
+#body {
+    a {
+        text-decoration: none;
+    }
+
+    .link,
+    .links a {
+        @include text-gradient();
+
+        &:hover {
+            @include animate-gradient();
+        }
+    }
+
+    .will-link {
+        &:hover {
+            @include text-gradient();
+            @include animate-gradient();
+        }
+    }
+    .will-links {
+        &:hover .will-link {
+            @include text-gradient();
+            @include animate-gradient();
+        }
+    }
+}

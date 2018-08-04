@@ -1,0 +1,9 @@
+
+.eff-reveal-border {
+    display: inline-block;
+    padding: $gapem/9;
+
+    &> .eff-reveal {
+        display: block;
+    }
+}

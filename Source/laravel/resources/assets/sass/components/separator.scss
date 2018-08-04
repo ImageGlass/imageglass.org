@@ -1,0 +1,14 @@
+.separator {
+    display: flex;
+    justify-content: center;
+    
+    &::before {
+        content: "";
+        display: inline-block;
+        height: $gap/10;
+        width: 30vw;
+        
+        background-image: radial-gradient(circle at center, $color-2 0, $color-1 40%, transparent 100%, transparent 100%);
+        opacity: 0.5;
+    }
+}

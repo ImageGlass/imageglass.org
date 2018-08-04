@@ -1,14 +1,66 @@
 
-// Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
 
-// Variables
-@import "variables";
+// 1. Variables
+@import "vars/colors";
+@import "vars/spacing";
+@import "vars/typo";
 
-// Bootstrap
-// @import '~bootstrap/scss/bootstrap';
 
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-}
+
+// 2. Mixins
+/* Customize Bootstrap 4.1.1 */
+@import "mixins/clearfix";
+@import "mixins/breakpoints";
+@import "mixins/grid-framework";
+@import "mixins/grid";
+@import "mixins/gradients";
+@import "mixins/blur-effect";
+@import "mixins/shadow";
+
+// 2. Basis
+/* Customize Bootstrap 4.1.1 */
+@import "basis/reboot";
+@import "basis/flex";
+@import "basis/spacing";
+@import "basis/display";
+@import "basis/text";
+@import "basis/grid";
+@import "basis/embed";
+@import "basis/animations";
+@import "basis/font-icomoon";
+
+// 3. Vendors
+@import "vendors/slick-carousel/slick";
+
+
+// 4. Components
+@import "components/reveal-effect";
+@import "components/link";
+@import "components/button";
+@import "components/quote-item";
+@import "components/bg-box";
+@import "components/img-box";
+@import "components/news-box";
+@import "components/chk-dropdown";
+@import "components/slick-slider";
+@import "components/separator";
+
+
+// 5. Modules
+@import "modules/layout";
+@import "modules/header";
+@import "modules/footer";
+@import "modules/mobile-menu";
+@import "modules/home-top";
+@import "modules/home-features";
+@import "modules/home-news";
+@import "modules/home-review";
+@import "modules/home-source";
+@import "modules/home-donate";
+@import "modules/home-photos";
+
+
+// 6. Pages
+@import "pages/home"
+
+

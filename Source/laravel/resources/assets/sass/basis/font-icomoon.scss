@@ -1,0 +1,127 @@
+@font-face {
+	font-family: "icomoon";
+	src: url("../fonts/icomoon/icomoon.eot?l1dovj");
+	src: url("../fonts/icomoon/icomoon.eot?l1dovj#iefix")
+			format("embedded-opentype"),
+		url("../fonts/icomoon/icomoon.ttf?l1dovj") format("truetype"),
+		url("../fonts/icomoon/icomoon.woff?l1dovj") format("woff"),
+		url("../fonts/icomoon/icomoon.svg?l1dovj#icomoon") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: "icomoon" !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-instagram:before {
+	content: "\e900";
+}
+.icon-bitcoin:before {
+	content: "\e901";
+}
+.icon-download:before {
+	content: "\e902";
+}
+.icon-info:before {
+	content: "\e903";
+}
+.icon-quotes-left:before {
+	content: "\e904";
+}
+.icon-quotes-right:before {
+	content: "\e905";
+}
+.icon-extension:before {
+	content: "\e906";
+}
+.icon-picture:before {
+	content: "\e907";
+}
+.icon-menu:before {
+	content: "\e908";
+}
+.icon-language:before {
+	content: "\e909";
+}
+.icon-envelope:before {
+	content: "\e90a";
+}
+.icon-google-plus:before {
+	content: "\e90b";
+}
+.icon-facebook:before {
+	content: "\e90c";
+}
+.icon-youtube:before {
+	content: "\e90d";
+}
+.icon-github:before {
+	content: "\e90e";
+}
+.icon-paypal:before {
+	content: "\e90f";
+}
+.icon-beer:before {
+	content: "\e910";
+}
+.icon-heart:before {
+	content: "\e911";
+}
+.icon-angle-right:before {
+	content: "\e912";
+}
+.icon-angle-left:before {
+	content: "\e913";
+}
+.icon-remove:before {
+	content: "\e914";
+}
+.icon-lightweight:before {
+	content: "\e915";
+}
+.icon-document-edit:before {
+	content: "\e916";
+}
+.icon-pen:before {
+	content: "\e917";
+}
+.icon-sad-face:before {
+	content: "\e918";
+}
+.icon-happy-face:before {
+	content: "\e919";
+}
+.icon-gift:before {
+	content: "\e920";
+}
+.icon-search:before {
+	content: "\e91a";
+}
+.icon-support-user:before {
+	content: "\e91b";
+}
+.icon-support-dev:before {
+	content: "\e91c";
+}
+.icon-bug:before {
+	content: "\e91d";
+}
+.icon-theme:before {
+	content: "\e91e";
+}
+.icon-bitcoin-o:before {
+	content: "\e91f";
+}

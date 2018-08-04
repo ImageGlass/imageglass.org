@@ -1,0 +1,51 @@
+
+.quote-item {
+    margin-bottom: 0;
+    position: relative;
+    font-style: italic;
+    font-size: $fs-small;
+    padding-left: $gap;
+
+    &::before {
+        content: "\e904";
+        font-family: 'icomoon' !important;
+        color: rgba(0,0,0,0.1);
+        font-size: 150%;
+        speak: none;
+        width: $gap*2.5;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        -webkit-font-smoothing: antialiased;
+        position: absolute;
+        top: 0;
+        left: -$gap/2;
+        text-align: left;
+        border-radius: 100%;
+    }
+
+    &> p {
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+    
+    .blockquote-footer {
+        margin-top: $gap/2;
+        font-size: $fs-tiny;
+        font-style: normal;
+
+        &::before {
+            content: "\2014 \00A0";
+        }
+
+        .author {
+            font-weight: $fw-bold;
+        }
+
+        cite {
+
+        }
+    }
+}

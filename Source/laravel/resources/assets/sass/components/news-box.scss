@@ -1,0 +1,83 @@
+.news-list {
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 0;
+
+	.news-box {
+		margin-bottom: $gap*2;
+
+        &> .news-box-content {
+            display: flex;
+            position: relative;
+            transition: all ease 300ms;
+            @include bg-gradient-gray();
+
+            .img-wrapper {
+                img {
+                    max-width: 100%;
+                    height: auto;
+                    visibility: hidden;
+                }
+            }
+    
+            .cover {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                font-weight: $fw-light;
+                overflow: hidden;
+                color: $color-text-1;
+                transition: all ease 300ms;
+
+                .eff-reveal {
+                    height: 100%;
+                    background-color: darken($color-white, 10%);
+                    @include bg-gradient-gray();
+                }
+
+                .title {
+                    font-size: $fs-h4;
+                }
+
+                time {
+                    font-size: $fs-small;
+                }
+
+                @media (max-width: #{map-get($grid-breakpoints, "lg")}) {
+
+                    .title {
+                        font-size: $fs-body;
+                    }
+                }
+            }
+
+            &:hover {
+                transform: translateY(-$gap/4);
+                @include btn-hover();
+    
+                .cover {
+                    background-color: rgba(0,0,0,0.2);
+                }
+            }
+
+            &:active {
+                transition: all ease 100ms;
+                transform: none;
+                @include btn-shadow();
+            }
+        }
+
+		
+        &.new-post {
+            .news-box-content {
+                @include bg-gradient-highlight();
+            }
+            .cover .eff-reveal {
+                @include bg-gradient-highlight(!important);
+            }
+        }
+		
+	}
+}

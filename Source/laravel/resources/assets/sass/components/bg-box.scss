@@ -1,0 +1,12 @@
+.bg-box {
+    background: url(https://picsum.photos/1366/1200/?random) no-repeat center center fixed;
+    background-size: cover;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://picsum.photos/1366/600/?random', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://picsum.photos/1366/600/?random', sizingMethod='scale')";
+    
+    &> .bg-box-content {
+        @include bg-gradient();
+
+        color: $color-white;
+    }
+}

@@ -1,0 +1,84 @@
+.btn:not(.eff-reveal-border) {
+    position: relative;
+    display: inline-block;
+    padding: $gap/2 $gap*1.5;
+    background-color: rgba($color-white, 1);
+    border: 0;
+    border-radius: $gap*3;
+    color: $color-text-1;
+    transition: all 200ms ease;
+    
+    @include btn-shadow();
+    @include bg-gradient-gray();
+
+    &:hover,
+    &:focus {
+        @include btn-hover();
+        @include animate-gradient();
+    }
+    &:active {
+        transition: all 100ms ease;
+        transform: translateY(0);
+    }
+
+
+    &.btn-primary {
+        @include bg-gradient();
+        color: $color-white;
+    }
+}
+
+
+.btn.eff-reveal-border {
+    display: inline-block;
+    border-radius: $gap*3;
+    overflow: hidden;
+    transition: all 100ms ease;
+
+    &> .eff-reveal {
+        padding: $gap/2 $gap*1.5;
+        background-color: rgba($color-white, 0.8);
+        border: 0;
+        border-radius: $gap*3;
+        color: $color-text-1;
+        transition: all 200ms ease;
+        @include bg-gradient-gray();
+    
+    
+        &:hover,
+        &:focus {
+            color: $color-text-1;
+            text-decoration: none;
+            outline: none;
+        }
+    }
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        @include shadow();
+        transition: all 200ms ease;
+        transform: translateY(-$gap/7);
+
+        &> .eff-reveal {
+            @include animate-gradient();
+        }
+    }
+    &:active {
+        transition: all 100ms ease;
+        transform: translateY(0);
+    }
+
+
+
+    &.btn-primary {
+        background-image: none;
+
+        &> .eff-reveal {
+            @include bg-gradient();
+            color: $color-white;
+        }
+    }
+
+    
+}
