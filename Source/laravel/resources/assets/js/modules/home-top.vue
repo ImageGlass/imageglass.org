@@ -3,7 +3,7 @@
         <div class="bg-box-content">
             <div class="container pt-5">
 
-                <h1 class="fs-h1 text-center">
+                <h1 class="fs-h1 text-center slogan">
                     A lightweight, versatile image viewer
                 </h1>
 

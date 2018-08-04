@@ -69,8 +69,7 @@ $headerHeight: $gap*3;
         .menu-item {
             &> a {
                 border-radius: 0;
-                padding-left: $gap*1.5;
-                padding-right: $gap*1.5;
+                padding: $gap/2 $gap*1.5;
             }
 
             &.submenu {

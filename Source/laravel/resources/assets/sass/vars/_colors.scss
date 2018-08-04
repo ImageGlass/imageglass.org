@@ -5,11 +5,13 @@ $color-black: #000;
 $color-white: #fff;
 
 
-$color-bg: #2a2a2a;
+
+$color-bg: #27292a;
 $color-bg-hover: lighten($color-bg, 5);
+$color-bg-header: #2d2f2f;
+$color-bg-footer: #2d2f2f;
 
-
-$color-text-1: #fff;
+$color-text-1: #efefef;
 
 
 :root {

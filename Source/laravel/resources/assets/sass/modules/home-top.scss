@@ -1,4 +1,9 @@
 .home-top {
+
+	.slogan {
+		color: lighten($color-text-1, 20);
+	}
+	
 	.btn-download {
 		font-size: $fs-h3;
 		font-weight: $fw-light;

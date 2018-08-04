@@ -1,43 +1,35 @@
 #footer {
 
-    .bg-box-content {
-        background-color: rgba($color-white, 0.5);
-    }
-    
+    font-size: $fs-tiny;
+    font-weight: $fw-light;
+    background-color: $color-bg-footer;
+    padding-top: $gap * 2;
+    padding-bottom: $gap * 1;
 
-    .footer-content {
-        font-size: $fs-tiny;
-        font-weight: $fw-light;
-		color: rgba($color-white, 0.7);
-		background-color: rgba($color-black, 0.5);
-		padding-top: $gap * 2;
-        padding-bottom: $gap * 1;
+    @include bg-blur(rgba($color-bg-footer, 0.7));
 
-        // @include bg-blur("rgba(0,0,0,0.4)", $gap/2);
+    .social-links {
+        margin-bottom: $gap/4;
 
+        a {
+            display: inline-block;
+            margin: 0 $gap/3;
+            color: $color-white;
+            font-size: $fs-h3;
+            transition: all ease 200ms;
 
-        .social-links {
-            margin-bottom: $gap/4;
+            &:hover {
+                text-decoration: none;
+                transform: translateY(-$gap/5);
+                @include text-gradient();
+                @include animate-gradient();
+            }
 
-            a {
-                display: inline-block;
-                margin: 0 $gap/3;
-                color: $color-white;
-                font-size: $fs-h3;
-                transition: all ease 200ms;
-
-                &:hover {
-                    text-decoration: none;
-                    transform: translateY(-$gap/5);
-                    @include text-gradient();
-                    @include animate-gradient();
-                }
-
-                &:active {
-                    transition: all ease 100ms;
-                    transform: translateY(0);
-                }
+            &:active {
+                transition: all ease 100ms;
+                transform: translateY(0);
             }
         }
     }
+    
 }

@@ -9,7 +9,7 @@
     &::before {
         content: "\e904";
         font-family: 'icomoon' !important;
-        color: rgba(0,0,0,0.1);
+        color: rgba($color-text-1, 0.2);
         font-size: 150%;
         speak: none;
         width: $gap*2.5;

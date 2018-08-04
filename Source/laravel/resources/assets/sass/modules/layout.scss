@@ -1,16 +1,16 @@
 :root {
-	--scroll-bar-size: 10px;
+	--scroll-bar-size: 15px;
 
 	/**
    * Background color for custom scroll bars.
    * The color is applied to the thumb part of the scrollbar.
    */
-	--scroll-bar-thumb-background-color: rgba(0, 0, 0, 0.2);
+	--scroll-bar-thumb-background-color: rgba(0,0,0, 0.7);
 	/**
 	* Background color for custom scroll bars in their active state.
 	* The color is applied to the thumb part of the scrollbar.
 	*/
-	--scroll-bar-thumb-background-color-active: rgba(0, 0, 0, 0.5);
+	--scroll-bar-thumb-background-color-active: rgba(0,0,0, 1);
 }
 
 ::-webkit-scrollbar {

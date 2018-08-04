@@ -24315,8 +24315,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 function applyRevealEffect() {
 	__WEBPACK_IMPORTED_MODULE_0_fluent_reveal_effect__["FluentRevealEffect"].applyEffect("#header .eff-reveal", {
 		clickEffect: true,
-		lightColor: "rgba(255,255,255, 0.15)",
-		gradientSize: 100
+		lightColor: "rgba(255,255,255, 0.1)",
+		gradientSize: 150
 	});
 }
 
@@ -24972,10 +24972,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
 	name: "FooterModule"
@@ -24996,102 +24992,96 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("footer", { staticClass: "bg-box", attrs: { id: "footer" } }, [
-      _c("div", { staticClass: "bg-box-content" }, [
-        _c("div", { staticClass: "footer-content" }, [
-          _c("div", { staticClass: "container text-center" }, [
-            _c("div", { staticClass: "social-links" }, [
-              _c(
-                "a",
-                {
-                  attrs: {
-                    href: "https://instagram.com/ImageGlassApp",
-                    target: "_blank",
-                    rel: "noopener noreferrer",
-                    title: "ImageGlass on Instagram"
-                  }
-                },
-                [_c("i", { staticClass: "icon-instagram" })]
-              ),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  attrs: {
-                    href: "https://github.com/d2phap/ImageGlass",
-                    target: "_blank",
-                    rel: "noopener noreferrer",
-                    title: "ImageGlass on Github"
-                  }
-                },
-                [_c("i", { staticClass: "icon-github" })]
-              ),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  attrs: {
-                    href: "https://www.facebook.com/ImageGlass",
-                    target: "_blank",
-                    rel: "noopener noreferrer",
-                    title: "ImageGlass on Facebook"
-                  }
-                },
-                [_c("i", { staticClass: "icon-facebook" })]
-              ),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  attrs: {
-                    href: "https://www.youtube.com/user/imageglass",
-                    target: "_blank",
-                    rel: "noopener noreferrer",
-                    title: "ImageGlass on Youtube"
-                  }
-                },
-                [_c("i", { staticClass: "icon-youtube" })]
-              ),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  attrs: {
-                    href: "https://crowdin.com/project/imageglass/invite",
-                    target: "_blank",
-                    rel: "noopener noreferrer",
-                    title: "ImageGlass Translation on Crowdin"
-                  }
-                },
-                [_c("i", { staticClass: "icon-language" })]
-              ),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  attrs: {
-                    href: "https://teespring.com/stores/imageglass",
-                    target: "_blank",
-                    rel: "noopener noreferrer",
-                    title: "Buy a 🎁"
-                  }
-                },
-                [_c("i", { staticClass: "icon-gift" })]
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", {}, [
-              _vm._v(
-                "\n\t\t\t\t\tDesigned by Dương Diệu Pháp. v5-2018\n\t\t\t\t"
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "mt-3" }, [
-              _vm._v("\n\t\t\t\t\tCopyright © 2010 - 2018 by Dương Diệu Pháp."),
-              _c("br"),
-              _vm._v(" All rights reserved.\n\t\t\t\t")
-            ])
-          ])
+    return _c("footer", { attrs: { id: "footer" } }, [
+      _c("div", { staticClass: "container text-center" }, [
+        _c("div", { staticClass: "social-links" }, [
+          _c(
+            "a",
+            {
+              attrs: {
+                href: "https://instagram.com/ImageGlassApp",
+                target: "_blank",
+                rel: "noopener noreferrer",
+                title: "ImageGlass on Instagram"
+              }
+            },
+            [_c("i", { staticClass: "icon-instagram" })]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: {
+                href: "https://github.com/d2phap/ImageGlass",
+                target: "_blank",
+                rel: "noopener noreferrer",
+                title: "ImageGlass on Github"
+              }
+            },
+            [_c("i", { staticClass: "icon-github" })]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: {
+                href: "https://www.facebook.com/ImageGlass",
+                target: "_blank",
+                rel: "noopener noreferrer",
+                title: "ImageGlass on Facebook"
+              }
+            },
+            [_c("i", { staticClass: "icon-facebook" })]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: {
+                href: "https://www.youtube.com/user/imageglass",
+                target: "_blank",
+                rel: "noopener noreferrer",
+                title: "ImageGlass on Youtube"
+              }
+            },
+            [_c("i", { staticClass: "icon-youtube" })]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: {
+                href: "https://crowdin.com/project/imageglass/invite",
+                target: "_blank",
+                rel: "noopener noreferrer",
+                title: "ImageGlass Translation on Crowdin"
+              }
+            },
+            [_c("i", { staticClass: "icon-language" })]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: {
+                href: "https://teespring.com/stores/imageglass",
+                target: "_blank",
+                rel: "noopener noreferrer",
+                title: "Buy a 🎁"
+              }
+            },
+            [_c("i", { staticClass: "icon-gift" })]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", {}, [
+          _vm._v("\n\t\t\tDesigned by Dương Diệu Pháp. v5-2018\n\t\t")
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "mt-3" }, [
+          _vm._v("\n\t\t\tCopyright © 2010 - 2018 by Dương Diệu Pháp."),
+          _c("br"),
+          _vm._v(" All rights reserved.\n\t\t")
         ])
       ])
     ])
@@ -28442,7 +28432,7 @@ var staticRenderFns = [
     return _c("section", { staticClass: "bg-box home-top" }, [
       _c("div", { staticClass: "bg-box-content" }, [
         _c("div", { staticClass: "container pt-5" }, [
-          _c("h1", { staticClass: "fs-h1 text-center" }, [
+          _c("h1", { staticClass: "fs-h1 text-center slogan" }, [
             _vm._v(
               "\n                    A lightweight, versatile image viewer\n                "
             )
@@ -28694,23 +28684,19 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
 
 
 
 function applyRevealEffect() {
 	__WEBPACK_IMPORTED_MODULE_0_fluent_reveal_effect__["FluentRevealEffect"].applyEffect(".home-features", {
 		clickEffect: false,
-		lightColor: "rgba(255,255,255,1)",
+		lightColor: "rgba(255,255,255, 0.1)",
 		gradientSize: 170,
 		isContainer: true,
 		children: {
 			borderSelector: ".eff-reveal-border",
 			elementSelector: ".eff-reveal",
-			lightColor: "rgba(255,255,255,1)",
+			lightColor: "rgba(0,0,0, 0.2)",
 			gradientSize: 500
 		}
 	});
@@ -28731,135 +28717,127 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("section", { staticClass: "bg-box home-features" }, [
-    _c("div", { staticClass: "bg-box-content py-0" }, [
-      _c("div", { staticClass: "home-content" }, [
-        _c("div", { staticClass: "container" }, [
-          _c("h2", { staticClass: "fs-h2 text-center" }, [
-            _vm._v("\n                    Features\n                ")
-          ]),
+  return _c("section", { staticClass: "home-features pt-5 pb-4" }, [
+    _c("div", { staticClass: "container" }, [
+      _c("h2", { staticClass: "fs-h2 text-center" }, [
+        _vm._v("\n            Features\n        ")
+      ]),
+      _vm._v(" "),
+      _vm._m(0),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass:
+            "row justify-content-center text-center mt-4 feature-list"
+        },
+        [
+          _c(
+            "div",
+            { staticClass: "col-md-6 col-lg-4 col-xxl-3 mb-4 feature-item" },
+            [
+              _c("div", { staticClass: "eff-reveal-border" }, [
+                _c("div", { staticClass: "eff-reveal links" }, [
+                  _vm._m(1),
+                  _vm._v(" "),
+                  _c("h3", { staticClass: "feature-title" }, [
+                    _vm._v(
+                      "\n                            70+ formats supported\n                        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "p",
+                    { staticClass: "feature-desc" },
+                    [
+                      _vm._v(
+                        "\n                            ImageGlass works great with GIF, SVG, HEIC and RAW formats,\n                            "
+                      ),
+                      _c(
+                        "router-link",
+                        {
+                          attrs: {
+                            to: "/documentation/supported-formats",
+                            title: "View all supported formats"
+                          }
+                        },
+                        [
+                          _vm._v(
+                            "\n                                among others\n                            "
+                          )
+                        ]
+                      )
+                    ],
+                    1
+                  )
+                ])
+              ])
+            ]
+          ),
           _vm._v(" "),
-          _vm._m(0),
+          _vm._m(2),
           _vm._v(" "),
           _c(
             "div",
-            {
-              staticClass:
-                "row justify-content-center text-center mt-4 feature-list"
-            },
+            { staticClass: "col-md-6 col-lg-4 col-xxl-3 mb-4 feature-item" },
             [
-              _c(
-                "div",
-                {
-                  staticClass: "col-md-6 col-lg-4 col-xxl-3 mb-4 feature-item"
-                },
-                [
-                  _c("div", { staticClass: "eff-reveal-border" }, [
-                    _c("div", { staticClass: "eff-reveal links" }, [
-                      _vm._m(1),
-                      _vm._v(" "),
-                      _c("h3", { staticClass: "feature-title" }, [
-                        _vm._v(
-                          "\n                                    70+ formats supported\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
+              _c("div", { staticClass: "eff-reveal-border" }, [
+                _c("div", { staticClass: "eff-reveal links" }, [
+                  _vm._m(3),
+                  _vm._v(" "),
+                  _c("h3", { staticClass: "feature-title" }, [
+                    _vm._v(
+                      "\n                            Personalization\n                        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "p",
+                    { staticClass: "feature-desc" },
+                    [
+                      _vm._v(
+                        "\n                            Easy installation of new \n                            \n                            "
+                      ),
                       _c(
-                        "p",
-                        { staticClass: "feature-desc" },
+                        "router-link",
+                        {
+                          attrs: {
+                            to: "/download/languagepacks",
+                            title: "Download language packs"
+                          }
+                        },
                         [
                           _vm._v(
-                            "\n                                    ImageGlass works great with GIF, SVG, HEIC and RAW formats,\n                                    "
-                          ),
-                          _c(
-                            "router-link",
-                            {
-                              attrs: {
-                                to: "/documentation/supported-formats",
-                                title: "View all supported formats"
-                              }
-                            },
-                            [
-                              _vm._v(
-                                "\n                                        among others\n                                    "
-                              )
-                            ]
+                            "\n                                language packs\n                            "
                           )
-                        ],
-                        1
-                      )
-                    ])
-                  ])
-                ]
-              ),
-              _vm._v(" "),
-              _vm._m(2),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass: "col-md-6 col-lg-4 col-xxl-3 mb-4 feature-item"
-                },
-                [
-                  _c("div", { staticClass: "eff-reveal-border" }, [
-                    _c("div", { staticClass: "eff-reveal links" }, [
-                      _vm._m(3),
-                      _vm._v(" "),
-                      _c("h3", { staticClass: "feature-title" }, [
-                        _vm._v(
-                          "\n                                    Personalization\n                                "
-                        )
-                      ]),
-                      _vm._v(" "),
+                        ]
+                      ),
+                      _vm._v(
+                        "\n                            &\n                            "
+                      ),
                       _c(
-                        "p",
-                        { staticClass: "feature-desc" },
+                        "router-link",
+                        {
+                          attrs: {
+                            to: "/download/themes",
+                            title: "Download themes"
+                          }
+                        },
                         [
                           _vm._v(
-                            "\n                                    Easy installation of new \n                                    \n                                    "
-                          ),
-                          _c(
-                            "router-link",
-                            {
-                              attrs: {
-                                to: "/download/languagepacks",
-                                title: "Download language packs"
-                              }
-                            },
-                            [
-                              _vm._v(
-                                "\n                                        language packs\n                                    "
-                              )
-                            ]
-                          ),
-                          _vm._v(
-                            "\n                                    &\n                                    "
-                          ),
-                          _c(
-                            "router-link",
-                            {
-                              attrs: {
-                                to: "/download/themes",
-                                title: "Download themes"
-                              }
-                            },
-                            [
-                              _vm._v(
-                                "\n                                        themes\n                                    "
-                              )
-                            ]
+                            "\n                                themes\n                            "
                           )
-                        ],
-                        1
+                        ]
                       )
-                    ])
-                  ])
-                ]
-              )
+                    ],
+                    1
+                  )
+                ])
+              ])
             ]
           )
-        ])
-      ])
+        ]
+      )
     ])
   ])
 }
@@ -28877,7 +28855,7 @@ var staticRenderFns = [
         },
         [
           _vm._v(
-            "\n                        A simple-to-use program that comes packed with basic functions and a nice minimal modern user interface.\n                    "
+            "\n                A simple-to-use program that comes packed with basic functions and a nice minimal modern user interface.\n            "
           )
         ]
       )
@@ -28907,13 +28885,13 @@ var staticRenderFns = [
             _vm._v(" "),
             _c("h3", { staticClass: "feature-title" }, [
               _vm._v(
-                "\n                                    Lightweight & Versatile\n                                "
+                "\n                            Lightweight & Versatile\n                        "
               )
             ]),
             _vm._v(" "),
             _c("p", { staticClass: "feature-desc" }, [
               _vm._v(
-                "\n                                    Fast switch between images\n                                "
+                "\n                            Fast switch between images\n                        "
               )
             ])
           ])

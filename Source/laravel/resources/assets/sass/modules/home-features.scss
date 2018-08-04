@@ -1,12 +1,12 @@
 .home-features {
-	.home-content {
-		color: $color-text-1;
-		background-color: rgba($color-white, 0.9);
-		padding-top: $gap * 3;
-        padding-bottom: $gap * 2;
+	// .home-content {
+	// 	color: $color-text-1;
+	// 	background-color: rgba($color-white, 0.9);
+	// 	padding-top: $gap * 3;
+    //     padding-bottom: $gap * 2;
         
-        @include bg-blur("rgba(255,255,255,0.9)");
-    }
+    //     @include bg-blur("rgba(255,255,255,0.9)");
+    // }
     
     .feature-item {
 		display: flex;
@@ -15,15 +15,12 @@
 	}
 
 	.eff-reveal-border {
-		border-radius: $gap/10;
 		display: flex;
 		flex-direction: column;
 		height: 100%;
 
 		.eff-reveal {
 			height: 100%;
-
-			border-radius: $gap/10;
 			padding: $gap;
 
 			.feature-icon {
@@ -43,7 +40,7 @@
             @include bg-gradient(!important);
             
             .eff-reveal {
-                background-color: rgba($color-white, 0.9);
+                background-color: $color-bg;
             }
 		}
 	}

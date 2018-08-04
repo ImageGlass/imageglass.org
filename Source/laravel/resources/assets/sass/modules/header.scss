@@ -4,9 +4,9 @@
     right: 0;
     top: 0;
     z-index: 100;
-    background-color: $color-bg;
+    background-color: $color-bg-header;
 
-    @include bg-blur();
+    @include bg-blur(rgba($color-bg-footer, 0.8));
 
     nav, ul {
         list-style: none;
@@ -89,7 +89,7 @@
                     flex-direction: column;
                     min-width: $gap*10;
                     padding: $gap/2 0;
-                    background-color: $color-bg-hover;
+                    background-color: $color-bg;
                     position: absolute;
                     box-shadow: 0 $gap*0.75 $gap*2 (-$gap/2) rgba($color-black, 0.3);
 
@@ -108,7 +108,7 @@
                 }
 
                 &:hover {
-                    background-color: $color-bg-hover;
+                    background-color: $color-bg;
 
                     &> .submenu-group {
                         display: flex;
