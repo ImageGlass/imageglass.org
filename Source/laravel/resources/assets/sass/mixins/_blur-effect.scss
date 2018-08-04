@@ -1,5 +1,5 @@
 
-@mixin bg-blur($bgColor: "rgba(255,255,255,0.7)", $blur: $gap) {
+@mixin bg-blur($bgColor: rgba($color-bg, 0.7), $blur: $gap) {
 
     @supports (-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px)) {
         @if (#{$bgColor} != "") {

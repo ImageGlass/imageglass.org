@@ -7,6 +7,6 @@
     &> .bg-box-content {
         @include bg-gradient();
 
-        color: $color-white;
+        color: $color-text-1;
     }
 }

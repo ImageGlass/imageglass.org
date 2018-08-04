@@ -98,12 +98,13 @@
 
 <script>
 import { FluentRevealEffect } from "fluent-reveal-effect";
+import { getCSSVar } from "../helpers/css-variable"
 
 function applyRevealEffect() {
 	FluentRevealEffect.applyEffect("#header .eff-reveal", {
 		clickEffect: true,
-		lightColor: "rgba(255,255,255,0.9)",
-		gradientSize: 150
+		lightColor: "rgba(255,255,255, 0.15)",
+		gradientSize: 100
 	});
 }
 

@@ -23,15 +23,34 @@
 
     cursor: pointer;
     outline: none;
-    transition: all 200ms ease, box-shadow 500ms ease;
+    transition: all 200ms ease, box-shadow 200ms ease;
     transform: translateY(-$gap/7);
     transform-origin: center;
 
-    @if ($shadow != "") {
-        $shadow: ", " + #{$shadow};
-    }
+    box-shadow: 0 1px 0px 0px darken($color-bg, 5), 
+    0 2px 0px 0px darken($color-bg, 5),
+    0 3px 0px 0px darken($color-bg, 5),
+    0 4px 0px 0px darken($color-bg, 5),
+    0 5px 0px 0px darken($color-bg, 5),
+    0 6px 0px 0px darken($color-bg, 5),
+    0 7px 0px 0px darken($color-bg, 5);
 
-    @if ($style == "button") {
-        box-shadow: 0 $gap $gap*2 (-$gap/2) rgba(#000, 0.2) #{$shadow};
-    }
+    // @if ($shadow != "") {
+    //     $shadow: ", " + #{$shadow};
+    // }
+
+    // @if ($style == "button") {
+    //     box-shadow: 0 $gap $gap*2 (-$gap/2) rgba(#000, 0.2) #{$shadow};
+    // }
+}
+
+
+@mixin btn-active($style: "button", $shadow: "") {
+
+    transform: rotate3d(1, 0, 0, 10deg);
+    
+    box-shadow: 0 1px 0px 0px darken($color-bg, 5), 
+    0 2px 0px 0px darken($color-bg, 5),
+    0 3px 0px 0px darken($color-bg, 5),
+    0 4px 0px 0px darken($color-bg, 5);
 }

@@ -5,4 +5,22 @@ $color-black: #000;
 $color-white: #fff;
 
 
-$color-text-1: #5a5a5a;
+$color-bg: #2a2a2a;
+$color-bg-hover: lighten($color-bg, 5);
+
+
+$color-text-1: #fff;
+
+
+:root {
+    --color-1: $color-1;
+    --color-2: $color-2;
+
+    --color-black: $color-black;
+    --color-white: $color-white;
+
+    --color-bg: $color-bg;
+    --color-bg-hover: $color-bg-hover;
+
+    --color-text-1: $color-text;
+}

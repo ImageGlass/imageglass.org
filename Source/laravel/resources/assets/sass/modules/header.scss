@@ -4,7 +4,7 @@
     right: 0;
     top: 0;
     z-index: 100;
-    background-color: $color-white;
+    background-color: $color-bg;
 
     @include bg-blur();
 
@@ -18,8 +18,8 @@
 .header-bar {
     display: flex;
     flex-direction: row;
-    padding-top: $gap/2;
-    padding-bottom: $gap/2;
+    padding-top: 0;
+    padding-bottom: 0;
 
     .menu-group {
         display: flex;
@@ -34,9 +34,8 @@
 
             &> a {
                 display: block;
-                padding: $gap/2 $gap;
-                color: $color-black;
-                border-radius: $gap*3;
+                padding: $gap;
+                color: $color-text-1;
                 transition: all 200ms ease;
 
                 &:hover {
@@ -55,7 +54,7 @@
                 }
             }
 
-            &:hover {
+            &.menu-logo:hover {
                 &> a {
                     span {
                         @include text-gradient();
@@ -90,40 +89,26 @@
                     flex-direction: column;
                     min-width: $gap*10;
                     padding: $gap/2 0;
-                    border-radius: 0 0 $gap/10 $gap/10;
-                    background-color: $color-white;
+                    background-color: $color-bg-hover;
                     position: absolute;
-                    box-shadow: 0 $gap*0.75 $gap*1.5 (-$gap/2) rgba($color-black, 0.15);
+                    box-shadow: 0 $gap*0.75 $gap*2 (-$gap/2) rgba($color-black, 0.3);
 
                     opacity: 0;
                     transform: translateY(-$gap);
                     transition: all ease 200ms;
 
-                    @include bg-blur(rgba($color-white, 0.8));
+                    @include bg-blur(rgba($color-bg, 0.8));
 
                     .menu-item {
-
-                        &:not(:first-child),
-                        &:not(:last-child) {
-                            &> a {
-                                border-radius: 0;
-                            }
-                        }
-
-                        &:last-child {
-                            &> a {
-                                border-radius: 0 0 $gap/10 $gap/10;
-                            }
+                        &> a {
+                            padding-top: $gap/2;
+                            padding-bottom: $gap/2;
                         }
                     }
                 }
 
                 &:hover {
-                    &> a {
-                        &::after {
-                            @include border-gradient();
-                        }
-                    }
+                    background-color: $color-bg-hover;
 
                     &> .submenu-group {
                         display: flex;

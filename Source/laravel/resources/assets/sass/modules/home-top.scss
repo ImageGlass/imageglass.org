@@ -1,20 +1,11 @@
 .home-top {
-	.btn-download.btn.eff-reveal-border {
+	.btn-download {
 		font-size: $fs-h3;
 		font-weight: $fw-light;
 
 		.eff-reveal {
-			@include bg-blur("rgba(255,255,255,0.7)");
-			padding: $gap/2 $gap * 2;
-
-			&:not(:hover) {
-				background-color: $color-white;
-			}
-
-			.will-link {
-				display: flex;
-				align-items: center;
-			}
+			display: inline-flex;
+			align-items: center;
 		}
 
 		.icon {
@@ -27,14 +18,12 @@
 		font-size: $fs-small;
 
 		a {
-			color: $color-white;
+			color: $color-text-1;
 		}
 	}
 
 	.top-video {
-        background-color: #4c4a48;
+        background-color: $color-bg;
 		box-shadow: 0 (-$gap/2) $gap*2.5 (-$gap/2) rgba($color-black, 0.4);
-
-		
 	}
 }

@@ -24209,6 +24209,7 @@ module.exports = function listToStyles (parentId, list) {
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_fluent_reveal_effect__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_fluent_reveal_effect___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_fluent_reveal_effect__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__helpers_css_variable__ = __webpack_require__(128);
 //
 //
 //
@@ -24307,14 +24308,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+
 
 
 
 function applyRevealEffect() {
 	__WEBPACK_IMPORTED_MODULE_0_fluent_reveal_effect__["FluentRevealEffect"].applyEffect("#header .eff-reveal", {
 		clickEffect: true,
-		lightColor: "rgba(255,255,255,0.9)",
-		gradientSize: 150
+		lightColor: "rgba(255,255,255, 0.15)",
+		gradientSize: 100
 	});
 }
 
@@ -28397,21 +28399,19 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
 
 
 
 function applyRevealEffect() {
 	__WEBPACK_IMPORTED_MODULE_0_fluent_reveal_effect__["FluentRevealEffect"].applyEffect(".home-top > .bg-box-content", {
 		clickEffect: true,
-		lightColor: "rgba(255,255,255, 0.9)",
+		lightColor: "rgba(255,255,255, 0.7)",
 		gradientSize: 120,
 		isContainer: true,
 		children: {
 			borderSelector: ".eff-reveal-border",
 			elementSelector: ".eff-reveal",
-			lightColor: "rgba(255,255,255, 0.7)",
+			lightColor: "rgba(255,255,255, 0.15)",
 			gradientSize: 200
 		}
 	});
@@ -28452,23 +28452,21 @@ var staticRenderFns = [
             _c(
               "a",
               {
-                staticClass: "btn eff-reveal-border btn-download will-links",
+                staticClass: "btn btn-download eff-reveal-border",
                 attrs: { href: "/download" }
               },
               [
                 _c("span", { staticClass: "eff-reveal" }, [
-                  _c("span", { staticClass: "will-link" }, [
-                    _c("i", { staticClass: "icon icon-download" }),
-                    _vm._v(
-                      "\n                                DOWNLOAD\n                            "
-                    )
-                  ])
+                  _c("i", { staticClass: "icon icon-download" }),
+                  _vm._v(
+                    "\n                            DOWNLOAD\n                        "
+                  )
                 ])
               ]
             )
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "text-center mt-1 download-version" }, [
+          _c("div", { staticClass: "text-center mt-2 download-version" }, [
             _c("span", [_vm._v("version: ")]),
             _vm._v(" "),
             _c("span", [_vm._v("5.5.7.26")])
@@ -34760,6 +34758,27 @@ if (false) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 119 */,
+/* 120 */,
+/* 121 */,
+/* 122 */,
+/* 123 */,
+/* 124 */,
+/* 125 */,
+/* 126 */,
+/* 127 */,
+/* 128 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export getCSSVar */
+
+
+function getCSSVar(cssVar) {
+    return getComputedStyle(document.body).getPropertyValue(cssVar);
+}
 
 /***/ })
 /******/ ]);

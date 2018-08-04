@@ -8,17 +8,15 @@
                 </h1>
 
                 <div class="text-center mt-4">
-                    <a href="/download" class="btn eff-reveal-border btn-download will-links">
+                    <a href="/download" class="btn btn-download eff-reveal-border">
                         <span class="eff-reveal">
-                            <span class="will-link">
-                                <i class="icon icon-download"></i>
-                                DOWNLOAD
-                            </span>
+                            <i class="icon icon-download"></i>
+                            DOWNLOAD
                         </span>
                     </a>
                 </div>
 
-                <div class="text-center mt-1 download-version">
+                <div class="text-center mt-2 download-version">
                     <span>version: </span>
                     <span>5.5.7.26</span>
                 </div>
@@ -42,13 +40,13 @@ import { FluentRevealEffect } from "fluent-reveal-effect";
 function applyRevealEffect() {
 	FluentRevealEffect.applyEffect(".home-top > .bg-box-content", {
 		clickEffect: true,
-		lightColor: "rgba(255,255,255, 0.9)",
+		lightColor: "rgba(255,255,255, 0.7)",
 		gradientSize: 120,
 		isContainer: true,
 		children: {
 			borderSelector: ".eff-reveal-border",
 			elementSelector: ".eff-reveal",
-			lightColor: "rgba(255,255,255, 0.7)",
+			lightColor: "rgba(255,255,255, 0.15)",
 			gradientSize: 200
 		}
 	});

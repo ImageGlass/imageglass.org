@@ -2,9 +2,8 @@
     position: relative;
     display: inline-block;
     padding: $gap/2 $gap*1.5;
-    background-color: rgba($color-white, 1);
+    background-color: $color-bg;
     border: 0;
-    border-radius: $gap*3;
     color: $color-text-1;
     transition: all 200ms ease;
     
@@ -14,11 +13,11 @@
     &:hover,
     &:focus {
         @include btn-hover();
-        @include animate-gradient();
     }
     &:active {
-        transition: all 100ms ease;
+        transition: all 50ms ease;
         transform: translateY(0);
+        @include btn-active();
     }
 
 
@@ -31,18 +30,17 @@
 
 .btn.eff-reveal-border {
     display: inline-block;
-    border-radius: $gap*3;
+    background-color: $color-bg;
+    background-image: none;
     overflow: hidden;
     transition: all 100ms ease;
 
     &> .eff-reveal {
         padding: $gap/2 $gap*1.5;
-        background-color: rgba($color-white, 0.8);
+        background-color: $color-bg;
         border: 0;
-        border-radius: $gap*3;
         color: $color-text-1;
         transition: all 200ms ease;
-        @include bg-gradient-gray();
     
     
         &:hover,
@@ -56,17 +54,20 @@
     &:hover,
     &:focus {
         cursor: pointer;
-        @include shadow();
         transition: all 200ms ease;
         transform: translateY(-$gap/7);
 
         &> .eff-reveal {
-            @include animate-gradient();
+            @include btn-hover();
         }
     }
     &:active {
-        transition: all 100ms ease;
+        transition: all 50ms ease;
         transform: translateY(0);
+        
+        &> .eff-reveal {
+            @include btn-active();
+        }
     }
 
 
