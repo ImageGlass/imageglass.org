@@ -6124,7 +6124,7 @@ body {
 
 @supports ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
   #header {
-    background-color: rgba(45, 47, 47, 0.8);
+    background-color: rgba(45, 47, 47, 0.7);
     -webkit-backdrop-filter: blur(1.25rem);
             backdrop-filter: blur(1.25rem);
   }

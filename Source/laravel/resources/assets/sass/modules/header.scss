@@ -6,7 +6,7 @@
     z-index: 100;
     background-color: $color-bg-header;
 
-    @include bg-blur(rgba($color-bg-footer, 0.8));
+    @include bg-blur(rgba($color-bg-footer, 0.7));
 
     nav, ul {
         list-style: none;
