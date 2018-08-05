@@ -1,7 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
+namespace App\Http\Controllers\APIs;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\News;
 use App\Http\Resources\News as NewsResource;

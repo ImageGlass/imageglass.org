@@ -26,18 +26,18 @@ Route::middleware("auth:api")->get("/user", function (Request $request) {
 
 //http://ig.local/public/api/...
 
-Route::get('/release/latest', 'ReleaseController@get_latest_release');
-Route::get('/release/{id}', 'ReleaseController@get_release')->where(array('id' => NUMBER_ONLY));
-Route::get('/release/download/{id}', 'ReleaseController@download_release')->where(array('id' => NUMBER_ONLY));
-Route::get('/releases', 'ReleaseController@get_release_list');
+Route::get('/release/latest', 'APIs\ReleaseController@get_latest_release');
+Route::get('/release/{id}', 'APIs\ReleaseController@get_release')->where(array('id' => NUMBER_ONLY));
+Route::get('/release/download/{id}', 'APIs\ReleaseController@download_release')->where(array('id' => NUMBER_ONLY));
+Route::get('/releases', 'APIs\ReleaseController@get_release_list');
 
 
-Route::get('/theme/{id}', 'ThemeController@get_theme')->where(array('id' => NUMBER_ONLY));
-Route::get('/theme/download/{id}', 'ThemeController@download_theme')->where(array('id' => NUMBER_ONLY));
-Route::get('/themes', 'ThemeController@get_theme_list');
+Route::get('/theme/{id}', 'APIs\ThemeController@get_theme')->where(array('id' => NUMBER_ONLY));
+Route::get('/theme/download/{id}', 'APIs\ThemeController@download_theme')->where(array('id' => NUMBER_ONLY));
+Route::get('/themes', 'APIs\ThemeController@get_theme_list');
 
 
-Route::get('/post/{id}', 'NewsController@get_post')->where(array('id' => NUMBER_ONLY));
-Route::get('/posts', 'NewsController@get_post_list');
+Route::get('/post/{id}', 'APIs\NewsController@get_post')->where(array('id' => NUMBER_ONLY));
+Route::get('/posts', 'APIs\NewsController@get_post_list');
 
 
