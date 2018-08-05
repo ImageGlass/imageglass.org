@@ -4,7 +4,6 @@
 		<HomeFeaturesModule></HomeFeaturesModule>
 		
 		<HomeNewsModule></HomeNewsModule>
-		<div class="separator"></div>
 		<HomeReviewModule></HomeReviewModule>
 
 		<HomeSourceModule></HomeSourceModule>

@@ -1,18 +1,14 @@
 <template>
-	<section class="bg-box home-news">
-		<div class="bg-box-content py-0">
-			<div class="home-content">
-				<div class="container">
-					<h2 class="fs-h2 text-center">
-						Latest News
-					</h2>
+	<section class="home-news">
+		<div class="container">
+			<h2 class="fs-h2 text-center">
+				Latest News
+			</h2>
 
-					<div class="text-center mt-4">
-						<NewsListComponent></NewsListComponent>
+			<div class="text-center mt-4">
+				<NewsListComponent></NewsListComponent>
 
-						<!-- <InstagramPhotoListComponent :instagramPosts="instagramPosts"></InstagramPhotoListComponent> -->
-					</div>
-				</div>
+				<!-- <InstagramPhotoListComponent :instagramPosts="instagramPosts"></InstagramPhotoListComponent> -->
 			</div>
 		</div>
 	</section>

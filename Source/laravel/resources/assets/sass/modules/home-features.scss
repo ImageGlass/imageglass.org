@@ -1,12 +1,4 @@
 .home-features {
-	// .home-content {
-	// 	color: $color-text-1;
-	// 	background-color: rgba($color-white, 0.9);
-	// 	padding-top: $gap * 3;
-    //     padding-bottom: $gap * 2;
-        
-    //     @include bg-blur("rgba(255,255,255,0.9)");
-    // }
     
     .feature-item {
 		display: flex;
@@ -22,6 +14,8 @@
 		.eff-reveal {
 			height: 100%;
 			padding: $gap;
+			background-color: $color-bg;
+			transition: all ease 200ms;
 
 			.feature-icon {
 				font-size: $gap * 3.5;
@@ -37,10 +31,10 @@
 		}
 
 		&:hover {
-            @include bg-gradient(!important);
+            // @include bg-gradient(!important);
             
             .eff-reveal {
-                background-color: $color-bg;
+                background-color: lighten($color-bg, 3);
             }
 		}
 	}

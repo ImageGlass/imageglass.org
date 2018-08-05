@@ -1,6 +1,7 @@
-let mix = require("laravel-mix");
+let mix = require("laravel-mix")
 
-mix.setPublicPath("../");
+mix.setPublicPath("../")
+mix.disableNotifications()
 
 /*
 |--------------------------------------------------------------------------
@@ -16,7 +17,20 @@ mix.setPublicPath("../");
 // Note: ***
 // Issue: https://github.com/JeffreyWay/laravel-mix/issues/1126
 // Cannot use ../ path here, must use setPublicPath
-mix.js("resources/assets/js/app.js", "public/js");
-mix.sass("resources/assets/sass/app.scss", "public/css");
+mix.options({
+    processCssUrls: false
+})
+
+if (!mix.inProduction()) {
+    mix.webpackConfig({
+        devtool: 'source-map'
+    })
+    .sourceMaps()
+}
+
+mix.js("resources/assets/js/app.js", "public/js")
+mix.sass("resources/assets/sass/app.scss", "public/css")
 
 
+mix.copyDirectory("resources/assets/fonts", "../public/fonts")
+mix.copyDirectory("resources/assets/img", "../public/img")

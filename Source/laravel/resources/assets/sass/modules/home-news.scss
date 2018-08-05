@@ -1,8 +1,14 @@
 .home-news {
-    .home-content {
-		color: $color-black;
-		background-color: darken($color-white, 0%);
-		padding-top: $gap * 3;
-        padding-bottom: $gap;
+    color: $color-text-1;
+    background-color: $color-bg-hover;
+    padding-top: $gap * 3;
+    padding-bottom: $gap * 3;
+
+
+    .home-news-list {
+        background-image: url(../img/news.png);
+        background-size: $gap*11;
+        background-position: 90% bottom;
+        background-repeat: no-repeat;
     }
 }

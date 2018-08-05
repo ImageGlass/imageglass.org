@@ -1,7 +1,13 @@
 <template>
 	<section class="home-review">
-		<div class="container">
-			<div class="row slider-review" id="sliderReview">
+		<div class="separator"></div>
+
+		<div class="container mt-5">
+			<h2 class="fs-h2 text-center">
+				Reviews
+			</h2>
+
+			<div class="row slider-review mt-4" id="sliderReview">
 				<div class="slick-slider">
 					<div class="review-item">
 						<blockquote class="quote-item" cite="urlxxxxxx">

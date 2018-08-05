@@ -10,12 +10,10 @@
                     Its source code was released under the terms of the <a class="link fw-normal" href="https://github.com/d2phap/ImageGlass/blob/master/LICENSE" target="_blank" rel="noopener">GNU General Public License v3.0</a>
 
                     <div class="mt-4">
-                        <span class="eff-reveal-border btn btn-primary">
-                            <a href="https://github.com/d2phap/ImageGlass" class="eff-reveal" target="_blank" rel="noopener">
-                                <i class="icon-github mr-2"></i>
-                                Check Out
-                            </a>
-                        </span>
+                        <a href="https://github.com/d2phap/ImageGlass" class="btn btn-primary" target="_blank" rel="noopener">
+                            <i class="icon-github mr-2"></i>
+                            Check Out
+                        </a>
                     </div>
                 </div>
             </div>

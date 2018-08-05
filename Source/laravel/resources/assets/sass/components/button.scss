@@ -7,7 +7,6 @@
     color: $color-text-1;
     transition: all 200ms ease;
     
-    @include btn-shadow();
     @include bg-gradient-gray();
 
     &:hover,
@@ -24,6 +23,15 @@
     &.btn-primary {
         @include bg-gradient();
         color: $color-white;
+
+        &:hover,
+        &:focus {
+            @include animate-gradient();
+            @include btn-hover(#30618d);
+        }
+        &:active {
+            @include btn-active(#30618d);
+        }
     }
 }
 

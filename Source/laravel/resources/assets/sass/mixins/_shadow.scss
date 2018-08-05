@@ -19,7 +19,7 @@
     }
 }
 
-@mixin btn-hover($style: "button", $shadow: "") {
+@mixin btn-hover($color: $color-bg) {
 
     cursor: pointer;
     outline: none;
@@ -27,30 +27,22 @@
     transform: translateY(-$gap/7);
     transform-origin: center;
 
-    box-shadow: 0 1px 0px 0px darken($color-bg, 5), 
-    0 2px 0px 0px darken($color-bg, 5),
-    0 3px 0px 0px darken($color-bg, 5),
-    0 4px 0px 0px darken($color-bg, 5),
-    0 5px 0px 0px darken($color-bg, 5),
-    0 6px 0px 0px darken($color-bg, 5),
-    0 7px 0px 0px darken($color-bg, 5);
-
-    // @if ($shadow != "") {
-    //     $shadow: ", " + #{$shadow};
-    // }
-
-    // @if ($style == "button") {
-    //     box-shadow: 0 $gap $gap*2 (-$gap/2) rgba(#000, 0.2) #{$shadow};
-    // }
+    box-shadow: 0 1px 0px 0px darken($color, 5), 
+    0 2px 0px 0px darken($color, 5),
+    0 3px 0px 0px darken($color, 5),
+    0 4px 0px 0px darken($color, 5),
+    0 5px 0px 0px darken($color, 5),
+    0 6px 0px 0px darken($color, 5),
+    0 7px 0px 0px darken($color, 5);
 }
 
 
-@mixin btn-active($style: "button", $shadow: "") {
+@mixin btn-active($color: $color-bg) {
 
     transform: rotate3d(1, 0, 0, 10deg);
     
-    box-shadow: 0 1px 0px 0px darken($color-bg, 5), 
-    0 2px 0px 0px darken($color-bg, 5),
-    0 3px 0px 0px darken($color-bg, 5),
-    0 4px 0px 0px darken($color-bg, 5);
+    box-shadow: 0 1px 0px 0px darken($color, 5), 
+    0 2px 0px 0px darken($color, 5),
+    0 3px 0px 0px darken($color, 5),
+    0 4px 0px 0px darken($color, 5);
 }
