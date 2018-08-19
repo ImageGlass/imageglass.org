@@ -874,6 +874,26 @@ define(String.prototype, "padRight", "".padEnd);
 
 /***/ }),
 
+/***/ "./node_modules/babel-runtime/helpers/classCallCheck.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/babel-runtime/helpers/classCallCheck.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+exports.__esModule = true;
+
+exports.default = function (instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+};
+
+/***/ }),
+
 /***/ "./node_modules/core-js/fn/regexp/escape.js":
 /*!**************************************************!*\
   !*** ./node_modules/core-js/fn/regexp/escape.js ***!
@@ -10701,6 +10721,80 @@ module.exports = g;
 
 
 __webpack_require__(/*! ../sass/main.scss */ "./resources/assets/sass/main.scss");
+
+var _homePage = __webpack_require__(/*! ./pages/home-page */ "./resources/assets/js/pages/home-page.js");
+
+var _homePage2 = _interopRequireDefault(_homePage);
+
+var _aboutPage = __webpack_require__(/*! ./pages/about-page */ "./resources/assets/js/pages/about-page.js");
+
+var _aboutPage2 = _interopRequireDefault(_aboutPage);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var a = new _homePage2.default();
+var b = new _aboutPage2.default();
+
+/***/ }),
+
+/***/ "./resources/assets/js/pages/about-page.js":
+/*!*************************************************!*\
+  !*** ./resources/assets/js/pages/about-page.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _classCallCheck2 = __webpack_require__(/*! babel-runtime/helpers/classCallCheck */ "./node_modules/babel-runtime/helpers/classCallCheck.js");
+
+var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var AboutPage = function AboutPage() {
+    (0, _classCallCheck3.default)(this, AboutPage);
+
+    // debugger
+    console.log("AboutPage");
+};
+
+exports.default = AboutPage;
+
+/***/ }),
+
+/***/ "./resources/assets/js/pages/home-page.js":
+/*!************************************************!*\
+  !*** ./resources/assets/js/pages/home-page.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _classCallCheck2 = __webpack_require__(/*! babel-runtime/helpers/classCallCheck */ "./node_modules/babel-runtime/helpers/classCallCheck.js");
+
+var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var HomePage = function HomePage() {
+    (0, _classCallCheck3.default)(this, HomePage);
+
+    console.log("HomePage");
+};
+
+exports.default = HomePage;
 
 /***/ }),
 

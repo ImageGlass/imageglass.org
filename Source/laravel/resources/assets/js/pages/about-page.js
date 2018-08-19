@@ -1,1 +1,7 @@
-console.log("about-page")
+
+export default class AboutPage {
+    constructor() {
+        // debugger
+        console.log("AboutPage")
+    }
+}
