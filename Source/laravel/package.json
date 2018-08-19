@@ -7,8 +7,7 @@
 		"test": "tests"
 	},
 	"dependencies": {
-		"optimize-css-assets-webpack-plugin": "^5.0.0",
-		"postcss-loader": "^3.0.0"
+		"optimize-css-assets-webpack-plugin": "^5.0.0"
 	},
 	"devDependencies": {
 		"babel-cli": "^6.26.0",

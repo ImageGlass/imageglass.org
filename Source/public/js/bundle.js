@@ -10690,10 +10690,10 @@ module.exports = g;
 
 /***/ }),
 
-/***/ "./resources/assets/js/index.js":
-/*!**************************************!*\
-  !*** ./resources/assets/js/index.js ***!
-  \**************************************/
+/***/ "./resources/assets/js/main.js":
+/*!*************************************!*\
+  !*** ./resources/assets/js/main.js ***!
+  \*************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10701,8 +10701,6 @@ module.exports = g;
 
 
 __webpack_require__(/*! ../sass/main.scss */ "./resources/assets/sass/main.scss");
-
-console.log("Xxxxxxxxxxxxxx");
 
 /***/ }),
 
@@ -10718,14 +10716,14 @@ console.log("Xxxxxxxxxxxxxx");
 /***/ }),
 
 /***/ 0:
-/*!***********************************************************!*\
-  !*** multi babel-polyfill ./resources/assets/js/index.js ***!
-  \***********************************************************/
+/*!**********************************************************!*\
+  !*** multi babel-polyfill ./resources/assets/js/main.js ***!
+  \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! babel-polyfill */"./node_modules/babel-polyfill/lib/index.js");
-module.exports = __webpack_require__(/*! D:\DEV\imageglass.org\Source\laravel\resources\assets\js\index.js */"./resources/assets/js/index.js");
+module.exports = __webpack_require__(/*! D:\DEV\imageglass.org\Source\laravel\resources\assets\js\main.js */"./resources/assets/js/main.js");
 
 
 /***/ })
