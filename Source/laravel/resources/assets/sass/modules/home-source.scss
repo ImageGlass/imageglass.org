@@ -5,7 +5,7 @@
         background-image: url(https://desktop.github.com/images/star-bg.svg);
         background-position: top center;
         background-size: cover;
-        color: $color-white;
+        color: var(--color-light);
 
         padding-top: $gap*3;
         padding-bottom: $gap*3;

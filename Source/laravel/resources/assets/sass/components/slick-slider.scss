@@ -25,8 +25,8 @@
 		color: transparent;
 		font-size: 0.1px;
 		border: 0;
-		border-top: $gap/8 solid $color-black;
-		border-left: $gap/8 solid $color-black;
+		border-top: $gap/8 solid var(--color-dark);
+		border-left: $gap/8 solid var(--color-dark);
 		border-radius: $gap/8;
 		transition: all 200ms ease;
 

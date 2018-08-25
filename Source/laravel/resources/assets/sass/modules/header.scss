@@ -1,3 +1,8 @@
+
+@mixin headerMenuItemHover() {
+    background-color: rgba($color-light, 0.05);
+}
+
 #header {
     position: sticky;
     left: 0;
@@ -40,6 +45,7 @@
 
                 &:hover {
                     text-decoration: none;
+                    @include headerMenuItemHover();
                 }
             }
 
@@ -56,6 +62,8 @@
 
             &.menu-logo:hover {
                 &> a {
+                    background-color: transparent;
+                    
                     span {
                         @include text-gradient();
                     }
@@ -91,7 +99,7 @@
                     padding: $gap/2 0;
                     background-color: $color-bg;
                     position: absolute;
-                    box-shadow: 0 $gap*0.75 $gap*2 (-$gap/2) rgba($color-black, 0.3);
+                    box-shadow: 0 $gap*0.75 $gap*2 (-$gap/2) rgba($color-dark, 0.3);
 
                     opacity: 0;
                     transform: translateY(-$gap);
@@ -108,7 +116,7 @@
                 }
 
                 &:hover {
-                    background-color: $color-bg;
+                    background-color: rgba($color-dark, 0.2);
 
                     &> .submenu-group {
                         display: flex;

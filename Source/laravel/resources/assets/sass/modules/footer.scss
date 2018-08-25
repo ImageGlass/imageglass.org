@@ -14,7 +14,7 @@
         a {
             display: inline-block;
             margin: 0 $gap/3;
-            color: $color-white;
+            color: var(--color-light);
             font-size: $fs-h3;
             transition: all ease 200ms;
 

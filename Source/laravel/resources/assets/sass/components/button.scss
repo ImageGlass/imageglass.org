@@ -22,7 +22,7 @@
 
     &.btn-primary {
         @include bg-gradient();
-        color: $color-white;
+        color: var(--color-light);
 
         &:hover,
         &:focus {
@@ -85,7 +85,7 @@
 
         &> .eff-reveal {
             @include bg-gradient();
-            color: $color-white;
+            color: var(--color-light);
         }
     }
 

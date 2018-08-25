@@ -1,11 +1,12 @@
 :root {
   --color-1: $color-1;
   --color-2: $color-2;
-  --color-black: $color-black;
-  --color-white: $color-white;
+  --color-dark: $color-dark;
+  --color-light: $color-light;
   --color-bg: $color-bg;
   --color-bg-hover: $color-bg-hover;
-  --color-text-1: $color-text; }
+  --color-text-1: $color-text;
+  --color-menuItem-hover: rgba($color-light, 0.2); }
 
 /* Customize Bootstrap 4.1.1 */
 /* Customize Bootstrap 4.1.1 */
@@ -3529,7 +3530,7 @@ template {
   .btn:not(.eff-reveal-border).btn-primary {
     background-image: linear-gradient(135deg, rgba(60, 88, 173, 0.8), rgba(41, 152, 172, 0.8), rgba(60, 88, 173, 0.8)) ;
     background-size: 200% 200%;
-    color: #fff; }
+    color: var(--color-light); }
     .btn:not(.eff-reveal-border).btn-primary:hover, .btn:not(.eff-reveal-border).btn-primary:focus {
       animation: aniBgGradient 3s ease infinite;
       cursor: pointer;
@@ -3580,7 +3581,7 @@ template {
     .btn.eff-reveal-border.btn-primary > .eff-reveal {
       background-image: linear-gradient(135deg, rgba(60, 88, 173, 0.8), rgba(41, 152, 172, 0.8), rgba(60, 88, 173, 0.8)) ;
       background-size: 200% 200%;
-      color: #fff; }
+      color: var(--color-light); }
 
 .quote-item {
   margin-bottom: 0;
@@ -3650,7 +3651,7 @@ template {
         font-weight: 200;
         overflow: hidden;
         opacity: 0;
-        color: #fff;
+        color: var(--color-light);
         transition: all ease 300ms;
         background-image: linear-gradient(135deg, #3c58ad, #2998ac, #3c58ad) ;
         background-size: 200% 200%; }
@@ -3745,8 +3746,8 @@ template {
     color: transparent;
     font-size: 0.1px;
     border: 0;
-    border-top: 0.15625rem solid #000;
-    border-left: 0.15625rem solid #000;
+    border-top: 0.15625rem solid var(--color-dark);
+    border-left: 0.15625rem solid var(--color-dark);
     border-radius: 0.15625rem;
     transition: all 200ms ease; }
     .slick-slider .slick-arrow:hover, .slick-slider .slick-arrow:focus {
@@ -3850,7 +3851,8 @@ body {
         color: #efefef;
         transition: all 200ms ease; }
         .header-bar .menu-group .menu-item > a:hover {
-          text-decoration: none; }
+          text-decoration: none;
+          background-color: rgba(255, 255, 255, 0.05); }
       .header-bar .menu-group .menu-item.menu-logo > a {
         background-image: url(../img/iglogo.svg);
         background-repeat: no-repeat;
@@ -3858,13 +3860,15 @@ body {
         background-size: 1.875rem;
         padding-left: 2.5rem;
         border-radius: 0; }
-      .header-bar .menu-group .menu-item.menu-logo:hover > a span {
-        background-image: linear-gradient(135deg, rgba(60, 88, 173, 0.8), rgba(41, 152, 172, 0.8), rgba(60, 88, 173, 0.8)) ;
-        background-size: 200% 200%;
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        text-fill-color: transparent; }
+      .header-bar .menu-group .menu-item.menu-logo:hover > a {
+        background-color: transparent; }
+        .header-bar .menu-group .menu-item.menu-logo:hover > a span {
+          background-image: linear-gradient(135deg, rgba(60, 88, 173, 0.8), rgba(41, 152, 172, 0.8), rgba(60, 88, 173, 0.8)) ;
+          background-size: 200% 200%;
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          text-fill-color: transparent; }
       .header-bar .menu-group .menu-item.submenu > a {
         position: relative;
         padding-right: 2.1875rem; }
@@ -3901,7 +3905,7 @@ body {
           padding-top: 0.625rem;
           padding-bottom: 0.625rem; }
       .header-bar .menu-group .menu-item.submenu:hover {
-        background-color: #27292a; }
+        background-color: rgba(0, 0, 0, 0.2); }
         .header-bar .menu-group .menu-item.submenu:hover > .submenu-group {
           display: flex;
           visibility: visible;
@@ -3923,7 +3927,7 @@ body {
     #footer .social-links a {
       display: inline-block;
       margin: 0 0.41667rem;
-      color: #fff;
+      color: var(--color-light);
       font-size: 1.5rem;
       transition: all ease 200ms; }
       #footer .social-links a:hover {
@@ -3944,7 +3948,7 @@ body {
   margin-right: -1.25rem;
   padding: 0 1.25rem;
   font-size: 1.875rem;
-  color: #000;
+  color: var(--color-dark);
   border-radius: 3.75rem;
   transition: all 200ms ease; }
   .mobile-menu-toggler:hover {
@@ -3986,7 +3990,7 @@ body {
     height: calc(100vh - 3.75rem);
     overflow-y: auto;
     padding: 1.25rem 0;
-    background-color: #fff;
+    background-color: var(--color-light);
     transition: all ease 300ms;
     transform: translateX(100%);
     box-shadow: -0.625rem 0 1.25rem -0.625rem rgba(0, 0, 0, 0.2); }
@@ -4100,7 +4104,7 @@ body {
     background-image: url(https://desktop.github.com/images/star-bg.svg);
     background-position: top center;
     background-size: cover;
-    color: #fff;
+    color: var(--color-light);
     padding-top: 3.75rem;
     padding-bottom: 3.75rem; }
     .home-source .home-source-content .eff-reveal-border {

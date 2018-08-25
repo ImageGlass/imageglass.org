@@ -29,7 +29,7 @@
                 font-weight: $fw-light;
                 overflow: hidden;
                 opacity: 0;
-                color: $color-white;
+                color: var(--color-light);
                 transition: all ease 300ms;
     
                 @include bg-gradient("", 1);
