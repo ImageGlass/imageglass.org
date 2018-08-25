@@ -7,7 +7,7 @@ class HomeController extends Controller
 {
     public function index() {
 
-
+		$this->data["_page"] = "home";
 
         return view("pages.home.home")->with($this->data);
     }
