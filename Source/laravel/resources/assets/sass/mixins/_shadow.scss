@@ -20,29 +20,17 @@
 }
 
 @mixin btn-hover($color: $color-bg) {
-
+    text-decoration: none;
     cursor: pointer;
     outline: none;
-    transition: all 200ms ease, box-shadow 200ms ease;
+    transition: all 200ms ease;
     transform: translateY(-$gap/7);
-    transform-origin: center;
-
-    box-shadow: 0 1px 0px 0px darken($color, 5), 
-    0 2px 0px 0px darken($color, 5),
-    0 3px 0px 0px darken($color, 5),
-    0 4px 0px 0px darken($color, 5),
-    0 5px 0px 0px darken($color, 5),
-    0 6px 0px 0px darken($color, 5),
-    0 7px 0px 0px darken($color, 5);
+    box-shadow: 0 $gap $gap (-$gap/2) rgba(#000, 0.2);
 }
 
 
 @mixin btn-active($color: $color-bg) {
-
-    transform: rotate3d(1, 0, 0, 10deg);
-    
-    box-shadow: 0 1px 0px 0px darken($color, 5), 
-    0 2px 0px 0px darken($color, 5),
-    0 3px 0px 0px darken($color, 5),
-    0 4px 0px 0px darken($color, 5);
+    transition: all 50ms ease;
+    transform: translateY(0);
+    box-shadow: 0 $gap/2 $gap (-$gap/2) rgba(#000, 0.3);
 }

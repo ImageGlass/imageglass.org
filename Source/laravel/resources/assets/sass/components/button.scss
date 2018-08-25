@@ -14,8 +14,6 @@
         @include btn-hover();
     }
     &:active {
-        transition: all 50ms ease;
-        transform: translateY(0);
         @include btn-active();
     }
 
@@ -61,20 +59,17 @@
 
     &:hover,
     &:focus {
-        cursor: pointer;
-        transition: all 200ms ease;
-        transform: translateY(-$gap/7);
+        @include btn-hover();
 
         &> .eff-reveal {
-            @include btn-hover();
+            
         }
     }
     &:active {
-        transition: all 50ms ease;
-        transform: translateY(0);
+        @include btn-active();
         
         &> .eff-reveal {
-            @include btn-active();
+            
         }
     }
 
