@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Input;
 use Request;
+use Response;
 
 class HomeController extends Controller
 {
@@ -36,12 +37,11 @@ class HomeController extends Controller
 
     public function sitemap_xml()
 	{
-		$this->data["news_items"] = News::get_items(0, 0);
-		$this->data["release_items"] = Download::get_items("release", 0, 0);
-		$this->data["theme_items"] = Download::get_items("theme", 0, 0);
-		$this->data["extension_items"] = Download::get_items("extension", 0, 0);
+		$this->data["news_items"] = $this::getRequest("/api/posts");
+		$this->data["release_items"] = $this::getRequest("/api/releases");
+		$this->data["theme_items"] = $this::getRequest("/api/themes");
 
-		$content = View::make("pages\sitemap-xml", $this->data);
+		$content = view("pages.sitemap-xml")->with($this->data);
 		return Response::make($content, "200")->header("Content-Type", "text/xml");
     }
     

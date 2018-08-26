@@ -36,6 +36,9 @@ Route::get('/welcome', function () {
 */
 Route::get('/', 'HomeController@index');
 Route::get('/sitemap.xml', 'HomeController@sitemap_xml');
+Route::get('/checkforupdate', 'HomeController@checkforupdate'); //redirect to [/check-for-update]
+Route::get('/check-for-update/{slug}', 'HomeController@check_for_update')->where(array('slug' => NUMBER_TEXT));
+
 
 
 /*
@@ -43,10 +46,9 @@ Route::get('/sitemap.xml', 'HomeController@sitemap_xml');
 | News Routes
 |--------------------------------------------------------------------------
 */
-
 Route::get('/news', 'NewsController@index');
-Route::get('/news/{slug}', 'NewsController@news_details')
-    ->where(array('slug' => NUMBER_TEXT));
+Route::get('/news/{slug}', 'NewsController@news_details')->where(array('slug' => NUMBER_TEXT));
+
 
 
 /*
@@ -54,10 +56,61 @@ Route::get('/news/{slug}', 'NewsController@news_details')
 | Download Routes
 |--------------------------------------------------------------------------
 */
+Route::get('/download', 'DownloadController@index'); //redirect to [/release/{slug}]
+Route::get('/releases', 'DownloadController@release_listing');
+Route::get('/releases/{slug}', 'DownloadController@release_details')->where(array('slug' => NUMBER_TEXT));
+Route::get('/releases/{slug}/download', 'DownloadController@release_download')->where(array('slug' => NUMBER_TEXT));
 
-Route::get('/download', 'DownloadController@index');
-Route::get('/release/{slug}', 'DownloadController@download_release_details')
-    ->where(array('slug' => NUMBER_TEXT));
+Route::get('/moon', 'DownloadController@moon_listing');
+Route::get('/languages', 'DownloadController@language_listing');
+
+Route::get('/themes', 'DownloadController@theme_listing');
+Route::get('/themes/{slug}', 'DownloadController@theme_details')->where(array('slug' => NUMBER_TEXT));
+Route::get('/themes/{slug}/download', 'DownloadController@theme_download')->where(array('slug' => NUMBER_TEXT));
 
 
 
+
+/*
+|--------------------------------------------------------------------------
+| Documentation Routes
+|--------------------------------------------------------------------------
+*/
+Route::get('/docs', 'DocumentationController@index');
+Route::get('/docs/{slug}', 'DocumentationController@documentation_details')->where(array('slug' => NUMBER_TEXT));
+
+
+
+/*
+|--------------------------------------------------------------------------
+| Support Routes
+|--------------------------------------------------------------------------
+*/
+Route::get('/support', 'SupportController@index');
+
+
+
+/*
+|--------------------------------------------------------------------------
+| Source Routes
+|--------------------------------------------------------------------------
+*/
+Route::get('/source', 'SourceController@index');
+
+
+
+/*
+|--------------------------------------------------------------------------
+| About Routes
+|--------------------------------------------------------------------------
+*/
+Route::get('/about', 'AboutController@index');
+
+
+
+/*
+|--------------------------------------------------------------------------
+| Redirect Routes
+|--------------------------------------------------------------------------
+*/
+Route::get('redirect', 'RedirectController@index');

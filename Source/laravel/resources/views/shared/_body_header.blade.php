@@ -2,7 +2,7 @@
     <div class="container header-bar">
         <div class="menu-group">
             <div class="menu-item menu-logo">
-                <a href="{{ url("/") }}" title="ImageGlass - A lightweight, versatile image viewer">
+                <a href="{{ url("/") }}" title="{{ $_sitename }}">
                     <span>
                         ImageGlass
                     </span>
@@ -44,14 +44,14 @@
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="{{ url("/download") }}/themes" class="eff-reveal">
+                            <a href="{{ url("/themes") }}" class="eff-reveal">
                                 <span>
                                     Themes
                                 </span>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="{{ url("/download") }}/languagepacks" class="eff-reveal">
+                            <a href="{{ url("/languages") }}" class="eff-reveal">
                                 <span>
                                     Language Packs
                                 </span>
@@ -60,7 +60,7 @@
                     </ul>
                 </li>
                 <li class="menu-item">
-                    <a href="{{ url("/documentation") }}" class="eff-reveal">
+                    <a href="{{ url("/docs") }}" class="eff-reveal">
                         <span>
                             DOCS
                         </span>
