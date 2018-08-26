@@ -6,7 +6,8 @@
     padding-top: $gap * 2;
     padding-bottom: $gap * 1;
 
-    @include bg-blur(rgba($color-bg-footer, 0.7));
+    background-image: url(../img/truchet_tiling.svg);
+    background-size: 300px;
 
     .social-links {
         margin-bottom: $gap/4;

@@ -3,8 +3,8 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 {{--  Site Icon  --}}
-<link rel="shortcut icon" href="{{ url('images/iglogo512.png') }}" />
-<link rel="icon" href="{{ url('images/iglogo16.png') }}" type="image/png"/>
+<link rel="shortcut icon" href="{{ url('img/iglogo.svg') }}" type="image/svg+xml" />
+<link rel="icon" href="{{ url('img/iglogo.svg') }}" type="image/svg+xml"/>
 <link rel="canonical" href="{{ url('documentation') }}" />
 
 {{--  For Search Indexing  --}}

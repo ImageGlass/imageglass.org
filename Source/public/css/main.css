@@ -3582,6 +3582,7 @@ template {
   position: relative;
   font-style: italic;
   font-size: 0.875rem;
+  font-weight: 200;
   padding-left: 1.25rem; }
   .quote-item::before {
     content: "\E904";
@@ -3909,13 +3910,11 @@ body {
 #footer {
   font-size: 0.75rem;
   font-weight: 200;
-  background-color: #2d2f2f;
+  background-color: #224f72;
   padding-top: 2.5rem;
-  padding-bottom: 1.25rem; }
-  @supports (-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px)) {
-    #footer {
-      background-color: rgba(45, 47, 47, 0.7);
-      backdrop-filter: blur(1.25rem); } }
+  padding-bottom: 1.25rem;
+  background-image: url(../img/truchet_tiling.svg);
+  background-size: 300px; }
   #footer .social-links {
     margin-bottom: 0.3125rem; }
     #footer .social-links a {
@@ -4095,7 +4094,7 @@ body {
 .home-source {
   background-image: linear-gradient(-20deg, #1e1b28 0%, #397fad 100%); }
   .home-source .home-source-content {
-    background-image: url(https://desktop.github.com/images/star-bg.svg);
+    background-image: url(../img/star-bg.svg);
     background-position: top center;
     background-size: cover;
     color: var(--color-light);
@@ -4107,7 +4106,6 @@ body {
         border-radius: 3.75rem; }
 
 .home-donate .home-donate-content {
-  background-image: url(https://desktop.github.com/images/star-bg.svg);
   background-position: left bottom;
   background-size: cover;
   padding-top: 3.75rem;
