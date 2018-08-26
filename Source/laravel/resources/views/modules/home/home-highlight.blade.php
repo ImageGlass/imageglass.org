@@ -16,8 +16,8 @@
             </div>
 
             <div class="text-center mt-2 download-version">
-                <span>version: </span>
-                <span>5.5.7.26</span>
+                <span>ImageGlass</span>
+                <span>{{ $release_item["version"] }}</span>
             </div>
 
             <section class="row justify-content-center mt-5">

@@ -6,6 +6,9 @@ use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
+use Request;
+use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Input;
 
 class Controller extends BaseController
 {
@@ -31,6 +34,32 @@ class Controller extends BaseController
         
         
         $this->data['_page'] = 'home';
+    }
+
+
+    protected function getRequest($url, $params = []) {
+
+        // save original input
+        $original_input = Request::input();
+
+		$request = Request::create($url, "GET", $params);
+        Request::replace($request->input());
+        
+        // get response data
+        $response = Route::dispatch($request);
+        
+        // restore original inputs
+        Request::replace($original_input);
+        
+        // convert json to array data
+        $array_data = json_decode($response->getContent(), true);
+
+        // if server responses a list of items
+        if (array_key_exists("data", $array_data)) {
+            return $array_data["data"];
+        }
+        
+        return $array_data;
     }
 
 }
