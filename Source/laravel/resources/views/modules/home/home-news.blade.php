@@ -17,7 +17,7 @@
                             @endphp
 
                             <li class="news-item {{ $totalDays < 8 ? "new-post" : "" }}">
-                                <a href="{{ url($news_item["slug"]) }}" class="news-item-content">
+                                <a href="{{ url("news", $news_item["slug"]) }}" class="news-item-content">
                                     <h3 class="title">{{ $news_item["title"] }}</h3>
                                     <time datetime="{{ $news_item["updated_at"] }}">{{ formatDateTime($news_item["updated_at"]) }}</time>
                                 </a>

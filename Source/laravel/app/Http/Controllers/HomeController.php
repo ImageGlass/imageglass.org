@@ -11,8 +11,6 @@ class HomeController extends Controller
 {
     public function index() {
 
-		
-
 		// get the latest relese info
 		$release_item = $this::getRequest("/api/release/latest");
 
@@ -20,10 +18,14 @@ class HomeController extends Controller
 		// get the latest news items
 		$news_items = $this::getRequest("/api/posts", array("limit" => "5"));
 
+		// get the review list from json
+		$review_items = $this::getJsonData("review_items.json");
+
 
 		// page data
 		$this->data["release_item"] = $release_item;
 		$this->data["news_items"] = $news_items;
+		$this->data["review_items"] = $review_items;
 
 
 		// meta tags

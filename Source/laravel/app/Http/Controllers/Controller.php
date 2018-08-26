@@ -62,4 +62,17 @@ class Controller extends BaseController
         return $array_data;
     }
 
+
+    protected function getJsonData($filename) {
+        $file_path = storage_path() . "/json_content/" . $filename;
+        $array_data = json_decode(file_get_contents($file_path), true);
+        
+        // if server responses a list of items
+        if (array_key_exists("data", $array_data)) {
+            return $array_data["data"];
+        }
+
+        return $array_data;
+    }
+
 }
