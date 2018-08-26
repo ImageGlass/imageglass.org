@@ -1,11 +1,20 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="canonical" href="{{ url('documentation') }}" />
+
 
 {{--  Site Icon  --}}
 <link rel="shortcut icon" href="{{ url('img/iglogo.svg') }}" type="image/svg+xml" />
-<link rel="icon" href="{{ url('img/iglogo.svg') }}" type="image/svg+xml"/>
-<link rel="canonical" href="{{ url('documentation') }}" />
+<link rel="apple-touch-icon" sizes="180x180" href="{{ url('img/icons/apple-touch-icon.png') }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ url('img/icons/favicon-32x32.png') }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ url('img/icons/favicon-16x16.png') }}">
+<link rel="manifest" href="{{ url('img/icons/site.webmanifest') }}">
+<link rel="mask-icon" href="{{ url('img/icons/safari-pinned-tab.svg') }}" color="#0776db">
+<meta name="msapplication-TileColor" content="#353535">
+<meta name="theme-color" content="#27292a">
+
+
 
 {{--  For Search Indexing  --}}
 <meta name="robots" content="index, follow">
@@ -32,6 +41,7 @@
 <meta property="og:description" content="{{ @$_description }}" />
 <meta property="article:tag" content="{{ @$_keywords }}" />
 <meta property="article:author" content="{{ @$_author }}">
+
 
 {{--  Facebook info  --}}
 <meta property="fb:admins" content="100000190054499" />
