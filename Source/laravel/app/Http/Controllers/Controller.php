@@ -55,8 +55,12 @@ class Controller extends BaseController
         $array_data = json_decode($response->getContent(), true);
 
         // if server responses a list of items
-        if (array_key_exists("data", $array_data)) {
+        if ($array_data != null && array_key_exists("data", $array_data)) {
             return $array_data["data"];
+        }
+
+        if ($array_data == null) {
+            abort(404);
         }
         
         return $array_data;
@@ -67,12 +71,28 @@ class Controller extends BaseController
         $file_path = storage_path() . "/json_content/" . $filename;
         $array_data = json_decode(file_get_contents($file_path), true);
         
-        // if server responses a list of items
-        if (array_key_exists("data", $array_data)) {
+        // if json is a list of items
+        if ($array_data != null && array_key_exists("data", $array_data)) {
             return $array_data["data"];
         }
 
         return $array_data;
+    }
+
+
+    protected function getIdFromSlug($slug) {
+        $params = explode("-", $slug);
+        $params_count = count($params);
+
+        if ($params_count < 2) {
+
+            // Error
+            return -1;
+        }
+
+        $id = $params[$params_count - 1];
+
+        return $id;
     }
 
 }

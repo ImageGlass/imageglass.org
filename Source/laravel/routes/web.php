@@ -49,3 +49,15 @@ Route::get('/news/{slug}', 'NewsController@news_details')
     ->where(array('slug' => NUMBER_TEXT));
 
 
+/*
+|--------------------------------------------------------------------------
+| Download Routes
+|--------------------------------------------------------------------------
+*/
+
+Route::get('/download', 'DownloadController@index');
+Route::get('/release/{slug}', 'DownloadController@download_release_details')
+    ->where(array('slug' => NUMBER_TEXT));
+
+
+

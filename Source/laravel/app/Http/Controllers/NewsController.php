@@ -26,9 +26,26 @@ class NewsController extends Controller
     }
 
 
-    public function news_details()
+    public function news_details($slug)
 	{
+        $id = $this->getIdFromSlug($slug);
+
+        if ($id < 0) {
+            // throw error
+            abort(404);
+        }
+
+        // get the news info
+        $news_item = $this::getRequest("/api/post/" . $id);
+
+
+        // page data
+        $this->data["news_item"] = $news_item;
+
+
+        // meta tags
         $this->data["_page"] = "news.details";
+        $this->data["_title"] = $news_item["title"] . " | " .  $this->data["_name"];
         
 		return view("pages.news.news-details")->with($this->data);
     }
