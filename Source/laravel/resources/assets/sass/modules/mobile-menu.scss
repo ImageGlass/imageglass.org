@@ -2,7 +2,7 @@
 	margin-right: -$gap;
 	padding: 0 $gap;
 	font-size: $fs-h2;
-	color: $color-black;
+	color: var(--color-dark);
 	border-radius: $gap * 3;
 	transition: all 200ms ease;
 
@@ -59,12 +59,12 @@ $headerHeight: $gap*3;
         height: calc(100vh - #{$headerHeight});
         overflow-y: auto;
         padding: $gap 0;
-        background-color: $color-white;
+        background-color: var(--color-light);
         @include bg-blur();
         transition: all ease 300ms;
 
         transform: translateX(100%);
-        box-shadow: (-$gap/2) 0 $gap (-$gap/2) rgba($color-black, 0.2);
+        box-shadow: (-$gap/2) 0 $gap (-$gap/2) rgba($color-dark, 0.2);
 
         .menu-item {
             &> a {

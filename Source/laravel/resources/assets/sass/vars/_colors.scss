@@ -1,15 +1,15 @@
 $color-1: #2998ac;
 $color-2: #3c58ad;
 
-$color-black: #000;
-$color-white: #fff;
+$color-dark: #000;
+$color-light: #fff;
 
 
 
 $color-bg: #27292a;
 $color-bg-hover: lighten($color-bg, 5);
 $color-bg-header: #2d2f2f;
-$color-bg-footer: #2d2f2f;
+$color-bg-footer: darken(mix($color-1, $color-2), 15);
 
 $color-text-1: #efefef;
 
@@ -18,11 +18,14 @@ $color-text-1: #efefef;
     --color-1: $color-1;
     --color-2: $color-2;
 
-    --color-black: $color-black;
-    --color-white: $color-white;
+    --color-dark: $color-dark;
+    --color-light: $color-light;
 
     --color-bg: $color-bg;
     --color-bg-hover: $color-bg-hover;
 
     --color-text-1: $color-text;
+
+
+    --color-menuItem-hover: rgba($color-light, 0.2);
 }

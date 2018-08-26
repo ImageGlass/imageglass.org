@@ -14,15 +14,13 @@
         @include btn-hover();
     }
     &:active {
-        transition: all 50ms ease;
-        transform: translateY(0);
         @include btn-active();
     }
 
 
     &.btn-primary {
         @include bg-gradient();
-        color: $color-white;
+        color: var(--color-light);
 
         &:hover,
         &:focus {
@@ -61,20 +59,17 @@
 
     &:hover,
     &:focus {
-        cursor: pointer;
-        transition: all 200ms ease;
-        transform: translateY(-$gap/7);
+        @include btn-hover();
 
         &> .eff-reveal {
-            @include btn-hover();
+            
         }
     }
     &:active {
-        transition: all 50ms ease;
-        transform: translateY(0);
+        @include btn-active();
         
         &> .eff-reveal {
-            @include btn-active();
+            
         }
     }
 
@@ -85,7 +80,7 @@
 
         &> .eff-reveal {
             @include bg-gradient();
-            color: $color-white;
+            color: var(--color-light);
         }
     }
 

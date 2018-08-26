@@ -1,22 +1,44 @@
 {
-    "private": true,
-    "scripts": {
-        "dev": "npm run development",
-        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "watch": "npm run development -- --watch",
-        "watch-poll": "npm run watch -- --watch-poll",
-        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "prod": "npm run production",
-        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
-    },
-    "devDependencies": {
-        "axios": "^0.18",
-        "cross-env": "^5.2",
-        "fluent-reveal-effect": "^0.10.2",
-        "jquery": "^3.3.1",
-        "laravel-mix": "^2.0",
-        "slick-carousel": "^1.8.1",
-        "vue": "^2.5.17",
-        "vue-router": "^3.0.1"
-    }
+	"name": "imageglass.org",
+	"version": "2018.0.0",
+	"description": "Source code of www.ImageGlass.org website",
+	"main": "index.js",
+	"directories": {
+		"test": "tests"
+	},
+	"dependencies": {
+		"jquery": "^3.3.1",
+		"optimize-css-assets-webpack-plugin": "^5.0.0"
+	},
+	"devDependencies": {
+		"babel-cli": "^6.26.0",
+		"babel-loader": "^7.1.5",
+		"babel-plugin-transform-runtime": "^6.23.0",
+		"babel-polyfill": "^6.26.0",
+		"babel-preset-env": "^1.7.0",
+		"css-loader": "^1.0.0",
+		"file-loader": "^1.1.11",
+		"fluent-reveal-effect": "^0.10.2",
+		"mini-css-extract-plugin": "^0.4.1",
+		"node-sass": "^4.9.3",
+		"sass-loader": "^7.1.0",
+		"slick-carousel": "^1.8.1",
+		"webpack": "^4.16.5",
+		"webpack-cli": "^3.1.0"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "webpack --mode production",
+		"start": "webpack --mode development"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/d2phap/imageglass.org.git"
+	},
+	"author": "Duong Dieu Phap",
+	"license": "GPL-3.0",
+	"bugs": {
+		"url": "https://github.com/d2phap/imageglass.org/issues"
+	},
+	"homepage": "https://github.com/d2phap/imageglass.org#readme"
 }

@@ -4,6 +4,7 @@
     position: relative;
     font-style: italic;
     font-size: $fs-small;
+    font-weight: $fw-light;
     padding-left: $gap;
 
     &::before {
