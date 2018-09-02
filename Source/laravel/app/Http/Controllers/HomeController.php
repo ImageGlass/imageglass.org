@@ -15,7 +15,7 @@ class HomeController extends Controller
 
 
 		// get the latest news items
-		$news_items = $this::getRequest("/api/posts", array("limit" => "5"));
+		$news_items = $this::getRequest("/api/news", array("limit" => "5"));
 
 		// get the review list from json
 		$review_items = $this::getJsonData("review_items.json");
@@ -37,7 +37,7 @@ class HomeController extends Controller
 
     public function sitemap_xml()
 	{
-		$this->data["news_items"] = $this::getRequest("/api/posts");
+		$this->data["news_items"] = $this::getRequest("/api/news");
 		$this->data["release_items"] = $this::getRequest("/api/releases");
 		$this->data["theme_items"] = $this::getRequest("/api/themes");
 

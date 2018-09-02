@@ -37,7 +37,7 @@ Route::get('/theme/download/{id}', 'APIs\ThemeController@download_theme')->where
 Route::get('/themes', 'APIs\ThemeController@get_theme_list');
 
 
-Route::get('/post/{id}', 'APIs\NewsController@get_post')->where(array('id' => NUMBER_ONLY));
-Route::get('/posts', 'APIs\NewsController@get_post_list');
+Route::get('/news/{id}', 'APIs\NewsController@get_news')->where(array('id' => NUMBER_ONLY));
+Route::get('/news', 'APIs\NewsController@get_news_list');
 
 

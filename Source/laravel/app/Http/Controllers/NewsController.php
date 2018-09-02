@@ -8,7 +8,7 @@ class NewsController extends Controller
     public function index() {
 
         // get the latest news items
-        $news_items = $this::getRequest("/api/posts", array("limit" => "5"));
+        $news_items = $this::getRequest("/api/news", array("limit" => "5"));
         
 
         // page data
@@ -36,7 +36,7 @@ class NewsController extends Controller
         }
 
         // get the news info
-        $news_item = $this::getRequest("/api/post/" . $id);
+        $news_item = $this::getRequest("/api/news/" . $id);
 
 
         // page data

@@ -13,7 +13,7 @@ class NewsController extends Controller
     /**
      * Get the news which matches provided ID
      */
-    public function get_post($id, Request $request) {
+    public function get_news($id, Request $request) {
         $delete_filter = $request->input('delete_filter', 0);
 
         $item = News::get_item($id, $delete_filter);
@@ -24,7 +24,7 @@ class NewsController extends Controller
     /**
      * Get the list of news items
      */
-    public function get_post_list(Request $request) {
+    public function get_news_list(Request $request) {
 
         $id = $request->input('id', 0);
         $title = $request->input('title', '');
