@@ -6,7 +6,7 @@
 
 
 @section("_article_list")
-    <ul class="row article-list">
+    <ul class="row justify-content-center article-list">
 
         @php
             // get list of items
@@ -54,7 +54,7 @@
         @endforeach
     </ul>
 
-    <div class="row">
+    <div class="row justify-content-center">
         <div class="col-lg-10 col-xl-9 col-xxl-8 col-hg-12">
             {{ $news_collection->links() }}
         </div>

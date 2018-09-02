@@ -1,0 +1,23 @@
+.article-post {
+    padding-bottom: $gap*2;
+    background-color: $color-bg-header;
+
+    .article-img {
+        display: block;
+        min-height: $gap*4;
+        margin-bottom: $gap;
+        background-image: url(../img/truchet_tiling.svg);
+        filter: grayscale(85%);
+        transition: all ease 200ms;
+
+        img {
+            width: 100%;
+            max-height: $gap*6;
+            object-fit: cover;
+
+            @media (max-width: calc(#{map-get($grid-breakpoints, "md")} - 1px)) {
+                max-height: $gap*3;
+            }
+        }
+    }
+}
