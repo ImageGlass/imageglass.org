@@ -25,8 +25,10 @@
         "psr-4": {
             "App\\": "app/"
         },
+        "phap-note": "run cmd: `composer dump-autoload` to update helper files",
         "files": [
-            "app/Helpers/datetime.php"
+            "app/Helpers/datetime.php",
+            "app/Helpers/url.php"
         ]
     },
     "autoload-dev": {

@@ -9,6 +9,12 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Request;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Input;
+use Illuminate\Contracts\Support\Jsonable;
+
+use Illuminate\Pagination\LengthAwarePaginator;
+use Illuminate\Pagination\Paginator;
+use Illuminate\Support\Collection;
+
 
 class Controller extends BaseController
 {
@@ -37,7 +43,15 @@ class Controller extends BaseController
     }
 
 
+    /**
+     * Call API and convert the response to LengthAwarePaginator object,
+     * Return: 
+     *      - throw 404 of null
+     *      - Model object of only 1 item
+     */
     protected function getRequest($url, $params = []) {
+        $currentPage = app("request")->input("page") ?: "1";
+        $params["page"] = $currentPage;
 
         // save original input
         $original_input = Request::input();
@@ -52,34 +66,80 @@ class Controller extends BaseController
         Request::replace($original_input);
         
         // convert json to array data
-        $array_data = json_decode($response->getContent(), true);
-
-        // if server responses a list of items
-        if ($array_data != null && array_key_exists("data", $array_data)) {
-            return $array_data["data"];
-        }
+        $array_data = collect(json_decode($response->getContent(), true));
+        // dd($array_data["current_page"]);
 
         if ($array_data == null) {
             abort(404);
         }
         
+
+        try {
+            $array_data = $this::makePagination($array_data);
+            // dd($array_data);
+        }
+        catch (\Exception $e) {
+            // dd($e);
+        }
+        
+        // dd($array_data);
         return $array_data;
     }
 
 
+    /**
+     * Convert the Collection to LengthAwarePaginator
+     */
+    protected function makePagination($items, $currentPage = null, $options = []) {
+        $currentPage = $currentPage ?: (Paginator::resolveCurrentPage() ?: 1);
+        $items = $items instanceof Collection ? $items : Collection::make($items);
+
+        $paginatedItems = new LengthAwarePaginator(
+            $items, // a collection
+            $items["total"], //total items
+            $items["per_page"], //items per page
+            $currentPage, // current page
+            $options // other options
+        );
+
+        // set url path for generted links
+        $paginatedItems->setPath(url()->current());
+
+        return $paginatedItems;
+    }
+
+
+    /**
+     * Read JSON file and convert to LengthAwarePaginator object,
+     * Return: 
+     *      - throw 404 of null
+     *      - Model object of only 1 item
+     */
     protected function getJsonData($filename) {
         $file_path = storage_path() . "/json_content/" . $filename;
-        $array_data = json_decode(file_get_contents($file_path), true);
-        
-        // if json is a list of items
-        if ($array_data != null && array_key_exists("data", $array_data)) {
-            return $array_data["data"];
-        }
+        $array_data = collect(json_decode(file_get_contents($file_path), true));
 
+        if ($array_data == null) {
+            abort(404);
+        }
+        
+        try {
+            $array_data = $this::makePagination($array_data);
+            // dd($array_data);
+        }
+        catch (\Exception $e) {
+            // dd($e);
+        }
+        
+        // dd($array_data);
         return $array_data;
     }
 
 
+    /**
+     * Get ID from slug string
+     * Ex: "announcing-imageglass-5-5-23" => 23
+     */
     protected function getIdFromSlug($slug) {
         $params = explode("-", $slug);
         $params_count = count($params);

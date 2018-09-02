@@ -8,11 +8,11 @@ class NewsController extends Controller
     public function index() {
 
         // get the latest news items
-        $news_items = $this::getRequest("/api/news", array("limit" => "5"));
-        
+        $news_collection = $this::getRequest("/api/news", array("limit" => "10"));
+        // dd($news_collection);
 
         // page data
-		$this->data["news_items"] = $news_items;
+		$this->data["news_collection"] = $news_collection;
 
 
         // meta tags

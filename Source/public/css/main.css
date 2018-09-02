@@ -3937,6 +3937,29 @@ body {
         transition: all ease 100ms;
         transform: translateY(0); }
 
+.pagination {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center; }
+  .pagination > .page-item {
+    display: flex; }
+    .pagination > .page-item > .page-link {
+      display: flex;
+      padding: 1rem 1.40625rem;
+      font-size: 1.125rem;
+      transition: all ease 200ms; }
+    .pagination > .page-item.active > .page-link {
+      background-color: #202122; }
+    .pagination > .page-item:not(.disabled):not(.active) > .page-link:hover {
+      background-color: #333637;
+      box-shadow: 0 0.625rem 1.25rem -0.625rem rgba(0, 0, 0, 0.3); }
+    .pagination > .page-item:not(.disabled):not(.active) > .page-link:active {
+      box-shadow: none;
+      transform: translateY(0.0625rem);
+      transition: all ease 50ms; }
+
 .mobile-menu-toggler {
   margin-right: -1.25rem;
   padding: 0 1.25rem;
@@ -4114,6 +4137,43 @@ body {
     border-radius: 3.75rem; }
     .home-donate .home-donate-content .eff-reveal-border .eff-reveal {
       border-radius: 3.75rem; }
+
+.article-list-section {
+  margin-top: 2.5rem; }
+  .article-list-section .article-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0; }
+    .article-list-section .article-list > .article-item {
+      margin-bottom: 2.5rem; }
+      .article-list-section .article-list > .article-item article {
+        background-color: #2d2f2f;
+        transition: all ease 200ms; }
+        .article-list-section .article-list > .article-item article .article-image {
+          position: relative;
+          overflow: hidden;
+          background-image: url(../img/truchet_tiling.svg);
+          min-height: 3.75rem; }
+          .article-list-section .article-list > .article-item article .article-image img {
+            min-width: 100%;
+            min-height: 100%;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            filter: brightness(85%);
+            transition: all ease 200ms; }
+        .article-list-section .article-list > .article-item article .article-content p:last-child {
+          margin-bottom: 0.41667rem; }
+        .article-list-section .article-list > .article-item article:hover {
+          background-color: #343737;
+          box-shadow: 0 1.25rem 1.875rem -1.25rem rgba(0, 0, 0, 0.2); }
+          .article-list-section .article-list > .article-item article:hover .article-image img {
+            filter: brightness(110%); }
+      .article-list-section .article-list > .article-item.new-article article {
+        border: 0.08333rem solid #2998ac; }
 
 
 /*# sourceMappingURL=main.css.map*/

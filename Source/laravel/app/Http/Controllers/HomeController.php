@@ -18,12 +18,12 @@ class HomeController extends Controller
 		$news_items = $this::getRequest("/api/news", array("limit" => "5"));
 
 		// get the review list from json
-		$review_items = $this::getJsonData("review_items.json");
+		$review_items = $this::getJsonData("review_items.json")["data"];
 
 
 		// page data
 		$this->data["release_item"] = $release_item;
-		$this->data["news_items"] = $news_items;
+		$this->data["news_items"] = $news_items["data"];
 		$this->data["review_items"] = $review_items;
 
 
@@ -37,9 +37,9 @@ class HomeController extends Controller
 
     public function sitemap_xml()
 	{
-		$this->data["news_items"] = $this::getRequest("/api/news");
-		$this->data["release_items"] = $this::getRequest("/api/releases");
-		$this->data["theme_items"] = $this::getRequest("/api/themes");
+		$this->data["news_items"] = $this::getRequest("/api/news")["data"];
+		$this->data["release_items"] = $this::getRequest("/api/releases")["data"];
+		$this->data["theme_items"] = $this::getRequest("/api/themes")["data"];
 
 		$content = view("pages.sitemap-xml")->with($this->data);
 		return Response::make($content, "200")->header("Content-Type", "text/xml");

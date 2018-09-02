@@ -10,16 +10,16 @@
                 <div class="col-xl-8 col-xxl-10 col-hg-9">
                     <ul class="news-list">
 
-                        @foreach ($news_items as $news_item)
+                        @foreach ($news_items as $item)
                             @php
-
-                            $totalDays = getTotalDays($news_item["updated_at"]);
+                            $url = url("news", $item["slug"]."-".$item["id"]);
+                            $totalDays = getTotalDays($item["updated_at"]);
                             @endphp
 
                             <li class="news-item {{ $totalDays < 8 ? "new-post" : "" }}">
-                                <a href="{{ url("news", $news_item["slug"]) }}" class="news-item-content">
-                                    <h3 class="title">{{ $news_item["title"] }}</h3>
-                                    <time datetime="{{ $news_item["updated_at"] }}">{{ formatDateTime($news_item["updated_at"]) }}</time>
+                                <a href="{{ $url }}" class="news-item-content">
+                                    <h3 class="title">{{ $item["title"] }}</h3>
+                                    <time datetime="{{ $item["updated_at"] }}">{{ formatDateTime($item["updated_at"]) }}</time>
                                 </a>
                             </li>
                         @endforeach

@@ -1,5 +1,5 @@
-@extends('shared._layout')
-@section('_body_content')
+@extends("layouts._layout")
+@section("_body_content")
 
     @include("modules.home.home-highlight")
     @include("modules.home.home-features")

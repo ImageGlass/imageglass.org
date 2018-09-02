@@ -1,0 +1,42 @@
+.pagination {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+
+    display: flex;
+    justify-content: center;
+
+    &> .page-item {
+        display: flex;
+
+        &> .page-link {
+            display: flex;
+            padding: $gap/1.25 $gap*1.125;
+            font-size: $fs-h4;
+            transition: all ease 200ms;
+        }
+
+        &.active {
+            &> .page-link {
+                background-color: darken($color-bg, 3);
+            }
+        }
+
+        &:not(.disabled):not(.active) {
+            &> .page-link {
+                &:hover {
+                    background-color: $color-bg-hover;
+                    box-shadow: 0 $gap/2 $gap (-$gap/2) rgba(#000, 0.3);
+                }
+
+                &:active {
+                    box-shadow: none;
+                    transform: translateY($gap/20);
+                    transition: all ease 50ms;
+                }
+            }
+        }
+
+        
+    }
+}

@@ -1,0 +1,69 @@
+.article-list-section {
+    margin-top: $gap*2;
+
+    .article-list { // ul
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 0;
+
+        &> .article-item {
+            margin-bottom: $gap*2;
+
+            article {
+                background-color: $color-bg-header;
+                transition: all ease 200ms;
+
+                .article-image {
+                    position: relative;
+                    overflow: hidden;
+                    background-image: url(../img/truchet_tiling.svg);
+                    min-height: $gap*3;
+
+                    img {
+                        min-width: 100%;
+                        min-height: 100%;
+                        position: absolute;
+                        margin: auto;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        filter: brightness(85%);
+                        transition: all ease 200ms;
+                    }
+                }
+
+                .article-content {
+                    .article-title {
+                        a {
+                            
+                        }
+                    }
+
+                    p:last-child {
+                        margin-bottom: $gap/3;
+                    }
+                }
+                
+
+                &:hover {
+                    background-color: lighten($color-bg-header, 3);
+                    box-shadow: 0 $gap $gap*1.5 (-$gap) rgba(#000, 0.2);
+
+                    .article-image {
+                        img {
+                            filter: brightness(110%);
+                        }
+                    }
+                }
+            }
+
+            &.new-article {
+                article {
+                    border: $gap/15 solid $color-1;
+                }
+            }
+        }
+    }
+    
+}
