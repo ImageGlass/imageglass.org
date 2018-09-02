@@ -20,7 +20,7 @@ class NewsController extends Controller
         $this->data["_title"] = "Latest news | " .  $this->data["_name"];
         $this->data["_description"] = "Get the lastest updates of ImageGlass. Read ImageGlass stories and everything in the world.";
         $this->data["_keywords"] .= "news, lastest update";
-		$this->data["_thumbnail"] = url("upload/photo/release/5.0_1.png");
+		$this->data["_thumbnail"] = "https://picsum.photos/1200/630/?random";
 
         return view("pages.news.news")->with($this->data);
     }

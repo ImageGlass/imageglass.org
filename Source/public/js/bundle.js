@@ -27747,20 +27747,41 @@ exports.default = HomePage;
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+				value: true
 });
 
 var _classCallCheck2 = __webpack_require__(/*! babel-runtime/helpers/classCallCheck */ "./node_modules/babel-runtime/helpers/classCallCheck.js");
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
+var _fluentRevealEffect = __webpack_require__(/*! fluent-reveal-effect */ "./node_modules/fluent-reveal-effect/index.js");
+
+var _headerModule = __webpack_require__(/*! ../modules/header-module */ "./resources/assets/js/modules/header-module.js");
+
+var _headerModule2 = _interopRequireDefault(_headerModule);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var NewsPage = function NewsPage() {
-    (0, _classCallCheck3.default)(this, NewsPage);
+function applyRevealEffect() {
+				_fluentRevealEffect.FluentRevealEffect.applyEffect("#body", {
+								clickEffect: false,
+								lightColor: "rgba(255,255,255, 0.3)",
+								gradientSize: 200,
+								isContainer: true,
+								children: {
+												borderSelector: ".eff-reveal-border",
+												elementSelector: ".eff-reveal",
+												lightColor: "rgba(255,255,255, 0)",
+												gradientSize: 1
+								}
+				});
+}
 
-    // debugger
-    console.log("NewsPage");
+var NewsPage = function NewsPage() {
+				(0, _classCallCheck3.default)(this, NewsPage);
+
+				_headerModule2.default.initModule();
+				applyRevealEffect();
 };
 
 exports.default = NewsPage;

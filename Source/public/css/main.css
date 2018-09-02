@@ -3942,7 +3942,8 @@ body {
   padding-left: 0;
   margin-bottom: 0;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  flex-wrap: wrap; }
   .pagination > .page-item {
     display: flex; }
     .pagination > .page-item > .page-link {
@@ -4147,33 +4148,30 @@ body {
     .article-list-section .article-list > .article-item {
       margin-bottom: 2.5rem; }
       .article-list-section .article-list > .article-item article {
+        display: block; }
+      .article-list-section .article-list > .article-item .article-item-content {
+        display: flex;
         background-color: #2d2f2f;
         transition: all ease 200ms; }
-        .article-list-section .article-list > .article-item article .article-image {
-          position: relative;
-          overflow: hidden;
-          background-image: url(../img/truchet_tiling.svg);
-          min-height: 3.75rem; }
-          .article-list-section .article-list > .article-item article .article-image img {
-            min-width: 100%;
-            min-height: 100%;
-            position: absolute;
-            margin: auto;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            filter: brightness(85%);
-            transition: all ease 200ms; }
-        .article-list-section .article-list > .article-item article .article-content p:last-child {
+        .article-list-section .article-list > .article-item .article-item-content .article-image {
+          filter: brightness(85%);
+          transition: all ease 200ms; }
+          .article-list-section .article-list > .article-item .article-item-content .article-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
+            @media (max-width: calc(768px - 1px)) {
+              .article-list-section .article-list > .article-item .article-item-content .article-image img {
+                max-height: 3.75rem; } }
+        .article-list-section .article-list > .article-item .article-item-content .article-content p:last-child {
           margin-bottom: 0.41667rem; }
-        .article-list-section .article-list > .article-item article:hover {
+        .article-list-section .article-list > .article-item .article-item-content:hover {
           background-color: #343737;
           box-shadow: 0 1.25rem 1.875rem -1.25rem rgba(0, 0, 0, 0.2); }
-          .article-list-section .article-list > .article-item article:hover .article-image img {
+          .article-list-section .article-list > .article-item .article-item-content:hover .article-image {
             filter: brightness(110%); }
-      .article-list-section .article-list > .article-item.new-article article {
-        border: 0.08333rem solid #2998ac; }
+      .article-list-section .article-list > .article-item.new-article .article-item-content {
+        background-color: #1c415e; }
 
 
 /*# sourceMappingURL=main.css.map*/
