@@ -37,10 +37,17 @@ class NewsController extends Controller
 
         // get the news info
         $news_item = $this::getRequest("/api/news/" . $id);
+        // get the latest news items
+        $news_collection = $this::getRequest("/api/news", array("limit" => "10"));
 
 
         // page data
+        $this->data["_category_url"] = "news";
+        $this->data["_article_list_title"] = "The latest updates";
+        $this->data["_postedDate"] = $news_item["updated_at"];
         $this->data["news_item"] = $news_item;
+        $this->data["_article_collection"] = $news_collection;
+        
 
 
         // meta tags

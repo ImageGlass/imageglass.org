@@ -3,6 +3,7 @@ import "../sass/main.scss"
 
 import HomePage from "./pages/home-page"
 import NewsPage from "./pages/news-page"
+import NewsDetailsPage from "./pages/news-details-page"
 
 
 ;(async () => {
@@ -14,6 +15,11 @@ import NewsPage from "./pages/news-page"
         case "news":
             // code for news page
             window._currentPage = new NewsPage()
+            break;
+
+        case "news.details":
+            // code for news page
+            window._currentPage = new NewsDetailsPage()
             break;
 
 

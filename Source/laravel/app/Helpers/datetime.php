@@ -22,7 +22,7 @@ function formatDateTime($date_str, $format_str = "", $include_time = true) {
 
 function getDateTimeFormat($include_time = true) {
     if ($include_time) {
-        return "j M Y g:i A";
+        return "M j Y g:i A";
     }
 
     return "j M Y";

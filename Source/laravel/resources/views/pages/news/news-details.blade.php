@@ -3,32 +3,22 @@
 
 <section class="container py-4 py-lg-5">
 
-    <div class="row no-gutters justify-content-center">
-        <article class="col-lg-10 col-xl-9 col-xxl-8 col-hg-7 article-post">
-            <picture class="article-img">
-                <source media="(max-width: 1920px)" srcset="https://picsum.photos/1000/400/?random">
-                <source media="(max-width: 1440px)" srcset="https://picsum.photos/1000/400/?random">
-                <source media="(max-width: 1200px)" srcset="https://picsum.photos/1000/400/?random">
-                <source media="(max-width: 992px)" srcset="https://picsum.photos/1000/400/?random">
-                <source media="(max-width: 768px)" srcset="https://picsum.photos/1000/400/?random">
-                <source media="(max-width: 576px)" srcset="https://picsum.photos/1000/400/?random">
-                <img src="https://picsum.photos/1000/400/?random" alt="Flowers">
-            </picture>
-
-            <h2 class="px-3 fs-h1 mb-4">
+    <div class="row no-gutters">
+        
+        <article class="col-md-8 col-lg-8 col-xxl-9 col-hg-10 pr-0 pr-md-4 article-post">    
+            <h2 class="fs-h1 mb-4">
                 {{ $news_item["title"] }}
             </h2>
     
-            <div class="px-3 article-body">
+            <section class="article-body">
                 {!! $news_item["content"] !!}
-            </div>
-    
-            <footer class="px-3">
-                xxxxx
-            </footer>
+            </section>
         </article>
-        
-
+    
+        <aside class="col-md-4 col-lg-4 col-xxl-3 col-hg-2 px-0 px-md-3 aside">
+            @include("modules.aside.post-info")
+            @include("modules.aside.article-list")
+        </aside>
     </div>
     
 

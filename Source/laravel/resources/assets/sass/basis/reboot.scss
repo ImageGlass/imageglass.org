@@ -186,6 +186,26 @@ samp {
 	font-size: 1em;
 }
 
+code {
+	display: inline-block;
+	margin-right: $gapem/5;
+	background-color: $color-dark;
+	font-size: 90%;
+	padding: $gapem/5 $gapem/3;
+	border: $gapem/15 solid rgba($color-text-1, 0.5);
+	box-shadow: $gapem/5 $gapem/5 0 0 #000;
+	color: #af00db;
+}
+kbd {
+	display: inline-block;
+	margin-right: $gapem/5;
+	background-color: $color-dark;
+	font-size: 90%;
+	padding: $gapem/5 $gapem/3;
+	border: $gapem/15 solid rgba($color-text-1, 0.5);
+	box-shadow: $gapem/5 $gapem/5 0 0 #000;
+}
+
 pre {
 	margin-top: 0;
 	margin-bottom: $gap;

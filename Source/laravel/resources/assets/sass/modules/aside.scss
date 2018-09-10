@@ -1,0 +1,7 @@
+.aside {
+    section {
+        &:not(:last-child) {
+            margin-bottom: $gap*2;
+        }
+    }
+}

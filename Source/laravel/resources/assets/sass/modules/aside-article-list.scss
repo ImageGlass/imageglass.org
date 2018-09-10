@@ -1,0 +1,36 @@
+.aside-article-list {
+    ul {
+        margin-bottom: 0;
+        padding-left: 0;
+        list-style: none;
+
+        &> li {
+            display: block;
+            margin-bottom: $gap/4;
+
+            &> a {
+                display: block;
+                background-color: $color-bg;
+                padding: $gap/3;
+                transition: all ease 200ms;
+
+                time {
+                    color: $color-text-1;
+                }
+
+                &:hover {
+                    background-color: lighten($color-bg, 3);
+                    time {
+                        color: $color-text-1;
+                    }
+                }
+            }
+
+            &.new-article {
+                &> a {
+                    background-color: darken(mix($color-1, $color-2), 20);
+                }
+            }
+        }
+    }
+}

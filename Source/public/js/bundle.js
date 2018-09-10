@@ -27386,6 +27386,10 @@ var _newsPage = __webpack_require__(/*! ./pages/news-page */ "./resources/assets
 
 var _newsPage2 = _interopRequireDefault(_newsPage);
 
+var _newsDetailsPage = __webpack_require__(/*! ./pages/news-details-page */ "./resources/assets/js/pages/news-details-page.js");
+
+var _newsDetailsPage2 = _interopRequireDefault(_newsDetailsPage);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _asyncToGenerator3.default)( /*#__PURE__*/_regenerator2.default.mark(function _callee() {
@@ -27396,26 +27400,90 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
                 case 0:
                     currentPage = document.getElementsByTagName("html")[0].getAttribute("data-page");
                     _context.t0 = currentPage;
-                    _context.next = _context.t0 === "news" ? 4 : _context.t0 === "home" ? 6 : 6;
+                    _context.next = _context.t0 === "news" ? 4 : _context.t0 === "news.details" ? 6 : _context.t0 === "home" ? 8 : 8;
                     break;
 
                 case 4:
                     // code for news page
                     window._currentPage = new _newsPage2.default();
-                    return _context.abrupt("break", 8);
+                    return _context.abrupt("break", 10);
 
                 case 6:
-                    // code for home page
-                    window._currentPage = new _homePage2.default();
-                    return _context.abrupt("break", 8);
+                    // code for news page
+                    window._currentPage = new _newsDetailsPage2.default();
+                    return _context.abrupt("break", 10);
 
                 case 8:
+                    // code for home page
+                    window._currentPage = new _homePage2.default();
+                    return _context.abrupt("break", 10);
+
+                case 10:
                 case "end":
                     return _context.stop();
             }
         }
     }, _callee, undefined);
 }))();
+
+/***/ }),
+
+/***/ "./resources/assets/js/modules/aside/article-list-module.js":
+/*!******************************************************************!*\
+  !*** ./resources/assets/js/modules/aside/article-list-module.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+				value: true
+});
+
+var _classCallCheck2 = __webpack_require__(/*! babel-runtime/helpers/classCallCheck */ "./node_modules/babel-runtime/helpers/classCallCheck.js");
+
+var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+var _createClass2 = __webpack_require__(/*! babel-runtime/helpers/createClass */ "./node_modules/babel-runtime/helpers/createClass.js");
+
+var _createClass3 = _interopRequireDefault(_createClass2);
+
+var _fluentRevealEffect = __webpack_require__(/*! fluent-reveal-effect */ "./node_modules/fluent-reveal-effect/index.js");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function applyRevealEffect() {
+				_fluentRevealEffect.FluentRevealEffect.applyEffect("#body", {
+								clickEffect: true,
+								lightColor: "rgba(255,255,255, 0.3)",
+								gradientSize: 100,
+								isContainer: true,
+								children: {
+												borderSelector: ".eff-reveal-border",
+												elementSelector: ".eff-reveal",
+												lightColor: "rgba(255,255,255, 0.1)",
+												gradientSize: 200
+								}
+				});
+}
+
+var ArticleListModule = function () {
+				function ArticleListModule() {
+								(0, _classCallCheck3.default)(this, ArticleListModule);
+				}
+
+				(0, _createClass3.default)(ArticleListModule, null, [{
+								key: "initModule",
+								value: function initModule() {
+												applyRevealEffect();
+								}
+				}]);
+				return ArticleListModule;
+}();
+
+exports.default = ArticleListModule;
 
 /***/ }),
 
@@ -27733,6 +27801,40 @@ var HomePage = function HomePage() {
 };
 
 exports.default = HomePage;
+
+/***/ }),
+
+/***/ "./resources/assets/js/pages/news-details-page.js":
+/*!********************************************************!*\
+  !*** ./resources/assets/js/pages/news-details-page.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _classCallCheck2 = __webpack_require__(/*! babel-runtime/helpers/classCallCheck */ "./node_modules/babel-runtime/helpers/classCallCheck.js");
+
+var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+var _articleListModule = __webpack_require__(/*! ../modules/aside/article-list-module */ "./resources/assets/js/modules/aside/article-list-module.js");
+
+var _articleListModule2 = _interopRequireDefault(_articleListModule);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var NewsDetailsPage = function NewsDetailsPage() {
+    (0, _classCallCheck3.default)(this, NewsDetailsPage);
+
+    _articleListModule2.default.initModule();
+};
+
+exports.default = NewsDetailsPage;
 
 /***/ }),
 

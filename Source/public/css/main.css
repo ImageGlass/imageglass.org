@@ -166,6 +166,25 @@ samp {
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 1em; }
 
+code {
+  display: inline-block;
+  margin-right: 0.25em;
+  background-color: #000;
+  font-size: 90%;
+  padding: 0.25em 0.41667em;
+  border: 0.08333em solid rgba(239, 239, 239, 0.5);
+  box-shadow: 0.25em 0.25em 0 0 #000;
+  color: #af00db; }
+
+kbd {
+  display: inline-block;
+  margin-right: 0.25em;
+  background-color: #000;
+  font-size: 90%;
+  padding: 0.25em 0.41667em;
+  border: 0.08333em solid rgba(239, 239, 239, 0.5);
+  box-shadow: 0.25em 0.25em 0 0 #000; }
+
 pre {
   margin-top: 0;
   margin-bottom: 1.25rem;
@@ -3769,6 +3788,11 @@ template {
     width: 30vw;
     background-image: radial-gradient(circle at center, #3c58ad 0, #2998ac 40%, transparent 100%, transparent 100%);
     opacity: 0.5; }
+  .separator.separator-left {
+    justify-content: start; }
+    .separator.separator-left::before {
+      background-image: radial-gradient(circle at left, #3c58ad 0, #2998ac 40%, transparent 100%, transparent 100%);
+      opacity: 0.5; }
 
 :root {
   --scroll-bar-size: 15px;
@@ -3936,6 +3960,9 @@ body {
       #footer .social-links a:active {
         transition: all ease 100ms;
         transform: translateY(0); }
+
+.aside section:not(:last-child) {
+  margin-bottom: 2.5rem; }
 
 .pagination {
   list-style: none;
@@ -4175,14 +4202,12 @@ body {
         background-color: #1c415e; }
 
 .article-post {
-  padding-bottom: 2.5rem;
-  background-color: #2d2f2f; }
+  margin-bottom: 2.5rem; }
   .article-post .article-img {
     display: block;
     min-height: 5rem;
     margin-bottom: 1.25rem;
     background-image: url(../img/truchet_tiling.svg);
-    filter: grayscale(85%);
     transition: all ease 200ms; }
     .article-post .article-img img {
       width: 100%;
@@ -4191,6 +4216,31 @@ body {
       @media (max-width: calc(768px - 1px)) {
         .article-post .article-img img {
           max-height: 3.75rem; } }
+  .article-post .article-body img {
+    display: block;
+    max-width: 100%;
+    height: auto; }
+
+.aside-article-list ul {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none; }
+  .aside-article-list ul > li {
+    display: block;
+    margin-bottom: 0.3125rem; }
+    .aside-article-list ul > li > a {
+      display: block;
+      background-color: #27292a;
+      padding: 0.41667rem;
+      transition: all ease 200ms; }
+      .aside-article-list ul > li > a time {
+        color: #efefef; }
+      .aside-article-list ul > li > a:hover {
+        background-color: #2e3132; }
+        .aside-article-list ul > li > a:hover time {
+          color: #efefef; }
+    .aside-article-list ul > li.new-article > a {
+      background-color: #1c415e; }
 
 
 /*# sourceMappingURL=main.css.map*/

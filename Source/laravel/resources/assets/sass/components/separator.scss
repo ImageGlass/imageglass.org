@@ -11,4 +11,13 @@
         background-image: radial-gradient(circle at center, $color-2 0, $color-1 40%, transparent 100%, transparent 100%);
         opacity: 0.5;
     }
+
+    &.separator-left {
+        justify-content: start;
+        
+        &::before {
+            background-image: radial-gradient(circle at left, $color-2 0, $color-1 40%, transparent 100%, transparent 100%);
+            opacity: 0.5;
+        }
+    }
 }
