@@ -44,15 +44,18 @@ class NewsController extends Controller
         // page data
         $this->data["_category_url"] = "news";
         $this->data["_article_list_title"] = "The latest updates";
-        $this->data["_postedDate"] = $news_item["updated_at"];
-        $this->data["news_item"] = $news_item;
+        $this->data["_posted_date"] = $news_item["updated_at"];
         $this->data["_article_collection"] = $news_collection;
+        $this->data["news_item"] = $news_item;
         
 
 
         // meta tags
         $this->data["_page"] = "news.details";
         $this->data["_title"] = $news_item["title"] . " | " .  $this->data["_name"];
+        $this->data["_description"] = $news_item["description"];
+        $this->data["_keywords"] .= "news, lastest update, new update";
+		$this->data["_thumbnail"] = $news_item["image"];
         
 		return view("pages.news.news-details")->with($this->data);
     }
