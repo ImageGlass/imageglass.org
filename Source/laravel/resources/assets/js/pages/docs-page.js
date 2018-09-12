@@ -17,7 +17,7 @@ function applyRevealEffect() {
 }
 
 
-export default class NewsPage {
+export default class DocsPage {
     constructor() {
         applyRevealEffect()
     }

@@ -76,8 +76,8 @@ Route::get('/themes/{slug}/download', 'DownloadController@theme_download')->wher
 | Documentation Routes
 |--------------------------------------------------------------------------
 */
-Route::get('/docs', 'DocumentationController@index');
-Route::get('/docs/{slug}', 'DocumentationController@documentation_details')->where(array('slug' => NUMBER_TEXT));
+Route::get('/docs', 'DocsController@index');
+Route::get('/docs/{slug}', 'DocsController@documentation_details')->where(array('slug' => NUMBER_TEXT));
 
 
 

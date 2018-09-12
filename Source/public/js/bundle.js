@@ -27378,6 +27378,10 @@ var _asyncToGenerator3 = _interopRequireDefault(_asyncToGenerator2);
 
 __webpack_require__(/*! ../sass/main.scss */ "./resources/assets/sass/main.scss");
 
+var _headerModule = __webpack_require__(/*! ./modules/header-module */ "./resources/assets/js/modules/header-module.js");
+
+var _headerModule2 = _interopRequireDefault(_headerModule);
+
 var _homePage = __webpack_require__(/*! ./pages/home-page */ "./resources/assets/js/pages/home-page.js");
 
 var _homePage2 = _interopRequireDefault(_homePage);
@@ -27390,6 +27394,10 @@ var _newsDetailsPage = __webpack_require__(/*! ./pages/news-details-page */ "./r
 
 var _newsDetailsPage2 = _interopRequireDefault(_newsDetailsPage);
 
+var _docsPage = __webpack_require__(/*! ./pages/docs-page */ "./resources/assets/js/pages/docs-page.js");
+
+var _docsPage2 = _interopRequireDefault(_docsPage);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _asyncToGenerator3.default)( /*#__PURE__*/_regenerator2.default.mark(function _callee() {
@@ -27398,27 +27406,34 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
         while (1) {
             switch (_context.prev = _context.next) {
                 case 0:
+
+                    _headerModule2.default.initModule();
                     currentPage = document.getElementsByTagName("html")[0].getAttribute("data-page");
                     _context.t0 = currentPage;
-                    _context.next = _context.t0 === "news" ? 4 : _context.t0 === "news.details" ? 6 : _context.t0 === "home" ? 8 : 8;
+                    _context.next = _context.t0 === "news" ? 5 : _context.t0 === "news.details" ? 7 : _context.t0 === "docs" ? 9 : _context.t0 === "home" ? 11 : 11;
                     break;
 
-                case 4:
+                case 5:
                     // code for news page
                     window._currentPage = new _newsPage2.default();
-                    return _context.abrupt("break", 10);
+                    return _context.abrupt("break", 13);
 
-                case 6:
+                case 7:
                     // code for news page
                     window._currentPage = new _newsDetailsPage2.default();
-                    return _context.abrupt("break", 10);
+                    return _context.abrupt("break", 13);
 
-                case 8:
+                case 9:
+                    // code for docs page
+                    window._currentPage = new _docsPage2.default();
+                    return _context.abrupt("break", 13);
+
+                case 11:
                     // code for home page
                     window._currentPage = new _homePage2.default();
-                    return _context.abrupt("break", 10);
+                    return _context.abrupt("break", 13);
 
-                case 10:
+                case 13:
                 case "end":
                     return _context.stop();
             }
@@ -27753,6 +27768,53 @@ exports.default = HomeTopModule;
 
 /***/ }),
 
+/***/ "./resources/assets/js/pages/docs-page.js":
+/*!************************************************!*\
+  !*** ./resources/assets/js/pages/docs-page.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+				value: true
+});
+
+var _classCallCheck2 = __webpack_require__(/*! babel-runtime/helpers/classCallCheck */ "./node_modules/babel-runtime/helpers/classCallCheck.js");
+
+var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+var _fluentRevealEffect = __webpack_require__(/*! fluent-reveal-effect */ "./node_modules/fluent-reveal-effect/index.js");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function applyRevealEffect() {
+				_fluentRevealEffect.FluentRevealEffect.applyEffect("#body", {
+								clickEffect: false,
+								lightColor: "rgba(255,255,255, 0.3)",
+								gradientSize: 200,
+								isContainer: true,
+								children: {
+												borderSelector: ".eff-reveal-border",
+												elementSelector: ".eff-reveal",
+												lightColor: "rgba(255,255,255, 0)",
+												gradientSize: 1
+								}
+				});
+}
+
+var DocsPage = function DocsPage() {
+				(0, _classCallCheck3.default)(this, DocsPage);
+
+				applyRevealEffect();
+};
+
+exports.default = DocsPage;
+
+/***/ }),
+
 /***/ "./resources/assets/js/pages/home-page.js":
 /*!************************************************!*\
   !*** ./resources/assets/js/pages/home-page.js ***!
@@ -27770,10 +27832,6 @@ Object.defineProperty(exports, "__esModule", {
 var _classCallCheck2 = __webpack_require__(/*! babel-runtime/helpers/classCallCheck */ "./node_modules/babel-runtime/helpers/classCallCheck.js");
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-
-var _headerModule = __webpack_require__(/*! ../modules/header-module */ "./resources/assets/js/modules/header-module.js");
-
-var _headerModule2 = _interopRequireDefault(_headerModule);
 
 var _homeTopModule = __webpack_require__(/*! ../modules/home/homeTop-module */ "./resources/assets/js/modules/home/homeTop-module.js");
 
@@ -27794,7 +27852,6 @@ var HomePage = function HomePage() {
 
     // console.log("HomePage")
 
-    _headerModule2.default.initModule();
     _homeTopModule2.default.initModule();
     _homeFeaturesModule2.default.initModule();
     _homeReviewModule2.default.initModule();
@@ -27858,10 +27915,6 @@ var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
 var _fluentRevealEffect = __webpack_require__(/*! fluent-reveal-effect */ "./node_modules/fluent-reveal-effect/index.js");
 
-var _headerModule = __webpack_require__(/*! ../modules/header-module */ "./resources/assets/js/modules/header-module.js");
-
-var _headerModule2 = _interopRequireDefault(_headerModule);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function applyRevealEffect() {
@@ -27882,7 +27935,6 @@ function applyRevealEffect() {
 var NewsPage = function NewsPage() {
 				(0, _classCallCheck3.default)(this, NewsPage);
 
-				_headerModule2.default.initModule();
 				applyRevealEffect();
 };
 
