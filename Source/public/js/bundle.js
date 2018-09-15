@@ -27531,7 +27531,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function applyRevealEffect() {
     _fluentRevealEffect.FluentRevealEffect.applyEffect("#header .eff-reveal", {
         clickEffect: true,
-        lightColor: "rgba(255,255,255, 0.1)",
+        lightColor: "rgba(255,255,255, 0.2)",
         gradientSize: 100
     });
 }

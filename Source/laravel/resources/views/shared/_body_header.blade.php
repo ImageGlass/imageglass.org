@@ -22,35 +22,35 @@
 
 
             <nav class="menu-group main-menu">
-                <li class="menu-item">
+                <li class="menu-item {{ strpos($_page, "news") !== false ? "active" : "" }}">
                     <a href="{{ url("/news") }}" class="eff-reveal">
                         <span>
                             NEWS
                         </span>
                     </a>
                 </li>
-                <li class="menu-item submenu">
+                <li class="menu-item submenu {{ strpos($_page, "download") !== false ? "active" : "" }}">
                     <a href="{{ url("/download") }}" class="eff-reveal">
                         <span>
                             DOWNLOAD
                         </span>
                     </a>
                     <ul class="submenu-group">
-                        <li class="menu-item">
+                        <li class="menu-item {{ strpos($_page, "moon") !== false ? "active" : "" }}">
                             <a href="{{ url("/moon") }}" class="eff-reveal">
                                 <span>
                                     ImageGlass Moon
                                 </span>
                             </a>
                         </li>
-                        <li class="menu-item">
+                        <li class="menu-item {{ strpos($_page, "theme") !== false ? "active" : "" }}">
                             <a href="{{ url("/themes") }}" class="eff-reveal">
                                 <span>
                                     Themes
                                 </span>
                             </a>
                         </li>
-                        <li class="menu-item">
+                        <li class="menu-item {{ strpos($_page, "language") !== false ? "active" : "" }}">
                             <a href="{{ url("/languages") }}" class="eff-reveal">
                                 <span>
                                     Language Packs
@@ -59,28 +59,28 @@
                         </li>
                     </ul>
                 </li>
-                <li class="menu-item">
+                <li class="menu-item {{ strpos($_page, "docs") !== false ? "active" : "" }}">
                     <a href="{{ url("/docs") }}" class="eff-reveal">
                         <span>
                             DOCS
                         </span>
                     </a>
                 </li>
-                <li class="menu-item">
+                <li class="menu-item {{ strpos($_page, "support") !== false ? "active" : "" }}">
                     <a href="{{ url("/support") }}" class="eff-reveal">
                         <span>
                             SUPPORT
                         </span>
                     </a>
                 </li>
-                <li class="menu-item">
+                <li class="menu-item {{ strpos($_page, "source") !== false ? "active" : "" }}">
                     <a href="{{ url("/source") }}" class="eff-reveal">
                         <span>
                             SOURCE
                         </span>
                     </a>
                 </li>
-                <li class="menu-item">
+                <li class="menu-item {{ strpos($_page, "about") !== false ? "active" : "" }}">
                     <a href="{{ url("/about") }}" class="eff-reveal">
                         <span>
                             ABOUT

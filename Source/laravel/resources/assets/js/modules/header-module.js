@@ -5,7 +5,7 @@ import {FluentRevealEffect} from "fluent-reveal-effect"
 function applyRevealEffect() {
     FluentRevealEffect.applyEffect("#header .eff-reveal", {
         clickEffect: true,
-        lightColor: "rgba(255,255,255, 0.1)",
+        lightColor: "rgba(255,255,255, 0.2)",
         gradientSize: 100
     })
 }
