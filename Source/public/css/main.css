@@ -4191,6 +4191,14 @@ body {
             @media (max-width: calc(768px - 1px)) {
               .article-list-section .article-list > .article-item .article-item-content .article-image img {
                 max-height: 3.75rem; } }
+          .article-list-section .article-list > .article-item .article-item-content .article-image.article-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center; }
+            .article-list-section .article-list > .article-item .article-item-content .article-image.article-icon img {
+              width: 6.25rem;
+              height: 6.25rem;
+              max-height: 100%; }
         .article-list-section .article-list > .article-item .article-item-content .article-content p:last-child {
           margin-bottom: 0.41667rem; }
         .article-list-section .article-list > .article-item .article-item-content:hover {

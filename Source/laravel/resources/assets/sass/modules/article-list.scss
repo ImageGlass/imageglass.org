@@ -32,6 +32,18 @@
                             max-height: $gap*3;
                         }
                     }
+
+                    &.article-icon {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        img {
+                            width: $gap*5;
+                            height: $gap*5;
+                            max-height: 100%;
+                        }
+                    }
                 }
 
                 .article-content {

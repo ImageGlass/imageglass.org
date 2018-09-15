@@ -9,8 +9,8 @@
         <li class="col-lg-10 col-xl-9 col-xxl-8 col-hg-6 article-item">
             <article class="eff-reveal-border">
                 <div class="row no-gutters article-item-content eff-reveal">
-                    <a class="col-md-3 article-image" href="{{ url("docs/features") }}" title="Features">
-                        <img src="https://picsum.photos/500/400/?random&id=1" alt="Features">
+                    <a class="col-md-3 article-image article-icon" href="{{ url("docs/features") }}" title="Features">
+                        <img src="{{ url("img/stars.svg") }}" alt="Features">
                     </a>
                     <div class="col-md-9 p-3 article-content">
                         <h3 class="article-title fs-h3">
@@ -30,8 +30,8 @@
         <li class="col-lg-10 col-xl-9 col-xxl-8 col-hg-6 article-item">
             <article class="eff-reveal-border">
                 <div class="row no-gutters article-item-content eff-reveal">
-                    <a class="col-md-3 article-image" href="{{ url("docs/supported-formats") }}" title="Supported formats">
-                        <img src="https://picsum.photos/500/400/?random&id=2" alt="Supported formats">
+                    <a class="col-md-3 article-image article-icon" href="{{ url("docs/supported-formats") }}" title="Supported formats">
+                        <img src="{{ url("img/photo.svg") }}" alt="Supported formats">
                     </a>
                     <div class="col-md-9 p-3 article-content">
                         <h3 class="article-title fs-h3">
@@ -51,8 +51,8 @@
         <li class="col-lg-10 col-xl-9 col-xxl-8 col-hg-6 article-item">
             <article class="eff-reveal-border">
                 <div class="row no-gutters article-item-content eff-reveal">
-                    <a class="col-md-3 article-image" href="{{ url("docs/ui-shortcuts-reference") }}" title="UI Shortcuts Reference">
-                        <img src="https://picsum.photos/500/400/?random&id=3" alt="UI Shortcuts Reference">
+                    <a class="col-md-3 article-image article-icon" href="{{ url("docs/ui-shortcuts-reference") }}" title="UI Shortcuts Reference">
+                        <img src="{{ url("img/keyboard.svg") }}" alt="UI Shortcuts Reference">
                     </a>
                     <div class="col-md-9 p-3 article-content">
                         <h3 class="article-title fs-h3">
@@ -61,8 +61,7 @@
                             </a>
                         </h3>
                         <p>
-                            ImageGlass has several built-in shortcut keys that can save you time in your daily workflows.<br/>
-                            This guide provides a quick reference to each shortcut available in ImageGlass.
+                            ImageGlass has several built-in shortcut keys that can save you time in your daily workflows. This guide provides a quick reference to each shortcut available in ImageGlass.
                         </p>
                     </div>
                 </div>
