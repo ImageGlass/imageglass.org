@@ -119,7 +119,7 @@ dfn {
 
 b,
 strong {
-  font-weight: bold; }
+  font-weight: 600; }
 
 small {
   font-size: 80%; }
@@ -4254,6 +4254,28 @@ body {
           color: #efefef; }
     .aside-article-list ul > li.new-article > a {
       background-color: #1c415e; }
+
+[data-page="support"] .google-group {
+  background-color: #e3e3e3; }
+
+[data-page="support"] .list-support {
+  list-style: none;
+  padding-left: 0; }
+  [data-page="support"] .list-support li {
+    display: inline-flex; }
+    [data-page="support"] .list-support li a {
+      display: flex;
+      color: #efefef; }
+      [data-page="support"] .list-support li a .eff-reveal {
+        display: block;
+        background-color: #313335;
+        text-align: center;
+        padding: 1.25rem;
+        transition: all 200ms ease; }
+      [data-page="support"] .list-support li a .item-icon {
+        font-size: 6.25rem; }
+      [data-page="support"] .list-support li a:hover .eff-reveal {
+        background-color: #36383a; }
 
 
 /*# sourceMappingURL=main.css.map*/

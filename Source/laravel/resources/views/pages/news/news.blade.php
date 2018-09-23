@@ -19,7 +19,7 @@
             $title = $item["title"];
             $updated_at = formatDateTime($item["updated_at"]);
             $img = "https://picsum.photos/500/400/?random&id={$item["id"]}";
-            $desc = $item["description"] ?: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut convallis laoreet pulvinar. Maecenas ac tincidunt velit. Duis tortor lectus, placerat id orci cong.";
+            $desc = $item["description"];
             $totalDays = getTotalDays($item["updated_at"]);
         @endphp
 

@@ -27398,6 +27398,10 @@ var _docsPage = __webpack_require__(/*! ./pages/docs-page */ "./resources/assets
 
 var _docsPage2 = _interopRequireDefault(_docsPage);
 
+var _supportPage = __webpack_require__(/*! ./pages/support-page */ "./resources/assets/js/pages/support-page.js");
+
+var _supportPage2 = _interopRequireDefault(_supportPage);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _asyncToGenerator3.default)( /*#__PURE__*/_regenerator2.default.mark(function _callee() {
@@ -27410,30 +27414,34 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
                     _headerModule2.default.initModule();
                     currentPage = document.getElementsByTagName("html")[0].getAttribute("data-page");
                     _context.t0 = currentPage;
-                    _context.next = _context.t0 === "news" ? 5 : _context.t0 === "news.details" ? 7 : _context.t0 === "docs" ? 9 : _context.t0 === "home" ? 11 : 11;
+                    _context.next = _context.t0 === "news" ? 5 : _context.t0 === "news.details" ? 7 : _context.t0 === "docs" ? 9 : _context.t0 === "support" ? 11 : _context.t0 === "home" ? 13 : 13;
                     break;
 
                 case 5:
                     // code for news page
                     window._currentPage = new _newsPage2.default();
-                    return _context.abrupt("break", 13);
+                    return _context.abrupt("break", 15);
 
                 case 7:
                     // code for news page
                     window._currentPage = new _newsDetailsPage2.default();
-                    return _context.abrupt("break", 13);
+                    return _context.abrupt("break", 15);
 
                 case 9:
                     // code for docs page
                     window._currentPage = new _docsPage2.default();
-                    return _context.abrupt("break", 13);
+                    return _context.abrupt("break", 15);
 
                 case 11:
-                    // code for home page
-                    window._currentPage = new _homePage2.default();
-                    return _context.abrupt("break", 13);
+                    window._currentPage = new _supportPage2.default();
+                    return _context.abrupt("break", 15);
 
                 case 13:
+                    // code for home page
+                    window._currentPage = new _homePage2.default();
+                    return _context.abrupt("break", 15);
+
+                case 15:
                 case "end":
                     return _context.stop();
             }
@@ -27939,6 +27947,70 @@ var NewsPage = function NewsPage() {
 };
 
 exports.default = NewsPage;
+
+/***/ }),
+
+/***/ "./resources/assets/js/pages/support-page.js":
+/*!***************************************************!*\
+  !*** ./resources/assets/js/pages/support-page.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+				value: true
+});
+
+var _classCallCheck2 = __webpack_require__(/*! babel-runtime/helpers/classCallCheck */ "./node_modules/babel-runtime/helpers/classCallCheck.js");
+
+var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+var _createClass2 = __webpack_require__(/*! babel-runtime/helpers/createClass */ "./node_modules/babel-runtime/helpers/createClass.js");
+
+var _createClass3 = _interopRequireDefault(_createClass2);
+
+var _fluentRevealEffect = __webpack_require__(/*! fluent-reveal-effect */ "./node_modules/fluent-reveal-effect/index.js");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function applyRevealEffect() {
+				_fluentRevealEffect.FluentRevealEffect.applyEffect("#body", {
+								clickEffect: true,
+								lightColor: "rgba(255,255,255, 0.3)",
+								gradientSize: 200,
+								isContainer: true,
+								children: {
+												borderSelector: ".eff-reveal-border",
+												elementSelector: ".eff-reveal",
+												lightColor: "rgba(255,255,255, 0.1)",
+												gradientSize: 250
+								}
+				});
+}
+
+var SupportPage = function () {
+				function SupportPage() {
+								(0, _classCallCheck3.default)(this, SupportPage);
+
+
+								this.loadGoogleGroupIframe();
+
+								applyRevealEffect();
+				}
+
+				(0, _createClass3.default)(SupportPage, [{
+								key: "loadGoogleGroupIframe",
+								value: function loadGoogleGroupIframe() {
+												document.getElementById("forum_embed").src = "https://groups.google.com/forum/embed/?place=forum/imageglass&showsearch=true&showpopout=true&showtabs=false&parenturl=" + encodeURIComponent(window.location.href);
+								}
+				}]);
+				return SupportPage;
+}();
+
+exports.default = SupportPage;
 
 /***/ }),
 
