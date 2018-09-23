@@ -51,6 +51,7 @@ body {
 	line-height: normal;
 	color: $color-text-1;
 	text-align: left;
+	animation: slideInDown 1000ms ease;
 }
 
 [tabindex="-1"]:focus {

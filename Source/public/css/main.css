@@ -55,7 +55,8 @@ body {
   font-weight: 400;
   line-height: normal;
   color: #efefef;
-  text-align: left; }
+  text-align: left;
+  animation: slideInDown 1000ms ease; }
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -3286,6 +3287,14 @@ template {
     background-position: 100% 50%; }
   100% {
     background-position: 0% 50%; } }
+
+@keyframes slideInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-2.5rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
 
 @font-face {
   font-family: "icomoon";
