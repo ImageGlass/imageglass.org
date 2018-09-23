@@ -3482,6 +3482,16 @@ template {
 .slick-arrow.slick-hidden {
   display: none; }
 
+table > tbody > tr {
+  border-top: 0.08333rem solid #404344; }
+  table > tbody > tr > td {
+    padding: 0.625rem;
+    border-left: 0.08333rem solid #404344; }
+    table > tbody > tr > td:last-child {
+      border-right: 0.08333rem solid #404344; }
+  table > tbody > tr:last-child {
+    border-bottom: 0.08333rem solid #404344; }
+
 .eff-reveal-border {
   display: inline-block;
   padding: 0.08929rem; }

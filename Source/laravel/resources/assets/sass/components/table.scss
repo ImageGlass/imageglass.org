@@ -1,0 +1,23 @@
+table {
+
+    &> tbody {
+        &> tr {
+            border-top: $gap/15 solid lighten($color-bg, 10);
+
+            &> td {
+                padding: $gap/2;
+                border-left: $gap/15 solid lighten($color-bg, 10);
+
+                &:last-child {
+                    border-right: $gap/15 solid lighten($color-bg, 10);
+                }
+            }
+
+
+            &:last-child {
+                border-bottom: $gap/15 solid lighten($color-bg, 10);
+            }
+        }
+    }
+
+}

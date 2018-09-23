@@ -27358,6 +27358,103 @@ module.exports = g;
 
 /***/ }),
 
+/***/ "./resources/assets/js/helpers/github-repo-info.js":
+/*!*********************************************************!*\
+  !*** ./resources/assets/js/helpers/github-repo-info.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _regenerator = __webpack_require__(/*! babel-runtime/regenerator */ "./node_modules/babel-runtime/regenerator/index.js");
+
+var _regenerator2 = _interopRequireDefault(_regenerator);
+
+var _asyncToGenerator2 = __webpack_require__(/*! babel-runtime/helpers/asyncToGenerator */ "./node_modules/babel-runtime/helpers/asyncToGenerator.js");
+
+var _asyncToGenerator3 = _interopRequireDefault(_asyncToGenerator2);
+
+var _classCallCheck2 = __webpack_require__(/*! babel-runtime/helpers/classCallCheck */ "./node_modules/babel-runtime/helpers/classCallCheck.js");
+
+var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+var _createClass2 = __webpack_require__(/*! babel-runtime/helpers/createClass */ "./node_modules/babel-runtime/helpers/createClass.js");
+
+var _createClass3 = _interopRequireDefault(_createClass2);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var GithubRepoInfo = function () {
+    function GithubRepoInfo(repo) {
+        (0, _classCallCheck3.default)(this, GithubRepoInfo);
+
+        this.repo = repo;
+        this.getRepoInfo = this.getRepoInfo.bind(this);
+    }
+
+    /**
+     * Get Repository information
+     */
+
+
+    (0, _createClass3.default)(GithubRepoInfo, [{
+        key: "getRepoInfo",
+        value: function () {
+            var _ref = (0, _asyncToGenerator3.default)( /*#__PURE__*/_regenerator2.default.mark(function _callee() {
+                var resp;
+                return _regenerator2.default.wrap(function _callee$(_context) {
+                    while (1) {
+                        switch (_context.prev = _context.next) {
+                            case 0:
+                                _context.prev = 0;
+                                _context.next = 3;
+                                return fetch("https://api.github.com/repos/" + this.repo);
+
+                            case 3:
+                                _context.next = 5;
+                                return _context.sent.json();
+
+                            case 5:
+                                resp = _context.sent;
+                                return _context.abrupt("return", resp);
+
+                            case 9:
+                                _context.prev = 9;
+                                _context.t0 = _context["catch"](0);
+
+                                console.log("***ERROR: ", _context.t0);
+
+                            case 12:
+                                return _context.abrupt("return", null);
+
+                            case 13:
+                            case "end":
+                                return _context.stop();
+                        }
+                    }
+                }, _callee, this, [[0, 9]]);
+            }));
+
+            function getRepoInfo() {
+                return _ref.apply(this, arguments);
+            }
+
+            return getRepoInfo;
+        }()
+    }]);
+    return GithubRepoInfo;
+}();
+
+exports.default = GithubRepoInfo;
+
+/***/ }),
+
 /***/ "./resources/assets/js/main.js":
 /*!*************************************!*\
   !*** ./resources/assets/js/main.js ***!
@@ -27402,6 +27499,10 @@ var _supportPage = __webpack_require__(/*! ./pages/support-page */ "./resources/
 
 var _supportPage2 = _interopRequireDefault(_supportPage);
 
+var _sourcePage = __webpack_require__(/*! ./pages/source-page */ "./resources/assets/js/pages/source-page.js");
+
+var _sourcePage2 = _interopRequireDefault(_sourcePage);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _asyncToGenerator3.default)( /*#__PURE__*/_regenerator2.default.mark(function _callee() {
@@ -27414,34 +27515,38 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
                     _headerModule2.default.initModule();
                     currentPage = document.getElementsByTagName("html")[0].getAttribute("data-page");
                     _context.t0 = currentPage;
-                    _context.next = _context.t0 === "news" ? 5 : _context.t0 === "news.details" ? 7 : _context.t0 === "docs" ? 9 : _context.t0 === "support" ? 11 : _context.t0 === "home" ? 13 : 13;
+                    _context.next = _context.t0 === "news" ? 5 : _context.t0 === "news.details" ? 7 : _context.t0 === "docs" ? 9 : _context.t0 === "support" ? 11 : _context.t0 === "source" ? 13 : _context.t0 === "home" ? 15 : 15;
                     break;
 
                 case 5:
                     // code for news page
                     window._currentPage = new _newsPage2.default();
-                    return _context.abrupt("break", 15);
+                    return _context.abrupt("break", 17);
 
                 case 7:
                     // code for news page
                     window._currentPage = new _newsDetailsPage2.default();
-                    return _context.abrupt("break", 15);
+                    return _context.abrupt("break", 17);
 
                 case 9:
                     // code for docs page
                     window._currentPage = new _docsPage2.default();
-                    return _context.abrupt("break", 15);
+                    return _context.abrupt("break", 17);
 
                 case 11:
                     window._currentPage = new _supportPage2.default();
-                    return _context.abrupt("break", 15);
+                    return _context.abrupt("break", 17);
 
                 case 13:
-                    // code for home page
-                    window._currentPage = new _homePage2.default();
-                    return _context.abrupt("break", 15);
+                    window._currentPage = new _sourcePage2.default();
+                    return _context.abrupt("break", 17);
 
                 case 15:
+                    // code for home page
+                    window._currentPage = new _homePage2.default();
+                    return _context.abrupt("break", 17);
+
+                case 17:
                 case "end":
                     return _context.stop();
             }
@@ -27947,6 +28052,110 @@ var NewsPage = function NewsPage() {
 };
 
 exports.default = NewsPage;
+
+/***/ }),
+
+/***/ "./resources/assets/js/pages/source-page.js":
+/*!**************************************************!*\
+  !*** ./resources/assets/js/pages/source-page.js ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _regenerator = __webpack_require__(/*! babel-runtime/regenerator */ "./node_modules/babel-runtime/regenerator/index.js");
+
+var _regenerator2 = _interopRequireDefault(_regenerator);
+
+var _asyncToGenerator2 = __webpack_require__(/*! babel-runtime/helpers/asyncToGenerator */ "./node_modules/babel-runtime/helpers/asyncToGenerator.js");
+
+var _asyncToGenerator3 = _interopRequireDefault(_asyncToGenerator2);
+
+var _classCallCheck2 = __webpack_require__(/*! babel-runtime/helpers/classCallCheck */ "./node_modules/babel-runtime/helpers/classCallCheck.js");
+
+var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+var _createClass2 = __webpack_require__(/*! babel-runtime/helpers/createClass */ "./node_modules/babel-runtime/helpers/createClass.js");
+
+var _createClass3 = _interopRequireDefault(_createClass2);
+
+var _articleListModule = __webpack_require__(/*! ../modules/aside/article-list-module */ "./resources/assets/js/modules/aside/article-list-module.js");
+
+var _articleListModule2 = _interopRequireDefault(_articleListModule);
+
+var _githubRepoInfo = __webpack_require__(/*! ../helpers/github-repo-info */ "./resources/assets/js/helpers/github-repo-info.js");
+
+var _githubRepoInfo2 = _interopRequireDefault(_githubRepoInfo);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var SourcePage = function () {
+    function SourcePage() {
+        (0, _classCallCheck3.default)(this, SourcePage);
+
+        _articleListModule2.default.initModule();
+
+        // load repository info
+        this.loadGithubInfo();
+    }
+
+    /**
+     * load repository info
+     */
+
+
+    (0, _createClass3.default)(SourcePage, [{
+        key: "loadGithubInfo",
+        value: function () {
+            var _ref = (0, _asyncToGenerator3.default)( /*#__PURE__*/_regenerator2.default.mark(function _callee() {
+                var repo, resp, repoStars, repoFolks, repoLicense;
+                return _regenerator2.default.wrap(function _callee$(_context) {
+                    while (1) {
+                        switch (_context.prev = _context.next) {
+                            case 0:
+                                repo = new _githubRepoInfo2.default("d2phap/ImageGlass");
+                                _context.next = 3;
+                                return repo.getRepoInfo();
+
+                            case 3:
+                                resp = _context.sent;
+                                repoStars = document.getElementById("repoStars");
+
+                                repoStars.innerHTML = resp.watchers_count + "\u2B50";
+
+                                repoFolks = document.getElementById("repoFolks");
+
+                                repoFolks.innerHTML = resp.forks_count;
+
+                                repoLicense = document.getElementById("repoLicense");
+
+                                repoLicense.innerHTML = resp.license.name;
+
+                            case 10:
+                            case "end":
+                                return _context.stop();
+                        }
+                    }
+                }, _callee, this);
+            }));
+
+            function loadGithubInfo() {
+                return _ref.apply(this, arguments);
+            }
+
+            return loadGithubInfo;
+        }()
+    }]);
+    return SourcePage;
+}();
+
+exports.default = SourcePage;
 
 /***/ }),
 

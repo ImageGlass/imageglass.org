@@ -7,6 +7,7 @@ import NewsPage from "./pages/news-page"
 import NewsDetailsPage from "./pages/news-details-page"
 import DocsPage from "./pages/docs-page"
 import SupportPage from "./pages/support-page"
+import SourcePage from "./pages/source-page"
 
 
 ;(async () => {
@@ -33,6 +34,10 @@ import SupportPage from "./pages/support-page"
 
         case "support":
             window._currentPage = new SupportPage()
+            break
+
+        case "source":
+            window._currentPage = new SourcePage()
             break
 
 
