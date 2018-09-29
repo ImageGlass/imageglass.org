@@ -2451,6 +2451,12 @@ template {
 .fw-light {
   font-weight: 200 !important; }
 
+.text-color-1 {
+  color: #2998ac !important; }
+
+.text-color-2 {
+  color: #3c58ad !important; }
+
 .container {
   width: 100%;
   padding-right: 1.25rem;
