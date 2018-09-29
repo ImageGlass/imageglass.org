@@ -47,7 +47,7 @@ body {
 		"Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
 		"Segoe UI Emoji", "Segoe UI Symbol";
 	font-size: 1rem;
-	font-weight: 400;
+	font-weight: $fw-normal;
 	line-height: normal;
 	color: $color-text-1;
 	text-align: left;
@@ -128,7 +128,7 @@ dfn {
 
 b,
 strong {
-	font-weight: 600;
+	font-weight: $fw-bold;
 }
 
 small {
@@ -153,6 +153,7 @@ sup {
 
 a {
 	color: $color-1;
+	font-weight: $fw-bold;
 	text-decoration: none;
 	background-color: transparent;
 	-webkit-text-decoration-skip: objects;

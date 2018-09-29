@@ -10,7 +10,7 @@ function applyRevealEffect() {
 		children: {
 			borderSelector: ".eff-reveal-border",
 			elementSelector: ".eff-reveal",
-			lightColor: "rgba(255,255,255, 0.1)",
+			lightColor: "rgba(255,255,255, 0.15)",
 			gradientSize: 200
 		}
 	})

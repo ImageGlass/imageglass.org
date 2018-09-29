@@ -1,0 +1,41 @@
+[data-page="about"] {
+
+    .intro {
+        font-size: $fs-h3;
+        // line-height: 2.5rem;
+        font-weight: $fw-light;
+    }
+    .avt {
+        float: right;
+        position: relative;
+        margin-top: -$gap*5;
+        margin-left: $gap;
+        width: $gap*10;
+        border-radius: $gap*10;
+        border: $gap/10 solid $color-light;
+        box-shadow: 0 0 $gap/5 0 rgba($color-dark, 0.1);
+    }
+    .personal-info ul {
+        padding-left: 0;
+        list-style: none;
+
+        &> li {
+            margin-bottom: $gap/2;
+            padding-left: $gap*1.5;
+            position: relative;
+
+            &::before {
+                content: "";
+                width: $gap/4;
+                height: $gap/4;
+                position: absolute;
+                border-top: $gap/15 solid $color-text-1;
+                border-right: $gap/15 solid $color-text-1;
+                left: $gap/2;
+                top: $gap/2;
+                transform: rotate(45deg);
+            }
+        }
+    }
+
+}

@@ -5,5 +5,11 @@
 
     &> .eff-reveal {
         display: block;
+        transition: all 200ms ease;
+    }
+
+    &:active {
+        transform: scale(0.98);
+        transition: all 70ms ease;
     }
 }

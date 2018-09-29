@@ -52,7 +52,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 200;
   line-height: normal;
   color: #efefef;
   text-align: left;
@@ -120,7 +120,7 @@ dfn {
 
 b,
 strong {
-  font-weight: 600; }
+  font-weight: 400; }
 
 small {
   font-size: 80%; }
@@ -140,6 +140,7 @@ sup {
 
 a {
   color: #2998ac;
+  font-weight: 400;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects; }
@@ -2439,13 +2440,13 @@ template {
   font-size: 0.75rem !important; }
 
 .fw-bolder {
-  font-weight: 800 !important; }
-
-.fw-bold {
   font-weight: 600 !important; }
 
-.fw-normal {
+.fw-bold {
   font-weight: 400 !important; }
+
+.fw-normal {
+  font-weight: 200 !important; }
 
 .fw-light {
   font-weight: 200 !important; }
@@ -3505,7 +3506,11 @@ table > tbody > tr {
   display: inline-block;
   padding: 0.08929rem; }
   .eff-reveal-border > .eff-reveal {
-    display: block; }
+    display: block;
+    transition: all 200ms ease; }
+  .eff-reveal-border:active {
+    transform: scale(0.98);
+    transition: all 70ms ease; }
 
 #body a {
   text-decoration: none; }
@@ -3648,7 +3653,7 @@ table > tbody > tr {
     .quote-item .blockquote-footer::before {
       content: "\2014   \A0"; }
     .quote-item .blockquote-footer .author {
-      font-weight: 600; }
+      font-weight: 400; }
 
 .bg-box {
   background: url(https://picsum.photos/1366/1200/?random) no-repeat center center fixed;
@@ -4295,6 +4300,38 @@ body {
         font-size: 6.25rem; }
       [data-page="support"] .list-support li a:hover .eff-reveal {
         background-color: #36383a; }
+
+[data-page="about"] .intro {
+  font-size: 1.5rem;
+  font-weight: 200; }
+
+[data-page="about"] .avt {
+  float: right;
+  position: relative;
+  margin-top: -6.25rem;
+  margin-left: 1.25rem;
+  width: 12.5rem;
+  border-radius: 12.5rem;
+  border: 0.125rem solid #fff;
+  box-shadow: 0 0 0.25rem 0 rgba(0, 0, 0, 0.1); }
+
+[data-page="about"] .personal-info ul {
+  padding-left: 0;
+  list-style: none; }
+  [data-page="about"] .personal-info ul > li {
+    margin-bottom: 0.625rem;
+    padding-left: 1.875rem;
+    position: relative; }
+    [data-page="about"] .personal-info ul > li::before {
+      content: "";
+      width: 0.3125rem;
+      height: 0.3125rem;
+      position: absolute;
+      border-top: 0.08333rem solid #efefef;
+      border-right: 0.08333rem solid #efefef;
+      left: 0.625rem;
+      top: 0.625rem;
+      transform: rotate(45deg); }
 
 
 /*# sourceMappingURL=main.css.map*/

@@ -27503,6 +27503,10 @@ var _sourcePage = __webpack_require__(/*! ./pages/source-page */ "./resources/as
 
 var _sourcePage2 = _interopRequireDefault(_sourcePage);
 
+var _aboutPage = __webpack_require__(/*! ./pages/about-page */ "./resources/assets/js/pages/about-page.js");
+
+var _aboutPage2 = _interopRequireDefault(_aboutPage);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _asyncToGenerator3.default)( /*#__PURE__*/_regenerator2.default.mark(function _callee() {
@@ -27515,38 +27519,39 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
                     _headerModule2.default.initModule();
                     currentPage = document.getElementsByTagName("html")[0].getAttribute("data-page");
                     _context.t0 = currentPage;
-                    _context.next = _context.t0 === "news" ? 5 : _context.t0 === "news.details" ? 7 : _context.t0 === "docs" ? 9 : _context.t0 === "support" ? 11 : _context.t0 === "source" ? 13 : _context.t0 === "home" ? 15 : 15;
+                    _context.next = _context.t0 === "news" ? 5 : _context.t0 === "news.details" ? 7 : _context.t0 === "docs" ? 9 : _context.t0 === "support" ? 11 : _context.t0 === "source" ? 13 : _context.t0 === "about" ? 15 : _context.t0 === "home" ? 17 : 17;
                     break;
 
                 case 5:
-                    // code for news page
                     window._currentPage = new _newsPage2.default();
-                    return _context.abrupt("break", 17);
+                    return _context.abrupt("break", 19);
 
                 case 7:
-                    // code for news page
                     window._currentPage = new _newsDetailsPage2.default();
-                    return _context.abrupt("break", 17);
+                    return _context.abrupt("break", 19);
 
                 case 9:
-                    // code for docs page
                     window._currentPage = new _docsPage2.default();
-                    return _context.abrupt("break", 17);
+                    return _context.abrupt("break", 19);
 
                 case 11:
                     window._currentPage = new _supportPage2.default();
-                    return _context.abrupt("break", 17);
+                    return _context.abrupt("break", 19);
 
                 case 13:
                     window._currentPage = new _sourcePage2.default();
-                    return _context.abrupt("break", 17);
+                    return _context.abrupt("break", 19);
 
                 case 15:
-                    // code for home page
-                    window._currentPage = new _homePage2.default();
-                    return _context.abrupt("break", 17);
+                    window._currentPage = new _aboutPage2.default();
+                    return _context.abrupt("break", 19);
 
                 case 17:
+                    // code for home page
+                    window._currentPage = new _homePage2.default();
+                    return _context.abrupt("break", 19);
+
+                case 19:
                 case "end":
                     return _context.stop();
             }
@@ -27591,7 +27596,7 @@ function applyRevealEffect() {
 								children: {
 												borderSelector: ".eff-reveal-border",
 												elementSelector: ".eff-reveal",
-												lightColor: "rgba(255,255,255, 0.1)",
+												lightColor: "rgba(255,255,255, 0.15)",
 												gradientSize: 200
 								}
 				});
@@ -27878,6 +27883,40 @@ var HomeTopModule = function () {
 }();
 
 exports.default = HomeTopModule;
+
+/***/ }),
+
+/***/ "./resources/assets/js/pages/about-page.js":
+/*!*************************************************!*\
+  !*** ./resources/assets/js/pages/about-page.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _classCallCheck2 = __webpack_require__(/*! babel-runtime/helpers/classCallCheck */ "./node_modules/babel-runtime/helpers/classCallCheck.js");
+
+var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+var _articleListModule = __webpack_require__(/*! ../modules/aside/article-list-module */ "./resources/assets/js/modules/aside/article-list-module.js");
+
+var _articleListModule2 = _interopRequireDefault(_articleListModule);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var AboutPage = function AboutPage() {
+    (0, _classCallCheck3.default)(this, AboutPage);
+
+    _articleListModule2.default.initModule();
+};
+
+exports.default = AboutPage;
 
 /***/ }),
 

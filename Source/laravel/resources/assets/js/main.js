@@ -8,6 +8,7 @@ import NewsDetailsPage from "./pages/news-details-page"
 import DocsPage from "./pages/docs-page"
 import SupportPage from "./pages/support-page"
 import SourcePage from "./pages/source-page"
+import AboutPage from "./pages/about-page"
 
 
 ;(async () => {
@@ -18,17 +19,14 @@ import SourcePage from "./pages/source-page"
     switch (currentPage) {
 
         case "news":
-            // code for news page
             window._currentPage = new NewsPage()
             break
 
         case "news.details":
-            // code for news page
             window._currentPage = new NewsDetailsPage()
             break
 
         case "docs":
-            // code for docs page
             window._currentPage = new DocsPage()
             break
 
@@ -38,6 +36,10 @@ import SourcePage from "./pages/source-page"
 
         case "source":
             window._currentPage = new SourcePage()
+            break
+
+        case "about":
+            window._currentPage = new AboutPage()
             break
 
 
