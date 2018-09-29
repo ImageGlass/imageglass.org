@@ -65,8 +65,8 @@ Route::get('/moon', 'DownloadController@moon_listing');
 Route::get('/languages', 'DownloadController@language_listing');
 
 Route::get('/themes', 'DownloadController@theme_listing');
-Route::get('/themes/{slug}', 'DownloadController@theme_details')->where(array('slug' => NUMBER_TEXT));
-Route::get('/themes/{slug}/download', 'DownloadController@theme_download')->where(array('slug' => NUMBER_TEXT));
+Route::get('/theme/{slug}', 'DownloadController@theme_details')->where(array('slug' => NUMBER_TEXT));
+Route::get('/theme/{slug}/download', 'DownloadController@theme_download')->where(array('slug' => NUMBER_TEXT));
 
 
 

@@ -9,6 +9,7 @@ import DocsPage from "./pages/docs-page"
 import SupportPage from "./pages/support-page"
 import SourcePage from "./pages/source-page"
 import AboutPage from "./pages/about-page"
+import ThemePage from "./pages/theme-page"
 
 
 ;(async () => {
@@ -28,6 +29,10 @@ import AboutPage from "./pages/about-page"
 
         case "docs":
             window._currentPage = new DocsPage()
+            break
+
+        case "theme":
+            window._currentPage = new ThemePage()
             break
 
         case "support":

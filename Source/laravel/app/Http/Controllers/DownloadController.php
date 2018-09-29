@@ -14,8 +14,7 @@ class DownloadController extends Controller
     }
 
 
-    public function release_details($slug)
-	{
+    public function release_details($slug) {
         $id = $this->getIdFromSlug($slug);
 
         if ($id < 0) {
@@ -39,4 +38,28 @@ class DownloadController extends Controller
 		return view("pages.download.release-details")->with($this->data);
     }
     
+
+
+    public function theme_listing() {
+        // get the latest theme items
+        $theme_collection = $this::getRequest("/api/themes", array("limit" => "10"));
+        // dd($theme_collection);
+
+        // page data
+		$this->data["theme_collection"] = $theme_collection;
+
+
+        // meta tags
+        $this->data["_page"] = "theme";
+        $this->data["_title"] = "Download ImageGlass theme packs | " .  $this->data["_name"];
+        $this->data["_description"] = "The beautiful theme packs to change the look of the interface of ImageGlass";
+        $this->data["_keywords"] .= "theme, lastest update";
+		$this->data["_thumbnail"] = "https://picsum.photos/1200/630/?random";
+
+        return view("pages.theme.theme")->with($this->data);
+    }
+
+
+
+
 }
