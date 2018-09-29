@@ -6,6 +6,7 @@ import HomePage from "./pages/home-page"
 import NewsPage from "./pages/news-page"
 import NewsDetailsPage from "./pages/news-details-page"
 import DocsPage from "./pages/docs-page"
+import DocsDetailsPage from "./pages/docs-details-page"
 import SupportPage from "./pages/support-page"
 import SourcePage from "./pages/source-page"
 import AboutPage from "./pages/about-page"
@@ -30,6 +31,10 @@ import LanguagePage from "./pages/language-page"
 
         case "docs":
             window._currentPage = new DocsPage()
+            break
+
+        case "docs.details":
+            window._currentPage = new DocsDetailsPage()
             break
 
         case "download.theme":

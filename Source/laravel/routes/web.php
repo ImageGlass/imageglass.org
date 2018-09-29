@@ -78,7 +78,7 @@ Route::get('/theme/{slug}/download', 'DownloadController@theme_download')->where
 */
 Route::get('/docs', 'DocsController@index');
 Route::get('/docs/{slug}', 'DocsController@documentation_details')->where(array('slug' => NUMBER_TEXT));
-
+Route::get('/documentation/{slug}', 'DocsController@documentation_redirect')->where(array('slug' => NUMBER_TEXT)); // for backward compatibility
 
 
 /*
