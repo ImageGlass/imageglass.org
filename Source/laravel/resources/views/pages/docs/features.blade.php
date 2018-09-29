@@ -20,7 +20,7 @@
             </div>
 
 
-            <h4 id="image-viewing" class="mt-5 mb-3 fs-h3">Image viewing</h4>
+            <h3 id="image-viewing" class="mt-5 mb-3 fs-h3">Image viewing</h3>
             <ul>
                 <li>Supports over <a href="{{ url('/documentation/supported-formats') }}" title="View all supported image formats" target="_blank">70+ common image formats</a>, including PNG, GIF, SVG*, WEBP*, HEIC, RAW,...</li>
                 <li>Losslessly rotate / save the viewing image.</li>
@@ -47,7 +47,7 @@
             </ul>
 
 
-            <h4 id="image-editing" class="mt-5 mb-3 fs-h3">Image editing</h4>
+            <h3 id="image-editing" class="mt-5 mb-3 fs-h3">Image editing</h3>
             <p>ImageGlass is aimed to be an lightweight, versatile <i>image viewer</i>, Edit function will open an external associated application.</p>
             <p>There are a lot of awesome apps for better editing feature. We are happy to provide you a quick look of those image formats.</p>
 

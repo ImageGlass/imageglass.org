@@ -191,12 +191,12 @@ samp {
 code {
 	display: inline-block;
 	margin-right: $gapem/5;
-	background-color: $color-dark;
+	background-color: $color-2;
 	font-size: 90%;
 	padding: $gapem/5 $gapem/3;
 	border: $gapem/15 solid rgba($color-text-1, 0.5);
 	box-shadow: $gapem/5 $gapem/5 0 0 #000;
-	color: #af00db;
+	color: $color-light;
 }
 kbd {
 	display: inline-block;

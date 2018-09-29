@@ -171,12 +171,12 @@ samp {
 code {
   display: inline-block;
   margin-right: 0.25em;
-  background-color: #000;
+  background-color: #3c58ad;
   font-size: 90%;
   padding: 0.25em 0.41667em;
   border: 0.08333em solid rgba(239, 239, 239, 0.5);
   box-shadow: 0.25em 0.25em 0 0 #000;
-  color: #af00db; }
+  color: #fff; }
 
 kbd {
   display: inline-block;
@@ -3492,15 +3492,27 @@ template {
 .slick-arrow.slick-hidden {
   display: none; }
 
-table > tbody > tr {
+table tr {
   border-top: 0.08333rem solid #404344; }
-  table > tbody > tr > td {
+  table tr > th,
+  table tr > td {
     padding: 0.625rem;
-    border-left: 0.08333rem solid #404344; }
-    table > tbody > tr > td:last-child {
+    border-left: 0.08333rem solid #404344;
+    transition: all ease 200ms; }
+    table tr > th:last-child,
+    table tr > td:last-child {
       border-right: 0.08333rem solid #404344; }
-  table > tbody > tr:last-child {
+  table tr > th {
+    font-weight: 400;
+    background-color: rgba(41, 152, 172, 0.15); }
+  table tr:last-child {
     border-bottom: 0.08333rem solid #404344; }
+
+table.table-striped tr:nth-child(2n+1) > td {
+  background-color: #232526; }
+
+table.table-hover tr:hover > td {
+  background-color: #333637; }
 
 .eff-reveal-border {
   display: inline-block;
