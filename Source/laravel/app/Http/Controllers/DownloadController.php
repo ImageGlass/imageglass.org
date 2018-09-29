@@ -51,15 +51,35 @@ class DownloadController extends Controller
 
         // meta tags
         $this->data["_page"] = "theme";
-        $this->data["_title"] = "Download ImageGlass theme packs | " .  $this->data["_name"];
+        $this->data["_title"] = "Download ImageGlass Theme Packs | " .  $this->data["_name"];
         $this->data["_description"] = "The beautiful theme packs to change the look of the interface of ImageGlass";
         $this->data["_keywords"] .= "theme, lastest update";
 		$this->data["_thumbnail"] = "https://picsum.photos/1200/630/?random";
 
-        return view("pages.theme.theme")->with($this->data);
+        return view("pages.download.themes")->with($this->data);
     }
 
 
+
+    public function language_listing() {
+        $url = "https://api.crowdin.com/api/project/imageglass/status?key=0b08634573c456476345efa8bad174f2&json";
+
+        // get the latest theme items
+        // $theme_collection = $this::getRequest($url, array("key" => "0b08634573c456476345efa8bad174f2", "json" => ""), true);
+        // dd($theme_collection);
+        
+        // page data
+		// $this->data["theme_collection"] = $theme_collection;
+
+        // meta tags
+        $this->data["_page"] = "language";
+        $this->data["_title"] = "Download ImageGlass Language Packs | " .  $this->data["_name"];
+        $this->data["_description"] = "Download all language packs of ImageGlass";
+        $this->data["_keywords"] .= "language pack, localization, translation";
+		$this->data["_thumbnail"] = "https://picsum.photos/1200/630/?random";
+
+        return view("pages.download.languages")->with($this->data);
+    }
 
 
 }

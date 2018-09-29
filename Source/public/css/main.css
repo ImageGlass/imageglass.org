@@ -4279,6 +4279,20 @@ body {
     .aside-article-list ul > li.new-article > a {
       background-color: #1c415e; }
 
+.language-list .language-item {
+  margin-bottom: 1.25rem; }
+  .language-list .language-item .eff-reveal-border {
+    display: flex;
+    flex-direction: column; }
+    .language-list .language-item .eff-reveal-border .eff-reveal {
+      display: block;
+      padding: 1.25rem;
+      background-color: #27292a;
+      text-align: center;
+      transition: all ease 200ms; }
+      .language-list .language-item .eff-reveal-border .eff-reveal:hover {
+        background-color: #2e3132; }
+
 [data-page="support"] .google-group {
   background-color: #e3e3e3; }
 

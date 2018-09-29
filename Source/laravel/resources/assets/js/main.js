@@ -10,6 +10,7 @@ import SupportPage from "./pages/support-page"
 import SourcePage from "./pages/source-page"
 import AboutPage from "./pages/about-page"
 import ThemePage from "./pages/theme-page"
+import LanguagePage from "./pages/language-page"
 
 
 ;(async () => {
@@ -33,6 +34,10 @@ import ThemePage from "./pages/theme-page"
 
         case "theme":
             window._currentPage = new ThemePage()
+            break
+
+        case "language":
+            window._currentPage = new LanguagePage()
             break
 
         case "support":

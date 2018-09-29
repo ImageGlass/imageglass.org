@@ -7,6 +7,7 @@
 		"test": "tests"
 	},
 	"dependencies": {
+		"axios": "^0.18.0",
 		"jquery": "^3.3.1",
 		"optimize-css-assets-webpack-plugin": "^5.0.0"
 	},

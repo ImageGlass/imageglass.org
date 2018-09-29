@@ -1,0 +1,25 @@
+.language-list {
+
+
+    .language-item {
+        margin-bottom: $gap;
+
+        .eff-reveal-border {
+            display: flex;
+            flex-direction: column;
+
+            .eff-reveal {
+                display: block;
+                padding: $gap;
+                background-color: $color-bg;
+                text-align: center;
+                transition: all ease 200ms;
+
+                &:hover {
+                    background-color: lighten($color-bg, 3);
+                }
+            }
+        }
+        
+    }
+}
