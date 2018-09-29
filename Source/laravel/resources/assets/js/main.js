@@ -32,11 +32,11 @@ import LanguagePage from "./pages/language-page"
             window._currentPage = new DocsPage()
             break
 
-        case "theme":
+        case "download.theme":
             window._currentPage = new ThemePage()
             break
 
-        case "language":
+        case "download.language":
             window._currentPage = new LanguagePage()
             break
 

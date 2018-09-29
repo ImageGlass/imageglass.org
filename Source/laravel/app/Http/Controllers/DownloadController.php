@@ -50,7 +50,7 @@ class DownloadController extends Controller
 
 
         // meta tags
-        $this->data["_page"] = "theme";
+        $this->data["_page"] = "download.theme";
         $this->data["_title"] = "Download ImageGlass Theme Packs | " .  $this->data["_name"];
         $this->data["_description"] = "The beautiful theme packs to change the look of the interface of ImageGlass";
         $this->data["_keywords"] .= "theme, lastest update";
@@ -72,7 +72,7 @@ class DownloadController extends Controller
 		// $this->data["theme_collection"] = $theme_collection;
 
         // meta tags
-        $this->data["_page"] = "language";
+        $this->data["_page"] = "download.language";
         $this->data["_title"] = "Download ImageGlass Language Packs | " .  $this->data["_name"];
         $this->data["_description"] = "Download all language packs of ImageGlass";
         $this->data["_keywords"] .= "language pack, localization, translation";

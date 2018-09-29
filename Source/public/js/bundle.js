@@ -29599,7 +29599,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
                     _headerModule2.default.initModule();
                     currentPage = document.getElementsByTagName("html")[0].getAttribute("data-page");
                     _context.t0 = currentPage;
-                    _context.next = _context.t0 === "news" ? 5 : _context.t0 === "news.details" ? 7 : _context.t0 === "docs" ? 9 : _context.t0 === "theme" ? 11 : _context.t0 === "language" ? 13 : _context.t0 === "support" ? 15 : _context.t0 === "source" ? 17 : _context.t0 === "about" ? 19 : _context.t0 === "home" ? 21 : 21;
+                    _context.next = _context.t0 === "news" ? 5 : _context.t0 === "news.details" ? 7 : _context.t0 === "docs" ? 9 : _context.t0 === "download.theme" ? 11 : _context.t0 === "download.language" ? 13 : _context.t0 === "support" ? 15 : _context.t0 === "source" ? 17 : _context.t0 === "about" ? 19 : _context.t0 === "home" ? 21 : 21;
                     break;
 
                 case 5:
