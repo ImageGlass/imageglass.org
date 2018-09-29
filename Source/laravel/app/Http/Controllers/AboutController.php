@@ -11,7 +11,7 @@ class AboutController extends Controller
         $news_collection = $this::getRequest("/api/news", array("limit" => "10"));
 
         // page data
-        $this->data["_category_url"] = "release";
+        $this->data["_category_url"] = "news";
         $this->data["_article_list_title"] = "The latest updates";
         $this->data["_article_collection"] = $news_collection;
 
