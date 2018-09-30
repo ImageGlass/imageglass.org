@@ -6,15 +6,15 @@ import axios from "axios"
 
 function applyRevealEffect() {
     FluentRevealEffect.applyEffect("#body", {
-		clickEffect: false,
+		clickEffect: true,
 		lightColor: "rgba(255,255,255, 0.3)",
-		gradientSize: 200,
+		gradientSize: 150,
 		isContainer: true,
 		children: {
 			borderSelector: ".eff-reveal-border",
 			elementSelector: ".eff-reveal",
-			lightColor: "rgba(255,255,255, 0)",
-			gradientSize: 1
+			lightColor: "rgba(255,255,255, 0.12)",
+			gradientSize: 300
 		}
 	})
 }

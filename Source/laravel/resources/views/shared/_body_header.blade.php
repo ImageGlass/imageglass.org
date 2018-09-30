@@ -43,6 +43,13 @@
                                 </span>
                             </a>
                         </li>
+                        <li class="menu-item {{ strpos($_page, "release") !== false ? "active" : "" }}">
+                            <a href="{{ url("/releases") }}" class="eff-reveal">
+                                <span>
+                                    All Releases
+                                </span>
+                            </a>
+                        </li>
                         <li class="menu-item {{ strpos($_page, "theme") !== false ? "active" : "" }}">
                             <a href="{{ url("/themes") }}" class="eff-reveal">
                                 <span>

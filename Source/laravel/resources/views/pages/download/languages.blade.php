@@ -3,7 +3,10 @@
     All Language Packs
 @stop
 
-
+@section("_page_subtitle")
+    We use Crowdin to translate ImageGlass, feel free to change at: <a href="https://crowdin.com/project/imageglass/invite" target="_blank" rel="noopener noreferrer">https://crowdin.com/project/imageglass/invite</a>.<br/>
+    To request new language pack, you can drop me an email.
+@stop
 
 @section("_article_list")
     <div class="row justify-content-center">

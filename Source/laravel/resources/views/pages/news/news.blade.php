@@ -18,9 +18,13 @@
             $url = url("news", $item["slug"]."-".$item["id"]);
             $title = $item["title"];
             $updated_at = formatDateTime($item["updated_at"]);
-            $img = "https://picsum.photos/500/400/?random&id={$item["id"]}";
+            $img = getFileUrl($item["image"], "news");
             $desc = $item["description"];
             $totalDays = getTotalDays($item["updated_at"]);
+
+            if (empty($img)) {
+                $img = "https://picsum.photos/500/380/?random&id={$item["id"]}";
+            }
         @endphp
 
         <li class="col-lg-10 col-xl-9 col-xxl-8 col-hg-6 article-item {{ $totalDays < 8 ? "new-article" : "" }}">

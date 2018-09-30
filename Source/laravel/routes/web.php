@@ -58,8 +58,8 @@ Route::get('/news/{slug}', 'NewsController@news_details')->where(array('slug' =>
 */
 Route::get('/download', 'DownloadController@index'); //redirect to [/release/{slug}]
 Route::get('/releases', 'DownloadController@release_listing');
-Route::get('/releases/{slug}', 'DownloadController@release_details')->where(array('slug' => NUMBER_TEXT));
-Route::get('/releases/{slug}/download', 'DownloadController@release_download')->where(array('slug' => NUMBER_TEXT));
+Route::get('/release/{slug}', 'DownloadController@release_details')->where(array('slug' => NUMBER_TEXT));
+Route::get('/release/{slug}/download', 'DownloadController@release_download')->where(array('slug' => NUMBER_TEXT));
 
 Route::get('/moon', 'DownloadController@moon_listing');
 Route::get('/languages', 'DownloadController@language_listing');

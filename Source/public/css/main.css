@@ -3522,13 +3522,13 @@ table.table-hover tr:hover > td {
 
 .eff-reveal-border {
   display: inline-block;
-  padding: 0.08929rem; }
+  padding: 0.08929rem;
+  transition: all 200ms ease; }
   .eff-reveal-border > .eff-reveal {
-    display: block;
-    transition: all 200ms ease; }
+    display: block; }
   .eff-reveal-border:active {
     transform: scale(0.98);
-    transition: all 70ms ease; }
+    transition: all 100ms ease; }
 
 #body a {
   text-decoration: none; }

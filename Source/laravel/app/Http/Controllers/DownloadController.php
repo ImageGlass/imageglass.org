@@ -14,6 +14,26 @@ class DownloadController extends Controller
     }
 
 
+    public function release_listing() {
+        // get the latest release items
+        $release_collection = $this::getRequest("/api/releases", array("limit" => "10"));
+        // dd($release_collection);
+
+        // page data
+		$this->data["release_collection"] = $release_collection;
+
+
+        // meta tags
+        $this->data["_page"] = "download.release";
+        $this->data["_title"] = "All Releases | " .  $this->data["_name"];
+        $this->data["_description"] = "Download all versions of ImageGlass";
+        $this->data["_keywords"] .= "release, lastest version, lastest update";
+		$this->data["_thumbnail"] = "https://picsum.photos/1200/630/?random";
+
+        return view("pages.download.releases")->with($this->data);
+    }
+
+
     public function release_details($slug) {
         $id = $this->getIdFromSlug($slug);
 

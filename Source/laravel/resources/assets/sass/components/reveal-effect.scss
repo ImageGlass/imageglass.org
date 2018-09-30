@@ -2,14 +2,15 @@
 .eff-reveal-border {
     display: inline-block;
     padding: $gap/14;
+    transition: all 200ms ease;
 
     &> .eff-reveal {
         display: block;
-        transition: all 200ms ease;
+        
     }
 
     &:active {
         transform: scale(0.98);
-        transition: all 70ms ease;
+        transition: all 100ms ease;
     }
 }

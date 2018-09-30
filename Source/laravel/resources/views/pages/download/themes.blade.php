@@ -3,6 +3,9 @@
     All Theme Packs
 @stop
 
+@section("_page_subtitle")
+    Beautiful theme packs to change the user interface of ImageGlass.
+@stop
 
 
 @section("_article_list")

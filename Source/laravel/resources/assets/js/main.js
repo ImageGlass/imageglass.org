@@ -12,6 +12,7 @@ import SourcePage from "./pages/source-page"
 import AboutPage from "./pages/about-page"
 import ThemePage from "./pages/theme-page"
 import LanguagePage from "./pages/language-page"
+import ReleasePage from "./pages/release-page"
 
 
 ;(async () => {
@@ -29,12 +30,8 @@ import LanguagePage from "./pages/language-page"
             window._currentPage = new NewsDetailsPage()
             break
 
-        case "docs":
-            window._currentPage = new DocsPage()
-            break
-
-        case "docs.details":
-            window._currentPage = new DocsDetailsPage()
+        case "download.release":
+            window._currentPage = new ReleasePage()
             break
 
         case "download.theme":
@@ -43,6 +40,14 @@ import LanguagePage from "./pages/language-page"
 
         case "download.language":
             window._currentPage = new LanguagePage()
+            break
+
+        case "docs":
+            window._currentPage = new DocsPage()
+            break
+
+        case "docs.details":
+            window._currentPage = new DocsDetailsPage()
             break
 
         case "support":
