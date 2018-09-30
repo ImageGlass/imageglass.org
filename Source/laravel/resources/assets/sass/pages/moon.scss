@@ -1,5 +1,8 @@
 [data-page="download.moon"] {
     #body {
         background-image: url("../img/star-bg.svg");
+
+        background-size: 100% auto;
+        animation: floatingStars 5s ease-in-out alternate-reverse infinite;
     }
 }

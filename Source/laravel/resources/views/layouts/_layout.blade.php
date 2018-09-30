@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ app()->getLocale() }}" data-page="{{ $_page }}">
+<html lang="{{ app()->getLocale() }}" data-page="{{ @$_page }}">
 <head>
     @include("shared._head")
 </head>
@@ -14,7 +14,7 @@
 	@include("shared._body_footer")
 
     <h1 hidden>
-        {{ $_h1 }}
+        {{ @$_h1 }}
     </h1>
 
     @include("shared._foot")

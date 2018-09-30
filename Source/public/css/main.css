@@ -3499,26 +3499,26 @@ template {
   display: none; }
 
 table tr {
-  border-top: 0.08333rem solid #404344; }
+  border-top: 0.08333rem solid #3d4244; }
   table tr > th,
   table tr > td {
     padding: 0.625rem;
-    border-left: 0.08333rem solid #404344;
+    border-left: 0.08333rem solid #3d4244;
     transition: all ease 200ms; }
     table tr > th:last-child,
     table tr > td:last-child {
-      border-right: 0.08333rem solid #404344; }
+      border-right: 0.08333rem solid #3d4244; }
   table tr > th {
     font-weight: 400;
     background-color: rgba(41, 152, 172, 0.15); }
   table tr:last-child {
-    border-bottom: 0.08333rem solid #404344; }
+    border-bottom: 0.08333rem solid #3d4244; }
 
 table.table-striped tr:nth-child(2n+1) > td {
-  background-color: #232526; }
+  background-color: #212425; }
 
 table.table-hover tr:hover > td {
-  background-color: #333637; }
+  background-color: #313536; }
 
 .eff-reveal-border {
   display: inline-block;
@@ -3571,11 +3571,11 @@ table.table-hover tr:hover > td {
   position: relative;
   display: inline-block;
   padding: 0.625rem 1.875rem;
-  background-color: #27292a;
+  background-color: #252829;
   border: 0;
   color: #efefef;
   transition: all 200ms ease;
-  background-image: linear-gradient(120deg, #27292a, #404344) ; }
+  background-image: linear-gradient(120deg, #252829, #3d4244) ; }
   .btn:not(.eff-reveal-border):hover, .btn:not(.eff-reveal-border):focus {
     text-decoration: none;
     cursor: pointer;
@@ -3606,13 +3606,13 @@ table.table-hover tr:hover > td {
 
 .btn.eff-reveal-border {
   display: inline-block;
-  background-color: #27292a;
+  background-color: #252829;
   background-image: none;
   overflow: hidden;
   transition: all 100ms ease; }
   .btn.eff-reveal-border > .eff-reveal {
     padding: 0.625rem 1.875rem;
-    background-color: #27292a;
+    background-color: #252829;
     border: 0;
     color: #efefef;
     transition: all 200ms ease; }
@@ -3742,7 +3742,7 @@ table.table-hover tr:hover > td {
     .news-list .news-item > .news-item-content {
       display: inline-flex;
       position: relative;
-      background-color: rgba(39, 41, 42, 0.8);
+      background-color: rgba(37, 40, 41, 0.8);
       padding: 0.3125rem;
       transition: all ease 300ms; }
       .news-list .news-item > .news-item-content .title {
@@ -3753,7 +3753,7 @@ table.table-hover tr:hover > td {
         font-size: 0.75rem;
         font-weight: 200;
         align-self: center;
-        background-color: #333637;
+        background-color: #313536;
         color: #efefef;
         padding: 0.125rem 0.3125rem;
         white-space: nowrap; }
@@ -3874,7 +3874,7 @@ table.table-hover tr:hover > td {
 
 body {
   min-height: 100vh;
-  background-color: #27292a; }
+  background-color: #252829; }
   @supports not (browser: ie) {
     body {
       display: grid;
@@ -3965,7 +3965,7 @@ body {
         flex-direction: column;
         min-width: 12.5rem;
         padding: 0.625rem 0;
-        background-color: #27292a;
+        background-color: #252829;
         position: absolute;
         box-shadow: 0 0.9375rem 2.5rem -0.625rem rgba(0, 0, 0, 0.3);
         opacity: 0;
@@ -3973,7 +3973,7 @@ body {
         transition: all ease 200ms; }
         @supports (-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px)) {
           .header-bar .menu-group .menu-item.submenu > .submenu-group {
-            background-color: rgba(39, 41, 42, 0.8);
+            background-color: rgba(37, 40, 41, 0.8);
             backdrop-filter: blur(1.25rem); } }
         .header-bar .menu-group .menu-item.submenu > .submenu-group .menu-item > a {
           padding-top: 0.625rem;
@@ -4039,9 +4039,9 @@ body {
       font-size: 1.125rem;
       transition: all ease 200ms; }
     .pagination > .page-item.active > .page-link {
-      background-color: #202122; }
+      background-color: #1e2021; }
     .pagination > .page-item:not(.disabled):not(.active) > .page-link:hover {
-      background-color: #333637;
+      background-color: #313536;
       box-shadow: 0 0.625rem 1.25rem -0.625rem rgba(0, 0, 0, 0.3); }
     .pagination > .page-item:not(.disabled):not(.active) > .page-link:active {
       box-shadow: none;
@@ -4100,7 +4100,7 @@ body {
     box-shadow: -0.625rem 0 1.25rem -0.625rem rgba(0, 0, 0, 0.2); }
     @supports (-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px)) {
       .header-bar .main-menu {
-        background-color: rgba(39, 41, 42, 0.7);
+        background-color: rgba(37, 40, 41, 0.7);
         backdrop-filter: blur(1.25rem); } }
     .header-bar .main-menu .menu-item > a {
       border-radius: 0;
@@ -4161,7 +4161,7 @@ body {
     .home-top .download-version a {
       color: #efefef; }
   .home-top .top-video {
-    background-color: #27292a;
+    background-color: #252829;
     box-shadow: 0 -0.625rem 3.125rem -0.625rem rgba(0, 0, 0, 0.4); }
 
 .home-features .feature-item {
@@ -4176,7 +4176,7 @@ body {
   .home-features .eff-reveal-border .eff-reveal {
     height: 100%;
     padding: 1.25rem;
-    background-color: #27292a;
+    background-color: #252829;
     transition: all ease 200ms; }
     .home-features .eff-reveal-border .eff-reveal .feature-icon {
       font-size: 4.375rem; }
@@ -4185,11 +4185,11 @@ body {
     .home-features .eff-reveal-border .eff-reveal .feature-desc {
       margin-bottom: 0.625rem; }
   .home-features .eff-reveal-border:hover .eff-reveal {
-    background-color: #2e3132; }
+    background-color: #2c3031; }
 
 .home-news {
   color: #efefef;
-  background-color: #333637;
+  background-color: #313536;
   padding-top: 3.75rem;
   padding-bottom: 3.75rem; }
   .home-news .home-news-list {
@@ -4199,7 +4199,7 @@ body {
     background-repeat: no-repeat; }
 
 .home-review {
-  background-color: #333637;
+  background-color: #313536;
   padding-bottom: 3.75rem; }
 
 .home-source {
@@ -4298,13 +4298,13 @@ body {
     margin-bottom: 0.3125rem; }
     .aside-article-list ul > li > a {
       display: block;
-      background-color: #27292a;
+      background-color: #252829;
       padding: 0.41667rem;
       transition: all ease 200ms; }
       .aside-article-list ul > li > a time {
         color: #efefef; }
       .aside-article-list ul > li > a:hover {
-        background-color: #2e3132; }
+        background-color: #2c3031; }
         .aside-article-list ul > li > a:hover time {
           color: #efefef; }
     .aside-article-list ul > li.new-article > a {
@@ -4318,11 +4318,11 @@ body {
     .language-list .language-item .eff-reveal-border .eff-reveal {
       display: block;
       padding: 1.25rem;
-      background-color: #27292a;
+      background-color: #252829;
       text-align: center;
       transition: all ease 200ms; }
       .language-list .language-item .eff-reveal-border .eff-reveal:hover {
-        background-color: #2e3132; }
+        background-color: #2c3031; }
 
 [data-page="support"] .google-group {
   background-color: #e3e3e3; }
@@ -4337,14 +4337,14 @@ body {
       color: #efefef; }
       [data-page="support"] .list-support li a .eff-reveal {
         display: block;
-        background-color: #313335;
+        background-color: #2f3234;
         text-align: center;
         padding: 1.25rem;
         transition: all 200ms ease; }
       [data-page="support"] .list-support li a .item-icon {
         font-size: 6.25rem; }
       [data-page="support"] .list-support li a:hover .eff-reveal {
-        background-color: #36383a; }
+        background-color: #343839; }
 
 [data-page="about"] .intro {
   font-size: 1.5rem;
@@ -4379,7 +4379,71 @@ body {
       transform: rotate(45deg); }
 
 [data-page="download.moon"] #body {
-  background-image: url("../img/star-bg.svg"); }
+  background-image: url("../img/star-bg.svg");
+  background-size: 100% auto;
+  animation: floatingStars 5s ease-in-out alternate-reverse infinite; }
+
+[data-page="error.404"] #body {
+  background-image: url("../img/star-bg.svg");
+  background-size: 100% auto;
+  animation: floatingStars 5s ease-in-out alternate-reverse infinite; }
+
+[data-page="error.404"] #error404SVG {
+  margin-top: -12.5rem; }
+
+[data-page="error.404"] #moon,
+[data-page="error.404"] #astronaut {
+  transition: all ease 300ms;
+  animation: floatingPlanet 2s ease-in-out alternate-reverse infinite; }
+
+[data-page="error.404"] #stars {
+  animation: floatingPlanet 2s ease-in-out 1s alternate-reverse infinite; }
+
+[data-page="error.404"] #cow {
+  transform-origin: 0px 0px 0px;
+  transform: matrix3d(0.72231, -0.69157, 0, 0, 0.69157, 0.72231, 0, 0, 0, 0, 1, 0, -134.432, 311.807, 0, 1);
+  animation: flyingCow 6s ease infinite; }
+
+@keyframes floatingStars {
+  from {
+    background-size: 150% auto; }
+  to {
+    background-size: 170% auto; } }
+
+@keyframes floatingPlanet {
+  from {
+    transform: translateY(0); }
+  to {
+    transform: translateY(1.25rem); } }
+
+@keyframes flyingCow {
+  0% {
+    transform: matrix3d(0.9988, 0.04902, 0, 0, -0.04902, 0.9988, 0, 0, 0, 0, 1, 0, 16.2326, -15.3478, 0, 1); }
+  12% {
+    transform: matrix3d(0.62287, -0.78233, 0, 0, 0.78233, 0.62287, 0, 0, 0, 0, 1, 0, -131.848, 373.092, 0, 1); }
+  25% {
+    transform: matrix3d(0.05933, -0.99824, 0, 0, 0.99824, 0.05933, 0, 0, 0, 0, 1, 0, -20.727, 624.605, 0, 1); }
+  37% {
+    transform: matrix3d(-0.55705, -0.83048, 0, 0, 0.83048, -0.55705, 0, 0, 0, 0, 1, 0, 231.396, 770.019, 0, 1); }
+  40% {
+    opacity: 1; }
+  50% {
+    transform: matrix3d(-0.99806, -0.06231, 0, 0, 0.06231, -0.99806, 0, 0, 0, 0, 1, 0, 621.332, 665.976, 0, 1); }
+  51% {
+    opacity: 0;
+    transform: matrix3d(-0.97338, 0.22921, 0, 0, -0.22921, -0.97338, 0, 0, 0, 0, 1, 0, 707.657, 564.404, 0, 1); }
+  60% {
+    opacity: 0;
+    transform: matrix3d(-0.79704, 0.60393, 0, 0, -0.60393, -0.79704, 0, 0, 0, 0, 1, 0, 772.189, 387.09, 0, 1); }
+  67% {
+    opacity: 1;
+    transform: matrix3d(-0.96042, 0.27854, 0, 0, -0.27854, -0.96042, 0, 0, 0, 0, 1, 0, 719.446, 544.38, 0, 1); }
+  75% {
+    transform: matrix3d(-0.20363, 0.97905, 0, 0, -0.97905, -0.20363, 0, 0, 0, 0, 1, 0, 702.952, 74.8115, 0, 1); }
+  87% {
+    transform: matrix3d(0.47491, 0.88004, 0, 0, -0.88004, 0.47491, 0, 0, 0, 0, 1, 0, 453.097, -112.773, 0, 1); }
+  100% {
+    transform: matrix3d(0.9988, 0.04902, 0, 0, -0.04902, 0.9988, 0, 0, 0, 0, 1, 0, 16.2326, -15.3478, 0, 1); } }
 
 
 /*# sourceMappingURL=main.css.map*/

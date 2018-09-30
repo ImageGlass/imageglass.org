@@ -16,6 +16,7 @@ import DocsDetailsPage from "./pages/docs-details-page"
 import SupportPage from "./pages/support-page"
 import SourcePage from "./pages/source-page"
 import AboutPage from "./pages/about-page"
+import Error404Page from "./pages/error-404-page"
 
 
 
@@ -68,6 +69,10 @@ import AboutPage from "./pages/about-page"
 
         case "about":
             window._currentPage = new AboutPage()
+            break
+
+        case "error.404":
+            window._currentPage = new Error404Page()
             break
 
 

@@ -29599,6 +29599,10 @@ var _aboutPage = __webpack_require__(/*! ./pages/about-page */ "./resources/asse
 
 var _aboutPage2 = _interopRequireDefault(_aboutPage);
 
+var _error404Page = __webpack_require__(/*! ./pages/error-404-page */ "./resources/assets/js/pages/error-404-page.js");
+
+var _error404Page2 = _interopRequireDefault(_error404Page);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _asyncToGenerator3.default)( /*#__PURE__*/_regenerator2.default.mark(function _callee() {
@@ -29611,59 +29615,63 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
                     _headerModule2.default.initModule();
                     currentPage = document.getElementsByTagName("html")[0].getAttribute("data-page");
                     _context.t0 = currentPage;
-                    _context.next = _context.t0 === "news" ? 5 : _context.t0 === "news.details" ? 7 : _context.t0 === "download.moon" ? 9 : _context.t0 === "download.release" ? 11 : _context.t0 === "download.theme" ? 13 : _context.t0 === "download.language" ? 15 : _context.t0 === "docs" ? 17 : _context.t0 === "docs.details" ? 19 : _context.t0 === "support" ? 21 : _context.t0 === "source" ? 23 : _context.t0 === "about" ? 25 : _context.t0 === "home" ? 27 : 27;
+                    _context.next = _context.t0 === "news" ? 5 : _context.t0 === "news.details" ? 7 : _context.t0 === "download.moon" ? 9 : _context.t0 === "download.release" ? 11 : _context.t0 === "download.theme" ? 13 : _context.t0 === "download.language" ? 15 : _context.t0 === "docs" ? 17 : _context.t0 === "docs.details" ? 19 : _context.t0 === "support" ? 21 : _context.t0 === "source" ? 23 : _context.t0 === "about" ? 25 : _context.t0 === "error.404" ? 27 : _context.t0 === "home" ? 29 : 29;
                     break;
 
                 case 5:
                     window._currentPage = new _newsPage2.default();
-                    return _context.abrupt("break", 29);
+                    return _context.abrupt("break", 31);
 
                 case 7:
                     window._currentPage = new _newsDetailsPage2.default();
-                    return _context.abrupt("break", 29);
+                    return _context.abrupt("break", 31);
 
                 case 9:
                     window._currentPage = new _moonPage2.default();
-                    return _context.abrupt("break", 29);
+                    return _context.abrupt("break", 31);
 
                 case 11:
                     window._currentPage = new _releasePage2.default();
-                    return _context.abrupt("break", 29);
+                    return _context.abrupt("break", 31);
 
                 case 13:
                     window._currentPage = new _themePage2.default();
-                    return _context.abrupt("break", 29);
+                    return _context.abrupt("break", 31);
 
                 case 15:
                     window._currentPage = new _languagePage2.default();
-                    return _context.abrupt("break", 29);
+                    return _context.abrupt("break", 31);
 
                 case 17:
                     window._currentPage = new _docsPage2.default();
-                    return _context.abrupt("break", 29);
+                    return _context.abrupt("break", 31);
 
                 case 19:
                     window._currentPage = new _docsDetailsPage2.default();
-                    return _context.abrupt("break", 29);
+                    return _context.abrupt("break", 31);
 
                 case 21:
                     window._currentPage = new _supportPage2.default();
-                    return _context.abrupt("break", 29);
+                    return _context.abrupt("break", 31);
 
                 case 23:
                     window._currentPage = new _sourcePage2.default();
-                    return _context.abrupt("break", 29);
+                    return _context.abrupt("break", 31);
 
                 case 25:
                     window._currentPage = new _aboutPage2.default();
-                    return _context.abrupt("break", 29);
+                    return _context.abrupt("break", 31);
 
                 case 27:
-                    // code for home page
-                    window._currentPage = new _homePage2.default();
-                    return _context.abrupt("break", 29);
+                    window._currentPage = new _error404Page2.default();
+                    return _context.abrupt("break", 31);
 
                 case 29:
+                    // code for home page
+                    window._currentPage = new _homePage2.default();
+                    return _context.abrupt("break", 31);
+
+                case 31:
                 case "end":
                     return _context.stop();
             }
@@ -30110,6 +30118,34 @@ var DocsPage = function DocsPage() {
 };
 
 exports.default = DocsPage;
+
+/***/ }),
+
+/***/ "./resources/assets/js/pages/error-404-page.js":
+/*!*****************************************************!*\
+  !*** ./resources/assets/js/pages/error-404-page.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _classCallCheck2 = __webpack_require__(/*! babel-runtime/helpers/classCallCheck */ "./node_modules/babel-runtime/helpers/classCallCheck.js");
+
+var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Error404Page = function Error404Page() {
+    (0, _classCallCheck3.default)(this, Error404Page);
+};
+
+exports.default = Error404Page;
 
 /***/ }),
 

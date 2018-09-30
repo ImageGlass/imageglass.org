@@ -26,7 +26,7 @@
 <meta name="google-site-verification" content="lwIlMXm2pAq31HiJyaVJH-BXTwIqPP2rFv4L6P4DTXU" />
 
 {{--  Site info  --}}
-<title>{{ $_title }}</title>
+<title>{{ @$_title }}</title>
 <meta name="description" content="{{ @$_description }}">
 <meta name="keywords" content="{{ @$_keywords }}">
 

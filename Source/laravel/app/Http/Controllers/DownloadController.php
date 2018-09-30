@@ -11,7 +11,7 @@ class DownloadController extends Controller
         // get the latest relese info
 		$release_item = $this::getRequest("/api/release/latest");
 
-        return redirect("releases/" . $release_item["slug"] ."-". $release_item["id"]);
+        return redirect("release/" . $release_item["slug"] ."-". $release_item["id"]);
     }
 
 
