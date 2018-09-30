@@ -39,7 +39,7 @@
                         <li class="menu-item {{ strpos($_page, "moon") !== false ? "active" : "" }}">
                             <a href="{{ url("/moon") }}" class="eff-reveal">
                                 <span>
-                                    ImageGlass Moon
+                                    ImageGlass Moon 🌙
                                 </span>
                             </a>
                         </li>

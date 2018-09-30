@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use Illuminate\Support\Facades\Storage;
 
 
 class DownloadController extends Controller
@@ -58,6 +59,25 @@ class DownloadController extends Controller
 		return view("pages.download.release-details")->with($this->data);
     }
     
+
+    public function moon_listing() {
+        // get the latest release items
+        $moon_files = glob("upload/moon/*.zip");
+		usort($moon_files, create_function('$a,$b', 'return filemtime($b) - filemtime($a);'));
+
+        // page data
+		$this->data["moon_files"] = $moon_files;
+
+
+        // meta tags
+        $this->data["_page"] = "download.moon";
+        $this->data["_title"] = "ImageGlass Moon | " .  $this->data["_name"];
+        $this->data["_description"] = "ImageGlass Moon has the latest of the new ImageGlass features. It is usually built and shipped to users with the latest state of develop branch.";
+        $this->data["_keywords"] .= "ImageGlass Moon, new features, developing, bugs";
+		$this->data["_thumbnail"] = "https://picsum.photos/1200/630/?random";
+
+        return view("pages.download.moon")->with($this->data);
+    }
 
 
     public function theme_listing() {

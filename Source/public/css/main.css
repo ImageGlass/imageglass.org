@@ -3873,10 +3873,23 @@ table.table-hover tr:hover > td {
   cursor: pointer; }
 
 body {
+  min-height: 100vh;
   background-color: #27292a; }
+  @supports not (browser: ie) {
+    body {
+      display: grid;
+      grid-template-rows: min-content auto min-content;
+      grid-template-columns: auto;
+      grid-template-areas: "_header" "_body" "_footer"; } }
 
-#app {
-  font-size: 1rem; }
+#header {
+  grid-area: _header; }
+
+#body {
+  grid-area: _body; }
+
+#footer {
+  grid-area: _footer; }
 
 #header {
   position: sticky;
@@ -4364,6 +4377,9 @@ body {
       left: 0.625rem;
       top: 0.625rem;
       transform: rotate(45deg); }
+
+[data-page="download.moon"] #body {
+  background-image: url("../img/star-bg.svg"); }
 
 
 /*# sourceMappingURL=main.css.map*/

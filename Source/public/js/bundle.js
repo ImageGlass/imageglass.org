@@ -29563,6 +29563,22 @@ var _newsDetailsPage = __webpack_require__(/*! ./pages/news-details-page */ "./r
 
 var _newsDetailsPage2 = _interopRequireDefault(_newsDetailsPage);
 
+var _moonPage = __webpack_require__(/*! ./pages/moon-page */ "./resources/assets/js/pages/moon-page.js");
+
+var _moonPage2 = _interopRequireDefault(_moonPage);
+
+var _releasePage = __webpack_require__(/*! ./pages/release-page */ "./resources/assets/js/pages/release-page.js");
+
+var _releasePage2 = _interopRequireDefault(_releasePage);
+
+var _themePage = __webpack_require__(/*! ./pages/theme-page */ "./resources/assets/js/pages/theme-page.js");
+
+var _themePage2 = _interopRequireDefault(_themePage);
+
+var _languagePage = __webpack_require__(/*! ./pages/language-page */ "./resources/assets/js/pages/language-page.js");
+
+var _languagePage2 = _interopRequireDefault(_languagePage);
+
 var _docsPage = __webpack_require__(/*! ./pages/docs-page */ "./resources/assets/js/pages/docs-page.js");
 
 var _docsPage2 = _interopRequireDefault(_docsPage);
@@ -29583,18 +29599,6 @@ var _aboutPage = __webpack_require__(/*! ./pages/about-page */ "./resources/asse
 
 var _aboutPage2 = _interopRequireDefault(_aboutPage);
 
-var _themePage = __webpack_require__(/*! ./pages/theme-page */ "./resources/assets/js/pages/theme-page.js");
-
-var _themePage2 = _interopRequireDefault(_themePage);
-
-var _languagePage = __webpack_require__(/*! ./pages/language-page */ "./resources/assets/js/pages/language-page.js");
-
-var _languagePage2 = _interopRequireDefault(_languagePage);
-
-var _releasePage = __webpack_require__(/*! ./pages/release-page */ "./resources/assets/js/pages/release-page.js");
-
-var _releasePage2 = _interopRequireDefault(_releasePage);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _asyncToGenerator3.default)( /*#__PURE__*/_regenerator2.default.mark(function _callee() {
@@ -29607,55 +29611,59 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
                     _headerModule2.default.initModule();
                     currentPage = document.getElementsByTagName("html")[0].getAttribute("data-page");
                     _context.t0 = currentPage;
-                    _context.next = _context.t0 === "news" ? 5 : _context.t0 === "news.details" ? 7 : _context.t0 === "download.release" ? 9 : _context.t0 === "download.theme" ? 11 : _context.t0 === "download.language" ? 13 : _context.t0 === "docs" ? 15 : _context.t0 === "docs.details" ? 17 : _context.t0 === "support" ? 19 : _context.t0 === "source" ? 21 : _context.t0 === "about" ? 23 : _context.t0 === "home" ? 25 : 25;
+                    _context.next = _context.t0 === "news" ? 5 : _context.t0 === "news.details" ? 7 : _context.t0 === "download.moon" ? 9 : _context.t0 === "download.release" ? 11 : _context.t0 === "download.theme" ? 13 : _context.t0 === "download.language" ? 15 : _context.t0 === "docs" ? 17 : _context.t0 === "docs.details" ? 19 : _context.t0 === "support" ? 21 : _context.t0 === "source" ? 23 : _context.t0 === "about" ? 25 : _context.t0 === "home" ? 27 : 27;
                     break;
 
                 case 5:
                     window._currentPage = new _newsPage2.default();
-                    return _context.abrupt("break", 27);
+                    return _context.abrupt("break", 29);
 
                 case 7:
                     window._currentPage = new _newsDetailsPage2.default();
-                    return _context.abrupt("break", 27);
+                    return _context.abrupt("break", 29);
 
                 case 9:
-                    window._currentPage = new _releasePage2.default();
-                    return _context.abrupt("break", 27);
+                    window._currentPage = new _moonPage2.default();
+                    return _context.abrupt("break", 29);
 
                 case 11:
-                    window._currentPage = new _themePage2.default();
-                    return _context.abrupt("break", 27);
+                    window._currentPage = new _releasePage2.default();
+                    return _context.abrupt("break", 29);
 
                 case 13:
-                    window._currentPage = new _languagePage2.default();
-                    return _context.abrupt("break", 27);
+                    window._currentPage = new _themePage2.default();
+                    return _context.abrupt("break", 29);
 
                 case 15:
-                    window._currentPage = new _docsPage2.default();
-                    return _context.abrupt("break", 27);
+                    window._currentPage = new _languagePage2.default();
+                    return _context.abrupt("break", 29);
 
                 case 17:
-                    window._currentPage = new _docsDetailsPage2.default();
-                    return _context.abrupt("break", 27);
+                    window._currentPage = new _docsPage2.default();
+                    return _context.abrupt("break", 29);
 
                 case 19:
-                    window._currentPage = new _supportPage2.default();
-                    return _context.abrupt("break", 27);
+                    window._currentPage = new _docsDetailsPage2.default();
+                    return _context.abrupt("break", 29);
 
                 case 21:
-                    window._currentPage = new _sourcePage2.default();
-                    return _context.abrupt("break", 27);
+                    window._currentPage = new _supportPage2.default();
+                    return _context.abrupt("break", 29);
 
                 case 23:
-                    window._currentPage = new _aboutPage2.default();
-                    return _context.abrupt("break", 27);
+                    window._currentPage = new _sourcePage2.default();
+                    return _context.abrupt("break", 29);
 
                 case 25:
-                    // code for home page
-                    window._currentPage = new _homePage2.default();
-                    return _context.abrupt("break", 27);
+                    window._currentPage = new _aboutPage2.default();
+                    return _context.abrupt("break", 29);
 
                 case 27:
+                    // code for home page
+                    window._currentPage = new _homePage2.default();
+                    return _context.abrupt("break", 29);
+
+                case 29:
                 case "end":
                     return _context.stop();
             }
@@ -30262,6 +30270,53 @@ var LanguagePage = function () {
 }();
 
 exports.default = LanguagePage;
+
+/***/ }),
+
+/***/ "./resources/assets/js/pages/moon-page.js":
+/*!************************************************!*\
+  !*** ./resources/assets/js/pages/moon-page.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+				value: true
+});
+
+var _classCallCheck2 = __webpack_require__(/*! babel-runtime/helpers/classCallCheck */ "./node_modules/babel-runtime/helpers/classCallCheck.js");
+
+var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+var _fluentRevealEffect = __webpack_require__(/*! fluent-reveal-effect */ "./node_modules/fluent-reveal-effect/index.js");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function applyRevealEffect() {
+				_fluentRevealEffect.FluentRevealEffect.applyEffect("#body", {
+								clickEffect: false,
+								lightColor: "rgba(255,255,255, 0.3)",
+								gradientSize: 200,
+								isContainer: true,
+								children: {
+												borderSelector: ".eff-reveal-border",
+												elementSelector: ".eff-reveal",
+												lightColor: "rgba(255,255,255, 0)",
+												gradientSize: 1
+								}
+				});
+}
+
+var MoonPage = function MoonPage() {
+				(0, _classCallCheck3.default)(this, MoonPage);
+
+				applyRevealEffect();
+};
+
+exports.default = MoonPage;
 
 /***/ }),
 

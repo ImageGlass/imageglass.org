@@ -5,14 +5,18 @@ import HeaderModule from "./modules/header-module"
 import HomePage from "./pages/home-page"
 import NewsPage from "./pages/news-page"
 import NewsDetailsPage from "./pages/news-details-page"
+
+import MoonPage from "./pages/moon-page"
+import ReleasePage from "./pages/release-page"
+import ThemePage from "./pages/theme-page"
+import LanguagePage from "./pages/language-page"
+
 import DocsPage from "./pages/docs-page"
 import DocsDetailsPage from "./pages/docs-details-page"
 import SupportPage from "./pages/support-page"
 import SourcePage from "./pages/source-page"
 import AboutPage from "./pages/about-page"
-import ThemePage from "./pages/theme-page"
-import LanguagePage from "./pages/language-page"
-import ReleasePage from "./pages/release-page"
+
 
 
 ;(async () => {
@@ -28,6 +32,10 @@ import ReleasePage from "./pages/release-page"
 
         case "news.details":
             window._currentPage = new NewsDetailsPage()
+            break
+
+        case "download.moon":
+            window._currentPage = new MoonPage()
             break
 
         case "download.release":

@@ -9,8 +9,15 @@ function getTotalDays($date_str) {
 }
 
 
-function formatDateTime($date_str, $format_str = "", $include_time = true) {
-    $datetime = new DateTime($date_str);
+function formatDateTime($date_str, $format_str = "", $include_time = true, $isUnix = false) {
+
+    if ($isUnix) {
+        $datetime = new DateTime();
+        $datetime->setTimestamp($date_str);
+    }
+    else {
+        $datetime = new DateTime($date_str);
+    }
 
     if ($format_str == "") {
         $format_str = getDateTimeFormat($include_time);
