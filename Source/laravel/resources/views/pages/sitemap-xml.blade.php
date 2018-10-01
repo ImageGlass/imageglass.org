@@ -10,9 +10,51 @@
 		<changefreq>weekly</changefreq>
 		<priority>0.7</priority>
     </url>
-    
-    <url>
-		<loc>{{ url('doc') }}</loc>
+
+	<url>
+		<loc>{{ url('moon') }}</loc>
+		<changefreq>weekly</changefreq>
+		<priority>0.7</priority>
+	</url>
+
+	<url>
+		<loc>{{ url('releases') }}</loc>
+		<changefreq>weekly</changefreq>
+		<priority>0.8</priority>
+	</url>
+
+	<url>
+		<loc>{{ url('themes') }}</loc>
+		<changefreq>weekly</changefreq>
+		<priority>0.8</priority>
+	</url>
+
+	<url>
+		<loc>{{ url('languages') }}</loc>
+		<changefreq>weekly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<url>
+		<loc>{{ url('docs') }}</loc>
+		<changefreq>weekly</changefreq>
+		<priority>0.7</priority>
+	</url>
+
+	<url>
+		<loc>{{ url("docs/features") }}</loc>
+		<changefreq>weekly</changefreq>
+		<priority>0.7</priority>
+	</url>
+
+	<url>
+		<loc>{{ url("docs/supported-formats") }}</loc>
+		<changefreq>weekly</changefreq>
+		<priority>0.7</priority>
+	</url>
+
+	<url>
+		<loc>{{ url("docs/ui-shortcuts-reference") }}</loc>
 		<changefreq>weekly</changefreq>
 		<priority>0.7</priority>
 	</url>
@@ -42,25 +84,6 @@
 		<priority>0.9</priority>
 	</url>
 
-	<url>
-		<loc>{{ url('release') }}</loc>
-		<changefreq>weekly</changefreq>
-		<priority>0.8</priority>
-	</url>
-
-	<url>
-		<loc>{{ url('theme') }}</loc>
-		<changefreq>weekly</changefreq>
-		<priority>0.8</priority>
-	</url>
-
-	<url>
-		<loc>{{ url('language') }}</loc>
-		<changefreq>weekly</changefreq>
-		<priority>0.9</priority>
-	</url>
-
-
 
 
 	@foreach ($news_items as $post)
@@ -88,7 +111,7 @@
 	@endphp
 
 	<url>
-		<loc>{{ url("download/release", $post["slug"]."-".$post["id"]) }}</loc>
+		<loc>{{ url("release", $post["slug"]."-".$post["id"]) }}</loc>
 		<lastmod>{{ $dt->format('c') }}</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1</priority>
@@ -105,7 +128,7 @@
 	@endphp
 
 	<url>
-		<loc>{{ url("download/themes", $post["slug"]."-".$post["id"]) }}</loc>
+		<loc>{{ url("theme", $post["slug"]."-".$post["id"]) }}</loc>
 		<lastmod>{{ $dt->format('c') }}</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1</priority>
