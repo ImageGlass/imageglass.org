@@ -3,6 +3,7 @@
     background-size: cover;
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://picsum.photos/1366/600/?random', sizingMethod='scale');
     -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://picsum.photos/1366/600/?random', sizingMethod='scale')";
+    animation: bgZoomIn 12s ease alternate-reverse infinite;
     
     &> .bg-box-content {
         @include bg-gradient();
