@@ -5,7 +5,11 @@ namespace App\Http\Controllers;
 
 class DocsController extends Controller
 {
-    public function index() {
+    public function documentation_listing_redirect($slug) {
+        return redirect("docs");
+    }
+
+    public function documentation_listing() {
 
         // meta tags
         $this->data["_page"] = "docs";
@@ -18,7 +22,7 @@ class DocsController extends Controller
     }
 
 
-    public function documentation_redirect($slug) {
+    public function documentation_details_redirect($slug) {
         return redirect("docs/".$slug);
     }
 

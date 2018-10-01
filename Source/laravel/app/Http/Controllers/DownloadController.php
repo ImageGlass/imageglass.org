@@ -15,6 +15,10 @@ class DownloadController extends Controller
     }
 
 
+    public function release_listing_redirect() {
+        return redirect("releases");
+    }
+
     public function release_listing() {
         // get the latest release items
         $release_collection = $this::getRequest("/api/releases", array("limit" => "10"));
@@ -80,6 +84,10 @@ class DownloadController extends Controller
     }
 
 
+    public function theme_listing_redirect() {
+        return redirect("themes");
+    }
+
     public function theme_listing() {
         // get the latest theme items
         $theme_collection = $this::getRequest("/api/themes", array("limit" => "10"));
@@ -100,6 +108,10 @@ class DownloadController extends Controller
     }
 
 
+
+    public function language_listing_redirect() {
+        return redirect("languages");
+    }
 
     public function language_listing() {
         $url = "https://api.crowdin.com/api/project/imageglass/status?key=0b08634573c456476345efa8bad174f2&json";

@@ -43,6 +43,28 @@ class HomeController extends Controller
 
 		$content = view("pages.sitemap-xml")->with($this->data);
 		return Response::make($content, "200")->header("Content-Type", "text/xml");
-    }
+	}
+	
+
+	public function check_for_update() {
+
+		if (request()->has("version")) {
+			$version = request()->version;
+			$year = date("Y");
+			$month = date("m");
+
+			dd($version, $year, $month);
+		}
+
+		// return JSON data
+		if (request()->has("json")) {
+
+		}
+
+		// return XML data
+		else {
+
+		}
+	}
     
 }

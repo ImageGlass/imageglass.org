@@ -36,8 +36,7 @@ Route::get('/welcome', function () {
 */
 Route::get('/', 'HomeController@index');
 Route::get('/sitemap.xml', 'HomeController@sitemap_xml');
-Route::get('/checkforupdate', 'HomeController@checkforupdate'); //redirect to [/check-for-update]
-Route::get('/check-for-update/{slug}', 'HomeController@check_for_update')->where(array('slug' => NUMBER_TEXT));
+Route::get('/checkforupdate', 'HomeController@check_for_update');
 
 
 
@@ -57,6 +56,10 @@ Route::get('/news/{slug}', 'NewsController@news_details')->where(array('slug' =>
 |--------------------------------------------------------------------------
 */
 Route::get('/download', 'DownloadController@index'); //redirect to [/release/{slug}]
+Route::get('/download/release', 'DownloadController@release_listing_redirect'); //redirect to [/releases]
+Route::get('/download/themes', 'DownloadController@theme_listing_redirect'); //redirect to [/themes]
+Route::get('/download/languagepacks', 'DownloadController@language_listing_redirect'); //redirect to [/languages]
+
 Route::get('/releases', 'DownloadController@release_listing');
 Route::get('/release/{slug}', 'DownloadController@release_details')->where(array('slug' => NUMBER_TEXT));
 Route::get('/release/{slug}/download', 'DownloadController@release_download')->where(array('slug' => NUMBER_TEXT));
@@ -76,9 +79,11 @@ Route::get('/theme/{slug}/download', 'DownloadController@theme_download')->where
 | Documentation Routes
 |--------------------------------------------------------------------------
 */
-Route::get('/docs', 'DocsController@index');
+Route::get('/docs', 'DocsController@documentation_listing');
 Route::get('/docs/{slug}', 'DocsController@documentation_details')->where(array('slug' => NUMBER_TEXT));
-Route::get('/documentation/{slug}', 'DocsController@documentation_redirect')->where(array('slug' => NUMBER_TEXT)); // for backward compatibility
+Route::get('/documentation', 'DocsController@documentation_listing_redirect');  //redirect to [/docs]
+Route::get('/documentation/{slug}', 'DocsController@documentation_details_redirect')->where(array('slug' => NUMBER_TEXT));  //redirect to [/docs/{slug}]
+
 
 
 /*
