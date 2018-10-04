@@ -3545,6 +3545,35 @@ template {
 .slick-arrow.slick-hidden {
   display: none; }
 
+progress[value] {
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Get rid of default border in Firefox. */
+  border: none;
+  height: 0.625rem;
+  border-radius: 1.25rem;
+  background-color: #b3b3b3; }
+  progress[value]::-webkit-progress-bar {
+    background-color: #b3b3b3;
+    border-radius: 1.25rem; }
+  progress[value]::-webkit-progress-value {
+    background-color: #2998ac;
+    border-radius: 1.25rem 0 0 1.25rem;
+    background-image: linear-gradient(135deg, rgba(60, 88, 173, 0.8), rgba(41, 152, 172, 0.8), rgba(60, 88, 173, 0.8)) ;
+    background-size: 200% 200%; }
+  progress[value]::-moz-progress-bar {
+    border-radius: 1.25rem 0 0 1.25rem;
+    background-image: -moz-linear-gradient(135deg, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%), -moz-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)), -moz-linear-gradient(left, #2998ac, #3c58ad); }
+
+progress[value="100"]::-webkit-progress-value {
+  background-color: #2998ac;
+  border-radius: 1.25rem; }
+
+progress[value="100"]::-moz-progress-bar {
+  border-radius: 1.25rem; }
+
 table tr {
   border-top: 0.08333rem solid #3d4244; }
   table tr > th,
@@ -4359,16 +4388,20 @@ body {
       background-color: #1c415e; }
 
 .language-list .language-item {
-  margin-bottom: 1.25rem; }
+  margin-bottom: 1.25rem;
+  display: flex;
+  justify-content: center; }
   .language-list .language-item .eff-reveal-border {
     display: flex;
     flex-direction: column; }
     .language-list .language-item .eff-reveal-border .eff-reveal {
       display: block;
+      flex: 1 1 auto;
       padding: 1.25rem;
       background-color: #252829;
       text-align: center;
-      transition: all ease 200ms; }
+      transition: all ease 200ms;
+      color: #efefef; }
       .language-list .language-item .eff-reveal-border .eff-reveal:hover {
         background-color: #2c3031; }
 

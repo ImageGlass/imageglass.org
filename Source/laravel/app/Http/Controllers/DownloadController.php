@@ -114,14 +114,15 @@ class DownloadController extends Controller
     }
 
     public function language_listing() {
-        $url = "https://api.crowdin.com/api/project/imageglass/status?key=0b08634573c456476345efa8bad174f2&json";
+        $key = "0b08634573c456476345efa8bad174f2";
+        $url = "https://api.crowdin.com/api/project/imageglass/status?key=".$key."&json";
 
-        // get the latest theme items
-        // $theme_collection = $this::getRequest($url, array("key" => "0b08634573c456476345efa8bad174f2", "json" => ""), true);
-        // dd($theme_collection);
+        // get language list
+        $language_list = json_decode($this->getPublicRequest($url));
+        // dd($language_list);
         
         // page data
-		// $this->data["theme_collection"] = $theme_collection;
+		$this->data["language_list"] = $language_list;
 
         // meta tags
         $this->data["_page"] = "download.language";
@@ -133,5 +134,17 @@ class DownloadController extends Controller
         return view("pages.download.languages")->with($this->data);
     }
 
+
+    public function language_download($slug) {
+        $key = "0b08634573c456476345efa8bad174f2";
+        $url = "https://api.crowdin.com/api/project/imageglass/download/".$slug.".zip?key=".$key;
+        $outputFile = "upload/language/".$slug.".zip";
+
+        // download file to server
+        file_put_contents($outputFile, $this->getPublicRequest($url));
+
+        return $outputFile;
+    }
+    
 
 }

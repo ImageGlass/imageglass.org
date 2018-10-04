@@ -1,8 +1,5 @@
 import {FluentRevealEffect} from "fluent-reveal-effect"
-import CrowdinAPI from "../helpers/crowndin-api"
-import axios from "axios"
-
-
+import $ from "jquery"
 
 function applyRevealEffect() {
     FluentRevealEffect.applyEffect("#body", {
@@ -13,8 +10,8 @@ function applyRevealEffect() {
 		children: {
 			borderSelector: ".eff-reveal-border",
 			elementSelector: ".eff-reveal",
-			lightColor: "rgba(255,255,255, 0.12)",
-			gradientSize: 300
+			lightColor: "rgba(255,255,255, 0.15)",
+			gradientSize: 200
 		}
 	})
 }
@@ -23,20 +20,41 @@ function applyRevealEffect() {
 export default class LanguagePage {
     constructor() {
         applyRevealEffect()
+        var self = this
 
-        this.loadLanguages()
+        $(".language-item-content").off().click(function(e) {
+            e.preventDefault()
+
+            // get lang code
+            let langCode = $(this).attr("data-code")
+
+            // start downloading
+            self.downloadLanguage(langCode)
+        })
     }
 
-    async loadLanguages() {
-        const PROJECT_NAME = "imageglass"
-        const SECRET_KEY = "0b08634573c456476345efa8bad174f2"
-        // debugger
-        // let crowndin = new CrowdinAPI(PROJECT_NAME, SECRET_KEY)
-        // const langs = await crowndin.getTranslationStatus()
-        // window.axios = axios
-        const resp = await axios.get("https://api.crowdin.com/api/project/imageglass/status?key=0b08634573c456476345efa8bad174f2&json", {
-            crossdomain: true
-        })
-        console.log(resp)
+    async downloadLanguage(langCode) {
+        try {
+            
+            // download the language pack from Crowndin to server
+            const downloadFile = await (await fetch(`language/${langCode}/download`)).text()
+
+            // create a dummy hyperlink to download
+            var a = document.createElement("a")
+            a.href = downloadFile
+            a.style.display = "none"
+            a.download = `${langCode}.zip`
+            document.body.appendChild(a)
+
+            // start downloading
+            a.click()
+
+            // remove dummy hyperlink
+            document.body.removeChild(a)
+
+        } catch (error) {
+            console.log(error)
+            alert(error)
+        }
     }
 }

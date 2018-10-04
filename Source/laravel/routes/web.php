@@ -66,6 +66,7 @@ Route::get('/release/{slug}/download', 'DownloadController@release_download')->w
 
 Route::get('/moon', 'DownloadController@moon_listing');
 Route::get('/languages', 'DownloadController@language_listing');
+Route::get('/language/{slug}/download', 'DownloadController@language_download');
 
 Route::get('/themes', 'DownloadController@theme_listing');
 Route::get('/theme/{slug}', 'DownloadController@theme_details')->where(array('slug' => NUMBER_TEXT));

@@ -13,66 +13,19 @@
         <div class="col-lg-10 col-xl-9 col-xxl-8 col-hg-12 language-list">
             <div class="row">
 
-                <div class="col-3 language-item">
+                @foreach ($language_list as $item)
+                <div class="col-6 col-sm-4 col-md-3 col-xl-2 col-hg-1 px-2 language-item">
                     <article class="eff-reveal-border">
-                        <a class="language-item-content eff-reveal" href="#" title="xxxxxx">
-                            <img class="img-fluid" src="https://image.flaticon.com/icons/svg/555/555515.svg" alt="Translate ImageGlass to Vietnamese language">
+                        <a class="language-item-content eff-reveal" data-code="{{ $item->code }}" href="{{ url("language/".$item->code."/download") }}" title="{{ $item->name }}">
+                            <img class="img-fluid" src="https://d2srrzh48sp2nh.cloudfront.net/01be2c21/images/flags/{{ $item->code }}.png" alt="{{ $item->name }}">
 
-                            <h2 class="fs-body">Vietnamese</h2>
+                            <progress class="col-12 px-0" value="{{ $item->approved_progress }}" max="100" title="{{ $item->approved_progress }}% translated"></progress>
+                            <h2 class="fs-small">{{ $item->name }}</h2>
                         </a>
                     </article>
                 </div>
-
-                <div class="col-3 language-item">
-                    <article class="eff-reveal-border">
-                        <a class="language-item-content eff-reveal" href="#" title="xxxxxx">
-                            <img class="img-fluid" src="https://image.flaticon.com/icons/svg/555/555538.svg" alt="Translate ImageGlass to Vietnamese language">
-
-                            <h2 class="fs-body">Vietnamese</h2>
-                        </a>
-                    </article>
-                </div>
-
-                <div class="col-3 language-item">
-                    <article class="eff-reveal-border">
-                        <a class="language-item-content eff-reveal" href="#" title="xxxxxx">
-                            <img class="img-fluid" src="https://image.flaticon.com/icons/svg/555/555549.svg" alt="Translate ImageGlass to Vietnamese language">
-
-                            <h2 class="fs-body">Vietnamese</h2>
-                        </a>
-                    </article>
-                </div>
-
-                <div class="col-3 language-item">
-                    <article class="eff-reveal-border">
-                        <a class="language-item-content eff-reveal" href="#" title="xxxxxx">
-                            <img class="img-fluid" src="https://image.flaticon.com/icons/svg/555/555556.svg" alt="Translate ImageGlass to Vietnamese language">
-
-                            <h2 class="fs-body">Vietnamese</h2>
-                        </a>
-                    </article>
-                </div>
-
-                <div class="col-3 language-item">
-                    <article class="eff-reveal-border">
-                        <a class="language-item-content eff-reveal" href="#" title="xxxxxx">
-                            <img class="img-fluid" src="https://image.flaticon.com/icons/svg/555/555606.svg" alt="Translate ImageGlass to Vietnamese language">
-
-                            <h2 class="fs-body">Vietnamese</h2>
-                        </a>
-                    </article>
-                </div>
-
-                <div class="col-3 language-item">
-                    <article class="eff-reveal-border">
-                        <a class="language-item-content eff-reveal" href="#" title="xxxxxx">
-                            <img class="img-fluid" src="https://image.flaticon.com/icons/svg/555/555462.svg" alt="Translate ImageGlass to Vietnamese language">
-
-                            <h2 class="fs-body">Vietnamese</h2>
-                        </a>
-                    </article>
-                </div>
-
+                @endforeach
+                
             </div>
         </div>
     </div>

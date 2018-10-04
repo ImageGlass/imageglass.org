@@ -1,8 +1,9 @@
 .language-list {
 
-
     .language-item {
         margin-bottom: $gap;
+        display: flex;
+        justify-content: center;
 
         .eff-reveal-border {
             display: flex;
@@ -10,10 +11,13 @@
 
             .eff-reveal {
                 display: block;
+                flex: 1 1 auto;
                 padding: $gap;
                 background-color: $color-bg;
                 text-align: center;
                 transition: all ease 200ms;
+                color: $color-text-1;
+                
 
                 &:hover {
                     background-color: lighten($color-bg, 3);
