@@ -10,12 +10,20 @@
 
 @section("_page_subtitle")
     Sorry, the page you are looking for could not be found.
+
+    <div class="col-lg-10 col-xl-9 col-xxl-8 col-hg-12 mb-0 mt-4">
+        <div class="row">
+            <div class="col-md-8 col-lg-7 col-xl-6 col-xxl-5 col-hg-3 mb-0">
+                @include("shared._ads")
+            </div>
+        </div>
+    </div>
 @stop
 
 
 @section("_article_list")
 
-<div class="row justify-content-end">
+<div class="row justify-content-end" style="margin-top: -100px;">
     <div class="col-10 col-md-8 col-lg-7 col-xl-6 col-xxl-5 col-hg-4">
 
         {{-- Source: https://codepen.io/sdras/pen/doZReX --}}

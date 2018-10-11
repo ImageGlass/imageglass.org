@@ -10,6 +10,15 @@
     <span class="d-inline-block mt-2">
         Be forewarned: it's designed for early adopters, and can contain bugs.
     </span>
+
+    <div class="col-lg-10 col-xl-9 col-xxl-8 col-hg-12 mb-0 mt-4">
+        <div class="row">
+            <div class="col-md-8 col-lg-7 col-xl-6 col-xxl-5 col-hg-3 mb-0">
+                @include("shared._ads")
+            </div>
+        </div>
+    </div>
+    
 @stop
 
 

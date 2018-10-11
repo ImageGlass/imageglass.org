@@ -20,6 +20,12 @@
                 <span>{{ $release_item["version"] }}</span>
             </div>
 
+            <div class="row justify-content-center mt-4">
+                <div class="col-lg-4">
+                    @include("shared._ads")
+                </div>
+            </div>
+
             <section class="row justify-content-center mt-5">
                 <div class="col-hg-7 col-xxl-8 col-xl-9 col-lg-10 col-12">
                     <div class="embed-responsive embed-responsive-16by9 top-video">

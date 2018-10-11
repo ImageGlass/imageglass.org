@@ -3,6 +3,16 @@
     Documentation
 @stop
 
+@section("_page_subtitle")
+    <div class="col-lg-10 col-xl-9 col-xxl-8 col-hg-12 mb-0 mt-4">
+        <div class="row">
+            <div class="col-md-8 col-lg-7 col-xl-6 col-xxl-5 col-hg-3 mb-0">
+                @include("shared._ads")
+            </div>
+        </div>
+    </div>
+@stop
+
 
 @section("_article_list")
     <ul class="row justify-content-center article-list">

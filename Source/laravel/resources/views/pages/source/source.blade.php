@@ -52,6 +52,7 @@
         </article>
     
         <aside class="col-md-4 col-lg-4 col-xxl-3 col-hg-2 px-0 px-md-3 aside">
+            @include("shared._ads")
             @include("modules.aside.article-list")
         </aside>
     </div>

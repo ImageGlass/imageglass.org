@@ -3753,8 +3753,7 @@ table.table-hover tr:hover > td {
   background: url(https://picsum.photos/1366/1200/?random) no-repeat center center fixed;
   background-size: cover;
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://picsum.photos/1366/600/?random', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://picsum.photos/1366/600/?random', sizingMethod='scale')";
-  animation: bgZoomIn 12s ease alternate-reverse infinite; }
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://picsum.photos/1366/600/?random', sizingMethod='scale')"; }
   .bg-box > .bg-box-content {
     background-image: linear-gradient(135deg, rgba(60, 88, 173, 0.8), rgba(41, 152, 172, 0.8), rgba(60, 88, 173, 0.8)) ;
     background-size: 200% 200%;
@@ -3912,6 +3911,47 @@ table.table-hover tr:hover > td {
     .separator.separator-left::before {
       background-image: radial-gradient(circle at left, #3c58ad 0, #2998ac 40%, transparent 100%, transparent 100%);
       opacity: 0.5; }
+
+#carbonads {
+  padding: 0.625rem;
+  position: relative;
+  transition: all 200ms ease;
+  box-shadow: 0px 30px 90px -35px rgba(0, 0, 0, 0.3), inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.1); }
+  @supports (-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px)) {
+    #carbonads {
+      background-color: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(1.25rem); } }
+  #carbonads > span,
+  #carbonads .carbon-wrap,
+  #carbonads a {
+    display: flex;
+    flex-direction: column; }
+  #carbonads .carbon-wrap {
+    flex-direction: row;
+    align-items: stretch; }
+  #carbonads a {
+    color: #efefef;
+    font-size: 0.875rem;
+    font-weight: 200; }
+  #carbonads .carbon-img {
+    border-radius: 1px; }
+  #carbonads a.carbon-text {
+    padding-left: 1.25rem; }
+  #carbonads .carbon-poweredby {
+    position: absolute;
+    bottom: 0.625rem;
+    right: 0.625rem;
+    font-size: 11px;
+    color: #d6d6d6; }
+  #carbonads:hover {
+    transform: scale(1.1) rotate3d(0, 0, 1, 2deg) translate(0, 0.3125rem);
+    box-shadow: 0px 2.5rem 90px -35px rgba(0, 0, 0, 0.3), inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(135deg, rgba(60, 88, 173, 0.8), rgba(41, 152, 172, 0.8), rgba(60, 88, 173, 0.8)) ;
+    background-size: 200% 200%;
+    animation: aniBgGradient 3s ease infinite; }
 
 :root {
   --scroll-bar-size: 15px;
