@@ -57,6 +57,12 @@
             @include("modules.aside.article-list")
         </aside>
     </div>
+
+    <div class="row mt-5">
+        <div class="col-md-8 col-lg-8 col-xxl-9 col-hg-10 pr-0 pr-md-4">
+            @include("shared._donation")
+        </div>
+    </div>
 </section>
 
 @stop

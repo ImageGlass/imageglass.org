@@ -63,4 +63,10 @@
             {{ $news_collection->links() }}
         </div>
     </div>
+
+    <div class="row justify-content-center mt-5">
+        <div class="col-lg-10 col-xl-9 col-xxl-8 col-hg-6">
+            @include("shared._donation")
+        </div>
+    </div>
 @stop
