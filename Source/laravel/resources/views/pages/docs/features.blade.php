@@ -16,7 +16,7 @@
             <p>ImageGlass is another open source basic image viewer, which, while simple, benefits from the speed that comes with being so lightweight, and is a good choice for Windows users.</p>
 
             <div class="mt-3 embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/d2ZCAZE0el4?rel=0&amp;showinfo=0"></iframe> 
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/d2ZCAZE0el4?rel=0&amp;showinfo=0" title="Introduction video"></iframe> 
             </div>
 
 

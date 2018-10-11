@@ -1,6 +1,7 @@
 @php
     $_page = "error.404";
     $_title = "Error 404 | ImageGlass";
+    $_description = "Sorry, the page you are looking for could not be found.";
 @endphp
 
 @extends("layouts._layout_listing")

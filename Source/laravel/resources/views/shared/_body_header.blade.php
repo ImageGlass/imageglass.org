@@ -21,7 +21,7 @@
             </div>
 
 
-            <nav class="menu-group main-menu">
+            <ul class="menu-group main-menu">
                 <li class="menu-item {{ strpos(@$_page, "news") !== false ? "active" : "" }}">
                     <a href="{{ url("/news") }}" class="eff-reveal">
                         <span>
@@ -94,7 +94,7 @@
                         </span>
                     </a>
                 </li>
-            </nav>
+            </ul>
 
         </div>
     </div>
