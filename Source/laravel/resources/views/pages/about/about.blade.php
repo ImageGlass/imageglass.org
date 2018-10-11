@@ -11,29 +11,25 @@
 
     <div class="row no-gutters">
         <article class="col-md-8 col-lg-8 col-xxl-9 col-hg-10 pr-0 pr-md-4 article-post">
-            
             <p class="intro">
 				<img class="avt" src="{{ url('/img/phapavt.png') }}" alt="Duong Dieu Phap">
-				<i class="icon-quotes-left"></i> Hello! My full name is Dương Diệu Pháp.<br/>
+				<i class="icon-quotes-left"></i> Hello! My full name is Dương Diệu Pháp (aka Phap - /fab/).<br/>
 				I am {{date('Y') - 1991}}-year-old Vietnamese developer. <i class="icon-quotes-right"></i><br/><br/>
 			</p>
 			<p>
 				I am working as Senior UI/UX Developement Specialist for <a href="http://www.ascentis.com.sg" target="_blank" rel="noopener noreferrer" title="Ascentis Private Limited"><strong>Ascentis Private Limited</strong></a> - the leader in powering CRM & Loyalty programs for leading brands in Singapore and the region.
 			</p>
 			<p>
-				Besides that, I have over 5 years of experiences in developing Windows desktop applications. I love to build little ultilities and I'm glad to receive both positive and negative feedback from the people.
+				I often develop libraries for web and ImageGlass app in my free time. You can check them in <a href="https://github.com/d2phap" target="blank" rel="noopener noreferrer">my Github page</a>. I will be glad if you can put some stars ⭐.
 			</p>
-
+			
 			<p>
-				<a class="btn btn-primary" href="https://www.google.com/search?q=&quot;duong+dieu+phap&quot;" target="_blank" rel="noopener noreferrer" title="Find me on the Internet">
-					<span class="icon-search"></span>
-					<span>Find me on the Internet</span>
-				</a>
+				<span class="fs-h1">🤗</span>
 			</p>
 
 
 			<div class="personal-info links">
-				<h3 class="fs-h3 mt-5 mb-3">Experiences</h3>
+				<h3 class="fs-h3 mt-5 mb-3">📚 Experiences</h3>
 				<ul>
 					<li><strong>11/2017 - present:</strong> Senior UI/UX Developement Specialist at <a target="_blank" rel="noopener noreferrer" href="http://www.ascentis.com.sg">Ascentis Private Limited</a></li>	
 					<li><strong>6/2015 - 11/2017:</strong> Front-end developer at <a target="_blank" rel="noopener noreferrer" href="http://aleph-labs.com">Aleph Labs</a></li>
@@ -42,7 +38,7 @@
 					<li><strong>2009 - 2014:</strong> Student of <a href="http://www.fit.hcmus.edu.vn/vn/Default.aspx?tabid=416" target="_blank" rel="noopener noreferrer">The Faculty of Information Technology (FIT)</a> of <a href="https://en.hcmus.edu.vn/" target="_blank" rel="noopener noreferrer">Ho Chi Minh University of Science</a></li>
 				</ul>
 
-				<h3 class="fs-h3 mt-5 mb-3" id="contact">Contact me</h3>
+				<h3 class="fs-h3 mt-5 mb-3" id="contact">💌 Contact me</h3>
 				<ul>
 					<li><strong>Email: </strong><a href="mailto:phap@imageglass.org" target="_blank" rel="noopener noreferrer">phap@imageglass.org</a></li>
 					<li><strong>Linkedin: </strong><a href="http://linkedin.com/in/duongdieuphap" target="_blank" rel="noopener noreferrer">linkedin.com/in/duongdieuphap</a></li>
@@ -53,6 +49,18 @@
 				</ul>
 			</div>
 
+			<div class="separator my-5"></div>
+
+			<h3 class="fs-h2">
+				🤸‍ My collaborator - Kevin Routley
+			</h3>
+			<p>
+				An awesome guy lives on the US East Coast. 
+				Not only does he help me to resolve the issues reported, but he also develops new features of ImageGlass.
+			</p>
+			<p>
+				Check out his Github profile: <a href="https://github.com/fire-eggs">github.com/fire-eggs</a>
+			</p>
 
         </article>
     
