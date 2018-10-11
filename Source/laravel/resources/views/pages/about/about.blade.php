@@ -59,7 +59,7 @@
 				Not only does he help me to resolve the issues reported, but he also develops new features of ImageGlass.
 			</p>
 			<p>
-				Check out his Github profile: <a href="https://github.com/fire-eggs">github.com/fire-eggs</a>
+				Check out his website: <a href="https://fire-eggs.github.io/" target="blank" rel="noopener noreferrer">fire-eggs.github.io</a>
 			</p>
 
         </article>
