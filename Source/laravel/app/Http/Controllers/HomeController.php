@@ -13,7 +13,6 @@ class HomeController extends Controller
 		// get the latest relese info
 		$release_item = $this::getRequest("/api/release/latest");
 
-
 		// get the latest news items
 		$news_items = $this::getRequest("/api/news", array("limit" => "5"));
 
@@ -52,19 +51,30 @@ class HomeController extends Controller
 			$version = request()->version;
 			$year = date("Y");
 			$month = date("m");
+			$behaviour = "unknown";
 
-			dd($version, $year, $month);
+			if (request()->has("behaviour")) {
+				$behaviour = request()->behaviour;
+			}
+
+			// TODO: ***
+			// Save to DB for analytics
 		}
+
+		$content_type = "text/xml";
+		$release_item = $this::getRequest("/api/release/latest");
 
 		// return JSON data
 		if (request()->has("json")) {
-
+			$content_type = "application/json";
 		}
 
-		// return XML data
-		else {
-
-		}
+		$this->data["content_type"] = $content_type;
+		$this->data["release_item"] = $release_item;
+		
+		
+		$content = view("pages.check-for-update")->with($this->data);
+		return Response::make($content, "200")->header("Content-Type", $content_type);
 	}
     
 }
