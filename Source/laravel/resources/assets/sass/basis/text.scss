@@ -62,3 +62,16 @@
 .text-color-2 {
 	color: $color-2 !important;
 }
+
+.text-code {
+	font-family: Consolas, "Courier New", Courier, monospace !important;
+	word-break: break-all;
+}
+
+.text-break-all {
+	word-break: break-all !important;
+}
+
+.text-wrap {
+	word-break: break-word !important;
+}

@@ -1,0 +1,16 @@
+.box {
+    padding: $gap;
+    background-color: $color-neutral;
+
+    &.box-info {
+        background-color: $color-info;
+    }
+
+    &.box-warning {
+        background-color: $color-warning;
+    }
+
+    &.box-error {
+        background-color: $color-error;
+    }
+}

@@ -1,23 +1,6 @@
 .home-top {
-	text-shadow: 0 0 $gapem/4 rgba($color-dark, 0.5);
-
 	.slogan {
 		color: lighten($color-text-1, 20);
-	}
-	
-	.btn-download {
-		font-size: $fs-h3;
-		font-weight: $fw-light;
-
-		.eff-reveal {
-			display: inline-flex;
-			align-items: center;
-		}
-
-		.icon {
-			font-size: $fs-h1;
-			margin-right: $gap/2;
-		}
 	}
 
 	.download-version {

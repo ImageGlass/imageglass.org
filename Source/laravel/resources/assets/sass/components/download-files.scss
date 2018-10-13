@@ -1,0 +1,32 @@
+.download-files {
+    
+    &> .download-file-item {
+        background-color: $color-bg-header;
+        padding: $gap 0;
+        margin-bottom: $gap;
+        position: relative;
+
+        .file-type-icon {
+            border: $gap/10 solid lighten($color-bg-header, 10);
+            padding: $gap/2;
+            font-size: $fs-h3;
+            font-weight: $fw-bold;
+            font-family: Consolas, "Courier New", Courier, monospace;
+            text-transform: uppercase;
+
+            min-height: $gap*4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background-color: $color-bg;
+            @include bg-gradient-gray();
+            text-shadow: 0 0 $gapem/5 rgba($color-dark, 0.5);
+        }
+
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+}
+

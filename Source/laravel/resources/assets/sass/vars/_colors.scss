@@ -14,6 +14,12 @@ $color-bg-footer: darken(mix($color-1, $color-2), 15);
 $color-text-1: #efefef;
 
 
+$color-neutral: rgba(#fff, 0.1);
+$color-info: rgba(#b3e5fc, 0.2);
+$color-warning: rgba(#ffe0b2, 0.2);
+$color-error: rgba(#f8bbc3, 0.2);
+
+
 :root {
     --color-1: $color-1;
     --color-2: $color-2;

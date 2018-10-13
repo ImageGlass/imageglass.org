@@ -1,26 +1,35 @@
 table {
 
     tr {
-        border-top: $gap/15 solid lighten($color-bg, 10);
-
         &> th,
         &> td {
-            padding: $gap/2;
-            border-left: $gap/15 solid lighten($color-bg, 10);
+            padding: $gap/4 0;
             transition: all ease 200ms;
-
-            &:last-child {
-                border-right: $gap/15 solid lighten($color-bg, 10);
-            }
         }
 
         &> th {
             font-weight: $fw-bold;
             background-color: rgba($color-1, 0.15);
         }
+    }
 
-        &:last-child {
-            border-bottom: $gap/15 solid lighten($color-bg, 10);
+    &:not(.table-borderless) {
+        tr {
+            border-top: $gap/15 solid lighten($color-bg, 10);
+    
+            &> th,
+            &> td {
+                padding: $gap/2;
+                border-left: $gap/15 solid lighten($color-bg, 10);
+    
+                &:last-child {
+                    border-right: $gap/15 solid lighten($color-bg, 10);
+                }
+            }
+    
+            &:last-child {
+                border-bottom: $gap/15 solid lighten($color-bg, 10);
+            }
         }
     }
 

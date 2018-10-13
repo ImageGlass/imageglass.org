@@ -47,16 +47,26 @@ class DownloadController extends Controller
             abort(404);
         }
 
+        // get the latest relese info
+		$release_latest = $this::getRequest("/api/release/latest");
 
         // get the release info
         $release_item = $this::getRequest("/api/release/" . $id);
 
+        // get the latest release items
+        $release_collection = $this::getRequest("/api/releases", array("limit" => "5"));
+
 
         // page data
+        $this->data["release_latest"] = $release_latest;
         $this->data["release_item"] = $release_item;
         
+        $this->data["_category_url"] = "release";
+        $this->data["_article_list_title"] = "The latest releases";
+        $this->data["_article_collection"] = $release_collection;
+        
 
-        // meta tags
+        // meta tags        
         $this->data["_page"] = "download.release.details";
         $this->data["_title"] = $release_item["title"] . " | " .  $this->data["_name"];
         

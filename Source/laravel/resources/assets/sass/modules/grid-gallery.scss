@@ -1,0 +1,43 @@
+.grid-gallery {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	/* Prevent vertical gaps */
+	line-height: 0;
+	column-width: $gap*12;
+	column-gap: $gap;
+
+	& > li {
+		margin-bottom: $gap;
+
+		/* To fix Chrome's bug when using css column + scale */
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+
+		img {
+			width: 100% !important;
+			height: auto !important;
+
+			transition: all ease 300ms;
+			filter: brightness(85%);
+		}
+
+		&:hover {
+			cursor: pointer;
+
+			img {
+				filter: brightness(105%);
+				transform: scale(1.08);
+				box-shadow: 0 $gap $gap*3 (-$gap) rgba(#000, 0.5);
+			}
+		}
+
+		&:active {
+			img {
+				transition: all ease 100ms;
+				transform: scale(1.04);
+			}
+		}
+	}
+}

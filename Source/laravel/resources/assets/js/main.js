@@ -8,6 +8,7 @@ import NewsDetailsPage from "./pages/news-details-page"
 
 import MoonPage from "./pages/moon-page"
 import ReleasePage from "./pages/release-page"
+import ReleaseDetailsPage from "./pages/release-details-page"
 import ThemePage from "./pages/theme-page"
 import LanguagePage from "./pages/language-page"
 
@@ -41,6 +42,10 @@ import Error404Page from "./pages/error-404-page"
 
         case "download.release":
             window._currentPage = new ReleasePage()
+            break
+
+        case "download.release.details":
+            window._currentPage = new ReleaseDetailsPage()
             break
 
         case "download.theme":
