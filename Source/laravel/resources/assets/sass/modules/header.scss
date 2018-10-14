@@ -97,7 +97,7 @@
                     flex-direction: column;
                     min-width: $gap*10;
                     padding: $gap/2 0;
-                    background-color: $color-bg;
+                    background-color: darken($color-bg, 3);
                     position: absolute;
                     box-shadow: 0 $gap*0.75 $gap*2 (-$gap/2) rgba($color-dark, 0.3);
 

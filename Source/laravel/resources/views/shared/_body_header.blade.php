@@ -1,3 +1,5 @@
+<input type="checkbox" class="chk-dropdown" id="chkMobileMenu">
+
 <header id="header">
     <div class="container header-bar">
         <div class="menu-group">

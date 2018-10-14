@@ -54,12 +54,12 @@ $headerHeight: $gap*3;
         position: fixed;
         top: $headerHeight;
         right: 0;
-        width: 60vw;
-        max-width: 250px;
+        width: 65vw;
+        max-width: $gap*15;
         height: calc(100vh - #{$headerHeight});
         overflow-y: auto;
         padding: $gap 0;
-        background-color: var(--color-light);
+        background-color: $color-bg;
         @include bg-blur();
         transition: all ease 300ms;
 
@@ -83,6 +83,7 @@ $headerHeight: $gap*3;
                     position: static;
                     background-color: transparent;
                     background-image: none;
+                    -webkit-backdrop-filter: none;
                     backdrop-filter: none;
                     box-shadow: none;
                     transform: translateY(0);
@@ -109,6 +110,19 @@ $headerHeight: $gap*3;
                         transform: translateY(0);
                         opacity: 1;
                     }
+                }
+            }
+
+            &.active {
+
+                &.submenu {
+                    .submenu-group {
+                        background-color: rgba($color-dark, 0.5);
+                    }
+                }
+
+                &:hover {
+                    animation: none;
                 }
             }
         }

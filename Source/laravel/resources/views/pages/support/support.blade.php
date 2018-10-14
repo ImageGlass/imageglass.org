@@ -20,8 +20,8 @@
                 </p>
 
                 <div class="mt-4">
-                    <ul class="row list-support">
-                        <li class="col-sm-6 col-md-4 col-lg-3">
+                    <ul class="row list-support mb-0">
+                        <li class="col-sm-6 col-md-4 col-lg-3 mb-3">
                             <a class="eff-reveal-border fs-small" target="_blank" rel="noopener" href="https://groups.google.com/forum/#!forum/imageglass">
                                 <span class="eff-reveal">
                                     <span class="item-icon">
@@ -36,7 +36,7 @@
                             </a>
                         </li>
 
-                        <li class="col-sm-6 col-md-4 col-lg-3">
+                        <li class="col-sm-6 col-md-4 col-lg-3 mb-3">
                             <a class="eff-reveal-border fs-small" target="_blank" rel="noopener" href="https://github.com/d2phap/ImageGlass/issues">
                                 <span class="eff-reveal">
                                     <span class="item-icon">
@@ -48,6 +48,10 @@
                                     </p>
                                 </span>
                             </a>
+                        </li>
+
+                        <li class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                            @include("shared._ads")
                         </li>
                         
                     </ul>

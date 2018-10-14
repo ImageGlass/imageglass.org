@@ -11,7 +11,7 @@
         li {
             display: inline-flex;
 
-            a {
+            .eff-reveal-border {
                 display: flex;
                 color: $color-text-1;
 
@@ -34,8 +34,31 @@
                     }
                 }
             }
-        }
 
-        
+            .quang-cao {
+                display: flex;
+
+                #carbonads > span {
+                    padding: $gap;
+                    height: 100%;
+
+                    &> .carbon-wrap {
+                        flex-direction: column;
+                        height: 100%;
+                        text-align: center;
+
+                        .carbon-img {
+                            align-items: center;
+                        }
+
+                        .carbon-text {
+                            padding-left: 0;
+                            margin-top: $gap;
+                            flex: 1 1 auto;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
