@@ -3,7 +3,6 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="canonical" href="{{ url('docs') }}" />
 
-
 {{--  Site Icon  --}}
 <link rel="shortcut icon" href="{{ url('img/iglogo.svg') }}" type="image/svg+xml" />
 <link rel="apple-touch-icon" sizes="180x180" href="{{ url('img/icons/apple-touch-icon.png') }}">
@@ -14,8 +13,6 @@
 <meta name="msapplication-TileColor" content="#353535">
 <meta name="theme-color" content="#27292a">
 
-
-
 {{--  For Search Indexing  --}}
 <meta name="robots" content="index, follow">
 <meta name="author" content="{{ @$_author }}">
@@ -25,11 +22,14 @@
 {{--  Google Site  --}}
 <meta name="google-site-verification" content="lwIlMXm2pAq31HiJyaVJH-BXTwIqPP2rFv4L6P4DTXU" />
 
+{{--  Perf optimization  --}}
+<link rel="preconnect" href="https://srv.carbonads.net">
+<link rel="preconnect" href="https://www.google-analytics.com">
+
 {{--  Site info  --}}
 <title>{{ @$_title }}</title>
 <meta name="description" content="{{ @$_description }}">
 <meta name="keywords" content="{{ @$_keywords }}">
-
 
 {{--  Open Graph Article  --}}
 <meta property="og:type" content="article">
@@ -41,7 +41,6 @@
 <meta property="og:description" content="{{ @$_description }}" />
 <meta property="article:tag" content="{{ @$_keywords }}" />
 <meta property="article:author" content="{{ @$_author }}">
-
 
 {{--  Facebook info  --}}
 <meta property="fb:admins" content="100000190054499" />
