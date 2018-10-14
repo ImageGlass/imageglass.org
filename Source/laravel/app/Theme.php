@@ -60,6 +60,7 @@ class Theme extends Model
 			->first();
 			
 		if (!is_null($db)) {
+			$db->timestamps = false;
 			$db->count = $db->count + $count_increasement;
 			$db->save();
 		}

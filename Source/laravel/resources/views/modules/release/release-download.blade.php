@@ -54,9 +54,13 @@
                 @endif
                 
                 <div class="download-files mt-3 col-12">
+                @php
+                $download_index = 0;
+                @endphp
+
                 @foreach ($release_item["downloads"] as $item)
                     @php
-                    $download_url = URL::to("release/".$release_item["slug"]."-".$release_item["id"]."/download?type=".$item["type"]);
+                    $download_url = URL::to("release/{$release_item["slug"]}-{$release_item["downloads"][$download_index]["id"]}/download");
                     @endphp
 
                     <div class="row download-file-item {{ $item["type"] }}">
@@ -90,6 +94,10 @@
                         </div>
 
                     </div>
+
+                    @php
+                    $download_index++;
+                    @endphp
                 @endforeach
                 </div>
             </article>

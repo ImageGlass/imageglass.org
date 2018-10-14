@@ -47,7 +47,9 @@ class ReleaseDownload extends Model
         $db = ReleaseDownload::where("id", "=", $id)
             ->first();
 
+
         if (!is_null($db)) {
+            $db->timestamps = false;
             $db->count = $db->count + $count_increasement;
             $db->save();
         }

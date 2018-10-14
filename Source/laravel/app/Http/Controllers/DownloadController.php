@@ -11,7 +11,7 @@ class DownloadController extends Controller
         // get the latest relese info
 		$release_item = $this::getRequest("/api/release/latest");
 
-        return redirect("release/" . $release_item["slug"] ."-". $release_item["id"]);
+        return redirect("release/{$release_item["slug"]}-{$release_item["id"]}");
     }
 
 
@@ -77,6 +77,32 @@ class DownloadController extends Controller
     }
     
 
+    public function release_download($slug) {
+        
+        $id = $this->getIdFromSlug($slug);
+
+        if ($id < 0) {
+            // throw error
+            abort(404);
+        }
+
+        // get the release info
+        $release_item = $this::getRequest("/api/release/download/{$id}");
+
+        $file = getFilePath($release_item["link"], "release");
+        $name = basename($file);
+        // dd($file);
+
+        // external file url
+        if (substr($file, 0, 4) == "http" || 
+            substr($file, 0, 5) == "https") {
+
+            return redirect($file);
+        }
+
+        // start download release
+        return response()->download($file, $name);
+    }
 
 
 
@@ -164,6 +190,32 @@ class DownloadController extends Controller
     }
 
 
+    public function theme_download($slug) {
+
+        $id = $this->getIdFromSlug($slug);
+
+        if ($id < 0) {
+            // throw error
+            abort(404);
+        }
+
+        // get the theme info
+        $theme_item = $this::getRequest("/api/theme/download/{$id}");
+
+        $file = getFilePath($theme_item["link"], "theme");
+        $name = basename($file);
+        // dd($file);
+
+        // external file url
+        if (substr($file, 0, 4) == "http" || 
+            substr($file, 0, 5) == "https") {
+
+            return redirect($file);
+        }
+
+        // start download theme
+        return response()->download($file, $name);
+    }
 
 
 
@@ -197,13 +249,9 @@ class DownloadController extends Controller
 
     public function language_download($slug) {
         $key = "0b08634573c456476345efa8bad174f2";
-        $url = "https://api.crowdin.com/api/project/imageglass/download/".$slug.".zip?key=".$key;
-        $outputFile = "upload/language/".$slug.".zip";
+        $url = "https://api.crowdin.com/api/project/imageglass/download/{$slug}.zip?key={$key}";
 
-        // download file to server
-        file_put_contents($outputFile, $this->getPublicRequest($url));
-
-        return $outputFile;
+        return redirect($url);
     }
     
 

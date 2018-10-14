@@ -28417,128 +28417,37 @@ exports.default = HomePage;
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+				value: true
 });
-
-var _regenerator = __webpack_require__(/*! babel-runtime/regenerator */ "./node_modules/babel-runtime/regenerator/index.js");
-
-var _regenerator2 = _interopRequireDefault(_regenerator);
-
-var _asyncToGenerator2 = __webpack_require__(/*! babel-runtime/helpers/asyncToGenerator */ "./node_modules/babel-runtime/helpers/asyncToGenerator.js");
-
-var _asyncToGenerator3 = _interopRequireDefault(_asyncToGenerator2);
 
 var _classCallCheck2 = __webpack_require__(/*! babel-runtime/helpers/classCallCheck */ "./node_modules/babel-runtime/helpers/classCallCheck.js");
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = __webpack_require__(/*! babel-runtime/helpers/createClass */ "./node_modules/babel-runtime/helpers/createClass.js");
-
-var _createClass3 = _interopRequireDefault(_createClass2);
-
 var _fluentRevealEffect = __webpack_require__(/*! fluent-reveal-effect */ "./node_modules/fluent-reveal-effect/index.js");
-
-var _jquery = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-
-var _jquery2 = _interopRequireDefault(_jquery);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function applyRevealEffect() {
-    _fluentRevealEffect.FluentRevealEffect.applyEffect("#body", {
-        clickEffect: true,
-        lightColor: "rgba(255,255,255, 0.3)",
-        gradientSize: 150,
-        isContainer: true,
-        children: {
-            borderSelector: ".eff-reveal-border",
-            elementSelector: ".eff-reveal",
-            lightColor: "rgba(255,255,255, 0.15)",
-            gradientSize: 200
-        }
-    });
+				_fluentRevealEffect.FluentRevealEffect.applyEffect("#body", {
+								clickEffect: true,
+								lightColor: "rgba(255,255,255, 0.3)",
+								gradientSize: 150,
+								isContainer: true,
+								children: {
+												borderSelector: ".eff-reveal-border",
+												elementSelector: ".eff-reveal",
+												lightColor: "rgba(255,255,255, 0.15)",
+												gradientSize: 200
+								}
+				});
 }
 
-var LanguagePage = function () {
-    function LanguagePage() {
-        (0, _classCallCheck3.default)(this, LanguagePage);
+var LanguagePage = function LanguagePage() {
+				(0, _classCallCheck3.default)(this, LanguagePage);
 
-        applyRevealEffect();
-        var self = this;
-
-        (0, _jquery2.default)(".language-item-content").off().click(function (e) {
-            e.preventDefault();
-
-            // get lang code
-            var langCode = (0, _jquery2.default)(this).attr("data-code");
-
-            // start downloading
-            self.downloadLanguage(langCode);
-        });
-    }
-
-    (0, _createClass3.default)(LanguagePage, [{
-        key: "downloadLanguage",
-        value: function () {
-            var _ref = (0, _asyncToGenerator3.default)( /*#__PURE__*/_regenerator2.default.mark(function _callee(langCode) {
-                var downloadFile, a;
-                return _regenerator2.default.wrap(function _callee$(_context) {
-                    while (1) {
-                        switch (_context.prev = _context.next) {
-                            case 0:
-                                _context.prev = 0;
-                                _context.next = 3;
-                                return fetch("language/" + langCode + "/download");
-
-                            case 3:
-                                _context.next = 5;
-                                return _context.sent.text();
-
-                            case 5:
-                                downloadFile = _context.sent;
-
-
-                                // create a dummy hyperlink to download
-                                a = document.createElement("a");
-
-                                a.href = downloadFile;
-                                a.style.display = "none";
-                                a.download = langCode + ".zip";
-                                document.body.appendChild(a);
-
-                                // start downloading
-                                a.click();
-
-                                // remove dummy hyperlink
-                                document.body.removeChild(a);
-
-                                _context.next = 19;
-                                break;
-
-                            case 15:
-                                _context.prev = 15;
-                                _context.t0 = _context["catch"](0);
-
-                                console.log(_context.t0);
-                                alert(_context.t0);
-
-                            case 19:
-                            case "end":
-                                return _context.stop();
-                        }
-                    }
-                }, _callee, this, [[0, 15]]);
-            }));
-
-            function downloadLanguage(_x) {
-                return _ref.apply(this, arguments);
-            }
-
-            return downloadLanguage;
-        }()
-    }]);
-    return LanguagePage;
-}();
+				applyRevealEffect();
+};
 
 exports.default = LanguagePage;
 
