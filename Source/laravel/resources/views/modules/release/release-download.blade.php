@@ -38,7 +38,7 @@
                 </div>
             </article>
 
-            <article class="article-post mb-0">
+            <article class="article-post mb-0" id="downloads">
                 <h2 class="fs-h2 mb-3">
                     Downloads
                 </h2>

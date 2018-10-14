@@ -1,5 +1,5 @@
-<section class="home-source">
-    <div class="home-source-content">
+<section class="bg-box-highlight home-source">
+    <div class="bg-box-highlight-content">
         <div class="container">
             <h2 class="fs-h2 text-center">
                 Free - Open Source Image Viewer

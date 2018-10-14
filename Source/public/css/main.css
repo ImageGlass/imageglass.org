@@ -3784,6 +3784,20 @@ table.table-hover tr:hover > td {
         font-size: 2.5rem;
         margin-right: 0.625rem; }
 
+.bg-box-highlight {
+  background-image: linear-gradient(-20deg, #1e1b28 0%, #397fad 100%); }
+  .bg-box-highlight .bg-box-highlight-content {
+    background-image: url(../img/star-bg.svg);
+    background-position: top center;
+    background-size: cover;
+    color: var(--color-light);
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem; }
+    .bg-box-highlight .bg-box-highlight-content .eff-reveal-border {
+      border-radius: 3.75rem; }
+      .bg-box-highlight .bg-box-highlight-content .eff-reveal-border .eff-reveal {
+        border-radius: 3.75rem; }
+
 .grid-img-list {
   list-style: none;
   padding-left: 0;
@@ -4366,20 +4380,6 @@ body {
 .home-review {
   background-color: #313536;
   padding-bottom: 3.75rem; }
-
-.home-source {
-  background-image: linear-gradient(-20deg, #1e1b28 0%, #397fad 100%); }
-  .home-source .home-source-content {
-    background-image: url(../img/star-bg.svg);
-    background-position: top center;
-    background-size: cover;
-    color: var(--color-light);
-    padding-top: 3.75rem;
-    padding-bottom: 3.75rem; }
-    .home-source .home-source-content .eff-reveal-border {
-      border-radius: 3.75rem; }
-      .home-source .home-source-content .eff-reveal-border .eff-reveal {
-        border-radius: 3.75rem; }
 
 .home-donate .home-donate-content {
   background-position: left bottom;
