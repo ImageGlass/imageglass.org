@@ -2,7 +2,7 @@ import {FluentRevealEffect} from "fluent-reveal-effect"
 
 
 function applyRevealEffect() {
-    FluentRevealEffect.applyEffect("#body", {
+    FluentRevealEffect.applyEffect("#body > .container", {
 		clickEffect: true,
 		lightColor: "rgba(255,255,255, 0.3)",
 		gradientSize: 100,

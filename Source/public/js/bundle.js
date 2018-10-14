@@ -27644,7 +27644,7 @@ var _fluentRevealEffect = __webpack_require__(/*! fluent-reveal-effect */ "./nod
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function applyRevealEffect() {
-				_fluentRevealEffect.FluentRevealEffect.applyEffect("#body", {
+				_fluentRevealEffect.FluentRevealEffect.applyEffect("#body > .container", {
 								clickEffect: true,
 								lightColor: "rgba(255,255,255, 0.3)",
 								gradientSize: 100,
@@ -27673,6 +27673,273 @@ var ArticleListModule = function () {
 }();
 
 exports.default = ArticleListModule;
+
+/***/ }),
+
+/***/ "./resources/assets/js/modules/grid-gallery-module.js":
+/*!************************************************************!*\
+  !*** ./resources/assets/js/modules/grid-gallery-module.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _classCallCheck2 = __webpack_require__(/*! babel-runtime/helpers/classCallCheck */ "./node_modules/babel-runtime/helpers/classCallCheck.js");
+
+var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+var _createClass2 = __webpack_require__(/*! babel-runtime/helpers/createClass */ "./node_modules/babel-runtime/helpers/createClass.js");
+
+var _createClass3 = _interopRequireDefault(_createClass2);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var GridGalleryModule = function () {
+    function GridGalleryModule() {
+        var selector = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : ".grid-gallery";
+        (0, _classCallCheck3.default)(this, GridGalleryModule);
+
+        this.selector = selector;
+        this.currentIndex = 0;
+        this.animationDuration = 500;
+        this.galleryItems = [];
+
+        this.galleryGrid = document.querySelector(this.selector);
+        if (!this.galleryGrid) {
+            throw new Error("Cannot find element: \"" + this.selector + "\"");
+        }
+        this.galleryItems = this.galleryGrid.querySelectorAll(".gallery-item");
+
+        this.initViewer = this.initViewer.bind(this);
+        this.openContent = this.openContent.bind(this);
+        this.handleGalleryItemClick = this.handleGalleryItemClick.bind(this);
+        this.handleCloseButtonClick = this.handleCloseButtonClick.bind(this);
+        this.handleNextButtonClick = this.handleNextButtonClick.bind(this);
+        this.handleBackButtonClick = this.handleBackButtonClick.bind(this);
+        this.handleKeyUp = this.handleKeyUp.bind(this);
+    }
+
+    /**
+     * Start Grid Gallery viewer
+     */
+
+
+    (0, _createClass3.default)(GridGalleryModule, [{
+        key: "initViewer",
+        value: function initViewer() {
+            var _this = this;
+
+            this.galleryItems.forEach(function (item, index) {
+                item.setAttribute("data-index", index);
+                item.addEventListener("click", _this.handleGalleryItemClick, false);
+            });
+        }
+
+        /**
+         * Show the content
+         */
+
+    }, {
+        key: "openContent",
+        value: function openContent() {
+            var step = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+
+
+            var self = this;
+            var viewer = document.querySelector(".grid-gallery-viewer");
+            var newIndex = self.currentIndex + step;
+
+            // view next
+            if (step > 0) {
+                if (newIndex > self.galleryItems.length - 1) {
+                    newIndex = 0;
+                }
+
+                // animation: hide old content
+                viewer.classList.add("closeViewer_Next");
+            }
+            // view back
+            else if (step < 0) {
+                    if (newIndex < 0) {
+                        newIndex = self.galleryItems.length - 1;
+                    }
+
+                    // animation: hide old content
+                    viewer.classList.add("closeViewer_Back");
+                }
+                // no change, refresh
+                else {
+                        // animation: hide old content
+                        viewer.classList.add("closeViewer");
+                    }
+
+            // update new index
+            self.currentIndex = newIndex;
+
+            // new content
+            var content = self.galleryItems[self.currentIndex].cloneNode(true).innerHTML;
+
+            setTimeout(function () {
+                viewer.classList.remove("closeViewer", "closeViewer_Next", "closeViewer_Back");
+
+                // view next
+                if (step > 0) {
+                    // animation: hide old content
+                    viewer.classList.add("openViewer_Next");
+                }
+                // view back
+                else if (step < 0) {
+                        // animation: hide old content
+                        viewer.classList.add("openViewer_Back");
+                    }
+                    // no change, refresh
+                    else {
+                            // animation: hide old content
+                            viewer.classList.add("openViewer");
+                        }
+
+                var viewerBody = viewer.querySelector(".viewer-body");
+                viewerBody.innerHTML = content;
+
+                setTimeout(function () {
+                    viewer.classList.remove("openViewer", "openViewer_Next", "openViewer_Back");
+                }, self.animationDuration);
+            }, self.animationDuration);
+        }
+
+        /**
+         * Event: gallery item click
+         * @param {Event} e 
+         */
+
+    }, {
+        key: "handleGalleryItemClick",
+        value: function handleGalleryItemClick(e) {
+            // console.log(e.currentTarget)
+            this.currentIndex = parseInt(e.currentTarget.getAttribute("data-index"));
+            // console.log(this.currentIndex)
+
+            // back button
+            var navBack = document.createElement("span");
+            navBack.classList.add("viewer-nav-back");
+            navBack.title = "Previous";
+            navBack.addEventListener("click", this.handleBackButtonClick, false);
+
+            // next button
+            var navNext = document.createElement("span");
+            navNext.classList.add("viewer-nav-next");
+            navNext.title = "Next";
+            navNext.addEventListener("click", this.handleNextButtonClick, false);
+
+            // close button
+            var btnclose = document.createElement("span");
+            btnclose.classList.add("viewer-close");
+            btnclose.title = "Close";
+            btnclose.addEventListener("click", this.handleCloseButtonClick, false);
+
+            // viewer body
+            var viewerBody = document.createElement("div");
+            viewerBody.classList.add("viewer-body");
+
+            // gallery viewer
+            var viewer = document.createElement("div");
+            viewer.classList.add("grid-gallery-viewer");
+            viewer.append(navBack);
+            viewer.append(viewerBody);
+            viewer.append(navNext);
+            viewer.append(btnclose);
+
+            document.body.classList.add("grid-gallery-viewer-open");
+            document.body.append(viewer);
+            document.addEventListener("keyup", this.handleKeyUp, false);
+
+            // open content
+            this.openContent();
+        }
+
+        /**
+         * Event: Close button click
+         */
+
+    }, {
+        key: "handleCloseButtonClick",
+        value: function handleCloseButtonClick() {
+            document.body.classList.remove("grid-gallery-viewer-open");
+            document.removeEventListener("keyup", this.handleKeyUp, false);
+
+            var viewer = document.querySelector(".grid-gallery-viewer");
+            if (viewer) {
+                viewer.classList.add("closing");
+
+                setTimeout(function () {
+                    viewer.remove();
+                }, this.animationDuration);
+            }
+        }
+
+        /**
+         * Event: Next button click
+         * @param {Event} e 
+         */
+
+    }, {
+        key: "handleNextButtonClick",
+        value: function handleNextButtonClick(e) {
+
+            // open content
+            this.openContent(1);
+        }
+
+        /**
+         * Event: Back button click
+         * @param {Event} e 
+         */
+
+    }, {
+        key: "handleBackButtonClick",
+        value: function handleBackButtonClick(e) {
+
+            // open content
+            this.openContent(-1);
+        }
+
+        /**
+         * Event key up
+         * @param {Event} e 
+         */
+
+    }, {
+        key: "handleKeyUp",
+        value: function handleKeyUp(e) {
+            // console.log(e.keyCode)
+
+            if (!e.ctrlKey && !e.shiftKey && !e.altKey && !e.metaKey) {
+
+                // NEXT key
+                if (e.keyCode == 39) {
+                    this.openContent(1);
+                }
+                // BACK key
+                else if (e.keyCode == 37) {
+                        this.openContent(-1);
+                    }
+                    // ESC key
+                    else if (e.keyCode == 27) {
+                            this.handleCloseButtonClick();
+                        }
+            }
+        }
+    }]);
+    return GridGalleryModule;
+}();
+
+exports.default = GridGalleryModule;
 
 /***/ }),
 
@@ -28425,14 +28692,23 @@ var _articleListModule = __webpack_require__(/*! ../modules/aside/article-list-m
 
 var _articleListModule2 = _interopRequireDefault(_articleListModule);
 
+var _gridGalleryModule = __webpack_require__(/*! ../modules/grid-gallery-module */ "./resources/assets/js/modules/grid-gallery-module.js");
+
+var _gridGalleryModule2 = _interopRequireDefault(_gridGalleryModule);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var ReleaseDetailsPage = function () {
     function ReleaseDetailsPage() {
         (0, _classCallCheck3.default)(this, ReleaseDetailsPage);
 
-        _articleListModule2.default.initModule();
+
         this.applyRevealEffectToHighlightSection();
+        _articleListModule2.default.initModule();
+
+        // grid gallery viewer
+        var gallery = new _gridGalleryModule2.default("#screenshots .grid-gallery");
+        gallery.initViewer();
     }
 
     (0, _createClass3.default)(ReleaseDetailsPage, [{

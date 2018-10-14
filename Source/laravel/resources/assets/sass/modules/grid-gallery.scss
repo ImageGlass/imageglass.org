@@ -41,3 +41,263 @@
 		}
 	}
 }
+
+
+.grid-gallery-viewer {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0,0,0,0.7);
+	// backdrop-filter: blur(20px);
+	animation: openGalleryViewer 500ms ease forwards;
+
+	.viewer-nav-back,
+	.viewer-nav-next {
+		display: block;
+		position: absolute;
+		z-index: 10;
+		width: $gap*3;
+		height: $gap*3;
+		transition: all ease 200ms;
+		background-color: rgba(#000, 0.2);
+		border-radius: 100%;
+
+		&::before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+			width: $gap;
+			height: $gap;
+			color: #fff;
+			border-left: $gap/10 solid;
+			border-bottom: $gap/10 solid;
+		}
+
+		&:hover {
+			cursor: pointer;
+			transform: scale(1.2);
+		}
+
+		&:active {
+			transition: all ease 100ms;
+			transform: scale(1.05);
+		}
+	}
+
+	.viewer-nav-back {
+		left: $gap;
+
+		&::before {
+			left: $gap/2;
+			transform: rotate(45deg);
+		}
+	}
+
+	.viewer-nav-next {
+		right: $gap;
+
+		&::before {
+			right: $gap/2;
+			transform: rotate(-135deg);
+		}
+	}
+
+	.viewer-body {
+		width: 100%;
+		max-height: 100vh;
+		padding: $gap;
+		display: flex;
+		justify-content: center;
+		transition: all ease 500ms;
+
+		&> * {
+			object-fit: contain;
+			max-width: 100%;
+		}
+	}
+
+	.viewer-close {
+		display: block;
+		position: absolute;
+		z-index: 11;
+		bottom: $gap;
+		left: 0;
+		right: 0;
+		margin: auto;
+		width: $gap*3;
+		height: $gap*3;
+		transition: all ease 200ms;
+		background-color: rgba(#000, 0.2);
+		border-radius: 1000%;
+
+		&::before,
+		&::after {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+			width: $gap*1.5;
+			height: $gap/10;
+			background-color: #fff;
+		}
+
+		&::before {
+			transform: rotate(-45deg);
+		}
+
+		&::after {
+			transform: rotate(45deg);
+		}
+
+		&:hover {
+			cursor: pointer;
+			transform: scale(1.2);
+		}
+
+		&:active {
+			transition: all ease 100ms;
+			transform: scale(1.05);
+		}
+	}
+
+
+	&.openViewer {
+		.viewer-body {
+			animation: openViewer 500ms ease forwards;
+		}
+	}
+	&.openViewer_Back {
+		.viewer-body {
+			animation: openViewer_Back 500ms ease forwards;
+		}
+	}
+	&.openViewer_Next {
+		.viewer-body {
+			animation: openViewer_Next 500ms ease forwards;
+		}
+	}
+
+	&.closeViewer {
+		.viewer-body {
+			animation: closeViewer 500ms ease forwards;
+		}
+	}
+	&.closeViewer_Next {
+		.viewer-body {
+			animation: closeViewer_Next 500ms ease forwards;
+		}
+	}
+	&.closeViewer_Back {
+		.viewer-body {
+			animation: closeViewer_Back 500ms ease forwards;
+		}
+	}
+
+	&.closing {
+		animation: closeGalleryViewer 500ms ease forwards;
+
+		.viewer-body {
+			animation: closeViewer 500ms ease forwards;
+		}
+	}
+}
+
+@keyframes openGalleryViewer {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+
+@keyframes closeGalleryViewer {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+@keyframes openViewer {
+	from {
+		opacity: 0;
+		transform: scale(0.9);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+@keyframes openViewer_Back {
+	from {
+		opacity: 0;
+		transform: scale(0.9) translateX(-$gap*2);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1) translateX(0);
+	}
+}
+
+@keyframes openViewer_Next {
+	from {
+		opacity: 0;
+		transform: scale(0.9) translateX($gap*2);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1) translateX(0);
+	}
+}
+
+@keyframes closeViewer {
+	from {
+		opacity: 1;
+		transform: scale(1);
+	}
+	to {
+		opacity: 0;
+		transform: scale(0.9);
+	}
+}
+
+@keyframes closeViewer_Next {
+	from {
+		opacity: 1;
+		transform: scale(1) translateX(0);
+	}
+	to {
+		opacity: 0;
+		transform: scale(0.9) translateX(-$gap*2);
+	}
+}
+
+@keyframes closeViewer_Back {
+	from {
+		opacity: 1;
+		transform: scale(1) translateX(0);
+	}
+	to {
+		opacity: 0;
+		transform: scale(0.9) translateX($gap*2);
+	}
+}

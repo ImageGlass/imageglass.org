@@ -1,11 +1,17 @@
 import {FluentRevealEffect} from "fluent-reveal-effect"
 import ArticleListModule from "../modules/aside/article-list-module"
+import GridGalleryModule from "../modules/grid-gallery-module"
 
 
 export default class ReleaseDetailsPage {
     constructor() {
-        ArticleListModule.initModule()
+        
         this.applyRevealEffectToHighlightSection()
+        ArticleListModule.initModule()
+
+        // grid gallery viewer
+        const gallery = new GridGalleryModule("#screenshots .grid-gallery")
+        gallery.initViewer()
     }
 
 

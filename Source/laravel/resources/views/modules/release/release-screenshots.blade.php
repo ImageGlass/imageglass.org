@@ -4,20 +4,13 @@
             Screenshots
         </h2>
 
-        <section class="">
-            <ul class="grid-gallery py-3">
-                @foreach($release_item["screen_shots"] as $item)
-                @php
-                    $img_url = getFileUrl($item["link"], "release");
-                @endphp
-
-                <li>
-                    <img src="{{ $img_url }}" alt="ImageGlass {{ $release_item["version"] }}"/>
-                </li>
-                @endforeach
-            </ul>
+        <section class="mt-4">
+            @php
+                $_gallery = $release_item["screen_shots"];
+                $_gallery_category = "release";
+            @endphp
+            @include("shared._body_photo-gallery")
         </section>
-        
     </div>
 </section>
 
