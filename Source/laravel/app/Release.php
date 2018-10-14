@@ -39,7 +39,7 @@ class Release extends Model
 	 * Get item that matches provided ID,
 	 * Set ID = 0 to get the latest stable release
 	 */
-	public static function get_item($id = 0, $release_type = 'stable', $delete_filter = 0) {
+	public static function get_item($id = 0, $release_type = '', $delete_filter = 0) {
 		$db = Release::where('title', 'LIKE', '%%');
 
 		if ($release_type != '') {

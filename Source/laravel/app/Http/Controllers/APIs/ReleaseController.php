@@ -35,7 +35,7 @@ class ReleaseController extends Controller
      * Get the release which matches provided ID
      */
     public function get_release($id, Request $request) {
-        $release_type = $request->input('release_type', 'stable');
+        $release_type = $request->input('release_type', '');
         $delete_filter = $request->input('delete_filter', 0);
 
         $item = Release::get_item($id, $release_type, $delete_filter);
