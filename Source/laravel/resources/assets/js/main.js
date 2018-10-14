@@ -10,6 +10,7 @@ import MoonPage from "./pages/moon-page"
 import ReleasePage from "./pages/release-page"
 import ReleaseDetailsPage from "./pages/release-details-page"
 import ThemePage from "./pages/theme-page"
+import ThemeDetailsPage from "./pages/theme-details-page"
 import LanguagePage from "./pages/language-page"
 
 import DocsPage from "./pages/docs-page"
@@ -50,6 +51,10 @@ import Error404Page from "./pages/error-404-page"
 
         case "download.theme":
             window._currentPage = new ThemePage()
+            break
+
+        case "download.theme.details": 
+            window._currentPage = new ThemeDetailsPage()
             break
 
         case "download.language":

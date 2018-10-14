@@ -27507,6 +27507,10 @@ var _themePage = __webpack_require__(/*! ./pages/theme-page */ "./resources/asse
 
 var _themePage2 = _interopRequireDefault(_themePage);
 
+var _themeDetailsPage = __webpack_require__(/*! ./pages/theme-details-page */ "./resources/assets/js/pages/theme-details-page.js");
+
+var _themeDetailsPage2 = _interopRequireDefault(_themeDetailsPage);
+
 var _languagePage = __webpack_require__(/*! ./pages/language-page */ "./resources/assets/js/pages/language-page.js");
 
 var _languagePage2 = _interopRequireDefault(_languagePage);
@@ -27547,67 +27551,71 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
                     _headerModule2.default.initModule();
                     currentPage = document.getElementsByTagName("html")[0].getAttribute("data-page");
                     _context.t0 = currentPage;
-                    _context.next = _context.t0 === "news" ? 5 : _context.t0 === "news.details" ? 7 : _context.t0 === "download.moon" ? 9 : _context.t0 === "download.release" ? 11 : _context.t0 === "download.release.details" ? 13 : _context.t0 === "download.theme" ? 15 : _context.t0 === "download.language" ? 17 : _context.t0 === "docs" ? 19 : _context.t0 === "docs.details" ? 21 : _context.t0 === "support" ? 23 : _context.t0 === "source" ? 25 : _context.t0 === "about" ? 27 : _context.t0 === "error.404" ? 29 : _context.t0 === "home" ? 31 : 31;
+                    _context.next = _context.t0 === "news" ? 5 : _context.t0 === "news.details" ? 7 : _context.t0 === "download.moon" ? 9 : _context.t0 === "download.release" ? 11 : _context.t0 === "download.release.details" ? 13 : _context.t0 === "download.theme" ? 15 : _context.t0 === "download.theme.details" ? 17 : _context.t0 === "download.language" ? 19 : _context.t0 === "docs" ? 21 : _context.t0 === "docs.details" ? 23 : _context.t0 === "support" ? 25 : _context.t0 === "source" ? 27 : _context.t0 === "about" ? 29 : _context.t0 === "error.404" ? 31 : _context.t0 === "home" ? 33 : 33;
                     break;
 
                 case 5:
                     window._currentPage = new _newsPage2.default();
-                    return _context.abrupt("break", 33);
+                    return _context.abrupt("break", 35);
 
                 case 7:
                     window._currentPage = new _newsDetailsPage2.default();
-                    return _context.abrupt("break", 33);
+                    return _context.abrupt("break", 35);
 
                 case 9:
                     window._currentPage = new _moonPage2.default();
-                    return _context.abrupt("break", 33);
+                    return _context.abrupt("break", 35);
 
                 case 11:
                     window._currentPage = new _releasePage2.default();
-                    return _context.abrupt("break", 33);
+                    return _context.abrupt("break", 35);
 
                 case 13:
                     window._currentPage = new _releaseDetailsPage2.default();
-                    return _context.abrupt("break", 33);
+                    return _context.abrupt("break", 35);
 
                 case 15:
                     window._currentPage = new _themePage2.default();
-                    return _context.abrupt("break", 33);
+                    return _context.abrupt("break", 35);
 
                 case 17:
-                    window._currentPage = new _languagePage2.default();
-                    return _context.abrupt("break", 33);
+                    window._currentPage = new _themeDetailsPage2.default();
+                    return _context.abrupt("break", 35);
 
                 case 19:
-                    window._currentPage = new _docsPage2.default();
-                    return _context.abrupt("break", 33);
+                    window._currentPage = new _languagePage2.default();
+                    return _context.abrupt("break", 35);
 
                 case 21:
-                    window._currentPage = new _docsDetailsPage2.default();
-                    return _context.abrupt("break", 33);
+                    window._currentPage = new _docsPage2.default();
+                    return _context.abrupt("break", 35);
 
                 case 23:
-                    window._currentPage = new _supportPage2.default();
-                    return _context.abrupt("break", 33);
+                    window._currentPage = new _docsDetailsPage2.default();
+                    return _context.abrupt("break", 35);
 
                 case 25:
-                    window._currentPage = new _sourcePage2.default();
-                    return _context.abrupt("break", 33);
+                    window._currentPage = new _supportPage2.default();
+                    return _context.abrupt("break", 35);
 
                 case 27:
-                    window._currentPage = new _aboutPage2.default();
-                    return _context.abrupt("break", 33);
+                    window._currentPage = new _sourcePage2.default();
+                    return _context.abrupt("break", 35);
 
                 case 29:
-                    window._currentPage = new _error404Page2.default();
-                    return _context.abrupt("break", 33);
+                    window._currentPage = new _aboutPage2.default();
+                    return _context.abrupt("break", 35);
 
                 case 31:
-                    // code for home page
-                    window._currentPage = new _homePage2.default();
-                    return _context.abrupt("break", 33);
+                    window._currentPage = new _error404Page2.default();
+                    return _context.abrupt("break", 35);
 
                 case 33:
+                    // code for home page
+                    window._currentPage = new _homePage2.default();
+                    return _context.abrupt("break", 35);
+
+                case 35:
                 case "end":
                     return _context.stop();
             }
@@ -28947,6 +28955,77 @@ var SupportPage = function () {
 }();
 
 exports.default = SupportPage;
+
+/***/ }),
+
+/***/ "./resources/assets/js/pages/theme-details-page.js":
+/*!*********************************************************!*\
+  !*** ./resources/assets/js/pages/theme-details-page.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _classCallCheck2 = __webpack_require__(/*! babel-runtime/helpers/classCallCheck */ "./node_modules/babel-runtime/helpers/classCallCheck.js");
+
+var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+var _createClass2 = __webpack_require__(/*! babel-runtime/helpers/createClass */ "./node_modules/babel-runtime/helpers/createClass.js");
+
+var _createClass3 = _interopRequireDefault(_createClass2);
+
+var _fluentRevealEffect = __webpack_require__(/*! fluent-reveal-effect */ "./node_modules/fluent-reveal-effect/index.js");
+
+var _articleListModule = __webpack_require__(/*! ../modules/aside/article-list-module */ "./resources/assets/js/modules/aside/article-list-module.js");
+
+var _articleListModule2 = _interopRequireDefault(_articleListModule);
+
+var _gridGalleryModule = __webpack_require__(/*! ../modules/grid-gallery-module */ "./resources/assets/js/modules/grid-gallery-module.js");
+
+var _gridGalleryModule2 = _interopRequireDefault(_gridGalleryModule);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ThemeDetailsPage = function () {
+    function ThemeDetailsPage() {
+        (0, _classCallCheck3.default)(this, ThemeDetailsPage);
+
+
+        this.applyRevealEffectToHighlightSection();
+        _articleListModule2.default.initModule();
+
+        // grid gallery viewer
+        var gallery = new _gridGalleryModule2.default("#screenshots .grid-gallery");
+        gallery.initViewer();
+    }
+
+    (0, _createClass3.default)(ThemeDetailsPage, [{
+        key: "applyRevealEffectToHighlightSection",
+        value: function applyRevealEffectToHighlightSection() {
+            _fluentRevealEffect.FluentRevealEffect.applyEffect(".theme-highlight > .bg-box-content", {
+                clickEffect: true,
+                lightColor: "rgba(255,255,255, 0.7)",
+                gradientSize: 120,
+                isContainer: true,
+                children: {
+                    borderSelector: ".eff-reveal-border",
+                    elementSelector: ".eff-reveal",
+                    lightColor: "rgba(255,255,255, 0.15)",
+                    gradientSize: 200
+                }
+            });
+        }
+    }]);
+    return ThemeDetailsPage;
+}();
+
+exports.default = ThemeDetailsPage;
 
 /***/ }),
 

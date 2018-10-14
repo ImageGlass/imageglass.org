@@ -55,7 +55,7 @@ class NewsController extends Controller
         $this->data["_title"] = $news_item["title"] . " | " .  $this->data["_name"];
         $this->data["_description"] = $news_item["description"];
         $this->data["_keywords"] .= "news, lastest update, new update";
-		$this->data["_thumbnail"] = $news_item["image"];
+		$this->data["_thumbnail"] = getFileUrl($news_item["image"], "news");
         
 		return view("pages.news.news-details")->with($this->data);
     }
