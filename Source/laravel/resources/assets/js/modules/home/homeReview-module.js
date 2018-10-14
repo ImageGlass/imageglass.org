@@ -1,5 +1,4 @@
 
-import {FluentRevealEffect} from "fluent-reveal-effect"
 import $ from "jquery"
 import "slick-carousel"
 

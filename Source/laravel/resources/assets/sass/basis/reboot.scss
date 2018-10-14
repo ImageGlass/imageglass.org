@@ -371,3 +371,10 @@ template {
 	display: none !important;
 }
 
+
+.__web-inspector-hide-shortcut__, 
+.__web-inspector-hide-shortcut__ *, 
+.__web-inspector-hidebefore-shortcut__::before, 
+.__web-inspector-hideafter-shortcut__::after {
+	display: none !important;
+}

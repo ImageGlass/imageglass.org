@@ -28,7 +28,7 @@
         </div>
         
         <div class="">
-            Designed by Dương Diệu Pháp. v5-2018
+            Designed by Dương Diệu Pháp. v5.2019
         </div>
 
         <div class="mt-3">

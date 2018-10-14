@@ -111,7 +111,10 @@ class DownloadController extends Controller
     public function moon_listing() {
         // get the latest release items
         $moon_files = glob("upload/moon/*.zip");
-		usort($moon_files, create_function('$a,$b', 'return filemtime($b) - filemtime($a);'));
+        usort($moon_files, function($a, $b) {
+            return filemtime($b) - filemtime($a);
+        });
+        
 
         // page data
 		$this->data["moon_files"] = $moon_files;
