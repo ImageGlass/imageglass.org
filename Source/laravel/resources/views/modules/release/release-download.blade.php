@@ -71,7 +71,7 @@
                         </div>
 
                         <div class="col-9 col-md-10 col-lg-10 col-xl-10 col-xxl-auto">
-                            <a class="btn btn-primary" target="_blank" href="{{ $download_url }}" title="Download {{ $item["type"] }} version">
+                            <a class="btn btn-primary" href="{{ $download_url }}" title="Download {{ $item["type"] }} version">
                                 <span class="icon-download"></span>
                                 <span class="mr-1">{{ $item["type"] }}</span>
                                 <small class="d-inline-block">({{ $item["size"] }})</small>

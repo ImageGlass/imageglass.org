@@ -5,6 +5,8 @@
         @if (#{$bgColor} != "") {
             background-color: #{$bgColor};
         }
+        
+        -webkit-backdrop-filter: blur($blur);
         backdrop-filter: blur($blur);
     }
 }
