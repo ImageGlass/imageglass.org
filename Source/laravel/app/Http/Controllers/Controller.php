@@ -102,9 +102,14 @@ class Controller extends BaseController
         
         // restore original inputs
         Request::replace($original_input);
-        
+        $json_data = json_decode($response->getContent(), true);
+
+        if ($json_data == null) {
+            abort(404);
+        }
+
         // convert json to array data
-        $array_data = collect(json_decode($response->getContent(), true));
+        $array_data = collect($json_data);
         // dd($array_data["current_page"]);
 
         if ($array_data == null) {
