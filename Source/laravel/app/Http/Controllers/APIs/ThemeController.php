@@ -24,9 +24,11 @@ class ThemeController extends Controller
     /**
      * Download theme
      */
-    public function download_theme($id) {
+    public function download_theme($id, Request $request) {
+        $is_countable = $request->input('is_countable', 1);
 
-        $item = Theme::update_count($id, 1);
+        $count_increase = $is_countable == 1 ? 1 : 0;
+        $item = Theme::update_count($id, $count_increase);
 
         if (!is_null($item)) {
 			return response(new ThemeResource($item))->header('Content-Type', 'application/json');

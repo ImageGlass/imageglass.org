@@ -75,6 +75,34 @@ class DownloadController extends Controller
         
 		return view("pages.download.release-details")->with($this->data);
     }
+
+
+    public function release_start_download($slug) {
+
+        $id = $this->getIdFromSlug($slug);
+
+        if ($id < 0) {
+            // throw error
+            abort(404);
+        }
+
+        // get the release info
+        $release_item = $this::getRequest("/api/release/download/{$id}?is_countable=0");
+        $redirect_url = url('release/'.$slug.'/download');
+
+
+        // page data
+        $this->data["redirect_url"] = $redirect_url;
+
+
+        // meta tags        
+        $this->data["_page"] = "redirect";
+        $this->data["_title"] = "Downloading ImageGlass | " .  $this->data["_name"];
+        $this->data["_description"] = "Downloading ".$release_item["type"];
+        $this->data["_keywords"] .= ", latest version, ".$release_item["type"];
+        
+		return view("pages.redirect")->with($this->data);
+    }
     
 
     public function release_download($slug) {
@@ -193,6 +221,36 @@ class DownloadController extends Controller
     }
 
 
+    public function theme_start_download($slug) {
+
+        $id = $this->getIdFromSlug($slug);
+
+        if ($id < 0) {
+            // throw error
+            abort(404);
+        }
+
+        // get the theme info
+        $theme_item = $this::getRequest("/api/theme/download/{$id}?is_countable=0");
+
+        // get the theme info
+        $redirect_url = url('theme/'.$slug.'/download');
+
+        // page data
+        $this->data["redirect_url"] = $redirect_url;
+        $this->data["download_name"] = $theme_item["title"];
+
+
+        // meta tags        
+        $this->data["_page"] = "redirect";
+        $this->data["_title"] = "Downloading theme " . $theme_item["title"] . "| " .  $this->data["_name"];
+        $this->data["_description"] = "Downloading theme " . $theme_item["title"];
+        $this->data["_keywords"] .= ", imageglass theme, monochrome theme, colorful theme, " . $theme_item["title"];
+        
+		return view("pages.redirect")->with($this->data);
+    }
+
+
     public function theme_download($slug) {
 
         $id = $this->getIdFromSlug($slug);
@@ -247,6 +305,24 @@ class DownloadController extends Controller
 		$this->data["_thumbnail"] = "https://picsum.photos/1200/630/?random";
 
         return view("pages.download.languages")->with($this->data);
+    }
+
+    public function language_start_download($slug) {
+
+        // get the theme info
+        $redirect_url = url('language/'.$slug.'/download');
+
+        // page data
+        $this->data["redirect_url"] = $redirect_url;
+
+
+        // meta tags        
+        $this->data["_page"] = "redirect";
+        $this->data["_title"] = "Downloading language pack | " .  $this->data["_name"];
+        $this->data["_description"] = "Downloading language pack";
+        $this->data["_keywords"] .= ", language pack, localization, translation, download";
+        
+		return view("pages.redirect")->with($this->data);
     }
 
 

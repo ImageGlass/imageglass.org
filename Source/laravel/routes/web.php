@@ -62,14 +62,17 @@ Route::get('/download/languagepacks', 'DownloadController@language_listing_redir
 
 Route::get('/releases', 'DownloadController@release_listing');
 Route::get('/release/{slug}', 'DownloadController@release_details')->where(array('slug' => NUMBER_TEXT));
+Route::get('/release/download/{slug}', 'DownloadController@release_start_download')->where(array('slug' => NUMBER_TEXT));
 Route::get('/release/{slug}/download', 'DownloadController@release_download')->where(array('slug' => NUMBER_TEXT));
 
 Route::get('/moon', 'DownloadController@moon_listing');
 Route::get('/languages', 'DownloadController@language_listing');
-Route::get('/language/{slug}/download', 'DownloadController@language_download');
+Route::get('/language/download/{slug}', 'DownloadController@language_start_download')->where(array('slug' => NUMBER_TEXT));
+Route::get('/language/{slug}/download', 'DownloadController@language_download')->where(array('slug' => NUMBER_TEXT));
 
 Route::get('/themes', 'DownloadController@theme_listing');
 Route::get('/theme/{slug}', 'DownloadController@theme_details')->where(array('slug' => NUMBER_TEXT));
+Route::get('/theme/download/{slug}', 'DownloadController@theme_start_download')->where(array('slug' => NUMBER_TEXT));
 Route::get('/theme/{slug}/download', 'DownloadController@theme_download')->where(array('slug' => NUMBER_TEXT));
 
 

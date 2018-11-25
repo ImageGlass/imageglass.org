@@ -7,7 +7,7 @@
             </h1>
 
             <div class="text-center mt-4">
-                <a href="{{ url("theme/{$theme_item["slug"]}-{$theme_item["id"]}/download") }}" class="btn btn-download eff-reveal-border">
+                <a href="{{ url("theme/download/{$theme_item["slug"]}-{$theme_item["id"]}") }}" class="btn btn-download eff-reveal-border" target="_blank">
                     <span class="eff-reveal">
                         <i class="icon icon-download"></i>
                         DOWNLOAD

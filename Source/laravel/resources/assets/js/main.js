@@ -18,7 +18,8 @@ import DocsDetailsPage from "./pages/docs-details-page"
 import SupportPage from "./pages/support-page"
 import SourcePage from "./pages/source-page"
 import AboutPage from "./pages/about-page"
-import Error404Page from "./pages/error-404-page"
+
+import RedirectPage from "./pages/redirect-page"
 
 
 
@@ -47,6 +48,10 @@ import Error404Page from "./pages/error-404-page"
 
         case "download.release.details":
             window._currentPage = new ReleaseDetailsPage()
+            break
+
+        case "redirect":
+            window._currentPage = new RedirectPage()
             break
 
         case "download.theme":
@@ -82,7 +87,7 @@ import Error404Page from "./pages/error-404-page"
             break
 
         case "error.404":
-            window._currentPage = new Error404Page()
+        
             break
 
 

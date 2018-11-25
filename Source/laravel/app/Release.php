@@ -65,7 +65,7 @@ class Release extends Model
 
 
 	/**
-	 * Get list of items with search criterias: 
+	 * Get list of items with search criteria: 
 	 * number: $id
 	 * string: $title
 	 * string: $slug

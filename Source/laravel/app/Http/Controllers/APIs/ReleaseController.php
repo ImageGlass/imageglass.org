@@ -46,10 +46,12 @@ class ReleaseController extends Controller
     /**
      * Get the download of release
      */
-    public function download_release($download_id) {
+    public function download_release($download_id, Request $request) {
+        $is_countable = $request->input('is_countable', 1);
+        $count_increase = $is_countable == 1 ? 1 : 0;
 
         //get and increase download count
-        $item = ReleaseDownload::update_count($download_id, 1);
+        $item = ReleaseDownload::update_count($download_id, $count_increase);
 
         if (!is_null($item)) {
 			return response(new ReleaseDownloadResource($item))->header('Content-Type', 'application/json');
