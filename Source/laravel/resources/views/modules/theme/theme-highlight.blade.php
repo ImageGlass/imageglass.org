@@ -15,6 +15,17 @@
                 </a>
             </div>
 
+            <div class="text-center mt-3">
+                <a class="sub-link" href="{{ url('/themes') }}" title="Download Theme Packs">
+                    <span class="icon-theme mr-1"></span>
+                    Themes
+                </a>
+                <a class="sub-link" href="{{ url('/languages') }}" title="Download Language Packs">
+                    <span class="icon-language mr-1"></span>
+                    Languages
+                </a>
+            </div>
+
             <div class="row justify-content-center mt-4 pt-2">
                 <div class="col-lg-4">
                     @include("shared._ads")

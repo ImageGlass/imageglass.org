@@ -25,6 +25,31 @@
                 margin-right: $gap/2;
             }
         }
+
+        .sub-link {
+            display: inline-block;
+            min-width: $gap*5.65;
+            padding: $gap/3;
+            margin: 0 $gap/3;
+            color: $color-text-1;
+            font-size: $fs-small;
+            font-weight: $fw-light;
+            text-decoration: none;
+            background-color: rgba(#000000, 0.35);
+            transition: all ease 300ms;
+
+            @include bg-blur(rgba(#000, 0.35));
+
+            &:hover {
+                @include bg-blur(rgba(#000, 0.2));
+                transform: translateY(-$gap/6);
+            }
+
+            &:active {
+                transition: all ease 100ms;
+                transform: scale(0.95) translateY(-$gap/10);
+            }
+        }
     }
 }
 

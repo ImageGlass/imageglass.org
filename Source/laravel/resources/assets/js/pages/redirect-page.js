@@ -26,10 +26,10 @@ export default class RedirectPage {
             }, 500);
         }
 
-        // start downloading file after 3s
+        // start downloading file after 4s
         setTimeout(() => {
             download()
-        }, 3000);
+        }, 4000);
 
         function download() {
             let url = document.getElementById("directUrl")
@@ -37,9 +37,9 @@ export default class RedirectPage {
         }
 
 
-        // auto go back home page after 15s
+        // auto go to themes page after 15s
         setTimeout(() => {
-            window.location = "/"
+            window.location = "/themes"
         }, 15000);
     }
 
