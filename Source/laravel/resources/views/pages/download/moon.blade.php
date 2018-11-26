@@ -43,7 +43,7 @@
                         <p class="mb-0 fs-small">
                             Size: {{ $size }}<br/>
                             Release date:
-                            <time datetime="xxxxx">
+                            <time>
                                 {{ $lastModified }}
                             </time>
                         </p>

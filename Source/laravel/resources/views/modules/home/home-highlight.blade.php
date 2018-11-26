@@ -1,4 +1,4 @@
-<section class="bg-box home-top">
+<section class="bg-box home-top" style="background-image: url({{ getRandomImg() }});">
     <div class="bg-box-content">
         <div class="container pt-5">
 

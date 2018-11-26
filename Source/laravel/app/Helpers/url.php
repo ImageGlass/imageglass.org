@@ -34,6 +34,14 @@ function getFilePath($ori_file_link, $type) {
 }
 
 
+function getRandomImg() {
+    $img_count = count(glob(public_path("img/bg/*.jpg")));
+    $img_rand = rand(1, $img_count);
+
+    return url("img/bg/".$img_rand.".jpg");
+}
+
+
 function formatBytes($bytes, $precision = 2) { 
     $units = array("B", "KB", "MB", "GB", "TB"); 
 
@@ -46,4 +54,4 @@ function formatBytes($bytes, $precision = 2) {
     // $bytes /= (1 << (10 * $pow)); 
 
     return round($bytes, $precision) . " " . $units[$pow]; 
-} 
+}

@@ -12,7 +12,7 @@ class SupportController extends Controller
         $this->data["_title"] = "Support | " .  $this->data["_name"];
         $this->data["_description"] = "Got a question? Need help with a problem? You're in the right place to find all the ImageGlass technical support you need.";
         $this->data["_keywords"] .= "support, how to create theme, build language pack, windows 10 photo, raw viewer, imageglass instaler";
-		$this->data["_thumbnail"] = "https://picsum.photos/1200/630/?random";
+		$this->data["_thumbnail"] = getRandomImg();
 
         return view("pages.support.support")->with($this->data);
     }

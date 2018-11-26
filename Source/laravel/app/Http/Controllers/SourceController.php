@@ -20,7 +20,7 @@ class SourceController extends Controller
         $this->data["_title"] = "Source | " .  $this->data["_name"];
         $this->data["_description"] = "ImageGlass source code was released under the terms of the GNU General Public License. By downloading ImageGlass source code, you agree with all the terms of this license.";
         $this->data["_keywords"] .= "source code, github, codeplex project, imageglass project, open source project, foss app";
-		$this->data["_thumbnail"] = "https://picsum.photos/1200/630/?random";
+		$this->data["_thumbnail"] = getRandomImg();
 
         return view("pages.source.source")->with($this->data);
     }

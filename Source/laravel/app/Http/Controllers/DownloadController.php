@@ -33,7 +33,7 @@ class DownloadController extends Controller
         $this->data["_title"] = "All Releases | " .  $this->data["_name"];
         $this->data["_description"] = "Download all versions of ImageGlass";
         $this->data["_keywords"] .= ", release, lastest version, lastest update";
-		$this->data["_thumbnail"] = "https://picsum.photos/1200/630/?random";
+		$this->data["_thumbnail"] = getRandomImg();
 
         return view("pages.download.releases")->with($this->data);
     }
@@ -153,7 +153,7 @@ class DownloadController extends Controller
         $this->data["_title"] = "ImageGlass Moon | " .  $this->data["_name"];
         $this->data["_description"] = "ImageGlass Moon has the latest of the new ImageGlass features. It is usually built and shipped to users with the latest state of develop branch.";
         $this->data["_keywords"] .= ", ImageGlass Moon, new features, developing, bugs";
-		$this->data["_thumbnail"] = "https://picsum.photos/1200/630/?random";
+		$this->data["_thumbnail"] = getRandomImg();
 
         return view("pages.download.moon")->with($this->data);
     }
@@ -182,7 +182,7 @@ class DownloadController extends Controller
         $this->data["_title"] = "Download ImageGlass Theme Packs | " .  $this->data["_name"];
         $this->data["_description"] = "The beautiful theme packs to change the look of the interface of ImageGlass";
         $this->data["_keywords"] .= ", theme, lastest update";
-		$this->data["_thumbnail"] = "https://picsum.photos/1200/630/?random";
+		$this->data["_thumbnail"] = getRandomImg();
 
         return view("pages.download.themes")->with($this->data);
     }
@@ -302,7 +302,7 @@ class DownloadController extends Controller
         $this->data["_title"] = "Download ImageGlass Language Packs | " .  $this->data["_name"];
         $this->data["_description"] = "Download all language packs of ImageGlass";
         $this->data["_keywords"] .= ", language pack, localization, translation";
-		$this->data["_thumbnail"] = "https://picsum.photos/1200/630/?random";
+		$this->data["_thumbnail"] = getRandomImg();
 
         return view("pages.download.languages")->with($this->data);
     }

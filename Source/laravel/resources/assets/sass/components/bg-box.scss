@@ -1,5 +1,5 @@
 .bg-box {
-    background: url(https://picsum.photos/1366/1200/?random) no-repeat center center fixed;
+    background: no-repeat center center fixed;
     background-size: cover;
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://picsum.photos/1366/600/?random', sizingMethod='scale');
     -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://picsum.photos/1366/600/?random', sizingMethod='scale')";
@@ -51,6 +51,20 @@
             }
         }
     }
+
+
+    @media (max-width: #{map-get($grid-breakpoints, "lg")}) {
+        background-image: url("https://picsum.photos/992/768/?random") !important;
+    }
+
+    @media (max-width: #{map-get($grid-breakpoints, "md")}) {
+        background-image: url("https://picsum.photos/768/576/?random") !important;
+    }
+
+    @media (max-width: #{map-get($grid-breakpoints, "sm")}) {
+        background-image: url("https://picsum.photos/576/768/?random") !important;
+    }
+
 }
 
 
