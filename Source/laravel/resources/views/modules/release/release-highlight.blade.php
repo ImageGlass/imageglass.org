@@ -1,4 +1,4 @@
-<section class="bg-box release-highlight">
+<section class="bg-box release-highlight" style="background-image: url({{ getRandomImg() }});">
     <div class="bg-box-content">
         <div class="container py-5">
 
