@@ -17,7 +17,7 @@
 				I am {{date('Y') - 1991}}-year-old Vietnamese developer. <i class="icon-quotes-right"></i><br/><br/>
 			</p>
 			<p>
-				I am working as Senior UI/UX Developement Specialist for <a href="http://www.ascentis.com.sg" target="_blank" rel="noopener noreferrer" title="Ascentis Private Limited"><strong>Ascentis Private Limited</strong></a> - the leader in powering CRM & Loyalty programs for leading brands in Singapore and the region.
+				I am working as Front-end Developer for <a href="https://chainstack.com/" target="_blank" rel="noopener noreferrer" title="Chainstack"><strong>Chainstack</strong></a> — a cloud and blockchain agnostic Platform as a Service helping businesses to manage enterprise blockchain networks and build bleeding-edge blockchain-powered applications.
 			</p>
 			<p>
 				I often develop libraries for web and ImageGlass app in my free time. You can check them in <a href="https://github.com/d2phap" target="blank" rel="noopener noreferrer">my Github page</a>. I will be glad if you can put some stars ⭐.
@@ -31,8 +31,9 @@
 			<div class="personal-info links">
 				<h3 class="fs-h3 mt-5 mb-3">📚 Experiences</h3>
 				<ul>
-					<li><strong>11/2017 - present:</strong> Senior UI/UX Developement Specialist at <a target="_blank" rel="noopener noreferrer" href="http://www.ascentis.com.sg">Ascentis Private Limited</a></li>	
-					<li><strong>6/2015 - 11/2017:</strong> Front-end developer at <a target="_blank" rel="noopener noreferrer" href="http://aleph-labs.com">Aleph Labs</a></li>
+					<li><strong>1/2019 - present:</strong> Front-end Developer at <a target="_blank" rel="noopener noreferrer" href="https://chainstack.com">Chainstack</a></li>	
+					<li><strong>11/2017 - 12/2018:</strong> Senior UI/UX Developement Specialist at <a target="_blank" rel="noopener noreferrer" href="http://www.ascentis.com.sg">Ascentis Private Limited</a></li>	
+					<li><strong>6/2015 - 11/2017:</strong> Front-end Developer at <a target="_blank" rel="noopener noreferrer" href="http://aleph-labs.com">Aleph Labs</a></li>
 					<li><strong>3/2012 - 5/2015:</strong> Lead engineer at <a target="_blank" rel="noopener noreferrer" href="http://www.poste-vn.com">Poste Co., Ltd</a></li>
 					<li><strong>11/2011 - 3/2012:</strong> iOS Developer at Universal Information Services Corp. (UIS)</li>
 					<li><strong>2009 - 2014:</strong> Student of <a href="http://www.fit.hcmus.edu.vn/vn/Default.aspx?tabid=416" target="_blank" rel="noopener noreferrer">The Faculty of Information Technology (FIT)</a> of <a href="https://en.hcmus.edu.vn/" target="_blank" rel="noopener noreferrer">Ho Chi Minh University of Science</a></li>
