@@ -112,7 +112,7 @@ class Theme extends Model
 		}
 
 		if ($order_by == '') {
-			$db = $db->orderBy('created_at', 'desc');
+			$db = $db->orderBy('updated_at', 'desc');
 		}
 		else {
 			$db = $db->orderByRaw($order_by);
