@@ -5,6 +5,10 @@
 
     RewriteEngine On
 
+    # Redirect HTTP to the HTTPS 
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
     # Redirect WWW to non-WWW, HTTP to HTTPS
     RewriteCond %{HTTP_HOST} ^www\.imageglass\.org [NC]
     RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
