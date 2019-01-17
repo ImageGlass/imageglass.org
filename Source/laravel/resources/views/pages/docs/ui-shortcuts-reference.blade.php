@@ -219,6 +219,18 @@
                             </td>
                         </tr>
                         <tr>
+                            <td>Flip Horizontal</td>
+                            <td>
+                                <kbd>Ctrl+;</kbd>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Flip Vertical</td>
+                            <td>
+                                <kbd>Ctrl+'</kbd>
+                            </td>
+                        </tr>
+                        <tr>
                             <td>Zoom in</td>
                             <td>
                                 <kbd>+</kbd>,<br/>
@@ -321,6 +333,12 @@
                         </tr>
                         <tr>
                             <td>Set as desktop background</td>
+                            <td>
+                                N/A
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Set as Lock screen image</td>
                             <td>
                                 N/A
                             </td>
