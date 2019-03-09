@@ -1,0 +1,56 @@
+.blog-post-new {
+    position: fixed;
+    right: $gap;
+    top: 0;
+    z-index: 10;
+    max-width: 300px;
+    font-size: $fs-small;
+    border: $gap/10 solid rgba($color-dark, 0.3);
+    background-color: rgba($color-light, 0.1);
+    @include bg-blur(rgba($color-light, 0.1));
+    transition: all ease 300ms;
+    animation: aniSlideDown 1s cubic-bezier(0.42, 0, 0.71, 1.31) 2s forwards;
+    transform: rotate3d(0, 0, 1, -5deg) translate(0, $gap/4);
+
+    &> a {
+        color: $color-light;
+        display: block;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        padding-right: $gap;
+
+        .tag-new {
+            color: $color-dark;
+            padding: $gap/2 $gap;
+            display: inline-block;
+            @include bg-gradient-highlight();
+            @include animate-gradient();
+        }
+
+        .title {
+            padding: $gap/2 0 $gap/2 $gap/3;
+            display: inline-block;
+        }
+    }
+
+    &:hover {
+        transition: all ease 300ms;
+        transform: scale(1.06) rotate3d(0, 0, 1, -3deg) translate(0, $gap/4);
+    }
+    &:active {
+        transition: all ease 100ms;
+        transform: scale(0.99) rotate3d(0, 0, 1, -1deg) translate(0, $gap/4);
+    }
+}
+
+@keyframes aniSlideDown {
+    0% {
+        top: 0;
+        opacity: 0;
+    }
+    100% {
+        top: $gap*4;
+        opacity: 1;
+    }
+}

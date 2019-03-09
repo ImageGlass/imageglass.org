@@ -1,4 +1,5 @@
 @extends("layouts._layout_listing")
+
 @section("_page_title")
     All News
 @stop

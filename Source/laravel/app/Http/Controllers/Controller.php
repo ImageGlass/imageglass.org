@@ -24,6 +24,17 @@ class Controller extends BaseController
 
     function __construct() {
 
+        // get Medium blog posts
+        $jsonRSS = "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@d2phap";
+
+        try {
+            // $blogPosts = json_decode($this->getPublicRequest($jsonRSS));
+            $this->data['_blog_posts'] = []; //$blogPosts->items;
+        } catch (Exception $e) {
+            $this->data['_blog_posts'] = [];
+        }
+
+        // basic meta data
         $this->data['_name'] = 'ImageGlass';
         $this->data['_sitename'] = 'ImageGlass - A lightweight, versatile image viewer';
         

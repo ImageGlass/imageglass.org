@@ -8,6 +8,8 @@
     @include("shared._body_header")
 
 	<section id="body">
+        @include("shared._blog-post-new")
+
 		@yield("_body_content")
 	</section>
 
