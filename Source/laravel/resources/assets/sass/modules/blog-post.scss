@@ -3,10 +3,10 @@
     right: $gap;
     top: 0;
     z-index: 10;
-    max-width: 300px;
+    max-width: 350px;
     font-size: $fs-small;
     border: $gap/10 solid rgba($color-dark, 0.3);
-    background-color: rgba($color-light, 0.1);
+    background-color: rgba($color-dark, 0.5);
     @include bg-blur(rgba($color-light, 0.1));
     transition: all ease 300ms;
     animation: aniSlideDown 1s cubic-bezier(0.42, 0, 0.71, 1.31) 2s forwards;
@@ -22,7 +22,7 @@
 
         .tag-new {
             color: $color-dark;
-            padding: $gap/2 $gap;
+            padding: $gap/2;
             display: inline-block;
             @include bg-gradient-highlight();
             @include animate-gradient();

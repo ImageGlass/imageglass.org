@@ -15,8 +15,8 @@
 @endif
 
 <section class="blog-post-new">
-    <a href="https://medium.com/@d2phap/i-finally-have-a-blog-e76bedd8dd2e?source=rss-7e76d1910f11------2" target="_blank" title="I finally have a blog!" rel="noopener noreferrer">
-        <span class="tag-new">✍</span>
-        <span class="title">I finally have a blog!</span>
+    <a href="https://medium.com/@d2phap/use-imageglass-in-designing-e86af294eba8?source=rss-7e76d1910f11------2" target="_blank" title="Use ImageGlass in designing" rel="noopener noreferrer">
+        <span class="tag-new">✍ New blog!</span>
+        <span class="title">Use ImageGlass in designing</span>
     </a>
 </section>

@@ -30,115 +30,115 @@
                     <tbody>
                         <tr>
                             <td><code>bmp</code></td>
-                            <td>x</td>
-                            <td>x</td>
+                            <td>✔</td>
+                            <td>✔</td>
                             <td></td>
                         </tr>
                         <tr>
                             <td><code>cur</code></td>
-                            <td>x</td>
+                            <td>✔</td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr>
                             <td><code>cut</code></td>
-                            <td>x</td>
+                            <td>✔</td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr>
                             <td><code>dib</code></td>
-                            <td>x</td>
+                            <td>✔</td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr>
                             <td><code>emf</code></td>
-                            <td>x</td>
-                            <td>x</td>
+                            <td>✔</td>
+                            <td>✔</td>
                             <td></td>
                         </tr>
                         <tr>
                             <td><code>exif</code></td>
-                            <td>x</td>
-                            <td>x</td>
+                            <td>✔</td>
+                            <td>✔</td>
                             <td></td>
                         </tr>
                         <tr>
                             <td><code>gif</code></td>
-                            <td>x</td>
-                            <td>x</td>
+                            <td>✔</td>
+                            <td>✔</td>
                             <td>Support writing the first image frame.</td>
                         </tr>
                         <tr>
                             <td><code>heic</code></td>
-                            <td>x</td>
+                            <td>✔</td>
                             <td></td>
                             <td>Non-animated format.</td>
                         </tr>
                         <tr>
                             <td><code>ico</code></td>
-                            <td>x</td>
-                            <td>x</td>
+                            <td>✔</td>
+                            <td>✔</td>
                             <td>The biggest image will be displayed.</td>
                         </tr>
                         <tr>
                             <td><code>jfif</code></td>
-                            <td>x</td>
+                            <td>✔</td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr>
                             <td><code>jpe</code></td>
-                            <td>x</td>
+                            <td>✔</td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr>
                             <td><code>jpeg</code></td>
-                            <td>x</td>
+                            <td>✔</td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr>
                             <td><code>jpg</code></td>
-                            <td>x</td>
-                            <td>x</td>
+                            <td>✔</td>
+                            <td>✔</td>
                             <td></td>
                         </tr>
                         <tr>
                             <td><code>pbm</code></td>
-                            <td>x</td>
+                            <td>✔</td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr>
                             <td><code>pcx</code></td>
-                            <td>x</td>
+                            <td>✔</td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr>
                             <td><code>pgm</code></td>
-                            <td>x</td>
+                            <td>✔</td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr>
                             <td><code>png</code></td>
-                            <td>x</td>
-                            <td>x</td>
+                            <td>✔</td>
+                            <td>✔</td>
                             <td></td>
                         </tr>
                         <tr>
                             <td><code>ppm</code></td>
-                            <td>x</td>
+                            <td>✔</td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr>
                             <td><code>svg</code></td>
-                            <td>x</td>
+                            <td>✔</td>
                             <td></td>
                             <td>
                                 - No scales.<br/>
@@ -147,51 +147,51 @@
                         </tr>
                         <tr>
                             <td><code>tif</code></td>
-                            <td>x</td>
+                            <td>✔</td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr>
                             <td><code>tiff</code></td>
-                            <td>x</td>
-                            <td>x</td>
+                            <td>✔</td>
+                            <td>✔</td>
                             <td>Support reading/writing single page only.</td>
                         </tr>
                         <tr>
                             <td><code>webp</code></td>
-                            <td>x</td>
+                            <td>✔</td>
                             <td></td>
                             <td>Support reading non-animated format only.</td>
                         </tr>
                         <tr>
                             <td><code>wmf</code></td>
-                            <td>x</td>
-                            <td>x</td>
+                            <td>✔</td>
+                            <td>✔</td>
                             <td></td>
                         </tr>
                         <tr>
                             <td><code>wpg</code></td>
-                            <td>x</td>
+                            <td>✔</td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr>
                             <td><code>xbm</code></td>
-                            <td>x</td>
+                            <td>✔</td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr>
                             <td><code>xpm</code></td>
-                            <td>x</td>
+                            <td>✔</td>
                             <td></td>
                             <td></td>
                         </tr>
 
                         <tr>
                             <td>(base-64 string)</td>
-                            <td>x</td>
-                            <td>x</td>
+                            <td>✔</td>
+                            <td>✔</td>
                             <td>Read through the Clipboard <kbd>Ctrl+V</kbd></td>
                         </tr>
                     </tbody>
@@ -213,25 +213,25 @@
                     <tbody>
                         <tr>
                             <td><code>exr</code></td>
-                            <td>x</td>
+                            <td>✔</td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr>
                             <td><code>hdr</code></td>
-                            <td>x</td>
+                            <td>✔</td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr>
                             <td><code>psd</code></td>
-                            <td>x</td>
+                            <td>✔</td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr>
                             <td><code>tga</code></td>
-                            <td>x</td>
+                            <td>✔</td>
                             <td></td>
                             <td></td>
                         </tr>
@@ -242,7 +242,7 @@
                                 </a>
                                 formats
                             </td>
-                            <td>x</td>
+                            <td>✔</td>
                             <td></td>
                             <td>
                                 required 
