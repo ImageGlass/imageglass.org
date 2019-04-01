@@ -25,7 +25,7 @@
                 <div class="col-6 col-sm-4 col-md-3 col-xl-2 col-hg-1 px-2 language-item">
                     <article class="eff-reveal-border">
                         <a class="language-item-content eff-reveal" data-code="{{ $item->code }}" href="{{ url("language/download/".$item->code) }}" title="{{ $item->name }}" target="_blank">
-                            <img class="img-fluid" src="https://d2srrzh48sp2nh.cloudfront.net/01be2c21/images/flags/{{ $item->code }}.png" alt="{{ $item->name }}">
+                            <img class="img-fluid" src="https://d2srrzh48sp2nh.cloudfront.net/fb90f322/images/flags/{{ $item->code }}.png" alt="{{ $item->name }}">
 
                             <progress class="col-12 px-0" value="{{ $item->approved_progress }}" max="100" title="{{ $item->approved_progress }}% translated"></progress>
                             <h2 class="fs-small">{{ $item->name }}</h2>
