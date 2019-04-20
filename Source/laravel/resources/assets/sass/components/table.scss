@@ -33,9 +33,16 @@ table {
         }
     }
 
+    &.table-bg {
+        tr {
+            &> td {
+                background-color: darken($color-bg, 1.5);
+            }
+        }
+    }
+
     &.table-striped {
         tr {
-            
             &:nth-child(2n+1) {
                 &> td {
                     background-color: darken($color-bg, 1.5);
@@ -46,7 +53,6 @@ table {
 
     &.table-hover {
         tr {
-            
             &:hover {
                 &> td {
                     background-color: lighten($color-bg, 5);
