@@ -15,8 +15,8 @@
 @endif
 
 <section class="blog-post-new">
-    <a href="https://medium.com/@d2phap/use-imageglass-in-designing-e86af294eba8?source=rss-7e76d1910f11------2" target="_blank" title="Use ImageGlass in designing" rel="noopener noreferrer">
+    <a href="https://medium.com/@d2phap/im-renovating-the-core-library-of-imageglass-e39aa26569bc" target="_blank" title="I’m renovating the core library of ImageGlass" rel="noopener noreferrer">
         <span class="tag-new">✍ New blog!</span>
-        <span class="title">Use ImageGlass in designing</span>
+        <span class="title">I’m renovating the core library of ImageGlass</span>
     </a>
 </section>

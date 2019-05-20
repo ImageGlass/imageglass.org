@@ -9,6 +9,11 @@
         Thanks for your gratitude and finance help!
     </p>
     <div>
+        <a href="https://www.patreon.com/bePatron?u=6414896" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+            Become a patron <svg width="20px" height="20px" viewBox="0 0 569 546" version="1.1" xmlns="http://www.w3.org/2000/svg"><title>Patreon logo</title><g><circle fill="#E84646" data-color="1" id="Oval" cx="362.589996" cy="204.589996" r="204.589996"></circle><rect fill="#000" data-color="2" id="Rectangle" x="0" y="0" width="100" height="545.799988"></rect></g></svg>
+        </a>
+    </div>
+    <div class="mt-3">
         <a href="https://www.paypal.me/d2phap" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
             <span class="text">Donate <b>$10</b> via <span class="icon-paypal"></span><i class="fw-bold">aypal</i></span>
         </a>
@@ -19,7 +24,7 @@
             <tbody>
                 <tr>
                     <td class="text-nowrap">
-                        <img src="https://dynamic-assets.coinbase.com/e785e0181f1a23a30d9476038d9be91e9f6c63959b538eabbc51a1abc8898940383291eede695c3b8dfaa1829a9b57f5a2d0a16b0523580346c6b8fab67af14b/asset_icons/b57ac673f06a4b0338a596817eb0a50ce16e2059f327dc117744449a47915cb2.png" alt="Bitcoin" width="20" height="20"> 
+                        <i class="icon-bitcoin"></i> 
                         Bitcoin
                     </td>
                     <td>
@@ -28,7 +33,7 @@
                 </tr>
                 <tr>
                     <td class="text-nowrap">
-                        <img src="https://dynamic-assets.coinbase.com/7796fb1bd5752a156c77e0b1fa28fb17e93d03b4b8e2dcff58dcaf8f99b2e4a3c3af2cd905d5536761c54ac273d62d91a38ef8e5702fa988c37264e7aba36b3b/asset_icons/3af4b33bde3012fd29dd1366b0ad737660f24acc91750ee30a034a0679256d0b.png" alt="Ethereum" width="20" height="20"> 
+                        <i class="icon-ethereum"></i> 
                         Ethereum
                     </td>
                     <td>

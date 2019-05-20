@@ -1,128 +1,131 @@
 @font-face {
-	font-family: "icomoon";
-	font-display: auto;
-	src: url("../fonts/icomoon.eot?l1dovj");
-	src: url("../fonts/icomoon.eot?l1dovj#iefix")
-			format("embedded-opentype"),
-		url("../fonts/icomoon.ttf?l1dovj") format("truetype"),
-		url("../fonts/icomoon.woff?l1dovj") format("woff"),
-		url("../fonts/icomoon.svg?l1dovj#icomoon") format("svg");
-	font-weight: normal;
-	font-style: normal;
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?t05nlg");
+  src: url("../fonts/icomoon.eot?t05nlg#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?t05nlg") format("truetype"), url("../fonts/icomoon.woff?t05nlg") format("woff"),
+    url("../fonts/icomoon.svg?t05nlg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 [class^="icon-"],
 [class*=" icon-"] {
-	/* use !important to prevent issues with browser extensions that change fonts */
-	font-family: "icomoon" !important;
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
 
-	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-ethereum:before {
+  content: "\e900";
+}
+.icon-medium:before {
+  content: "\e901";
+}
 .icon-instagram:before {
-	content: "\e900";
+  content: "\e902";
 }
 .icon-bitcoin:before {
-	content: "\e901";
+  content: "\e903";
 }
 .icon-download:before {
-	content: "\e902";
+  content: "\e904";
 }
 .icon-info:before {
-	content: "\e903";
+  content: "\e905";
 }
 .icon-quotes-left:before {
-	content: "\e904";
+  content: "\e906";
 }
 .icon-quotes-right:before {
-	content: "\e905";
+  content: "\e907";
 }
 .icon-extension:before {
-	content: "\e906";
+  content: "\e908";
 }
 .icon-picture:before {
-	content: "\e907";
+  content: "\e909";
 }
 .icon-menu:before {
-	content: "\e908";
+  content: "\e90a";
 }
 .icon-language:before {
-	content: "\e909";
+  content: "\e90b";
 }
 .icon-envelope:before {
-	content: "\e90a";
+  content: "\e90c";
 }
 .icon-google-plus:before {
-	content: "\e90b";
+  content: "\e90d";
 }
 .icon-facebook:before {
-	content: "\e90c";
+  content: "\e90e";
 }
 .icon-youtube:before {
-	content: "\e90d";
+  content: "\e90f";
 }
 .icon-github:before {
-	content: "\e90e";
+  content: "\e910";
 }
 .icon-paypal:before {
-	content: "\e90f";
+  content: "\e911";
 }
 .icon-beer:before {
-	content: "\e910";
+  content: "\e912";
 }
 .icon-heart:before {
-	content: "\e911";
+  content: "\e913";
 }
 .icon-angle-right:before {
-	content: "\e912";
+  content: "\e914";
 }
 .icon-angle-left:before {
-	content: "\e913";
+  content: "\e915";
 }
 .icon-remove:before {
-	content: "\e914";
+  content: "\e916";
 }
 .icon-lightweight:before {
-	content: "\e915";
+  content: "\e917";
 }
 .icon-document-edit:before {
-	content: "\e916";
+  content: "\e918";
 }
 .icon-pen:before {
-	content: "\e917";
+  content: "\e919";
 }
 .icon-sad-face:before {
-	content: "\e918";
+  content: "\e91a";
 }
 .icon-happy-face:before {
-	content: "\e919";
-}
-.icon-gift:before {
-	content: "\e920";
+  content: "\e91b";
 }
 .icon-search:before {
-	content: "\e91a";
+  content: "\e91c";
 }
 .icon-support-user:before {
-	content: "\e91b";
+  content: "\e91d";
 }
 .icon-support-dev:before {
-	content: "\e91c";
+  content: "\e91e";
 }
 .icon-bug:before {
-	content: "\e91d";
+  content: "\e91f";
 }
 .icon-theme:before {
-	content: "\e91e";
+  content: "\e920";
 }
 .icon-bitcoin-o:before {
-	content: "\e91f";
+  content: "\e921";
+}
+.icon-gift:before {
+  content: "\e922";
 }

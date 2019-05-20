@@ -2,6 +2,10 @@
     <div class="container text-center">
         <div class="social-links">
 
+            <a href="https://medium.com/@d2phap" target="_blank" rel="noopener noreferrer" title="Medium blog">
+                <i class="icon-medium"></i>
+            </a>
+
             <a href="https://instagram.com/ImageGlassApp" target="_blank" rel="noopener noreferrer" title="ImageGlass on Instagram">
                 <i class="icon-instagram"></i>
             </a>
@@ -20,10 +24,6 @@
 
             <a href="https://crowdin.com/project/imageglass/invite" target="_blank" rel="noopener noreferrer" title="ImageGlass Translation on Crowdin">
                 <i class="icon-language"></i>
-            </a>
-
-            <a href="https://teespring.com/stores/imageglass" target="_blank" rel="noopener noreferrer" title="Buy a 🎁">
-                <i class="icon-gift"></i>
             </a>
         </div>
         

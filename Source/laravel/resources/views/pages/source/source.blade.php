@@ -13,11 +13,11 @@
         <article class="col-md-8 col-lg-8 col-xxl-9 col-hg-10 pr-0 pr-md-4 article-post">
             <p class="links">
                 <b>
-                    ImageGlass was released under the terms of the <a id="repoLicense" href="https://github.com/d2phap/ImageGlass/blob/master/LICENSE" target="_blank" rel="noopener noreferrer">
+                    ImageGlass is released under the terms of the <a id="repoLicense" href="https://github.com/d2phap/ImageGlass/blob/master/LICENSE" target="_blank" rel="noopener noreferrer">
                         GNU General Public License v3.0
                     </a>.
                 </b><br>
-                By downloading ImageGlass, you agree with all the terms of this license.
+                By downloading / using ImageGlass, you agree with all the terms of this license.
             </p>
 
             <h3 class="fs-h3 mt-4">

@@ -13,8 +13,7 @@
         <article class="col-md-8 col-lg-8 col-xxl-9 col-hg-10 pr-0 pr-md-4 article-post">
             <p class="intro">
 				<img class="avt" src="{{ url('/img/phapavt.png') }}" alt="Duong Dieu Phap">
-				<i class="icon-quotes-left"></i> Hello! My full name is Dương Diệu Pháp (aka Phap - /fab/).<br/>
-				I am {{date('Y') - 1991}}-year-old Vietnamese developer. <i class="icon-quotes-right"></i><br/><br/>
+				<i class="icon-quotes-left"></i> Hello! I am Dương Diệu Pháp (aka Phap - /fab/), {{date('Y') - 1991}}-year-old Vietnamese developer. <i class="icon-quotes-right"></i><br/><br/>
 			</p>
 			<p>
 				I am working as Front-end Developer for <a href="https://chainstack.com/" target="_blank" rel="noopener noreferrer" title="Chainstack"><strong>Chainstack</strong></a> — a cloud and blockchain agnostic Platform as a Service helping businesses to manage enterprise blockchain networks and build bleeding-edge blockchain-powered applications.
@@ -42,6 +41,7 @@
 				<h3 class="fs-h3 mt-5 mb-3" id="contact">💌 Contact me</h3>
 				<ul>
 					<li><strong>Email: </strong><a href="mailto:phap@imageglass.org" target="_blank" rel="noopener noreferrer">phap@imageglass.org</a></li>
+					<li><strong>Medium: </strong><a href="https://medium.com/@d2phap" target="_blank" rel="noopener noreferrer">medium.com/@d2phap</a></li>
 					<li><strong>Linkedin: </strong><a href="http://linkedin.com/in/duongdieuphap" target="_blank" rel="noopener noreferrer">linkedin.com/in/duongdieuphap</a></li>
 					<li><strong>Github: </strong><a href="https://github.com/d2phap" target="_blank" rel="noopener noreferrer">github.com/d2phap</a></li>
 					<li><strong>Dribbble: </strong><a href="https://dribbble.com/d2phap" target="_blank" rel="noopener noreferrer">dribbble.com/d2phap</a></li>
