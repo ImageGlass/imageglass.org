@@ -1,5 +1,14 @@
 <?php
 
+function getTotalHours($date_str) {
+    $now = new DateTime();
+    $datetime = new DateTime($date_str);
+    $diff = $datetime->diff($now);
+
+    return $diff->format("%h");
+}
+
+
 function getTotalDays($date_str) {
     $now = new DateTime();
     $datetime = new DateTime($date_str);
