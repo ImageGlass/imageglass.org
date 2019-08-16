@@ -61,13 +61,13 @@
         <li class="col-lg-10 col-xl-9 col-xxl-8 col-hg-6 article-item">
             <article class="eff-reveal-border">
                 <div class="row no-gutters article-item-content eff-reveal">
-                    <a class="col-md-3 article-image article-icon" href="{{ url("docs/ui-shortcuts-reference") }}" title="UI Shortcuts Reference">
-                        <img src="{{ url("img/keyboard.svg") }}" alt="UI Shortcuts Reference">
+                    <a class="col-md-3 article-image article-icon" href="{{ url("docs/ui-shortcuts-reference") }}" title="UI shortcuts reference">
+                        <img src="{{ url("img/keyboard.svg") }}" alt="UI shortcuts reference">
                     </a>
                     <div class="col-md-9 p-3 article-content">
                         <h3 class="article-title fs-h3">
-                            <a class="will-link" href="{{ url("docs/ui-shortcuts-reference") }}" title="UI Shortcuts Reference">
-                                UI Shortcuts Reference
+                            <a class="will-link" href="{{ url("docs/ui-shortcuts-reference") }}" title="UI shortcuts reference">
+                                UI shortcuts reference
                             </a>
                         </h3>
                         <p>
@@ -77,7 +77,28 @@
                 </div>
             </article>
         </li>
-        {{--  #UI Shortcuts Reference  --}}
+        {{--  #UI shortcuts reference  --}}
+
+        <li class="col-lg-10 col-xl-9 col-xxl-8 col-hg-6 article-item">
+            <article class="eff-reveal-border">
+                <div class="row no-gutters article-item-content eff-reveal">
+                    <a class="col-md-3 article-image article-icon" href="{{ url("docs/command-line-utilities") }}" title="Command line utilities">
+                        <img src="{{ url("img/command.svg") }}" alt="Command line utilities">
+                    </a>
+                    <div class="col-md-9 p-3 article-content">
+                        <h3 class="article-title fs-h3">
+                            <a class="will-link" href="{{ url("docs/command-line-utilities") }}" title="Command line utilities">
+                                Command line utilities
+                            </a>
+                        </h3>
+                        <p>
+                            Learn how to manage ImageGlass using built-in command lines like a pro. These can be useful to system administrators, and to other programs calling the application.
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </li>
+        {{--  #Command line utilities  --}}
 
     </ul>
 

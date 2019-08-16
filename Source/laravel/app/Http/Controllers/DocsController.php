@@ -43,15 +43,22 @@ class DocsController extends Controller
 
             case "supported-formats":
                 $title = "Supported formats";
-                $description = "mageGlass supports the most common image formats. User also can customize this extension list easily.";
+                $description = "ImageGlass supports the most common image formats. User also can customize this extension list easily.";
                 $keyword = "imageglass formats, image formats, supported formats";
             
                 break;
 
             case "ui-shortcuts-reference":
-                $title = "UI Shortcuts Reference";
+                $title = "UI shortcuts reference";
                 $description = "ImageGlass has several built-in shortcut keys that can save you time in your daily workflows.";
                 $keyword = "imageglass shortcut, hotkey, ui shortcut";
+            
+                break;
+
+            case "command-line-utilities":
+                $title = "Command line utilities";
+                $description = "Learn how to manage ImageGlass using built-in command lines like a pro.";
+                $keyword = "imageglass command line, imageglass silent install";
             
                 break;
             

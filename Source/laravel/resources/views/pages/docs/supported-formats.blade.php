@@ -18,7 +18,7 @@
 
             <h3 id="default-formats" class="mt-5 mb-3 fs-h3">Default formats</h3>
             <div class="table-responsive">
-                <table class="table table-hover table-striped">
+                <table class="col-12 table table-hover table-striped">
                     <thead>
                         <tr>
                             <th width="25%">File extension</th>
@@ -201,7 +201,7 @@
 
             <h3 id="optional-formats" class="mt-5 mb-3 fs-h3">Optional formats</h3>
             <div class="table-responsive">
-                <table class="table table-hover table-striped">
+                <table class="col-12 table table-hover table-striped">
                     <thead>
                         <tr>
                             <th width="25%">File extension</th>
