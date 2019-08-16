@@ -18,6 +18,7 @@
 
             <h3 class="mt-5 fs-h3">Keyboard shortcuts</h3>
 
+
             <h4 class="mt-4 fs-h4 fw-bold text-color-1">Common features</h4>
             <div class="table-responsive">
                 <table class="col-12 table table-hover table-striped">
@@ -26,61 +27,6 @@
                             <td width="60%">Open main menu</td>
                             <td width="40%">
                                 <kbd>`</kbd>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="60%">Open file</td>
-                            <td width="40%">
-                                <kbd>Ctrl+O</kbd>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Open image data from clipboard</td>
-                            <td>
-                                <kbd>Ctrl+V</kbd>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Save image as ...</td>
-                            <td>
-                                <kbd>Ctrl+S</kbd>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Edit image</td>
-                            <td>
-                                <kbd>Ctrl+E</kbd>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Refresh</td>
-                            <td>
-                                <kbd>F5</kbd>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Reload Image</td>
-                            <td>
-                                <kbd>Ctrl+F5</kbd>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Full screen</td>
-                            <td>
-                                <kbd>Alt+Enter</kbd>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Exit full screen</td>
-                            <td>
-                                <kbd>Alt+Enter</kbd>, <br/>
-                                <kbd>ESC</kbd>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Print</td>
-                            <td>
-                                <kbd>Ctrl+P</kbd>
                             </td>
                         </tr>
                         <tr>
@@ -96,39 +42,83 @@
                             </td>
                         </tr>
                         <tr>
+                            <td width="60%">Full screen</td>
+                            <td width="40%">
+                                <kbd>Alt+Enter</kbd>
+                            </td>
+                        </tr>
+                        <tr>
                             <td>Settings</td>
                             <td>
                                 <kbd>Ctrl+Shift+P</kbd>
                             </td>
                         </tr>
                         <tr>
-                            <td>About</td>
-                            <td>
-                                <kbd>F1</kbd>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>First-launch configurations</td>
-                            <td>
-                                N/A
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Check for update</td>
-                            <td>
-                                N/A
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Report an issue</td>
-                            <td>
-                                N/A
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Quit application</td>
+                            <td>Exit ImageGlass</td>
                             <td>
                                 <kbd>ESC</kbd> <span class="icon-info" title='Must enable the setting: "Allow to press ESC to quit application"'></span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4 class="mt-4 fs-h4 fw-bold text-color-1">File</h4>
+            <div class="table-responsive">
+                <table class="col-12 table table-hover table-striped">
+                    <tbody>
+                        <tr>
+                            <td width="60%">Open file</td>
+                            <td width="40%">
+                                <kbd>Ctrl+O</kbd>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Open image data from clipboard</td>
+                            <td>
+                                <kbd>Ctrl+V</kbd>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Open new window</td>
+                            <td>
+                                <kbd>Ctrl+N</kbd>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Save image as ...</td>
+                            <td>
+                                <kbd>Ctrl+S</kbd>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Edit image</td>
+                            <td>
+                                <kbd>Ctrl+E</kbd>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Print</td>
+                            <td>
+                                <kbd>Ctrl+P</kbd>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Refresh</td>
+                            <td>
+                                <kbd>F5</kbd>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Reload image</td>
+                            <td>
+                                <kbd>Ctrl+R</kbd>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Reload image list</td>
+                            <td>
+                                <kbd>Ctrl+Shift+R</kbd>
                             </td>
                         </tr>
                     </tbody>
@@ -175,70 +165,18 @@
                 </table>
             </div>
 
-            <h4 class="mt-4 fs-h4 fw-bold text-color-1">Slideshow</h4>
+            <h4 class="mt-4 fs-h4 fw-bold text-color-1">Zoom</h4>
             <div class="table-responsive">
                 <table class="col-12 table table-hover table-striped">
                     <tbody>
                         <tr>
-                            <td width="60%">Start slideshow</td>
+                            <td width="60%">Zoom in</td>
                             <td width="40%">
-                                <kbd>F11</kbd>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="60%">Pause / Resume slideshow</td>
-                            <td width="40%">
-                                <kbd>Space</kbd>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Exit slideshow</td>
-                            <td>
-                                <kbd>ESC</kbd>, <br/>
-                                <kbd>F11</kbd>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <h4 class="mt-4 fs-h4 fw-bold text-color-1">Manipulation</h4>
-            <div class="table-responsive">
-                <table class="col-12 table table-hover table-striped">
-                    <tbody>
-                        <tr>
-                            <td width="60%">Rotate counterclockwise</td>
-                            <td width="40%">
-                                <kbd>Ctrl+,</kbd>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="60%">Rotate clockwise</td>
-                            <td width="40%">
-                                <kbd>Ctrl+.</kbd>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Flip Horizontal</td>
-                            <td>
-                                <kbd>Ctrl+;</kbd>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Flip Vertical</td>
-                            <td>
-                                <kbd>Ctrl+'</kbd>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Zoom in</td>
-                            <td>
                                 <kbd>+</kbd>,<br/>
                                 <kbd>NumPad+</kbd>,<br/>
                                 <kbd>Ctrl+=</kbd>,<br/>
                                 <kbd>Ctrl+NumPad+</kbd>, <br/><br/>
 
-                                
                                 <kbd>Ctrl+(mousewheel)</kbd> <span class="icon-info" title='Must enable the setting: "Use the mousewheel to browse images, hold CTRL for zooming"'></span>
                             </td>
                         </tr>
@@ -267,8 +205,6 @@
                                 <kbd>Ctrl+M</kbd>
                             </td>
                         </tr>
-
-
                         <tr>
                             <td>Auto Zoom</td>
                             <td>
@@ -299,8 +235,44 @@
                                 <kbd>Ctrl+L</kbd>
                             </td>
                         </tr>
-                        
-                        
+                    </tbody>
+                </table>
+            </div>
+
+            <h4 class="mt-4 fs-h4 fw-bold text-color-1">Image</h4>
+            <div class="table-responsive">
+                <table class="col-12 table table-hover table-striped">
+                    <tbody>
+                        <tr>
+                            <td width="60%">View channels</td>
+                            <td width="40%">
+                                N/A
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60%">Rotate counterclockwise</td>
+                            <td width="40%">
+                                <kbd>Ctrl+,</kbd>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60%">Rotate clockwise</td>
+                            <td width="40%">
+                                <kbd>Ctrl+.</kbd>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Flip Horizontal</td>
+                            <td>
+                                <kbd>Ctrl+;</kbd>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Flip Vertical</td>
+                            <td>
+                                <kbd>Ctrl+'</kbd>
+                            </td>
+                        </tr>
                         <tr>
                             <td>Rename image</td>
                             <td>
@@ -322,7 +294,7 @@
                         <tr>
                             <td>Extract image frames</td>
                             <td>
-                                <kbd>Ctrl+R</kbd>
+                                <kbd>Ctrl+J</kbd>
                             </td>
                         </tr>
                         <tr>
@@ -355,7 +327,6 @@
                                 <kbd>Ctrl+I</kbd>
                             </td>
                         </tr>
-                        
                     </tbody>
                 </table>
             </div>
@@ -392,6 +363,33 @@
                             <td width="60%">Clear clipboard</td>
                             <td width="40%">
                                 <kbd>Ctrl+`</kbd>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4 class="mt-4 fs-h4 fw-bold text-color-1">Slideshow</h4>
+            <div class="table-responsive">
+                <table class="col-12 table table-hover table-striped">
+                    <tbody>
+                        <tr>
+                            <td width="60%">Start slideshow</td>
+                            <td width="40%">
+                                <kbd>F11</kbd>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60%">Pause / Resume slideshow</td>
+                            <td width="40%">
+                                <kbd>Space</kbd>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Exit slideshow</td>
+                            <td>
+                                <kbd>ESC</kbd>, <br/>
+                                <kbd>F11</kbd>
                             </td>
                         </tr>
                     </tbody>
@@ -438,6 +436,38 @@
                             <td width="60%">Color Picker</td>
                             <td width="40%">
                                 <kbd>Ctrl+Shift+K</kbd>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4 class="mt-4 fs-h4 fw-bold text-color-1">Help</h4>
+            <div class="table-responsive">
+                <table class="col-12 table table-hover table-striped">
+                    <tbody>
+                        <tr>
+                            <td width="60%">About</td>
+                            <td width="40%">
+                                <kbd>F1</kbd>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Check for update</td>
+                            <td>
+                                N/A
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Report an issue</td>
+                            <td>
+                                N/A
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>First-launch configurations</td>
+                            <td>
+                                N/A
                             </td>
                         </tr>
                     </tbody>
