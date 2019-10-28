@@ -15,8 +15,8 @@
 @endif
 
 <section class="blog-post-new">
-    <a href="https://medium.com/@d2phap/im-renovating-the-core-library-of-imageglass-e39aa26569bc" target="_blank" title="I’m renovating the core library of ImageGlass" rel="noopener noreferrer">
-        <span class="tag-new">✍ New blog!</span>
-        <span class="title">I’m renovating the core library of ImageGlass</span>
+    <a href="https://medium.com/@d2phap/enable-windows-file-explorer-sort-order-in-imageglass-7-ff63b4ab16a0" target="_blank" title="Enable Windows File Explorer sort order in ImageGlass 7" rel="noopener noreferrer">
+        <span class="tag-new">📙 New blog!</span>
+        <span class="title">Enable Windows File Explorer sort order in ImageGlass 7</span>
     </a>
 </section>

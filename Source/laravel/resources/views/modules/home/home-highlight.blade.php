@@ -29,7 +29,7 @@
             <section class="row justify-content-center mt-5">
                 <div class="col-hg-7 col-xxl-8 col-xl-9 col-lg-10 col-12">
                     <div class="embed-responsive embed-responsive-16by9 top-video">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mHhz-Ew8M7A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NbRy660CsFw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </section>

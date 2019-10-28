@@ -9,8 +9,9 @@
         Thanks for your gratitude and finance help!
     </p>
     <div>
-        <a href="https://www.patreon.com/bePatron?u=6414896" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-            Become a patron <svg width="20px" height="20px" viewBox="0 0 569 546" version="1.1" xmlns="http://www.w3.org/2000/svg"><title>Patreon logo</title><g><circle fill="#E84646" data-color="1" id="Oval" cx="362.589996" cy="204.589996" r="204.589996"></circle><rect fill="#000" data-color="2" id="Rectangle" x="0" y="0" width="100" height="545.799988"></rect></g></svg>
+        <a href="https://github.com/sponsors/d2phap" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+            Become a sponsor 
+            <i class="icon-github"></i>
         </a>
     </div>
     <div class="mt-3">
