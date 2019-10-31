@@ -15,8 +15,8 @@
 @endif
 
 <section class="blog-post-new">
-    <a href="https://medium.com/@d2phap/enable-windows-file-explorer-sort-order-in-imageglass-7-ff63b4ab16a0" target="_blank" title="Enable Windows File Explorer sort order in ImageGlass 7" rel="noopener noreferrer">
-        <span class="tag-new">📙 New blog!</span>
-        <span class="title">Enable Windows File Explorer sort order in ImageGlass 7</span>
+    <a href="https://medium.com/@d2phap/viewing-multi-page-tif-format-e0dcc256f4f0" target="_blank" title="Experiment viewing multi-page TIF format!" rel="noopener noreferrer">
+        <span class="tag-new">💥 New!</span>
+        <span class="title">Experiment viewing multi-page TIF format!</span>
     </a>
 </section>
