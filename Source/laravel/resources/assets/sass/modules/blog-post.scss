@@ -25,7 +25,6 @@
             padding: $gap/2;
             display: inline-block;
             @include bg-gradient-highlight();
-            @include animate-gradient();
         }
 
         .title {
