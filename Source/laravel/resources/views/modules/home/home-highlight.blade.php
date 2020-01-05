@@ -26,11 +26,11 @@
                             <div class="top-news-item item-new">
                                 <span>
                                     <span class="news-item-wrap">
-                                        <a href="https://medium.com/@d2phap/viewing-multi-page-tif-format-e0dcc256f4f0" class="news-item-img" target="_blank" rel="noopener sponsored">
-                                            <img src="https://picsum.photos/50/20">
+                                        <a href="https://medium.com/@d2phap/enable-windows-file-explorer-sort-order-in-imageglass-7-ff63b4ab16a0" class="news-item-img" target="_blank" rel="noopener sponsored">
+                                            <img src="https://picsum.photos/50/21">
                                         </a>
-                                        <a href="https://medium.com/@d2phap/viewing-multi-page-tif-format-e0dcc256f4f0" class="news-item-text" target="_blank" rel="noopener sponsored">
-                                            Experiment viewing multi-page TIF format!
+                                        <a href="https://imageglass.org/news/announcing-imageglass-7-5-68" class="news-item-text">
+                                            Announcing ImageGlass 7.5
                                         </a>
                                     </span>
                                 </span>
@@ -41,11 +41,11 @@
                             <div class="top-news-item">
                                 <span>
                                     <span class="news-item-wrap">
-                                        <a href="https://medium.com/@d2phap/enable-windows-file-explorer-sort-order-in-imageglass-7-ff63b4ab16a0" class="news-item-img" target="_blank" rel="noopener sponsored">
-                                            <img src="https://picsum.photos/50/40">
+                                        <a href="https://medium.com/@d2phap/viewing-multi-page-tif-format-e0dcc256f4f0" class="news-item-img" target="_blank" rel="noopener sponsored">
+                                            <img src="https://picsum.photos/50/20">
                                         </a>
-                                        <a href="https://medium.com/@d2phap/enable-windows-file-explorer-sort-order-in-imageglass-7-ff63b4ab16a0" class="news-item-text" target="_blank" rel="noopener sponsored">
-                                            Enable Windows File Explorer sort order in ImageGlass 7
+                                        <a href="https://medium.com/@d2phap/viewing-multi-page-tif-format-e0dcc256f4f0" class="news-item-text" target="_blank" rel="noopener sponsored">
+                                            Experiment viewing multi-page TIF format!
                                         </a>
                                     </span>
                                 </span>
@@ -62,7 +62,7 @@
                     <section class="row justify-content-center align-items-end h-100">
                         <div class="col-12">
                             <div class="embed-responsive embed-responsive-16by9 top-video">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NbRy660CsFw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cNXpHBMcjAI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                         </div>
                     </section>
