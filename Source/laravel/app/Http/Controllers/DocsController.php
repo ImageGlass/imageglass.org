@@ -61,6 +61,13 @@ class DocsController extends Controller
                 $keyword = "imageglass command line, imageglass silent install";
             
                 break;
+
+            case "app-configs":
+                $title = "App configuration";
+                $description = "Learn how to control ImageGlass over configuration, pre-define or even lock some settings at installation.";
+                $keyword = "imageglass config file, imageglass admin settings";
+            
+                break;
             
             default:
                 abort(404);

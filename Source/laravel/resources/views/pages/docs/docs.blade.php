@@ -82,6 +82,27 @@
         <li class="col-lg-10 col-xl-9 col-xxl-8 col-hg-6 article-item">
             <article class="eff-reveal-border">
                 <div class="row no-gutters article-item-content eff-reveal">
+                    <a class="col-md-3 article-image article-icon" href="{{ url("docs/app-configs") }}" title="App configuration">
+                        <img src="{{ url("img/setting.svg") }}" alt="App configuration">
+                    </a>
+                    <div class="col-md-9 p-3 article-content">
+                        <h3 class="article-title fs-h3">
+                            <a class="will-link" href="{{ url("docs/app-configs") }}" title="App configuration">
+                                App configuration
+                            </a>
+                        </h3>
+                        <p>
+                            Learn how to control ImageGlass over configuration, pre-define or even lock some settings at installation.
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </li>
+        {{--  #App configuration  --}}
+
+        <li class="col-lg-10 col-xl-9 col-xxl-8 col-hg-6 article-item">
+            <article class="eff-reveal-border">
+                <div class="row no-gutters article-item-content eff-reveal">
                     <a class="col-md-3 article-image article-icon" href="{{ url("docs/command-line-utilities") }}" title="Command line utilities">
                         <img src="{{ url("img/command.svg") }}" alt="Command line utilities">
                     </a>
