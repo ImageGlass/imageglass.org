@@ -12,11 +12,8 @@
 
     <div class="row no-gutters">
         <article class="col-md-8 col-lg-8 col-xxl-9 col-hg-10 pr-0 pr-md-4 article-post links">
-            
-            <p>ImageGlass supports the most common image formats.</p>
-            <p>While <b>Default formats</b> group are including lightweight image formats and able to be loaded automatically, <b>Optional formats</b> group are not. This is to avoid heavy workloads and performance interruption of the app. Besides, user can easily customize this extension list.</p>
+            <p>ImageGlass supports the most common image formats thanks to Magick.NET library. User can easily customize the extension list to add more file type and open in ImageGlass as long as Magick.NET supports it.</p>
 
-            <h3 id="default-formats" class="mt-5 mb-3 fs-h3">Default formats</h3>
             <div class="table-responsive">
                 <table class="col-12 table table-hover table-striped">
                     <thead>
@@ -33,6 +30,12 @@
                             <td>✔</td>
                             <td>✔</td>
                             <td></td>
+                        </tr>
+                        <tr>
+                            <td><code>bpg</code></td>
+                            <td>✔</td>
+                            <td></td>
+                            <td>Required <a href="https://bellard.org/bpg/" title="BPG tools for Windows" ref="noopener nofollow noreferrer">BPG tools for Windows</a> installed.</td>
                         </tr>
                         <tr>
                             <td><code>cur</code></td>
@@ -65,10 +68,22 @@
                             <td></td>
                         </tr>
                         <tr>
+                            <td><code>exr</code></td>
+                            <td>✔</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
                             <td><code>gif</code></td>
                             <td>✔</td>
                             <td>✔</td>
                             <td>Support writing the first image frame.</td>
+                        </tr>
+                        <tr>
+                            <td><code>hdr</code></td>
+                            <td>✔</td>
+                            <td></td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><code>heic</code></td>
@@ -80,7 +95,7 @@
                             <td><code>ico</code></td>
                             <td>✔</td>
                             <td>✔</td>
-                            <td>The biggest image will be displayed.</td>
+                            <td>Able to view every single page separately.</td>
                         </tr>
                         <tr>
                             <td><code>jfif</code></td>
@@ -137,6 +152,12 @@
                             <td></td>
                         </tr>
                         <tr>
+                            <td><code>psd</code></td>
+                            <td>✔</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
                             <td><code>svg</code></td>
                             <td>✔</td>
                             <td></td>
@@ -146,16 +167,22 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><code>tif</code></td>
+                            <td><code>tga</code></td>
                             <td>✔</td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr>
+                            <td><code>tif</code></td>
+                            <td>✔</td>
+                            <td></td>
+                            <td>Able to view every single page separately.<br/>Support writing single page only.</td>
+                        </tr>
+                        <tr>
                             <td><code>tiff</code></td>
                             <td>✔</td>
                             <td>✔</td>
-                            <td>Support reading/writing single page only.</td>
+                            <td>Able to view every single page separately.<br/>Support writing single page only.</td>
                         </tr>
                         <tr>
                             <td><code>webp</code></td>
@@ -187,54 +214,6 @@
                             <td></td>
                             <td></td>
                         </tr>
-
-                        <tr>
-                            <td>(base-64 string)</td>
-                            <td>✔</td>
-                            <td>✔</td>
-                            <td>Read through the Clipboard <kbd>Ctrl+V</kbd></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-
-            <h3 id="optional-formats" class="mt-5 mb-3 fs-h3">Optional formats</h3>
-            <div class="table-responsive">
-                <table class="col-12 table table-hover table-striped">
-                    <thead>
-                        <tr>
-                            <th width="25%">File extension</th>
-                            <th width="20%">Read</th>
-                            <th width="20%">Write</th>
-                            <th width="35%">Comment</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><code>exr</code></td>
-                            <td>✔</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td><code>hdr</code></td>
-                            <td>✔</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td><code>psd</code></td>
-                            <td>✔</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td><code>tga</code></td>
-                            <td>✔</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
                         <tr>
                             <td>
                                 <a href="https://en.wikipedia.org/wiki/Raw_image_format" target="_blank" rel="noopener">
@@ -244,13 +223,13 @@
                             </td>
                             <td>✔</td>
                             <td></td>
-                            <td>
-                                required 
-                                <a href="https://en.wikipedia.org/wiki/Windows_Imaging_Component" target="_blank" rel="noopener">
-                                    WIC
-                                </a>
-                                installed
-                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>(base-64 string)</td>
+                            <td>✔</td>
+                            <td>✔</td>
+                            <td>Read through the Clipboard <kbd>Ctrl+V</kbd></td>
                         </tr>
                     </tbody>
                 </table>
