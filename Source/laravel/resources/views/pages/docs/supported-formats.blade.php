@@ -19,9 +19,9 @@
                     <thead>
                         <tr>
                             <th width="25%">File extension</th>
-                            <th width="20%">Read</th>
-                            <th width="20%">Write</th>
-                            <th width="35%">Comment</th>
+                            <th width="15%">Read</th>
+                            <th width="15%">Write</th>
+                            <th width="45%">Comment</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -176,13 +176,19 @@
                             <td><code>tif</code></td>
                             <td>✔</td>
                             <td></td>
-                            <td>Able to view every single page separately.<br/>Support writing single page only.</td>
+                            <td>
+                                - Able to view every single page separately.<br/>
+                                - Support writing single page only.
+                            </td>
                         </tr>
                         <tr>
                             <td><code>tiff</code></td>
                             <td>✔</td>
                             <td>✔</td>
-                            <td>Able to view every single page separately.<br/>Support writing single page only.</td>
+                            <td>
+                                - Able to view every single page separately.<br/>
+                                - Support writing single page only.
+                            </td>
                         </tr>
                         <tr>
                             <td><code>webp</code></td>
