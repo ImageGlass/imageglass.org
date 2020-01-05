@@ -2,7 +2,6 @@
 @section("_body_content")
 
 <section class="container py-4 py-lg-5">
-
     <div class="row no-gutters">
         <h2 class="fs-h1 mb-4">
             UI Shortcuts Reference
@@ -12,12 +11,10 @@
 
     <div class="row no-gutters">
         <article class="col-md-8 col-lg-8 col-xxl-9 col-hg-10 pr-0 pr-md-4 article-post links">
-            
             <p>ImageGlass has several built-in shortcut keys that can save you time in your daily workflows.</p>
             <p>This guide provides a quick reference to each shortcut available in ImageGlass. You can also find shortcuts in tooltips or menus. Hover over an element to display its tooltip. If the element has a shortcut, the tooltip will include it.</p>
 
             <h3 class="mt-5 fs-h3">Keyboard shortcuts</h3>
-
 
             <h4 class="mt-4 fs-h4 fw-bold text-color-1">Common features</h4>
             <div class="table-responsive">
@@ -32,18 +29,42 @@
                         <tr>
                             <td>Send the viewing image to other apps</td>
                             <td>
-                                <kbd>Ctrl+(drag)</kbd> <span class="icon-info" title='Hold CTRL key and drag the image to other apps'></kbd>
+                                <kbd>Ctrl+(drag)</kbd> <span class="icon-info" title="Hold CTRL key and drag the image to other apps"></kbd>
                             </td>
                         </tr>
                         <tr>
                             <td>Horizontal / Vertical scrolling</td>
                             <td>
-                                <kbd>Ctrl | Shift | Alt+(scroll)</kbd> <span class="icon-info" title='Hold CTRL / SHIFT / ALT key and scroll mouse wheel. Need to configure in Settings dialog > Image tab.'></kbd>
+                                <kbd>Ctrl | Shift | Alt+(scroll)</kbd> <span class="icon-info" title="Hold CTRL / SHIFT / ALT key and scroll mouse wheel. Configurable in Settings > Image"></kbd>
                             </td>
                         </tr>
                         <tr>
-                            <td width="60%">Full screen</td>
-                            <td width="40%">
+                            <td>Panning image</td>
+                            <td>
+                                <kbd>Up | Down | Left | Right</kbd> <span class="icon-info" title="Configurable in Settings > Keyboard"></kbd>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Window fit</td>
+                            <td>
+                                <kbd>F9</kbd>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Frameless</td>
+                            <td>
+                                <kbd>F10</kbd>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Moving frameless window</td>
+                            <td>
+                                <kbd>Shift+(drag)</kbd>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Full screen</td>
+                            <td>
                                 <kbd>Alt+Enter</kbd>
                             </td>
                         </tr>
@@ -56,7 +77,7 @@
                         <tr>
                             <td>Exit ImageGlass</td>
                             <td>
-                                <kbd>ESC</kbd> <span class="icon-info" title='Must enable the setting: "Allow to press ESC to quit application"'></span>
+                                <kbd>ESC</kbd> <span class="icon-info" title="Must enable the setting: 'Allow to press ESC to quit application'"></span>
                             </td>
                         </tr>
                     </tbody>
@@ -132,15 +153,17 @@
                         <tr>
                             <td width="60%">View next image</td>
                             <td width="40%">
-                                <kbd>Right arrow</kbd>,<br/>
-                                <kbd>PageUp</kbd>
+                                <kbd>Right arrow</kbd> <span class="icon-info" title="Configurable in Settings > Keyboard"></span>,<br/>
+                                <kbd>PageUp</kbd> <span class="icon-info" title="Configurable in Settings > Keyboard"></span>, <br/>
+                                <kbd>Backspace</kbd> <span class="icon-info" title="Configurable in Settings > Keyboard"></span>
                             </td>
                         </tr>
                         <tr>
-                            <td width="60%">View previous image</td>
-                            <td width="40%">
-                                <kbd>Left arrow</kbd>,<br/>
-                                <kbd>PageDown</kbd>
+                            <td>View previous image</td>
+                            <td>
+                                <kbd>Left arrow</kbd> <span class="icon-info" title="Configurable in Settings > Keyboard"></span>,<br/>
+                                <kbd>PageDown</kbd> <span class="icon-info" title="Configurable in Settings > Keyboard"></span>, <br/>
+                                <kbd>Space</kbd> <span class="icon-info" title="Configurable in Settings > Keyboard"></span>
                             </td>
                         </tr>
                         <tr>
@@ -161,6 +184,30 @@
                                 <kbd>End</kbd>
                             </td>
                         </tr>
+                        <tr>
+                            <td>View next page</td>
+                            <td>
+                                <kbd>Ctrl+Right arrow</kbd>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>View previous page</td>
+                            <td>
+                                <kbd>Ctrl+Left arrow</kbd>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>View the first page</td>
+                            <td>
+                                <kbd>Ctrl+Home</kbd>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>View the last page</td>
+                            <td>
+                                <kbd>Ctrl+End</kbd>
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
@@ -177,7 +224,7 @@
                                 <kbd>Ctrl+=</kbd>,<br/>
                                 <kbd>Ctrl+NumPad+</kbd>, <br/><br/>
 
-                                <kbd>Ctrl+(mousewheel)</kbd> <span class="icon-info" title='Must enable the setting: "Use the mousewheel to browse images, hold CTRL for zooming"'></span>
+                                <kbd>Ctrl+(mousewheel)</kbd> <span class="icon-info" title="Configurable in Settings > Keyboard"></span>
                             </td>
                         </tr>
                         <tr>
@@ -188,21 +235,15 @@
                                 <kbd>Ctrl+-</kbd>,<br/>
                                 <kbd>Ctrl+NumPad-</kbd>, <br/><br/>
 
-                                <kbd>Ctrl+(mousewheel)</kbd> <span class="icon-info" title='Must enable the setting: "Use the mousewheel to browse images, hold CTRL for zooming"'></span>
+                                <kbd>Ctrl+(mousewheel)</kbd> <span class="icon-info" title="Configurable in Settings > Keyboard"></span>
                             </td>
                         </tr>
                         <tr>
-                            <td>View actual size</td>
+                            <td>Actual size</td>
                             <td>
                                 <kbd>0</kbd>,<br/>
                                 <kbd>Ctrl+0</kbd>,<br/>
                                 <kbd>Ctrl+NumPad0</kbd>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Adjust window to actual image dimentions</td>
-                            <td>
-                                <kbd>Ctrl+M</kbd>
                             </td>
                         </tr>
                         <tr>
@@ -224,9 +265,15 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Zoom to fit</td>
+                            <td>Scale to fit</td>
                             <td>
                                 <kbd>Ctrl+/</kbd>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Scale to fill</td>
+                            <td>
+                                <kbd>Ctrl+D</kbd>
                             </td>
                         </tr>
                         <tr>
@@ -250,25 +297,25 @@
                             </td>
                         </tr>
                         <tr>
-                            <td width="60%">Rotate counterclockwise</td>
-                            <td width="40%">
+                            <td>Rotate left</td>
+                            <td>
                                 <kbd>Ctrl+,</kbd>
                             </td>
                         </tr>
                         <tr>
-                            <td width="60%">Rotate clockwise</td>
-                            <td width="40%">
+                            <td>Rotate right</td>
+                            <td>
                                 <kbd>Ctrl+.</kbd>
                             </td>
                         </tr>
                         <tr>
-                            <td>Flip Horizontal</td>
+                            <td>Flip horizontal</td>
                             <td>
                                 <kbd>Ctrl+;</kbd>
                             </td>
                         </tr>
                         <tr>
-                            <td>Flip Vertical</td>
+                            <td>Flip vertical</td>
                             <td>
                                 <kbd>Ctrl+'</kbd>
                             </td>
@@ -292,7 +339,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Extract image frames</td>
+                            <td>Extract image pages</td>
                             <td>
                                 <kbd>Ctrl+J</kbd>
                             </td>
@@ -336,32 +383,34 @@
                 <table class="col-12 table table-hover table-striped">
                     <tbody>
                         <tr>
-                            <td width="60%">Copy multiple files</td>
+                            <td width="60%">
+                                Copy multiple files <span class="icon-info" title="Copy multiple image files to clipboard, you will be able to paste them in File Explorer as files"></span>
+                            </td>
                             <td width="40%">
                                 <kbd>Ctrl+C</kbd>
                             </td>
                         </tr>
                         <tr>
-                            <td width="60%">Copy image data</td>
-                            <td width="40%">
+                            <td>Copy image data <span class="icon-info" title="Copy image bitmap data to clipboard, you will be able to paste this in MS Paint as bitmap"></span></td>
+                            <td>
                                 <kbd>Ctrl+Shift+C</kbd>
                             </td>
                         </tr>
                         <tr>
-                            <td width="60%">Cut multiple files</td>
-                            <td width="40%">
+                            <td>Cut multiple files <span class="icon-info" title="Cut multiple image files to clipboard, you will be able to paste them in File Explorer as files"></span></td>
+                            <td>
                                 <kbd>Ctrl+X</kbd>
                             </td>
                         </tr>
                         <tr>
-                            <td width="60%">Copy image path</td>
-                            <td width="40%">
+                            <td>Copy image path</td>
+                            <td>
                                 N/A
                             </td>
                         </tr>
                         <tr>
-                            <td width="60%">Clear clipboard</td>
-                            <td width="40%">
+                            <td>Clear clipboard</td>
+                            <td>
                                 <kbd>Ctrl+`</kbd>
                             </td>
                         </tr>
@@ -380,9 +429,9 @@
                             </td>
                         </tr>
                         <tr>
-                            <td width="60%">Pause / Resume slideshow</td>
-                            <td width="40%">
-                                <kbd>Space</kbd>
+                            <td>Pause / Resume slideshow</td>
+                            <td>
+                                <kbd>Space</kbd> <span class="icon-info" title="Configurable in Settings > Keyboard"></span>
                             </td>
                         </tr>
                         <tr>
@@ -436,6 +485,12 @@
                             <td width="60%">Color Picker</td>
                             <td width="40%">
                                 <kbd>Ctrl+Shift+K</kbd>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Page navigation</td>
+                            <td>
+                                <kbd>Ctrl+Shift+J</kbd>
                             </td>
                         </tr>
                     </tbody>

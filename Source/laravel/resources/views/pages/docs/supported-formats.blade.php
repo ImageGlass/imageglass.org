@@ -12,7 +12,7 @@
 
     <div class="row no-gutters">
         <article class="col-md-8 col-lg-8 col-xxl-9 col-hg-10 pr-0 pr-md-4 article-post links">
-            <p>ImageGlass supports the most common image formats thanks to Magick.NET library. User can easily customize the extension list to add more file type and open in ImageGlass as long as Magick.NET supports it.</p>
+            <p>ImageGlass supports the most common image formats thanks to Magick.NET library. User can easily customize the extension list to add more file types and open in ImageGlass as long as Magick.NET supports it.</p>
 
             <div class="table-responsive">
                 <table class="col-12 table table-hover table-striped">
