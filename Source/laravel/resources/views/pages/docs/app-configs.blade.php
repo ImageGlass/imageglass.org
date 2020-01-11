@@ -21,7 +21,7 @@
                     <i><b><u>Startup dir</u></b></i>: is the folder where ImageGlass.exe located in, also called as installed dir. E.g: <code>C:\Program Files\ImageGlass\</code>
                 </li>
                 <li>
-                    <i><b><u>Config dir</u></b></i>: is the folder that contains ImageGlass setting file (igconfig.xml) and others, located in <code>%AppData%\ImageGlass\</code>. In portable mode, Config dir is also <i><b><u>Startup dir</u></b></i>.
+                    <i><b><u>Config dir</u></b></i>: is the folder that contains ImageGlass setting file (igconfig.xml) and others, located in <code>%AppData%\ImageGlass\</code>. In portable mode, Config dir is also <i><b><u>Startup dir</u></b></i>. If ImageGlass does not have write permission to <i><b><u>Startup dir</u></b></i>, it will use <i><b><u>%AppData%\ImageGlass\</u></b></i> instead.
                 </li>
             </ul>
 
@@ -74,36 +74,36 @@
                             <td>Array item separator</td>
                             <td>
                                 <code>,</code><br/>E.g.<br/>
-                                <code>key="FrmMainWindowsBound" value="280,125,1329,849"</code>
+                                <code class="text-break-all">key="FrmMainWindowsBound" value="280,125,1329,849"</code>
                             </td>
                             <td>
                                 <code>;</code><br/>E.g.<br/>
-                                <code>key="frmMain.WindowsBound" value="280;125;1329;849"</code><br/>
-                                <code>key="ToolbarButtons" value="btnBack;btnNext;Separator;"</code>
+                                <code class="text-break-all">key="frmMain.WindowsBound" value="280;125;1329;849"</code><br/>
+                                <code class="text-break-all">key="ToolbarButtons" value="btnBack;btnNext;Separator;"</code>
                             </td>
                         </tr>
                         <tr>
                             <td>Pair value item separator in array</td>
                             <td>
                                 <code>,</code><br/>E.g.<br/>
-                                <code>key="KeyboardActions" value="0,0;1,3;"</code>
+                                <code class="text-break-all">key="KeyboardActions" value="0,0;1,3;"</code>
                             </td>
                             <td>
                                 <code>;</code><br/>E.g.<br/>
-                                <code>key="KeyboardActions" value="LeftRight:PrevNextImage;PageUpDown:PrevNextImage;"</code>
+                                <code class="text-break-all">key="KeyboardActions" value="LeftRight:PrevNextImage;PageUpDown:PrevNextImage;"</code>
                             </td>
                         </tr>
                         <tr>
                             <td>List item value stored as</td>
                             <td>
                                 <code>number</code><br/>E.g.<br/>
-                                <code>key="ToolbarPosition" value="0"</code><br/>
-                                <code>key="ToolbarButtons" value="0,1,-1"</code>
+                                <code class="text-break-all">key="ToolbarPosition" value="0"</code><br/>
+                                <code class="text-break-all">key="ToolbarButtons" value="0,1,-1"</code>
                             </td>
                             <td>
                                 <code>item name</code><br/>E.g.<br/>
-                                <code>key="ToolbarPosition" value="Top"</code><br/>
-                                <code>key="ToolbarButtons" value="btnBack;btnNext;Separator;"</code>
+                                <code class="text-break-all">key="ToolbarPosition" value="Top"</code><br/>
+                                <code class="text-break-all">key="ToolbarButtons" value="btnBack;btnNext;Separator;"</code>
                             </td>
                         </tr>
                     </tbody>
