@@ -1,3 +1,11 @@
+{{-- StackCommerce ads: /7346874/Hellobar-adunits/7481 --}}
+<!-- /7346874/Hellobar-adunits/7481 -->
+<div id="div-gpt-ad-1578609097069-0" style="width: 1px; height: 1px;">
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1578609097069-0'); });
+  </script>
+</div>
+
 {{--  Global site tag (gtag.js) - Google Analytics  --}}
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-34325591-1"></script>
 <script>

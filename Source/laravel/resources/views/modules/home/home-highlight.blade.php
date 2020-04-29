@@ -26,11 +26,11 @@
                             <div class="top-news-item item-new">
                                 <span>
                                     <span class="news-item-wrap">
-                                        <a href="https://medium.com/@d2phap/enable-windows-file-explorer-sort-order-in-imageglass-7-ff63b4ab16a0" class="news-item-img" target="_blank" rel="noopener sponsored">
+                                        <a href="https://imageglass.org/news/announcing-imageglass-7-6-69">
                                             <img src="https://picsum.photos/50/21">
                                         </a>
-                                        <a href="https://imageglass.org/news/announcing-imageglass-7-5-68" class="news-item-text">
-                                            Announcing ImageGlass 7.5
+                                        <a href="https://imageglass.org/news/announcing-imageglass-7-6-69" class="news-item-text">
+                                            Announcing ImageGlass 7.6 - 10th (❁´◡`❁)
                                         </a>
                                     </span>
                                 </span>
@@ -41,16 +41,17 @@
                             <div class="top-news-item">
                                 <span>
                                     <span class="news-item-wrap">
-                                        <a href="https://medium.com/@d2phap/viewing-multi-page-tif-format-e0dcc256f4f0" class="news-item-img" target="_blank" rel="noopener sponsored">
+                                        <a href="https://medium.com/@d2phap/understand-imageglass-config-files-73fd61d6ccfc" class="news-item-img" target="_blank" rel="noopener sponsored">
                                             <img src="https://picsum.photos/50/20">
                                         </a>
-                                        <a href="https://medium.com/@d2phap/viewing-multi-page-tif-format-e0dcc256f4f0" class="news-item-text" target="_blank" rel="noopener sponsored">
-                                            Experiment viewing multi-page TIF format!
+                                        <a href="https://medium.com/@d2phap/understand-imageglass-config-files-73fd61d6ccfc" class="news-item-text" target="_blank" rel="noopener sponsored">
+                                            Understand ImageGlass config files
                                         </a>
                                     </span>
                                 </span>
                             </div>
                         </div>
+                        
 
                         <div class="col-12 col-md-10 col-lg-10 col-xl-10 col-xxl-8 col-hg-7">
                             @include("shared._ads")
@@ -62,7 +63,7 @@
                     <section class="row justify-content-center align-items-end h-100">
                         <div class="col-12">
                             <div class="embed-responsive embed-responsive-16by9 top-video">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cNXpHBMcjAI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/X3J2LfE3F2k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                         </div>
                     </section>

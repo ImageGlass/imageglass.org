@@ -69,7 +69,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Settings</td>
+                            <td>Settings...</td>
                             <td>
                                 <kbd>Ctrl+Shift+P</kbd>
                             </td>
@@ -89,7 +89,7 @@
                 <table class="col-12 table table-hover table-striped">
                     <tbody>
                         <tr>
-                            <td width="60%">Open file</td>
+                            <td width="60%">Open file...</td>
                             <td width="40%">
                                 <kbd>Ctrl+O</kbd>
                             </td>
@@ -107,19 +107,25 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Save image as ...</td>
+                            <td>Save image as...</td>
                             <td>
                                 <kbd>Ctrl+S</kbd>
                             </td>
                         </tr>
                         <tr>
-                            <td>Edit image</td>
+                            <td>Open with...</td>
                             <td>
-                                <kbd>Ctrl+E</kbd>
+                                <kbd>D</kbd>
                             </td>
                         </tr>
                         <tr>
-                            <td>Print</td>
+                            <td>Edit image...</td>
+                            <td>
+                                <kbd>E</kbd>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Print...</td>
                             <td>
                                 <kbd>Ctrl+P</kbd>
                             </td>
@@ -127,7 +133,7 @@
                         <tr>
                             <td>Refresh</td>
                             <td>
-                                <kbd>F5</kbd>
+                                <kbd>R</kbd>
                             </td>
                         </tr>
                         <tr>
@@ -167,9 +173,9 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Go to ...</td>
+                            <td>Go to...</td>
                             <td>
-                                <kbd>Ctrl+G</kbd>
+                                <kbd>G</kbd>
                             </td>
                         </tr>
                         <tr>
@@ -249,37 +255,37 @@
                         <tr>
                             <td>Auto Zoom</td>
                             <td>
-                                <kbd>Ctrl+A</kbd>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Scale to width</td>
-                            <td>
-                                <kbd>Ctrl+W</kbd>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Scale to height</td>
-                            <td>
-                                <kbd>Ctrl+H</kbd>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Scale to fit</td>
-                            <td>
-                                <kbd>Ctrl+/</kbd>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Scale to fill</td>
-                            <td>
-                                <kbd>Ctrl+D</kbd>
+                                <kbd>1</kbd>
                             </td>
                         </tr>
                         <tr>
                             <td>Lock zoom ratio</td>
                             <td>
-                                <kbd>Ctrl+L</kbd>
+                                <kbd>2</kbd>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Scale to width</td>
+                            <td>
+                                <kbd>3</kbd>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Scale to height</td>
+                            <td>
+                                <kbd>4</kbd>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Scale to fit</td>
+                            <td>
+                                <kbd>5</kbd>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Scale to fill</td>
+                            <td>
+                                <kbd>6</kbd>
                             </td>
                         </tr>
                     </tbody>
@@ -321,7 +327,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Rename image</td>
+                            <td>Rename image...</td>
                             <td>
                                 <kbd>F2</kbd>
                             </td>
@@ -339,7 +345,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Extract image pages</td>
+                            <td>Extract image pages...</td>
                             <td>
                                 <kbd>Ctrl+J</kbd>
                             </td>
@@ -452,19 +458,19 @@
                         <tr>
                             <td width="60%">Toolbar</td>
                             <td width="40%">
-                                <kbd>Ctrl+F1</kbd>
+                                <kbd>T</kbd>
                             </td>
                         </tr>
                         <tr>
                             <td>Thumbnail panel</td>
                             <td>
-                                <kbd>Ctrl+T</kbd>
+                                <kbd>H</kbd>
                             </td>
                         </tr>
                         <tr>
-                            <td>Checked background</td>
+                            <td>Checkerboard background</td>
                             <td>
-                                <kbd>Ctrl+B</kbd>
+                                <kbd>B</kbd>
                             </td>
                         </tr>
                         <tr>
@@ -484,13 +490,19 @@
                         <tr>
                             <td width="60%">Color Picker</td>
                             <td width="40%">
-                                <kbd>Ctrl+Shift+K</kbd>
+                                <kbd>K</kbd>
                             </td>
                         </tr>
                         <tr>
                             <td>Page navigation</td>
                             <td>
-                                <kbd>Ctrl+Shift+J</kbd>
+                                <kbd>P</kbd>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Cropping</td>
+                            <td>
+                                <kbd>C</kbd>
                             </td>
                         </tr>
                     </tbody>
@@ -508,19 +520,19 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Check for update</td>
+                            <td>Check for update...</td>
                             <td>
                                 N/A
                             </td>
                         </tr>
                         <tr>
-                            <td>Report an issue</td>
+                            <td>Report an issue...</td>
                             <td>
                                 N/A
                             </td>
                         </tr>
                         <tr>
-                            <td>First-launch configurations</td>
+                            <td>First-launch configurations...</td>
                             <td>
                                 N/A
                             </td>
