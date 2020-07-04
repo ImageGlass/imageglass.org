@@ -26,6 +26,18 @@
                     </thead>
                     <tbody>
                         <tr>
+                            <td><code>ai</code></td>
+                            <td>✔</td>
+                            <td></td>
+                            <td>Required <a href="https://ghostscript.com/download/gsdnld.html" target="_blank" ref="noopener nofollow noreferrer">Ghostscript</a> installed.</td>
+                        </tr>
+                        <tr>
+                            <td><code>b64</code></td>
+                            <td>✔</td>
+                            <td>✔</td>
+                            <td>Base-64 string image format.</td>
+                        </tr>
+                        <tr>
                             <td><code>bmp</code></td>
                             <td>✔</td>
                             <td>✔</td>
@@ -35,7 +47,7 @@
                             <td><code>bpg</code></td>
                             <td>✔</td>
                             <td></td>
-                            <td>Required <a href="https://bellard.org/bpg/" title="BPG tools for Windows" ref="noopener nofollow noreferrer">BPG tools for Windows</a> installed.</td>
+                            <td>Required <a href="https://bellard.org/bpg/" target="_blank" ref="noopener nofollow noreferrer">BPG tools for Windows</a> installed.</td>
                         </tr>
                         <tr>
                             <td><code>cur</code></td>
@@ -60,6 +72,12 @@
                             <td>✔</td>
                             <td>✔</td>
                             <td></td>
+                        </tr>
+                        <tr>
+                            <td><code>eps</code></td>
+                            <td>✔</td>
+                            <td></td>
+                            <td>Required <a href="https://ghostscript.com/download/gsdnld.html" target="_blank" ref="noopener nofollow noreferrer">Ghostscript</a> installed.</td>
                         </tr>
                         <tr>
                             <td><code>exif</code></td>
@@ -99,6 +117,12 @@
                         </tr>
                         <tr>
                             <td><code>jfif</code></td>
+                            <td>✔</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code>jp2</code></td>
                             <td>✔</td>
                             <td></td>
                             <td></td>
@@ -222,14 +246,11 @@
                         </tr>
                         <tr>
                             <td>
-                                <a href="https://en.wikipedia.org/wiki/Raw_image_format" target="_blank" rel="noopener">
-                                    RAW
-                                </a>
-                                formats
+                                RAW and other formats
                             </td>
                             <td>✔</td>
                             <td></td>
-                            <td></td>
+                            <td>Refer to <a href="https://imagemagick.org/script/formats.php#supported" target="_blank" ref="noopener nofollow noreferrer">ImageMagick website</a> for all supported formats.</td>
                         </tr>
                         <tr>
                             <td>(base-64 string)</td>

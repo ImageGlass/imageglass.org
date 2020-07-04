@@ -1,9 +1,9 @@
 @font-face {
   font-family: "icomoon";
-  src: url("../fonts/icomoon.eot?t05nlg");
-  src: url("../fonts/icomoon.eot?t05nlg#iefix") format("embedded-opentype"),
-    url("../fonts/icomoon.ttf?t05nlg") format("truetype"), url("../fonts/icomoon.woff?t05nlg") format("woff"),
-    url("../fonts/icomoon.svg?t05nlg#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?tpo3nv");
+  src: url("../fonts/icomoon.eot?tpo3nv#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?tpo3nv") format("truetype"), url("../fonts/icomoon.woff?tpo3nv") format("woff"),
+    url("../fonts/icomoon.svg?tpo3nv#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -24,108 +24,112 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-ethereum:before {
+.icon-patreon:before {
   content: "\e900";
+  color: #f96854;
 }
-.icon-medium:before {
+.icon-ethereum:before {
   content: "\e901";
 }
-.icon-instagram:before {
+.icon-medium:before {
   content: "\e902";
 }
-.icon-bitcoin:before {
+.icon-instagram:before {
   content: "\e903";
 }
-.icon-download:before {
+.icon-bitcoin:before {
   content: "\e904";
 }
-.icon-info:before {
+.icon-download:before {
   content: "\e905";
 }
-.icon-quotes-left:before {
+.icon-info:before {
   content: "\e906";
 }
-.icon-quotes-right:before {
+.icon-quotes-left:before {
   content: "\e907";
 }
-.icon-extension:before {
+.icon-quotes-right:before {
   content: "\e908";
 }
-.icon-picture:before {
+.icon-extension:before {
   content: "\e909";
 }
-.icon-menu:before {
+.icon-picture:before {
   content: "\e90a";
 }
-.icon-language:before {
+.icon-menu:before {
   content: "\e90b";
 }
-.icon-envelope:before {
+.icon-language:before {
   content: "\e90c";
 }
-.icon-google-plus:before {
+.icon-envelope:before {
   content: "\e90d";
 }
-.icon-facebook:before {
+.icon-google-plus:before {
   content: "\e90e";
 }
-.icon-youtube:before {
+.icon-facebook:before {
   content: "\e90f";
 }
-.icon-github:before {
+.icon-youtube:before {
   content: "\e910";
 }
-.icon-paypal:before {
+.icon-github:before {
   content: "\e911";
 }
-.icon-beer:before {
+.icon-paypal:before {
   content: "\e912";
 }
-.icon-heart:before {
+.icon-beer:before {
   content: "\e913";
 }
-.icon-angle-right:before {
+.icon-heart:before {
   content: "\e914";
 }
-.icon-angle-left:before {
+.icon-angle-right:before {
   content: "\e915";
 }
-.icon-remove:before {
+.icon-angle-left:before {
   content: "\e916";
 }
-.icon-lightweight:before {
+.icon-remove:before {
   content: "\e917";
 }
-.icon-document-edit:before {
+.icon-lightweight:before {
   content: "\e918";
 }
-.icon-pen:before {
+.icon-document-edit:before {
   content: "\e919";
 }
-.icon-sad-face:before {
+.icon-pen:before {
   content: "\e91a";
 }
-.icon-happy-face:before {
+.icon-sad-face:before {
   content: "\e91b";
 }
-.icon-search:before {
+.icon-happy-face:before {
   content: "\e91c";
 }
-.icon-support-user:before {
+.icon-search:before {
   content: "\e91d";
 }
-.icon-support-dev:before {
+.icon-support-user:before {
   content: "\e91e";
 }
-.icon-bug:before {
+.icon-support-dev:before {
   content: "\e91f";
 }
-.icon-theme:before {
+.icon-bug:before {
   content: "\e920";
 }
-.icon-bitcoin-o:before {
+.icon-theme:before {
   content: "\e921";
 }
-.icon-gift:before {
+.icon-bitcoin-o:before {
   content: "\e922";
+}
+.icon-gift:before {
+  content: "\e923";
 }

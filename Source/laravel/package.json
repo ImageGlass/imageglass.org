@@ -21,7 +21,7 @@
 		"file-loader": "^1.1.11",
 		"fluent-reveal-effect": "^0.10.2",
 		"mini-css-extract-plugin": "^0.4.1",
-		"node-sass": "^4.9.3",
+		"node-sass": "^4.14.1",
 		"sass-loader": "^7.1.0",
 		"slick-carousel": "^1.8.1",
 		"webpack": "^4.16.5",

@@ -9,8 +9,13 @@
         Thanks for your gratitude and finance help!
     </p>
     <div>
+        <a href="https://patreon.com/d2phap" class="btn btn-primary mr-3" target="_blank" rel="noopener noreferrer">
+            Patreon
+            <i class="icon-patreon"></i>
+        </a>
+
         <a href="https://github.com/sponsors/d2phap" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-            Become a sponsor 
+            Github
             <i class="icon-github"></i>
         </a>
     </div>
