@@ -6,7 +6,7 @@
 
     @if ($post_total_days < 15)
     <section class="blog-post-new">
-        <a href="{{ $blog_post->link }}" target="_blank" rel="noopener noreferrer">
+        <a href="{{ $blog_post->link }}" target="_blank" rel="noopener noreferrer nofollow">
             <span class="tag-new">💥 New!</span>
             <span class="title">{{ $blog_post->title }}</span>
         </a>
@@ -15,8 +15,8 @@
 @endif --}}
 
 <section class="blog-post-new">
-    <a href="https://medium.com/@d2phap/viewing-multi-page-tif-format-e0dcc256f4f0" target="_blank" title="Experiment viewing multi-page TIF format!" rel="noopener noreferrer">
+    <a href="https://www.patreon.com/posts/new-imageglass-39518578" target="_blank" title="A new ImageGlass app just started!" rel="noopener noreferrer nofollow">
         <span class="tag-new">💥 New!</span>
-        <span class="title">Experiment viewing multi-page TIF format!</span>
+        <span class="title">A new ImageGlass app just started!</span>
     </a>
 </section>
