@@ -15,8 +15,8 @@
 @endif --}}
 
 <section class="blog-post-new">
-    <a href="https://www.patreon.com/posts/new-imageglass-39518578" target="_blank" title="A new ImageGlass app just started!" rel="noopener noreferrer nofollow">
-        <span class="tag-new">💥 New!</span>
-        <span class="title">A new ImageGlass app just started!</span>
+    <a href="https://www.patreon.com/posts/imageglass-and-39849218" target="_blank" title="ImageGlass Preview and the future of ImageGlass" rel="noopener">
+        <span class="tag-new">🏔</span>
+        <span class="title">ImageGlass Preview and the future of ImageGlass</span>
     </a>
 </section>
