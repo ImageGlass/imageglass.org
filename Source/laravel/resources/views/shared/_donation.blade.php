@@ -20,7 +20,7 @@
         </a>
     </div>
     <div class="mt-3">
-        <a href="https://www.paypal.me/d2phap" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.paypal.me/ddphap" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
             <span class="text">Donate <b>$10</b> via <span class="icon-paypal"></span><i class="fw-bold">aypal</i></span>
         </a>
     </div>
@@ -30,11 +30,11 @@
             <tbody>
                 <tr>
                     <td class="text-nowrap">
-                        <i class="icon-bitcoin"></i> 
-                        Bitcoin
+                        <i class="icon-ethereum"></i> 
+                        Chailink
                     </td>
                     <td>
-                        <code class="text-break-all">3Hp7QLP9Fxpb1s4CAcZFYR7NUgN1bR93Hy</code>
+                        <code class="text-break-all">0x4267Bd7c062f69fF233538Df83099C737f56094f</code>
                     </td>
                 </tr>
                 <tr>
@@ -43,7 +43,16 @@
                         Ethereum
                     </td>
                     <td>
-                        <code class="text-break-all">0x6DDBd646586bebF7a97e022D615cbE789D39a965</code>
+                        <code class="text-break-all">0xDc91F762C13b207eb1270fCBEdB464F1507B030C</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-nowrap">
+                        <i class="icon-bitcoin"></i> 
+                        Bitcoin
+                    </td>
+                    <td>
+                        <code class="text-break-all">3Hp7QLP9Fxpb1s4CAcZFYR7NUgN1bR93Hy</code>
                     </td>
                 </tr>
             </tbody>
