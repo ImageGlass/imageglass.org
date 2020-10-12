@@ -4,7 +4,8 @@
 @stop
 
 @section("_page_subtitle")
-    Beautiful theme packs to change the user interface of ImageGlass.
+    Beautiful theme packs to change the user interface of ImageGlass. Learn how to create a theme pack at: 
+    <a href="https://github.com/ImageGlass/theme" target="_blank" rel="noopener noreferrer">https://github.com/ImageGlass/theme</a>.
 
     <div class="col-lg-10 col-xl-9 col-xxl-8 col-hg-12 mb-0 mt-4">
         <div class="row">
