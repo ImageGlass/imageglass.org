@@ -31,7 +31,7 @@
                 <tr>
                     <td class="text-nowrap">
                         <i class="icon-ethereum"></i> 
-                        Chailink
+                        Chainlink
                     </td>
                     <td>
                         <code class="text-break-all">0x4267Bd7c062f69fF233538Df83099C737f56094f</code>
