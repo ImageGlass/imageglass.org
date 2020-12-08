@@ -26,11 +26,11 @@
                             <div class="top-news-item item-new">
                                 <span>
                                     <span class="news-item-wrap">
-                                        <a href="https://imageglass.org/news/announcing-imageglass-7-6-69">
+                                        <a href="https://imageglass.org/news/announcing-imageglass-8.0-70">
                                             <img src="https://picsum.photos/50/21">
                                         </a>
-                                        <a href="https://imageglass.org/news/announcing-imageglass-7-6-69" class="news-item-text">
-                                            Announcing ImageGlass 7.6 - 10th (❁´◡`❁)
+                                        <a href="https://imageglass.org/news/announcing-imageglass-8.0-70" class="news-item-text">
+                                            Announcing ImageGlass 8.0 Kobe
                                         </a>
                                     </span>
                                 </span>
@@ -63,7 +63,7 @@
                     <section class="row justify-content-center align-items-end h-100">
                         <div class="col-12">
                             <div class="embed-responsive embed-responsive-16by9 top-video">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/X3J2LfE3F2k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GujLgI4bpuU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                         </div>
                     </section>

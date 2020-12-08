@@ -15,8 +15,8 @@
 @endif --}}
 
 <section class="blog-post-new">
-    <a href="https://www.patreon.com/posts/imageglass-and-39849218" target="_blank" title="ImageGlass Preview and the future of ImageGlass" rel="noopener">
-        <span class="tag-new">🏔</span>
-        <span class="title">ImageGlass Preview and the future of ImageGlass</span>
+    <a href="https://www.patreon.com/posts/view-and-export-42245882" target="_blank" title="View and export Exif data in ImageGlass 8.0" rel="noopener">
+        <span class="tag-new">🎏</span>
+        <span class="title">View and export Exif data in ImageGlass 8.0</span>
     </a>
 </section>

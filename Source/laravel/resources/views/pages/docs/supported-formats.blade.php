@@ -32,6 +32,12 @@
                             <td>Required <a href="https://ghostscript.com/download/gsdnld.html" target="_blank" ref="noopener nofollow noreferrer">Ghostscript</a> installed.</td>
                         </tr>
                         <tr>
+                            <td><code>avif</code></td>
+                            <td>✔</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
                             <td><code>b64</code></td>
                             <td>✔</td>
                             <td>✔</td>
@@ -105,6 +111,12 @@
                         </tr>
                         <tr>
                             <td><code>heic</code></td>
+                            <td>✔</td>
+                            <td></td>
+                            <td>Non-animated format.</td>
+                        </tr>
+                        <tr>
+                            <td><code>heif</code></td>
                             <td>✔</td>
                             <td></td>
                             <td>Non-animated format.</td>
