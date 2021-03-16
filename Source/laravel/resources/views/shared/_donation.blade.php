@@ -21,7 +21,7 @@
     </div>
     <div class="mt-3">
         <a href="https://www.paypal.me/ddphap" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-            <span class="text">Donate <b>$10</b> via <span class="icon-paypal"></span><i class="fw-bold">aypal</i></span>
+            <span class="text">Donate <b>10 USD</b> via <span class="icon-paypal"></span><i class="fw-bold">aypal</i></span>
         </a>
     </div>
 
@@ -34,7 +34,7 @@
                         Chainlink
                     </td>
                     <td>
-                        <code class="text-break-all">0x4267Bd7c062f69fF233538Df83099C737f56094f</code>
+                        <code class="text-break-all">0xc19be8972809b6b989f3e4ba16595712ba8e0de4</code>
                     </td>
                 </tr>
                 <tr>
@@ -43,7 +43,7 @@
                         Ethereum
                     </td>
                     <td>
-                        <code class="text-break-all">0xDc91F762C13b207eb1270fCBEdB464F1507B030C</code>
+                        <code class="text-break-all">0xc19be8972809b6b989f3e4ba16595712ba8e0de4</code>
                     </td>
                 </tr>
                 <tr>
@@ -52,7 +52,7 @@
                         Bitcoin
                     </td>
                     <td>
-                        <code class="text-break-all">3Hp7QLP9Fxpb1s4CAcZFYR7NUgN1bR93Hy</code>
+                        <code class="text-break-all">1PcCezBmM3ahTzfBBi5KVWnnd3bCHbas8Z</code>
                     </td>
                 </tr>
             </tbody>
