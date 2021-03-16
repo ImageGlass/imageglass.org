@@ -31,22 +31,23 @@
 				<h3 class="fs-h3 mt-5 mb-3">📚 Experiences</h3>
 				<ul>
 					<li><strong>1/2019 - present:</strong> Front-end Developer at <a target="_blank" rel="noopener noreferrer" href="https://chainstack.com">Chainstack</a></li>	
-					<li><strong>11/2017 - 12/2018:</strong> Senior UI/UX Developement Specialist at <a target="_blank" rel="noopener noreferrer" href="http://www.ascentis.com.sg">Ascentis Private Limited</a></li>	
-					<li><strong>6/2015 - 11/2017:</strong> Front-end Developer at <a target="_blank" rel="noopener noreferrer" href="http://aleph-labs.com">Aleph Labs</a></li>
-					<li><strong>3/2012 - 5/2015:</strong> Lead engineer at <a target="_blank" rel="noopener noreferrer" href="http://www.poste-vn.com">Poste Co., Ltd</a></li>
+					<li><strong>11/2017 - 12/2018:</strong> Senior UI/UX Developement Specialist at <a target="_blank" rel="noopener noreferrer" href="https://www.ascentis.com.sg">Ascentis Private Limited</a></li>	
+					<li><strong>6/2015 - 11/2017:</strong> Front-end Developer at <a target="_blank" rel="noopener noreferrer" href="https://aleph-labs.com">Aleph Labs</a></li>
+					<li><strong>3/2012 - 5/2015:</strong> Lead engineer at <a target="_blank" rel="noopener noreferrer" href="https://www.poste-vn.com">Poste Co., Ltd</a></li>
 					<li><strong>11/2011 - 3/2012:</strong> iOS Developer at Universal Information Services Corp. (UIS)</li>
 					<li><strong>2009 - 2014:</strong> Student of <a href="http://www.fit.hcmus.edu.vn/vn/Default.aspx?tabid=416" target="_blank" rel="noopener noreferrer">The Faculty of Information Technology (FIT)</a> of <a href="https://en.hcmus.edu.vn/" target="_blank" rel="noopener noreferrer">Ho Chi Minh University of Science</a></li>
 				</ul>
 
 				<h3 class="fs-h3 mt-5 mb-3" id="contact">💌 Contact me</h3>
 				<ul>
+					<li><strong>Twitter: </strong><a href="https://twitter.com/duongdieuphap">@duongdieuphap</a></li>
+					<li><strong>Discord: </strong><a href="https://discord.io/imageglass">discord.io/imageglass</a></li>
 					<li><strong>Email: </strong><a href="mailto:phap@imageglass.org" target="_blank" rel="noopener noreferrer">phap@imageglass.org</a></li>
 					<li><strong>Medium: </strong><a href="https://medium.com/@d2phap" target="_blank" rel="noopener noreferrer">medium.com/@d2phap</a></li>
 					<li><strong>Linkedin: </strong><a href="http://linkedin.com/in/duongdieuphap" target="_blank" rel="noopener noreferrer">linkedin.com/in/duongdieuphap</a></li>
 					<li><strong>Github: </strong><a href="https://github.com/d2phap" target="_blank" rel="noopener noreferrer">github.com/d2phap</a></li>
 					<li><strong>Dribbble: </strong><a href="https://dribbble.com/d2phap" target="_blank" rel="noopener noreferrer">dribbble.com/d2phap</a></li>
-					<li><strong>Facebook: </strong><a href="http://facebook.com/d.d.p.h.a.p" target="_blank" rel="noopener noreferrer">facebook.com/d.d.p.h.a.p</a></li>
-					<li><strong>Skype: </strong><a href="skype:d2phap">d2phap</a></li>
+					<li><strong>Facebook: </strong><a href="https://facebook.com/d.d.p.h.a.p" target="_blank" rel="noopener noreferrer">facebook.com/d.d.p.h.a.p</a></li>
 				</ul>
 			</div>
 
@@ -66,8 +67,8 @@
         </article>
     
         <aside class="col-md-4 col-lg-4 col-xxl-3 col-hg-2 px-0 px-md-3 aside">
-			@include("shared._ads")
-            @include("modules.aside.article-list")
+					@include("shared._ads")
+          @include("modules.aside.article-list")
         </aside>
     </div>
 </section>

@@ -51,7 +51,20 @@
                         </li>
 
                         <li class="col-sm-6 col-md-4 col-lg-3 mb-3">
-                            @include("shared._ads")
+                            <div class="eff-reveal-border">
+                                <span class="eff-reveal p-1">
+                                    <iframe src="https://discord.com/widget?id=818852544859209748&theme=dark" width="100%" height="100%" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                                </span>
+                            </div>
+                        </li>
+
+                        <li class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                            <div class="eff-reveal-border">
+                                <span class="eff-reveal p-1 d-flex">
+                                    @include("shared._ads")
+                                </span>
+                            </div>
+                            
                         </li>
                         
                     </ul>
