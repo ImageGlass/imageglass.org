@@ -35,12 +35,12 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/d2phap/imageglass.org.git"
+		"url": "git+https://github.com/ImageGlass/imageglass.org.git"
 	},
 	"author": "Duong Dieu Phap",
 	"license": "GPL-3.0",
 	"bugs": {
-		"url": "https://github.com/d2phap/imageglass.org/issues"
+		"url": "https://github.com/ImageGlass/imageglass.org/issues"
 	},
-	"homepage": "https://github.com/d2phap/imageglass.org#readme"
+	"homepage": "https://github.com/ImageGlass/imageglass.org#readme"
 }

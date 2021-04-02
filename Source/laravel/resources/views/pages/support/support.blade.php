@@ -72,10 +72,6 @@
 
             </section>
         </article>
-    
-        <section class="col-12 google-group">
-            <iframe id="forum_embed" src="javascript:void(0)" scrolling="no" frameborder="0" width="100%" height="800"></iframe>
-        </section>
 
         <div class="row justify-content-center mt-5">
             <div class="col-xl-8 col-lg-9 col-md-10 text-center">
