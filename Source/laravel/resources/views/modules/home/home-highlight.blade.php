@@ -26,11 +26,11 @@
                             <div class="top-news-item item-new">
                                 <span>
                                     <span class="news-item-wrap">
-                                        <a href="https://imageglass.org/news/announcing-imageglass-8.0-70">
+                                        <a href="https://imageglass.org/news/announcing-imageglass-8-1-home-71">
                                             <img src="https://picsum.photos/50/21">
                                         </a>
-                                        <a href="https://imageglass.org/news/announcing-imageglass-8.0-70" class="news-item-text">
-                                            Announcing ImageGlass 8.0 Kobe
+                                        <a href="https://imageglass.org/news/announcing-imageglass-8-1-home-71" class="news-item-text">
+                                            Announcing ImageGlass 8.1 Home
                                         </a>
                                     </span>
                                 </span>
