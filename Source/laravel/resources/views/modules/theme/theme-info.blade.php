@@ -25,6 +25,14 @@
                                 <td>{{ $theme_item["author"] }}</td>
                             </tr>
                             <tr>
+                                <td>Email</td>
+                                <td>{{ $theme_item["email"] }}</td>
+                            </tr>
+                            <tr>
+                                <td>Website</td>
+                                <td>{{ $theme_item["website"] }}</td>
+                            </tr>
+                            <tr>
                                 <td>Release Date</td>
                                 <td>{{ formatDateTime($theme_item["updated_at"]) }}</td>
                             </tr>
