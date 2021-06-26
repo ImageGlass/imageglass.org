@@ -8,8 +8,7 @@
 	},
 	"dependencies": {
 		"axios": "^0.21.1",
-		"jquery": "^3.5.0",
-		"optimize-css-assets-webpack-plugin": "^5.0.0"
+		"jquery": "^3.5.0"
 	},
 	"devDependencies": {
 		"babel-cli": "^6.26.0",
@@ -21,9 +20,11 @@
 		"file-loader": "^1.1.11",
 		"fluent-reveal-effect": "^0.10.2",
 		"mini-css-extract-plugin": "^0.4.1",
-		"node-sass": "^4.14.1",
+		"node-sass": "^4.0.0",
+		"optimize-css-assets-webpack-plugin": "^5.0.0",
 		"sass-loader": "^7.1.0",
 		"slick-carousel": "^1.8.1",
+		"uglifyjs-webpack-plugin": "^2.2.0",
 		"webpack": "^4.16.5",
 		"webpack-cli": "^3.1.0"
 	},

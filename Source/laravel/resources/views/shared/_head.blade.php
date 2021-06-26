@@ -57,7 +57,7 @@
 {{--  Base CSS  --}}
 <link rel="stylesheet" href="{{ asset('css/main.css') }}">
 
-{{-- StackCommerce ads --}}
+{{-- StackCommerce ads 
 <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
 <script>
   window.googletag = window.googletag || {cmd: []};
@@ -67,6 +67,10 @@
     googletag.enableServices();
   });
 </script>
+--}}
+
+{{-- buysellads/carbon ads --}}
+<script src="//m.servedby-buysellads.com/monetization.js" type="text/javascript"></script>
 
 
 {{--  Other header stuffs  --}}

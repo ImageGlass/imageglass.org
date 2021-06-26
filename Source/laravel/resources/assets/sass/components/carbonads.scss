@@ -84,12 +84,15 @@
             @include bg-gradient();
         }
 
-        .carbon-img,
         .news-item-img {
             img {
                 max-height: 40px;
                 max-width: 40px !important;
             }
+        }
+
+        .carbon-img img {
+            max-height: none;
         }
     }
 }

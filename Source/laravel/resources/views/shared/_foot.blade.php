@@ -1,10 +1,22 @@
-{{-- StackCommerce ads: /7346874/Hellobar-adunits/7481 --}}
+{{-- StackCommerce ads: /7346874/Hellobar-adunits/7481 
 <!-- /7346874/Hellobar-adunits/7481 -->
 <div id="div-gpt-ad-1578609097069-0" style="width: 1px; height: 1px;">
   <script>
     googletag.cmd.push(function() { googletag.display('div-gpt-ad-1578609097069-0'); });
   </script>
 </div>
+--}}
+
+
+{{-- buysellads/carbon ads --}}
+<script>
+  (function(){
+    if(typeof _bsa !== 'undefined' && _bsa) {
+      _bsa.init('flexbar', 'CESDLK3L', 'placement:imageglassorg');
+    }
+  })();
+</script>
+
 
 {{--  Global site tag (gtag.js) - Google Analytics  --}}
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-34325591-1"></script>
@@ -15,6 +27,7 @@
 
   gtag("config", "UA-34325591-1");
 </script>
+
 
 {{-- UXSniff Script --}}
 <script>
