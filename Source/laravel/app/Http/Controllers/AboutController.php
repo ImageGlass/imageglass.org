@@ -24,6 +24,27 @@ class AboutController extends Controller
 
         return view("pages.about.about")->with($this->data);
     }
+    
+    
+    
+    public function privacy() {
+
+        // get the latest news items
+        $news_collection = $this::getRequest("/api/news", array("limit" => "10"));
+
+        // page data
+        $this->data["_category_url"] = "news";
+        $this->data["_article_list_title"] = "The latest updates";
+        $this->data["_article_collection"] = $news_collection;
+
+        // meta tags
+        $this->data["_page"] = "privacy";
+        $this->data["_title"] = "Privacy | " .  $this->data["_name"];
+        $this->data["_description"] = "Privacy Information.";
+        $this->data["_keywords"] .= "privacy";
+
+        return view("pages.about.privacy")->with($this->data);
+    }
 
 
     
