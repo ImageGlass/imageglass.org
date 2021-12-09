@@ -98,6 +98,12 @@
                             <td></td>
                         </tr>
                         <tr>
+                          <td><code>fax</code></td>
+                          <td>✔</td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
                             <td><code>gif</code></td>
                             <td>✔</td>
                             <td>✔</td>
@@ -156,6 +162,12 @@
                             <td>✔</td>
                             <td>✔</td>
                             <td></td>
+                        </tr>
+                        <tr>
+                          <td><code>jxl</code></td>
+                          <td>✔</td>
+                          <td>✔</td>
+                          <td></td>
                         </tr>
                         <tr>
                             <td><code>pbm</code></td>

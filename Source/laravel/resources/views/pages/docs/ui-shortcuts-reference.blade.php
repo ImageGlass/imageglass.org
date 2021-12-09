@@ -23,7 +23,7 @@
                         <tr>
                             <td width="60%">Open main menu</td>
                             <td width="40%">
-                                <kbd>`</kbd>
+                                <kbd>Alt+F</kbd>
                             </td>
                         </tr>
                         <tr>
@@ -57,15 +57,15 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Moving frameless window</td>
+                            <td>Full screen</td>
                             <td>
-                                <kbd>Shift+(drag)</kbd>
+                                <kbd>F11</kbd>
                             </td>
                         </tr>
                         <tr>
-                            <td>Full screen</td>
+                            <td>Moving frameless window</td>
                             <td>
-                                <kbd>Alt+Enter</kbd>
+                                <kbd>Shift+(drag)</kbd>
                             </td>
                         </tr>
                         <tr>
@@ -245,6 +245,12 @@
                             </td>
                         </tr>
                         <tr>
+                            <td>Custom zoom...</td>
+                            <td>
+                                <kbd>Z</kbd>
+                            </td>
+                        </tr>
+                        <tr>
                             <td>Actual size</td>
                             <td>
                                 <kbd>0</kbd>,<br/>
@@ -299,7 +305,13 @@
                         <tr>
                             <td width="60%">View channels</td>
                             <td width="40%">
-                                N/A
+                                <kbd>Shift+C</kbd>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Loading order</td>
+                            <td>
+                                <kbd>Shift+O</kbd>
                             </td>
                         </tr>
                         <tr>
@@ -411,7 +423,7 @@
                         <tr>
                             <td>Copy image path</td>
                             <td>
-                                N/A
+                                <kbd>Ctrl+L</kbd>
                             </td>
                         </tr>
                         <tr>
@@ -431,7 +443,7 @@
                         <tr>
                             <td width="60%">Start slideshow</td>
                             <td width="40%">
-                                <kbd>F11</kbd>
+                                <kbd>F12</kbd>
                             </td>
                         </tr>
                         <tr>
@@ -476,7 +488,7 @@
                         <tr>
                             <td>Keep window always on top</td>
                             <td>
-                                N/A
+                                <kbd>`</kbd>
                             </td>
                         </tr>
                     </tbody>
@@ -503,6 +515,12 @@
                             <td>Cropping</td>
                             <td>
                                 <kbd>C</kbd>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Exif tool</td>
+                            <td>
+                                <kbd>X</kbd>
                             </td>
                         </tr>
                     </tbody>
