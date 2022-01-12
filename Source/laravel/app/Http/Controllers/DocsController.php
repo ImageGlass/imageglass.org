@@ -68,6 +68,13 @@ class DocsController extends Controller
                 $keyword = "imageglass config file, imageglass admin settings";
             
                 break;
+
+            case "spider-service":
+                $title = "Spider service";
+                $description = "Learn how to disable and remove Spider service from ImageGlass.";
+                $keyword = "imageglass spider service, imageglass privacy policy";
+            
+                break;
             
             default:
                 abort(404);

@@ -121,6 +121,25 @@
         </li>
         {{--  #Command line utilities  --}}
 
+        <li class="col-lg-10 col-xl-9 col-xxl-8 col-hg-6 article-item">
+            <article class="eff-reveal-border">
+                <div class="row no-gutters article-item-content eff-reveal">
+                    <a class="col-md-3 article-image article-icon" href="{{ url("docs/spider-service") }}" title="Spider service">
+                        <img class="my-3" src="{{ url("img/spider.svg") }}" alt="Spider service" />
+                    </a>
+                    <div class="col-md-9 p-3 article-content">
+                        <h3 class="article-title fs-h3">
+                            <a class="will-link" href="{{ url("docs/spider-service") }}" title="Spider service">
+                                Spider service
+                            </a>
+                        </h3>
+                        <p>Learn how to disable and remove Spider service from ImageGlass.</p>
+                    </div>
+                </div>
+            </article>
+        </li>
+        {{--  #Spider service  --}}
+
     </ul>
 
 @stop

@@ -77,7 +77,9 @@
                         <tr>
                             <td>Exit ImageGlass</td>
                             <td>
-                                <kbd>ESC</kbd> <span class="icon-info" title="Must enable the setting: 'Allow to press ESC to quit application'"></span>
+                                <kbd>ESC</kbd> <span class="icon-info" title="Must enable the setting: 'Allow to press ESC to quit application'"></span>,<br/>
+                                <kbd>Ctrl+W</kbd>,<br/>
+                                <kbd>Shift+ESC</kbd>
                             </td>
                         </tr>
                     </tbody>
