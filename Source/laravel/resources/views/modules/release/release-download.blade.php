@@ -54,6 +54,25 @@
                 @endif
                 
                 <div class="download-files mt-3 col-12">
+                    <!-- MS Store download -->
+                    <div class="row download-file-item type-store" style="max-height: 142px;">
+                        <div class="col-3 col-md-2 col-lg-2 col-xl-2 col-xxl-auto">
+                            <div class="file-type-icon" style="font-size: 50px; padding: 0; line-height: 0;">
+                                🛍
+                            </div>
+                        </div>
+
+                        <div class="col-9 col-md-10 col-lg-10 col-xl-10 col-xxl-auto">
+                            <p>
+                                You can support this project by purchasing it on the
+                                <a href="https://www.microsoft.com/store/productId/9N33VZK3C7TH">
+                                    Microsoft Store
+                                </a>.</p>
+                            <script type="module" src="https://getbadgecdn.azureedge.net/ms-store-badge.bundled.js"></script>
+                            <ms-store-badge productid="9n33vzk3c7th" size="large" style="transform: scale(0.6) translate(-185px, -40px);"></ms-store-badge>
+                        </div>
+                    </div>
+
                 @php
                 $download_index = 0;
                 @endphp
