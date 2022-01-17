@@ -15,9 +15,34 @@
                 From version 8.4 (stable release), ImageGlass integrates Spider service (<a href="https://www.spider.com" target="_blank" rel="noopener noreferrer"><i>Spider.com</i></a>) and enables it by default (except the Store release). The Spider service will anonymously starts after 5 seconds when the process <i>ImageGlass.exe</i> is launched. This service shares device IP (none of your personal information is accessed) with Spider.com customers to pass traffic through your device.<br/>
                 You can read more about the privacy policy at <a href="https://imageglass.org/privacy">imageglass.org/privacy</a>.
             </p>
-            <p>
-                This section provides full details about how to totally disable and remove the Spider service from ImageGlass.
-            </p>
+
+            <div>
+                <h3 class="mt-5 mb-3 fs-h3">🤔 A tough decision!</h3>
+                <p>ImageGlass turns 12 years old in 2022, with 8 major versions, I have been developing and keeping it free, clean and no-ad for all people. During that time, many company offered good amount of money and wanted to inject ads or their tracking code into ImageGlass. I rejected all of them! Because:</p>
+                <ul>
+                    <li>Their service interrupts user experience.</li>
+                    <li>Their service impacts ImageGlass' performance.</li>
+                    <li>Their service installs 3rd-party softwares in the installation process anonymously which is tricky to the users when they install ImageGlass, and hard to remove them, too.</li>
+                    <li>Their service inserts ads / popups into ImageGlass.</li>
+                    <li>No option to disable or remove.</li>
+                </ul>
+
+                <p>
+                    Come to the Spider service, after 2 months of checking and reviewing their requirements, products and company, I accepted the offer because:
+                </p>
+                <ul>
+                    <li>The service does not hide its existence, lets end-users know, and decide what to do with it.</li>
+                    <li>It runs in the background and does not impact app's performance.</li>
+                    <li>It comes with an SDK, and can be integrated into ImageGlass without interrupting user experience.</li>
+                    <li>With the SDK, I can provide an option for the users to disable, or totally remove it. Users fully control what to do with the service.</li>
+                    <li>The company has a reputation, not an unknown product, or scamming profile.</li>
+                    <li>The service collects minimum and acceptable resources: Only IP address, no other personal data to be accessed. This still does not sound good, but thinking of when you surf webs: Google, Facebook, Tiktok, Instagram,... and other sites that use Google Ads, Google Analytics,... your IP address is collected without notice.</li>
+                </ul>
+                <p>
+                    <b>More importantly, the Spider service can be totally managed by end-users without requiring technical knowledge.</b>
+                    The below section provides full details about how to disable and remove the Spider service from ImageGlass.
+                </p>
+            </div>
 
 
             <div>
@@ -35,13 +60,13 @@
 
             <div>
                 <h3 class="mt-5 mb-3 fs-h3">
-                    🕸 Disable Spider service using
+                    🕸 Disable the Spider service using
                     <a href="https://imageglass.org/docs/app-configs">
                         configuration files
                     </a>
                 </h3>
                 <p>
-                    Spider service is controlled by <code>IsEnableSpiderService</code> setting, it's set to <code>True</code> by default. You can change this value to <code>False</code> in one of the config files: <code>igconfig.xml</code>, or <code>igconfig.admin.xml</code>.
+                    The Spider service is controlled by <code>IsEnableSpiderService</code> setting, it's set to <code>True</code> by default. You can change this value to <code>False</code> in one of the config files: <code>igconfig.xml</code>, or <code>igconfig.admin.xml</code>.
                 </p>
                 <p>
                     <pre><code>&lt;ImageGlass&gt;
@@ -58,7 +83,7 @@
             </div>
 
 
-            <h3 class="mt-5 mb-3 fs-h3">🕸 Permanently remove Spider service from ImageGlass</h3>
+            <h3 class="mt-5 mb-3 fs-h3">🕸 Permanently remove the Spider service from ImageGlass</h3>
             <p>
                 Open startup folder, find the file <code>bs-sdk.dll</code> and delete it. You will not see the Spider service option in <i>Settings > Privacy</i> after this step is done.
             </p>
