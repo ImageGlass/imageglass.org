@@ -36,20 +36,6 @@
                 <p>
                     ImageGlass, as a software, periodically checks for updates. This is done by downloading a small file from the website and is anonymous. You can disable this from the <i>Settings</i> dialog.
                 </p>
-                <div class="pl-3">
-                    <h5 class="fs-h4 fw-bold">From version 8.4 and later</h5>
-                    <p>
-                        ImageGlass, as a software, shares available resources with 
-                        <a href="https://www.spider.com" target="_blank" rel="noopener noreferrer"><i>Spider.com</i></a> customers, as a Spider service, to pass traffic through your device in return for free use of this software.
-                    </p>
-                    <p>
-                        Your device resources will be used <u>ONLY</u> in a manner that will not substantially affect the device's operation. None of your personal information is accessed (except the device IP).Your resources will <u>NOT</u> be used for computer services such as crypto mining, storage, etc. You can stop sharing resources at any time in the Settings dialog. You can learn more about
-                        <a href="https://www.spider.com/privacy-policy" target="_blank" rel="noopener noreferrer">Spider's privacy policy</a>.
-                    </p>
-                    <p>
-                        As an end-user, you may be notified of this policy in the <i>First-launch configurations</i> dialog. You can always stop, disable this Spider service anytime in the <i>Settings</i> dialog. ImageGlass also provides a guide in details for those people who want to modify and redistribute the software package to totally remove this service, you can learn more about it at: <a href="https://imageglass.org/docs/spider-service">imageglass.org/docs/spider-service</a>.
-                    </p>
-                </div>
             </div>
 
 
@@ -61,7 +47,7 @@
 
             <div class="separator my-5"></div>
             <p class="text-right">
-                <i>Last update: Jan 12th, 2022.</i>
+                <i>Last update: Jan 22th, 2022.</i>
             </p>
         </article>
     
