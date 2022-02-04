@@ -42,7 +42,7 @@
                 <h2 class="fs-h2 mb-3">
                     Downloads
                 </h2>
-    
+
                 <div class="box box-info mt-3 links">
                     ❔ Looking for beta version? Download <a href="{{ url("moon") }}" title="Take me there!">ImageGlass Moon</a>!
                 </div>

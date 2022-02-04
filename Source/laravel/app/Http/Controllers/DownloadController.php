@@ -162,6 +162,36 @@ class DownloadController extends Controller
 
 
 
+    public function spider() {
+        // get the latest relese info
+		$release_latest = $this::getRequest("/api/release/latest");
+
+        // get the release info
+        $release_item = $this::getRequest("/api/release/" . $release_latest["id"]);
+
+        // get the latest release items
+        $release_collection = $this::getRequest("/api/releases", array("limit" => "5"));
+
+        // page data
+        $this->data["release_item"] = $release_item;
+        $this->data["_category_url"] = "release";
+        $this->data["_article_list_title"] = "The latest releases";
+        $this->data["_article_collection"] = $release_collection;
+
+        // meta tags
+        $this->data["_page"] = "download.spider";
+        $this->data["_title"] = "ImageGlass Spider | " .  $this->data["_name"];
+        $this->data["_description"] = "ImageGlass Spider is a special release of ImageGlass, collaborates with Spider service to provide a full-featured image viewer and provides enterprises the on-demand data collection for analysis.";
+        $this->data["_keywords"] .= ", ImageGlass Spider";
+		$this->data["_thumbnail"] = getRandomImg();
+
+        return view("pages.download.spider")->with($this->data);
+    }
+
+
+
+
+
 
 
     public function theme_listing_redirect() {
