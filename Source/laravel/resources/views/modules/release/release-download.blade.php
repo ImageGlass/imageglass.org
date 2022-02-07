@@ -1,3 +1,17 @@
+<style>
+.download-file-item.Spider .btn:not(.eff-reveal-border).btn-primary {
+    background-image: linear-gradient(135deg,rgb(114 173 60 / 80%),rgba(41,152,172,.8),rgba(60,88,173,.8));
+}
+.download-file-item .table tr td {
+    padding: 0;
+    font-size: 85%;
+}
+.download-file-item .note {
+    font-size: 85%;
+    font-style: italic;
+}
+</style>
+
 <section class="container py-4 py-lg-5">
     <div class="row">
         <div class="col-lg-8 col-xxl-9 col-hg-10">
@@ -55,7 +69,7 @@
                 
                 <div class="download-files mt-3 col-12">
                     <!-- MS Store download -->
-                    <div class="row download-file-item type-store" style="max-height: 142px;">
+                    <div class="row download-file-item py-2 mb-2 type-store" style="max-height: 122px;">
                         <div class="col-3 col-md-2 col-lg-2 col-xl-2 col-xxl-auto">
                             <div class="file-type-icon" style="font-size: 50px; padding: 0; line-height: 0;">
                                 🛍
@@ -74,14 +88,21 @@
 
                 @php
                 $download_index = 0;
+                $downloads_arr = $release_item["downloads"];
+
+                usort($downloads_arr, function($a, $b) {
+                    if ($a["id"] === $b["id"]) return 0;
+                    if ($a["id"] > $b["id"]) return 1;
+                    return -1;
+                });
                 @endphp
 
-                @foreach ($release_item["downloads"] as $item)
+                @foreach ($downloads_arr as $item)
                     @php
-                    $download_url = URL::to("release/download/{$release_item["slug"]}-{$release_item["downloads"][$download_index]["id"]}");
+                    $download_url = URL::to("release/download/{$release_item["slug"]}-{$downloads_arr[$download_index]["id"]}");
                     @endphp
 
-                    <div class="row download-file-item {{ $item["type"] }}">
+                    <div class="row download-file-item py-2 mb-2 {{ $item["type"] }}">
                         <div class="col-3 col-md-2 col-lg-2 col-xl-2 col-xxl-auto">
                             <div class="file-type-icon">
                                 *.{{ $item["file_type"] }}
@@ -89,13 +110,27 @@
                         </div>
 
                         <div class="col-9 col-md-10 col-lg-10 col-xl-10 col-xxl-auto">
-                            <a class="btn btn-primary" href="{{ $download_url }}" title="Download {{ $item["type"] }} version" target="_blank">
-                                <span class="icon-download"></span>
-                                <span class="mr-1">{{ $item["type"] }}</span>
-                                <small class="d-inline-block">({{ $item["size"] }})</small>
-                            </a>
+                            <div>
+                                <a class="btn btn-primary" href="{{ $download_url }}" title="Download {{ $item["type"] }} version" target="_blank">
+                                    <span class="icon-download"></span>
+                                    <span class="mr-1">{{ $item["type"] }}</span>
+                                    <small class="d-inline-block">({{ $item["size"] }})</small>
+                                </a>
+                                @if (str_contains($item["type"], "Spider"))
+                                <a class="d-inline-block ml-2" href="{{ URL::to("spider") }}">
+                                    ℹ Learn more
+                                </a>
+                                @endif
+                            </div>
 
-                            <table class="table table-borderless mt-2">
+                            @if (str_contains($item["type"], "Spider"))
+                            <div class="note mt-1 mb-2">
+                                By downloading, installing and using ImageGlass Spider, you agree and accept our
+                                <a href="https://github.com/ImageGlass/Spider/blob/develop/PRIVACY.md" target="_blank" rel="noopener noreferrer">privacy policy</a>.
+                            </div>
+                            @endif
+
+                            <table class="table table-borderless mt-1">
                                 <tbody>
                                     <tr>
                                         <td class="pr-3 align-middle" width="140">SHA1 Checksum</td>

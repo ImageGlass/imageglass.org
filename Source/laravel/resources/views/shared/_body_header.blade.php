@@ -38,6 +38,14 @@
                         </span>
                     </a>
                     <ul class="submenu-group">
+                        <li class="menu-item {{ strpos(@$_page, "spider") !== false ? "active" : "" }}">
+                            <a href="{{ url("/spider") }}" class="eff-reveal">
+                                <span>
+                                    ImageGlass Spider
+                                    <img src="https://imageglass.org/img/spider.svg" alt="Spider" height="18" style="filter: drop-shadow(0 0 1px black);">
+                                </span>
+                            </a>
+                        </li>
                         <li class="menu-item {{ strpos(@$_page, "moon") !== false ? "active" : "" }}">
                             <a href="{{ url("/moon") }}" class="eff-reveal">
                                 <span>

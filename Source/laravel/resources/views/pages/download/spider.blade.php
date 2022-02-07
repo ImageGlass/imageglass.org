@@ -1,5 +1,14 @@
 @extends("layouts._layout")
 @section("_body_content")
+<style>
+.download-file-item.Spider .btn:not(.eff-reveal-border).btn-primary {
+    background-image: linear-gradient(135deg,rgb(114 173 60 / 80%),rgba(41,152,172,.8),rgba(60,88,173,.8));
+}
+.download-file-item .table tr td {
+    padding: 0;
+    font-size: 85%;
+}
+</style>
 
 <section class="container py-4 py-lg-5">
     <div class="row no-gutters">
@@ -55,12 +64,12 @@
                 @endphp
 
                 @foreach ($release_item["downloads"] as $item)
-                    @if ($item["type"] === "spider x64")
+                    @if (str_contains($item["type"], "Spider"))
                         @php
                         $download_url = URL::to("release/download/{$release_item["slug"]}-{$release_item["downloads"][$download_index]["id"]}");
                         @endphp
 
-                        <div class="row download-file-item {{ $item["type"] }}">
+                        <div class="row download-file-item py-2 mb-2 {{ $item["type"] }}">
                             <div class="col-3 col-md-2 col-lg-2 col-xl-2 col-xxl-auto">
                                 <div class="file-type-icon">
                                     *.{{ $item["file_type"] }}
@@ -74,7 +83,7 @@
                                     <small class="d-inline-block">({{ $item["size"] }})</small>
                                 </a>
 
-                                <table class="table table-borderless mt-2">
+                                <table class="table table-borderless mt-1">
                                     <tbody>
                                         <tr>
                                             <td class="pr-3 align-middle" width="140">SHA1 Checksum</td>
