@@ -90,11 +90,13 @@
                 $download_index = 0;
                 $downloads_arr = $release_item["downloads"];
 
-                usort($downloads_arr, function($a, $b) {
-                    if ($a["id"] === $b["id"]) return 0;
-                    if ($a["id"] > $b["id"]) return 1;
-                    return -1;
-                });
+                if ((bool)random_int(0, 1)) {
+                    usort($downloads_arr, function($a, $b) {
+                        if ($a["id"] === $b["id"]) return 0;
+                        if ($a["id"] > $b["id"]) return 1;
+                        return -1;
+                    });
+                }
                 @endphp
 
                 @foreach ($downloads_arr as $item)
