@@ -39,7 +39,7 @@ Route::get('/sitemap.xml', 'HomeController@sitemap_xml');
 Route::get('/checkforupdate', 'HomeController@check_for_update');
 
 /* Handle all requests from app client */
-Route::get('/client', 'HomeController@client_request');
+Route::get('/url/update', 'HomeController@url_update');
 
 
 

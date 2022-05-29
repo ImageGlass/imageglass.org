@@ -77,7 +77,7 @@ class HomeController extends Controller
 		return Response::make($content, "200")->header("Content-Type", $content_type);
 	}
 
-	public function client_request() {
+	public function url_update() {
 		return redirect("https://raw.githubusercontent.com/ImageGlass/config/main/update.json");
 	}
     
