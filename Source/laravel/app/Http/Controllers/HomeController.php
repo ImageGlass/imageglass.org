@@ -76,5 +76,9 @@ class HomeController extends Controller
 		$content = view("pages.check-for-update")->with($this->data);
 		return Response::make($content, "200")->header("Content-Type", $content_type);
 	}
+
+	public function client_request() {
+		return redirect("https://raw.githubusercontent.com/ImageGlass/config/main/update.json");
+	}
     
 }
