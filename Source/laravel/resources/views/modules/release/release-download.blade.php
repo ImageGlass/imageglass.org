@@ -60,9 +60,13 @@
                 <div class="box box-info mt-3 links">
                     ❔ Looking for beta version? Download <a href="{{ url("moon") }}" title="Take me there!">ImageGlass Moon</a>!
                 </div>
-    
+                
+                <div class="box box-info mt-2 links">
+                    💡 Don't know which release to download? Check it here: <a href="https://imageglass.org/docs/app-codes">imageglass.org/docs/app-codes</a>
+                </div>
+
                 @if (isset($release_latest) && $release_latest["version"] != $release_item["version"])
-                <div class="box box-warning mt-3 links">
+                <div class="box box-warning mt-2 links">
                     ⚠ There is a newer version of ImageGlass. Would you like to <a href="{{ url("download") }}" title="Take me there!">download</a>?
                 </div>
                 @endif
@@ -82,7 +86,7 @@
                                 <a href="https://www.microsoft.com/store/productId/9N33VZK3C7TH">Microsoft Store</a>.
                             </p>
                             <script type="module" src="https://getbadgecdn.azureedge.net/ms-store-badge.bundled.js"></script>
-                            <ms-store-badge productid="9n33vzk3c7th" size="large" style="transform: scale(0.6) translate(-185px, -40px);"></ms-store-badge>
+                            <ms-store-badge productid="9n33vzk3c7th" size="large" style="transform: scale(0.6) translateY(-40px);"></ms-store-badge>
                         </div>
                     </div>
 
@@ -107,7 +111,7 @@
                     <div class="row download-file-item py-2 mb-2 {{ $item["type"] }}">
                         <div class="col-3 col-md-2 col-lg-2 col-xl-2 col-xxl-auto">
                             <div class="file-type-icon">
-                                *.{{ $item["file_type"] }}
+                                {{ $item["file_type"] }}
                             </div>
                         </div>
 

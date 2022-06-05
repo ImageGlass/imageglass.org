@@ -69,10 +69,10 @@ class DocsController extends Controller
             
                 break;
 
-            case "spider-service":
-                $title = "Spider service";
-                $description = "Learn how to disable and remove Spider service from ImageGlass.";
-                $keyword = "imageglass spider service, imageglass privacy policy";
+            case "app-codes":
+                $title = "The differences between ImageGlass release codes";
+                $description = "Learn how to distinguish ImageGlass Kobe, Moon, and Spider release.";
+                $keyword = "imageglass spider, imageglass kobe, imageglass moon, imageglass privacy policy";
             
                 break;
             

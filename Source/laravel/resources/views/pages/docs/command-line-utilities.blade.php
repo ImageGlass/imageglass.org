@@ -68,7 +68,7 @@
             </div>
 
 
-            <h3 id="optional-formats" class="mt-5 mb-3 fs-h3">Non-administrative commands (Windows 10 only)</h3>
+            <h3 id="optional-formats" class="mt-5 mb-3 fs-h3">Non-administrative commands (Windows 10+ only)</h3>
             <p>
                 The following commands are located in <code>igcmdWin10.exe</code> file. For the details how it works, please check the 
                 <a href="https://github.com/d2phap/ImageGlass/blob/master/Source/Ultilities/igcmdWin10/Program.cs" target="_blank" rel="noreferrer noopener">
@@ -88,6 +88,12 @@
                             <td>Set lock screen image</td>
                             <td>
                                 <code>igcmdWin10.exe setlockimage</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Display Share dialog</td>
+                            <td>
+                                <code>igcmdWin10.exe share &lt;string imgPath&gt;</code>
                             </td>
                         </tr>
                     </tbody>

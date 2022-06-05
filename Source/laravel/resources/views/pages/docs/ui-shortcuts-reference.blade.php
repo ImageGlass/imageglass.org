@@ -133,6 +133,12 @@
                             </td>
                         </tr>
                         <tr>
+                            <td>Share...</td>
+                            <td>
+                                <kbd>S</kbd>
+                            </td>
+                        </tr>
+                        <tr>
                             <td>Refresh</td>
                             <td>
                                 <kbd>R</kbd>

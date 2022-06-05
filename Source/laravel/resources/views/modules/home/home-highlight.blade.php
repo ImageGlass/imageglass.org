@@ -22,15 +22,15 @@
                     </div>
 
                     <div class="row justify-content-center pt-2 my-3">
-                        <div class="col-12 col-md-10 col-lg-10 col-xl-10 col-xxl-8 col-hg-7">
+                        <div class="col-12 col-md-10 col-lg-10 col-xl-10 col-xxl-8 col-hg-7 mb-1">
                             <div class="top-news-item item-new">
                                 <span>
                                     <span class="news-item-wrap">
-                                        <a href="https://imageglass.org/news/announcing-imageglass-kobe-8-5-74">
-                                            <img src="https://picsum.photos/50/21">
+                                        <a href="https://imageglass.org/news/announcing-imageglass-8-6-76">
+                                            <img src="https://picsum.photos/50/20">
                                         </a>
-                                        <a href="https://imageglass.org/news/announcing-imageglass-kobe-8-5-74" class="news-item-text">
-                                            Announcing ImageGlass Kobe 8.5
+                                        <a href="https://imageglass.org/news/announcing-imageglass-8-6-76" class="news-item-text">
+                                            Announcing ImageGlass 8.6
                                         </a>
                                     </span>
                                 </span>
@@ -41,11 +41,11 @@
                             <div class="top-news-item">
                                 <span>
                                     <span class="news-item-wrap">
-                                        <a href="https://medium.com/@d2phap/understand-imageglass-config-files-73fd61d6ccfc" class="news-item-img" target="_blank" rel="noopener sponsored">
-                                            <img src="https://picsum.photos/50/20">
+                                        <a href="https://imageglass.org/news/announcing-imageglass-moon-9-0-beta-1-75">
+                                            <img src="https://picsum.photos/50/21">
                                         </a>
-                                        <a href="https://medium.com/@d2phap/understand-imageglass-config-files-73fd61d6ccfc" class="news-item-text" target="_blank" rel="noopener sponsored">
-                                            Understand ImageGlass config files
+                                        <a href="https://imageglass.org/news/announcing-imageglass-moon-9-0-beta-1-75" class="news-item-text">
+                                            Announcing ImageGlass Moon 9.0 beta 1
                                         </a>
                                     </span>
                                 </span>

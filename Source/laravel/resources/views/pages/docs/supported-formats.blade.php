@@ -104,6 +104,12 @@
                           <td></td>
                         </tr>
                         <tr>
+                          <td><code>fits</code></td>
+                          <td>✔</td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
                             <td><code>gif</code></td>
                             <td>✔</td>
                             <td>✔</td>
@@ -170,6 +176,12 @@
                           <td></td>
                         </tr>
                         <tr>
+                          <td><code>mjpeg</code></td>
+                          <td>✔</td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
                             <td><code>pbm</code></td>
                             <td>✔</td>
                             <td></td>
@@ -201,6 +213,12 @@
                         </tr>
                         <tr>
                             <td><code>psd</code></td>
+                            <td>✔</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code>qoi</code></td>
                             <td>✔</td>
                             <td></td>
                             <td></td>
@@ -239,10 +257,22 @@
                             </td>
                         </tr>
                         <tr>
+                            <td><code>viff</code></td>
+                            <td>✔</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code>vx</code></td>
+                            <td>✔</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
                             <td><code>webp</code></td>
                             <td>✔</td>
                             <td></td>
-                            <td>Support reading non-animated format only.</td>
+                            <td>Support animated format since v8.6.</td>
                         </tr>
                         <tr>
                             <td><code>wmf</code></td>
